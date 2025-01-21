@@ -1,0 +1,4 @@
+
+* If your input data is represented in [http://www.geneontology.org/GO.format.obo-1_2.shtml OBO format], you can use the '''obo2rdf.pl''' script provided by [http://search.cpan.org/~easr/ONTO-PERL/ ONTO-PERL]
+
+* I (Erick) have just committed some tool files (to the [http://bitbucket.org/galaxy/galaxy-central/wiki/ThirdPartyTools 3rd party Galaxy contributions]) that could enable the transformation of OBO formatted files to RDF (as well as OWL) from within [http://bitbucket.org/galaxy/galaxy-central/wiki/Home Galaxy], see [http://bitbucket.org/easr/onto-toolkit/ ONTO-ToolKit]

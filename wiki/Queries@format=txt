@@ -1,0 +1,135 @@
+[[PageOutline]] 
+= Queries =
+
+Targeted queries to be resolved by Semantic Web technologies.
+
+One of our goal would be to implement an advanced search engine -- something like a Wolfram Alpha for biology. In this page, we will gather meaningful and challenging queries for the Semantic Web technology and will define some goals of the !BioHackathon 2010 from them.
+
+== Expected query types ==
+
+Queries may vary from simple google-like keyword or phrase search to biological objects as its input. This section itemize prospected types of query arbitrary.
+
+ * Gene ID
+ * Technical terms
+ * Phrase search (e.g. "ortholog genes of gene A")
+ * DNA or protein sequence
+ *  :
+
+== Prospected queries ==
+
+=== From [http://ir.ohsu.edu/genomics/2007protocol.html TREC Genomics Trac] ===
+
+[http://trec.nist.gov/ TREC] (Text REtreival Conference) held a competition for information extraction (IE) or text mining (TM) researchers and raised following 14 challenging questions to retrieve answering passages automatically. Some of these may also be considered as targets for Semantic Web.
+
+ * <T1>What [ANTIBODIES] have been used to detect protein [http://swoogle.umbc.edu/index.php?option=com_frontpage&service=search&queryType=search_swt&searchString=uri%3ATLR4&searchStart=1 TLR4]?
+ * <T2>What [BIOLOGICAL SUBSTANCES] have been used to measure toxicity in response to [http://swoogle.umbc.edu/index.php?option=com_frontpage&service=search&queryType=search_swt&searchString=uri%3Acytarabine&searchStart=1 cytarabine]?
+ * <T3>What [CELL OR TISSUE TYPES] express members of the mammalian [http://swoogle.umbc.edu/index.php?option=com_frontpage&service=search&queryType=search_swt&searchString=uri%3ATIM+uri%3Agene&searchStart=1 TIM gene] family?
+ * <T4>What [DISEASES] are associated with [http://swoogle.umbc.edu/index.php?option=com_frontpage&service=search&queryType=search_swt&searchString=uri%3Alysosomal&searchStart=1 lysosomal] abnormalities in the [http://swoogle.umbc.edu/index.php?option=com_frontpage&service=search&queryType=search_swt&searchString=uri%3Anervous+uri%3Asystem&searchStart=1 nervous system]?
+ * <T5>What [DRUGS] have been tested in mouse models of [http://swoogle.umbc.edu/index.php?option=com_frontpage&service=search&queryType=search_swt&searchString=uri%3AAlzheimer%27s+uri%3Adisease&searchStart=1 Alzheimer's disease]?
+ * <T6>What centrosomal [GENES] are implicated in diseases of [http://swoogle.umbc.edu/index.php?option=com_frontpage&service=search&queryType=search_swt&searchString=uri%3Abrain+uri%3Adevelopment&searchStart=1 brain development]?
+ * <T7>What [MOLECULAR FUNCTIONS] does [http://swoogle.umbc.edu/index.php?option=com_frontpage&service=search&queryType=search_swt&searchString=uri%3Ahelicase+uri%3Aprotein&searchStart=1 helicase protein] NS3 play in HCV ([http://swoogle.umbc.edu/index.php?option=com_frontpage&service=search&queryType=search_swt&searchString=uri%3AHepatitis+uri%3AC+uri%3Avirus&searchStart=1 Hepatitis C virus])?
+ * <T8>What [MUTATIONS] in apolipoprotein genes are associated with disease?
+ * <T9>Which [PATHWAYS] are possibly involved in the disease ADPKD?
+ * <T10>What [PROTEINS] does epsin1 interact with during endocytosis?
+ * <T11>What Streptococcus pneumoniae [STRAINS] are resistent to penicillin and erythromycin?
+ * <T12>What [SIGNS OR SYMPTOMS] of anxiety disorder are related to lipid levels?
+ * <T13>What [TOXICITIES] are associated with cytarabine?
+ * <T14>What [TUMOR TYPES] are associated with Rb1 mutations?
+
+Is there any way of translating a natural language query to a SPARQL one? or should we need to develop?[[BR]]
+Some "buffer" layer, which bridges the gap between highly structured language such as SPARQL and unstructured one (i.e., natural language), might be needed.
+[http://swoogle.umbc.edu/ Swoogle] may be useful. Also, information extraction (IE) technology is crucial to identify a key concept in literature.
+Natural language processing (NLP) technology used for IE in life science such as [http://www-tsujii.is.s.u-tokyo.ac.jp/medie/ MEDIE] or [http://www-tsujii.is.s.u-tokyo.ac.jp/enju/ Enju] can be used.
+
+ * [http://www.obofoundry.org/ro/ OBO Relation Ontology]
+ * [http://www.w3.org/TR/hcls-kb/#appendix HCLS KB Appendix]
+ * [http://ir.ohsu.edu/genomics/2007protocol.html TREC Genomics Trac Protocol]
+ * [http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/home/wiki.cgi?page=GENIA+Ontology GENIA Ontology]
+
+ * [http://www.w3.org/RDF/ Resource Description Framework (RDF)]
+ * [http://www.w3.org/TR/rdf-sparql-query/ SPARQL Query Language for RDF]
+ * [http://www.w3.org/TR/rdf-dawg-uc/ RDF Data Access Use Cases and Requirements]
+
+ * [http://swoogle.umbc.edu/ Swoogle] Search
+   * [http://swoogle.umbc.edu/index.php?option=com_frontpage&service=search&queryType=search_swt&searchString=uri%3Aantibody&searchStart=1 Antibody]
+   * [http://swoogle.umbc.edu/index.php?option=com_frontpage&service=search&queryType=search_swt&searchString=uri%3Abiological+uri%3Asubstance&searchStart=1 Biological substance]
+   * [http://swoogle.umbc.edu/index.php?option=com_frontpage&service=search&queryType=search_swt&searchString=uri%3Acell+uri%3Aor+uri%3Atissue+uri%3Atype&searchStart=1 Cell or tissue type]
+   * [http://swoogle.umbc.edu/index.php?option=com_frontpage&service=search&queryType=search_swt&searchString=uri%3Adisease&searchStart=1 Disease]
+   * [http://swoogle.umbc.edu/index.php?option=com_frontpage&service=search&queryType=search_swt&searchString=uri%3Adrug&searchStart=1 Drug]
+   * [http://swoogle.umbc.edu/index.php?option=com_frontpage&service=search&queryType=search_swt&searchString=uri%3Agene&searchStart=1 Gene]
+   * [http://swoogle.umbc.edu/index.php?option=com_frontpage&service=search&queryType=search_swt&searchString=uri%3Amolecular+uri%3Afunction&searchStart=1 Molecular function]
+   * [http://swoogle.umbc.edu/index.php?option=com_frontpage&service=search&queryType=search_swt&searchString=uri%3Amutation&searchStart=1 Mutation]
+   * [http://swoogle.umbc.edu/index.php?option=com_frontpage&service=search&queryType=search_swt&searchString=uri%3Apathway&searchStart=1 Pathway]
+   * [http://swoogle.umbc.edu/index.php?option=com_frontpage&service=search&queryType=search_swt&searchString=uri%3Aprotein&searchStart=1 Protein]
+   * [http://swoogle.umbc.edu/index.php?option=com_frontpage&service=search&queryType=search_swt&searchString=uri%3Astrain&searchStart=1 Strain]
+   * [http://swoogle.umbc.edu/index.php?option=com_frontpage&service=search&queryType=search_swt&searchString=uri%3Asign+uri%3Aor+uri%3Asymptom&searchStart=1 Sign or symptom]
+   * [http://swoogle.umbc.edu/index.php?option=com_frontpage&service=search&queryType=search_swt&searchString=uri%3Atoxicity&searchStart=1 Toxicity]
+   * [http://swoogle.umbc.edu/index.php?option=com_frontpage&service=search&queryType=search_swt&searchString=uri%3Atumor+uri%3Atype&searchStart=1 Tumore type]
+
+
+{{{
+?something pred:Detect ?uniprotid .
+?something pred:isA ProteinType:antibody .
+?uniprotid pred:hasName ProteinName:TLR4 .
+?uniprotid pred:isA idType:uniprot .
+}}}
+
+{{{
+?something pred:Measure degreeOf:ToxicityOfCytarabine .
+?something pred:isA Entity:BiologicalSubstance .
+}}}
+
+{{{
+?somegene pred:expressIn ?cell_or_tissue .
+?cell_or_tissue pred:isA Entity:Cell or Tissue .
+?somegene pred:isA familyOf:mammalian TIM gene .
+}}}
+
+{{{
+?disease pred:associate medical_genetics:lysosomal abnormalities .
+?disease pred:isA umls:DiseaseorSyndrome .
+medical_genetics:lysosomal abnormalities pred:occurredIn Tissue:nervous system .
+}}}
+
+{{{
+?drug pred:tested DeseaseModel:mouse .
+?drug pred:target disease:Alzheimer's disease .
+?drug pred:isA Entity:Drug .
+}}}
+
+{{{
+?gene pred:isA Entity:Gene .
+?gene pred:isA CellularLocalization:centrosome .
+?gene pred:associate/implicate ?disease .
+?disease pred:isA umls:DiseaseorSyndrome .
+?disease pred:hasRelation go:brain development .
+}}}
+
+{{{
+?something pred:isA go:molecular function .
+?uniprotid pred:hasName ProteinName:NS3 . 
+?uniprotid pred:isA idType:uniprot .
+?uniprotid pred:isA go:helicase activity .
+?uniprotid pred:play ?something .
+?something pred:occurredIn Organism:Hepatitis C virus .
+}}}
+=== From [http://www.flymine.org/release-20.0/templates.do FlyMine Templates] ===
+
+!InterMine/FlyMine provides a curated set of typical query templates. As these are checked by the biologists, most of them seems to be meaningful compared to computationally generated queries based on combinations of available resources.
+
+ * Disease [Human] --> Genes + D. melanogaster homologues (filter on BLAST E-Value).
+   * For a specified human disease, show all associated human genes and their Drosophila homologues as identified with BLAST. Results are filtered by a specified E-Value, the lower the E-Value, the better the match. (Data Source: Homophila).
+
+ * EST clone [A. gambiae] --> Chromosomal location + Gene + D. melanogaster orthologue + Pathway.
+   * For a particular A. gambiae EST clone, show its chromosomal location, the corresponding A. gambiae gene, the D. melanogaster orthologue and the pathway. (Data Source: !VectorBase, !InParanoid, KEGG, Reactome, !FlyReactome).
+
+
+=== From participants ===
+
+Please add your own use cases here:
+
+ * Q: I have a set of predicted genes from a newly sequenced genome of a Theileria species. What is a unique characteristic of this set from the view point of the biological pathway? Is it natural that this organism lacks thiolase in the mevalonate pathway? (Toshiaki Katayama)
+   * To resolve this sample question, we need taxonomically classified list of biological modules in the pathway filled with a phylogenetic profile of orthologous genes among related species. Then we can confirm its absence with protein2genome mapping, predicted sub cellular localization of the enzyme, knowledge on reaction in the organelle (apicoplast) from related journal articles and reviews. Most of components are already in databases but none of them are semantically linked with each other.
+
+ * Q: What is the largest gene expression regulation network ever known coming with expression level data? (Itoshi Nikaido)
+   * What actually wanted is a "graph structure" and "feature labels" of each node.

@@ -1,0 +1,22 @@
+Okay Keeners!  Here's some sample input data:
+
+{{{
+<rdf:RDF 
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+xmlns:lsrn="http://purl.oclc.org/SADI/LSRN/">
+
+    <lsrn:KEGG_Record rdf:about="hsa:672"/>
+
+</rdf:RDF>
+
+}}}
+
+save that input data to a file called keggdemo.rdf and then issue the following (Unix) command line:
+
+{{{
+ curl -d @keggdemo.rdf http://sadiframework.org/services/getKEGGParalogsByGene
+}}}
+
+(What that command means is "take the content of keggdemo.rdf and HTTP-POST it to getKEGGParalogsByGene"   HEY!!  '''NO SOAP'''!!  HURRAY!!!)
+
+You will notice that, in the output from the service, there is a LOT more information than we have advertised in the service description!!  That is because we are only interested in describing the '''salient features''' of a service!!  The fact that the service produces things like "identity scores" and other statistical information is not particularly useful when it comes to service discovery!!  All sorts of algorithms provide identity scores... so we don't include those features in our service output definition... but they are still there, and can be used by SPARQL to filter results if you are using, for exmple, the SHARE query engine.  

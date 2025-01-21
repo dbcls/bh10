@@ -1,0 +1,28 @@
+= Project description for Rutger Vos's visit to DBCLS, 24 January - 24 February 2011. =
+== NeXML I/O as a BioRuby plugin ==
+During the 2010 Google Summer of Code, student Anurag Priyam developed some classes for reading and writing NeXML (http://www.nexml.org). However, these classes were built as part of the "core" BioRuby architecture. Best practices dictate that new code is instead released as a biogem plugin. To this end, I am refactoring Anurag's code. Steps taken so far:
+ * Tools needed for biogem development and deployment (http://bioruby.open-bio.org/wiki/BiogemInstallation)
+  * Update RubyGems, i.e. `sudo gem update --system`
+  * Install bio-gem, i.e. `sudo gem install bio-gem`
+  * Install bio-gem dependency jeweler, i.e. `sudo gem install jeweler`
+  * Install bio-gem dependency bundler, i.e. `sudo gem install bundler`
+ * Tools needed for git(hub):
+  * Install git
+  * Fork yeban/bioruby on github
+  * `git clone git@github.com:rvosa/bioruby.git`
+  * `git branch bioruby-nexml`
+  * `git checkout bioruby-nexml`
+ * Make biogem compliant folder layout (http://bioruby.open-bio.org/wiki/BiogemDevelopment)
+  * `biogem nexml`
+  * Merge bioruby-nexml classes, unit tests and test files in biogem folder structure
+  * Results at https://github.com/rvosa/bio-nexml
+ * And now getting it to actually run...
+  * xml parser is missing, `sudo gem install libxml-ruby`
+  * add dependency to Rakefile, Gemfile, Gemfile.lock
+  * refactoring class hierarchy to reflect schema complex types
+  * debugging problems with unit tests
+== NeXML/RDF as a BioRuby plugin ==
+Elements in NeXML documents can be annotated using RDFa. This means that every element (and the objects in which it can be de-serialized) can be the subject in an RDF triple. For example, TreeBASE uses this extensively to add metadata about submissions to its repository to the NeXML it produces (e.g. author names, NCBI taxonomy record identifiers, etc.). In order to fully implement NeXML functionality, the BioRuby objects that are generated when reading a NeXML file should therefore be able to be annotated with predicates (with namespaces) and with objects (also, perhaps, with namespaces). To make this possible, Anurag started some work on this, but this needs to be extended and released as a biogem (bio-rdf?)
+== BioHackathon meeting reports ==
+ * finish abstract for BioHack09 meeting report
+ * help finish BioHack10 meeting report for special issue of Journal of Biomedical Semantics

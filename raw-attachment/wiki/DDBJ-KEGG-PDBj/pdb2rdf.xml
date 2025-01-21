@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pdbx="http://pdbj.protein.osaka-u.ac.jp/XML/pdbmlplus/pdbMLplus_v32.xsd" xmlns:pdb="http://www.pdbj.org/ontology/pdb.owl#" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ro="http://www.obofoundry.org/ro/ro.owl#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:bibo="http://purl.org/ontology/bibo/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<pdb:Entry rdf:about="http://www.pdbj.org/1a00">
+<dc:created>1997-12-08</dc:created>
+<dc:modified>2009-02-24</dc:modified>
+<foaf:topic>
+<pdb:Structure>
+<ro:contains>
+<polymer rdf:about="http://www.pdbj.org/1a00#1" xmlns="http://www.pdbj.org/ontology/pdb.owl#">
+<rdfs:comment>HEMOGLOBIN (ALPHA CHAIN)</rdfs:comment>
+<ro:derived-from>
+<pdb:Gene>
+<rdfs:label>HUMAN BETA GLOBIN</rdfs:label>
+<ro:derived-from>
+<rdf:Resource rdf:about="http://www.ncbi.nlm.nih.gov/taxonomy/9606">
+<rdfs:label>human</rdfs:label>
+<rdfs:label>Homo sapiens</rdfs:label>
+</rdf:Resource>
+</ro:derived-from>
+</pdb:Gene>
+</ro:derived-from>
+<ro:derived_from>
+<pdb:Cell>
+<rdfs:label>RED BLOOD CELL</rdfs:label>
+</pdb:Cell>
+</ro:derived_from>
+<ro:derived_from>
+<pdb:Organ>
+<rdfs:label>BLOOD</rdfs:label>
+</pdb:Organ>
+</ro:derived_from>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/uniprot/P69905" />
+<ro:derived-from>
+<rdf:Resource rdf:about="http://www.ncbi.nlm.nih.gov/taxonomy/9606">
+<rdfs:label>human</rdfs:label>
+<rdfs:label>Homo sapiens</rdfs:label>
+</rdf:Resource>
+</ro:derived-from>
+</polymer>
+</ro:contains>
+<ro:contains>
+<polymer rdf:about="http://www.pdbj.org/1a00#2" xmlns="http://www.pdbj.org/ontology/pdb.owl#">
+<rdfs:comment>HEMOGLOBIN (BETA CHAIN)</rdfs:comment>
+<ro:derived-from>
+<pdb:Gene>
+<rdfs:label>HUMAN BETA GLOBIN</rdfs:label>
+<ro:derived-from>
+<rdf:Resource rdf:about="http://www.ncbi.nlm.nih.gov/taxonomy/9606">
+<rdfs:label>human</rdfs:label>
+<rdfs:label>Homo sapiens</rdfs:label>
+</rdf:Resource>
+</ro:derived-from>
+</pdb:Gene>
+</ro:derived-from>
+<ro:derived_from>
+<pdb:Cell>
+<rdfs:label>RED BLOOD CELL</rdfs:label>
+</pdb:Cell>
+</ro:derived_from>
+<ro:derived_from>
+<pdb:Organ>
+<rdfs:label>BLOOD</rdfs:label>
+</pdb:Organ>
+</ro:derived_from>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/uniprot/P68871" />
+<ro:derived-from>
+<rdf:Resource rdf:about="http://www.ncbi.nlm.nih.gov/taxonomy/9606">
+<rdfs:label>human</rdfs:label>
+<rdfs:label>Homo sapiens</rdfs:label>
+</rdf:Resource>
+</ro:derived-from>
+</polymer>
+</ro:contains>
+<ro:contains>
+<non-polymer rdf:about="http://www.pdbj.org/1a00#3" xmlns="http://www.pdbj.org/ontology/pdb.owl#">
+<rdfs:comment>PROTOPORPHYRIN IX CONTAINING FE</rdfs:comment>
+</non-polymer>
+</ro:contains>
+<ro:contains>
+<water rdf:about="http://www.pdbj.org/1a00#4" xmlns="http://www.pdbj.org/ontology/pdb.owl#">
+<rdfs:comment>water</rdfs:comment>
+</water>
+</ro:contains>
+<foaf:page>
+<bibo:AcademicArticle rdf:about="urn:doi:10.1021/bi9708702">
+<rdfs:seeAlso rdf:resource="http://ncbi.nlm.nih.gov/pubmed/9521756" />
+<rdfs:label>High-resolution crystal structures of human hemoglobin with mutations at tryptophan 37beta: structural basis for a high-affinity T-state,.</rdfs:label>
+</bibo:AcademicArticle>
+</foaf:page>
+</pdb:Structure>
+</foaf:topic>
+</pdb:Entry>
+</rdf:RDF>

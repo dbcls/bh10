@@ -1,0 +1,78 @@
+[[PageOutline]] 
+
+= OWL =
+== Ontology Web Language ==
+ * [http://en.wikipedia.org/wiki/Web_Ontology_Language]
+ * [http://www.w3.org/TR/owl2-new-features/ OWL 2]
+ * [http://www.w3.org/TR/owl-guide/ guide]
+ * [http://owl.cs.manchester.ac.uk/tutorials/protegeowltutorial/ Protege OWL tutorial]
+
+= OWL use cases =
+== Modeling ==
+Ontologies are created to fix terms in their meaning. So that confusion about their definition is avoided.
+Many ontologies are written in the OBO format an easily human readable text format. For example GO is defined in OBO.
+OWL is a more formal definition of an Ontology. This gives it a lot of powerful features that one can use. While also incurring 
+a steep learning curve.
+
+A simple model is: [[br]]
+:woman a rdf:Class . [[br]]
+:woman rdfs:comment "Woman is person who has two XX chromosomes. Per normal healthy cell." . [[br]
+:woman rdfs:subClassOf :human . [[br]]
+
+:mother :subPropertyOf :human . [[br]]
+:mother rdfs:comment "Every human has at least one Mother. We may not know who she is or if she is alive but you must have had one. Clones are not human ;)" . [[br]]
+
+:human a rdf:Class . [[br]]
+:human rdfs:comment "Human a vague concept" . [[br]]
+== Reasoning ==
+
+OWL allows reasoning over statement using description logic. That means that one does not need to encode all implied information in your system to be able to get conclusive data.
+
+e.g.
+jenny a :woman . [[BR]]
+jenny :hasMother mum . [[BR]]
+mum a :mother . [[BR]]
+
+In a classical system without reasoning when asking the question select ?s where {?p rdf:Type :woman}; will only answer jenny.
+ 
+After adding the following OWL axiom.
+:mother owl:subClassOf :woman .[[BR]]
+
+The answer would become
+jenny and mum. 
+As the axiom leads to the inference that mum is a :Woman.  So the new triple [[BR]]
+mum a :woman .[[BR]]
+
+== Constraint Validation ==
+
+Lets add a simple constraint too the Ontology. Being rather conservative.[[BR]]
+:man owl:disjointWith :woman . [[BR]]
+
+That means if we had made a mistake filling our triple store and we had added a. [[BR]]
+mum a :man . [[BR]]
+our OWL logic would raise a contradiction.
+
+A product meant for this is
+[http://clarkparsia.com/pellet/icv]
+
+In the end I used pellet 2.0.1 for validating the RDF of UniProt,org to see if it is valid according to our OWL file.
+
+./pellet.sh consistency "http://purl.uniprot.org/uniprot/P12345" "ftp://ftp.uniprot.org//pub/databases/uniprot/current_release/rdf/core.owl" 
+
+Which found many errors. Most where datatype errors. e.g. "2009-11" Year-Month is not a valid ISO8601 standard. I changed these to "P2009Y11M" which is valid period encoding.
+The OWL now has a comment  describing what is meant here and why we use this.
+
+For uniprot.org we now also have a script that checks a 1000 entries for correctness.
+{{{
+#!/bin/bash
+cd $PELLETDIR
+LIMIT=1000
+UNIPROT="http://localhost:8080"
+for ac in `curl "$UNIPROT/uniprot/?query=*&format=list&limit=$LIMIT"`; do
+        echo $ac
+        `curl "$UNIPROT/uniprot/$ac.rdf" -o $ac.rdf`;
+        ./pellet.sh consistency -v $ac.rdf ~/Documents/workspace/uniprot-rdf/src/core.owl
+        rm $ac.rdf;
+done
+}}}
+

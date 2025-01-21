@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      OWL – BioHackathon 2010
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="alternate" href="/wiki/OWL?version=11&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="/wiki/OWL" title="View latest version" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" />
+        <link rel="prev" href="/wiki/OWL?version=10" title="Version 10" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search BioHackathon 2010" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon3.dbcls.jp/"><img src="http://hackathon3.dbcls.jp/raw-attachment/wiki/LogoGallery/trac_logo.png" alt="DBCLS BioHackathon 2010" width="200" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="/wiki/OWL?version=10" title="Version 10">Previous Version</a></span></li><li><a href="/wiki/OWL" title="View latest version">View Latest Version</a></li><li><span class="missing">Next Version &rarr;</span></li><li class="last"><a href="/wiki/OWL?action=diff&amp;version=11">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 11 (modified by admin, <a class="timeline" href="/timeline?from=2010-02-14T21%3A21%3A05%2B0900&amp;precision=second" title="2010-02-14T21:21:05+0900 in Timeline">15 years</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+--
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <p>
+</p><div class="wiki-toc"><ol><li><a href="#OWL">OWL</a><ol><li><a href="#OntologyWebLanguage">Ontology Web Language</a></li></ol></li><li>
+<a href="#OWLusecases">OWL use cases</a><ol><li><a href="#Modeling">Modeling</a></li><li>
+<a href="#Reasoning">Reasoning</a></li><li>
+<a href="#ConstraintValidation">Constraint Validation</a></li></ol></li></ol></div><p> 
+</p>
+<h1 id="OWL">OWL</h1>
+<h2 id="OntologyWebLanguage">Ontology Web Language</h2>
+<ul><li><a class="ext-link" href="http://en.wikipedia.org/wiki/Web_Ontology_Language"><span class="icon"> </span>http://en.wikipedia.org/wiki/Web_Ontology_Language</a>
+</li><li><a class="ext-link" href="http://www.w3.org/TR/owl2-new-features/"><span class="icon"> </span>OWL 2</a>
+</li><li><a class="ext-link" href="http://www.w3.org/TR/owl-guide/"><span class="icon"> </span>guide</a>
+</li><li><a class="ext-link" href="http://owl.cs.manchester.ac.uk/tutorials/protegeowltutorial/"><span class="icon"> </span>Protege OWL tutorial</a>
+</li></ul><h1 id="OWLusecases">OWL use cases</h1>
+<h2 id="Modeling">Modeling</h2>
+<p>
+Ontologies are created to fix terms in their meaning. So that confusion about their definition is avoided.
+Many ontologies are written in the OBO format an easily human readable text format. For example GO is defined in OBO.
+OWL is a more formal definition of an Ontology. This gives it a lot of powerful features that one can use. While also incurring 
+a steep learning curve.
+</p>
+<p>
+A simple model is: <br />
+:woman a rdf:Class . <br />
+:woman rdfs:comment "Woman is person who has two XX chromosomes. Per normal healthy cell." . [[br]
+:woman rdfs:subClassOf :human . <br />
+</p>
+<p>
+:mother :subPropertyOf :human . <br />
+:mother rdfs:comment "Every human has at least one Mother. We may not know who she is or if she is alive but you must have had one. Clones are not human ;)" . <br />
+</p>
+<p>
+:human a rdf:Class . <br />
+:human rdfs:comment "Human a vague concept" . <br />
+</p>
+<h2 id="Reasoning">Reasoning</h2>
+<p>
+OWL allows reasoning over statement using description logic. That means that one does not need to encode all implied information in your system to be able to get conclusive data.
+</p>
+<p>
+e.g.
+jenny a :woman . <br />
+jenny :hasMother mum . <br />
+mum a :mother . <br />
+</p>
+<p>
+In a classical system without reasoning when asking the question select ?s where {?p rdf:Type :woman}; will only answer jenny.
+ 
+After adding the following OWL axiom.
+:mother owl:subClassOf :woman .<br />
+</p>
+<p>
+The answer would become
+jenny and mum. 
+As the axiom leads to the inference that mum is a :Woman.  So the new triple <br />
+mum a :woman .<br />
+</p>
+<h2 id="ConstraintValidation">Constraint Validation</h2>
+<p>
+Lets add a simple constraint too the Ontology. Being rather conservative.<br />
+:man owl:disjointWith :woman . <br />
+</p>
+<p>
+That means if we had made a mistake filling our triple store and we had added a. <br />
+mum a :man . <br />
+our OWL logic would raise a contradiction.
+</p>
+<p>
+A product meant for this is
+<a class="ext-link" href="http://clarkparsia.com/pellet/icv"><span class="icon"> </span>http://clarkparsia.com/pellet/icv</a>
+</p>
+<p>
+In the end I used pellet 2.0.1 for validating the RDF of <a class="missing wiki">UniProt?</a>,org to see if it is valid according to our OWL file.
+</p>
+<p>
+./pellet.sh consistency "<a class="ext-link" href="http://purl.uniprot.org/uniprot/P12345"><span class="icon"> </span>http://purl.uniprot.org/uniprot/P12345</a>" "<a class="ext-link" href="ftp://ftp.uniprot.org//pub/databases/uniprot/current_release/rdf/core.owl"><span class="icon"> </span>ftp://ftp.uniprot.org//pub/databases/uniprot/current_release/rdf/core.owl</a>" 
+</p>
+<p>
+Which found many errors. Most where datatype errors. e.g. "2009-11" Year-Month is not a valid ISO8601 standard. I changed these to "P2009Y11M" which is valid period encoding.
+The OWL now has a comment  describing what is meant here and why we use this.
+</p>
+<p>
+For uniprot.org we now also have a script that checks a 1000 entries for correctness.
+</p>
+<pre class="wiki">#!/bin/bash
+cd $PELLETDIR
+LIMIT=1000
+UNIPROT="http://localhost:8080"
+for ac in `curl "$UNIPROT/uniprot/?query=*&amp;format=list&amp;limit=$LIMIT"`; do
+        echo $ac
+        `curl "$UNIPROT/uniprot/$ac.rdf" -o $ac.rdf`;
+        ./pellet.sh consistency -v $ac.rdf ~/Documents/workspace/uniprot-rdf/src/core.owl
+        rm $ac.rdf;
+done
+</pre>
+        
+        
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="/wiki/OWL?version=11&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

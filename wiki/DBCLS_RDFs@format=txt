@@ -1,0 +1,39 @@
+[[PageOutline]] 
+
+= DBCLS RDFs =
+
+== Target datasets ==
+ * TogoWS REST API
+ * MEDLINE/PubMed (full) 
+ * Kazusa Gene Indexing (http://a.kazusa.or.jp) 
+ * Allie  http://allie.dbcls.jp
+ * Databases archived at DBCLS http://dbarchive.lifesciencedb.jp/
+ * Dictionaries and glossaries (digitalized) at http://lifesciencedb.jp/lsdb.cgi?gg=dic
+
+== TogoWS REST API + RDF output powered by BioRuby ==
+Retrieve entry in RDF/Turtle.
+ * http://togows.dbcls.jp/entry/ncbi-pubmed/10975656.ttl
+
+Search entries in RDF/Turtle.
+ * http://togows.dbcls.jp/search/ncbi-pubmed/blain+cancer.ttl
+
+== MEDLINE/PubMed ==
+[wiki:RDF/TogoWS/PubMed]
+
+== Kazusa Gene Indexing + !PubMed + cyanobase + rhizobase ==
+[wiki:RDF/KazusaAnnotation]
+
+ * SPARQL test query http://virtuoso.beta.dbcls.jp/sparql/
+ * Faceted view: http://virtuoso.beta.dbcls.jp/4store/ka/fct/
+
+ * http://a.kazusa.or.jp
+ * http://genome.kazusa.or.jp/cyanobase
+ * http://genome.kazusa.or.jp/rhizobase
+
+== Allie - A Search Service for Abbreviation / Long Form ==
+[wiki:RDF/Allie]
+
+ * SPARQL test query page: http://data.allie.dbcls.jp/sparql/
+ * Faceted view: http://data.allie.dbcls.jp/fct/
+
+ * http://allie.dbcls.jp

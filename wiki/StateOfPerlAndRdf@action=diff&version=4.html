@@ -1,0 +1,322 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+    <html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      StateOfPerlAndRdf (diff) – BioHackathon 2010
+    </title>
+        <link rel="search" href="../search.1.html" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="up" href="StateOfPerlAndRdf@action=history.html" title="Page history" />
+        <link rel="next" href="StateOfPerlAndRdf@action=diff&amp;version=5.html" title="Version 5" />
+        <link rel="start" href="../wiki.1.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/diff.css" type="text/css" />
+        <link rel="prev" href="StateOfPerlAndRdf@action=diff&amp;version=3.html" title="Version 3" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../search/opensearch" title="Search BioHackathon 2010" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script><script type="text/javascript" src="http://hackathon3.dbcls.jp/chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="../chrome/common/css/diff.css" /><meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="../index.html"><img src="http://hackathon3.dbcls.jp/raw-attachment/wiki/LogoGallery/trac_logo.png" alt="DBCLS BioHackathon 2010" width="200" /></a>
+      </div>
+      <form id="search" action="../search.1.html" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://hackathon3.dbcls.jp/login">Login</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li><a href="../about.html">About Trac</a></li><li class="last"><a href="../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.1.html">Wiki</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../roadmap.html">Roadmap</a></li><li><a href="../browser.html">Browse Source</a></li><li><a href="../report.html">View Tickets</a></li><li class="last"><a href="../search.1.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="StateOfPerlAndRdf@action=diff&amp;version=3.html" title="Version 3">Previous Change</a></span></li><li><a href="StateOfPerlAndRdf@action=history.html" title="Page history">Wiki History</a></li><li class="last"><span><a class="next" href="StateOfPerlAndRdf@action=diff&amp;version=5.html" title="Version 5">Next Change</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <h1>Changes
+        between
+          <a href="StateOfPerlAndRdf@version=3.html">Version 3</a> and
+        <a href="StateOfPerlAndRdf@version=4.html">Version 4</a> of
+        <a href="StateOfPerlAndRdf@version=4.html">StateOfPerlAndRdf</a>
+      </h1>
+      <form method="post" id="prefs" action="StateOfPerlAndRdf@version=4.html"><div><input type="hidden" name="__FORM_TOKEN" value="9b92f779110146561b41c442" /></div>
+        <div>
+          <input type="hidden" name="action" value="diff" />
+          <input type="hidden" name="version" value="4" />
+          <input type="hidden" name="old_version" value="3" />
+    <label for="style">View differences</label>
+    <select id="style" name="style">
+      <option selected="selected" value="inline">inline</option>
+      <option value="sidebyside">side by side</option>
+    </select>
+    <div class="field">
+      Show <input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+      <label for="contextlines">lines around each change</label>
+    </div>
+    <fieldset id="ignore">
+      <legend>Ignore:</legend>
+      <div class="field">
+        <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+        <label for="ignoreblanklines">Blank lines</label>
+      </div>
+      <div class="field">
+        <input type="checkbox" id="ignorecase" name="ignorecase" />
+        <label for="ignorecase">Case changes</label>
+      </div>
+      <div class="field">
+        <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+        <label for="ignorewhitespace">White space changes</label>
+      </div>
+    </fieldset>
+    <div class="buttons">
+      <input type="submit" name="update" value="Update" />
+    </div>
+        </div>
+      </form>
+      <dl id="overview">
+        <dt class="property time">Timestamp:</dt>
+        <dd class="time">
+          2010/03/12 02:49:11 (<a class="timeline" href="../timeline@from=2010-03-12T02%253A49%253A11+0900&amp;precision=second.html" title="2010-03-12T02:49:11+0900 in Timeline">15 years</a> ago)
+        </dd>
+        <dt class="property author">Author:</dt>
+        <dd class="author">
+          tkappler
+        </dd>
+        <dt class="property message">Comment:</dt>
+        <dd class="message">
+          
+          <p>
+fixes
+</p>
+
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+            <dt class="mod"></dt><dd>Modified</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="StateOfPerlAndRdf@version=4.html">StateOfPerlAndRdf</a>
+        </h2>
+        <table class="inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Version 3">
+                    <a href="StateOfPerlAndRdf@version=3.html#L25">
+                      v3</a>
+                  </th>
+                  <th title="Version 4">
+                    <a href="StateOfPerlAndRdf@version=4.html#L25">
+                      v4</a>
+                  </th>
+                  <th> </th>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>25</th><th>25</th><td class="l"><span>Last release: 0.117, 2010-02-04.</span> </td>
+                  </tr><tr>
+                          <th>26</th><th>26</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>27</th><th> </th><td class="l"><span><del>&nbsp;istkappler</del> in touch with the author, Gregory Williams, and it's a pleasure to work with him. Some patches contributed. Here's some of his advice that I intend to include in some more in-depth, step-by-step writeups.</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>27</th><td class="r"><span><ins>tkappler is</ins> in touch with the author, Gregory Williams, and it's a pleasure to work with him. Some patches contributed. Here's some of his advice that I intend to include in some more in-depth, step-by-step writeups.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>28</th><th>28</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>29</th><th>29</th><td class="l"><span>&gt; In general you should be using RDF::Query for retrieving patterns</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="StateOfPerlAndRdf@version=3.html#L48">…</a></th>
+                  <th><a href="StateOfPerlAndRdf@version=4.html#L48">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>48</th><th>48</th><td class="l"><span>=== RDF::Redland ===</span> </td>
+                  </tr><tr>
+                          <th>49</th><th>49</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>50</th><th> </th><td class="l"><span>[http://search.cpan.org/~djbeckett/Redland-1.0.5.4/redland/docs/redland.pod RDF::Redland] is a wrapper for the [Redland C library](http://librdf.org/). Looks</span> </td>
+                      </tr><tr>
+                        <th>51</th><th> </th><td class="l"><span>pretty complete.</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>50</th><td class="r"><span>[http://search.cpan.org/~djbeckett/Redland-1.0.5.4/redland/docs/redland.pod RDF::Redland] is a wrapper for the [Redland C library](http://librdf.org/). Looks pretty complete.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>52</th><th>51</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>53</th><th>52</th><td class="l"><span>I couldn't build it as I have the new version 0.9.17 of librasqal, the query library for Redland, which is API incompatible with its predecessor on which RDF::Redland apparently depends.</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="StateOfPerlAndRdf@version=3.html#L61">…</a></th>
+                  <th><a href="StateOfPerlAndRdf@version=4.html#L60">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>61</th><th>60</th><td class="l"><span>=== RDF::Core ===</span> </td>
+                  </tr><tr>
+                          <th>62</th><th>61</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>63</th><th> </th><td class="l"><span>Another pure Perl RDF framework. [http://search.cpan.org/~dpokorny/RDF-Core/ CPAN]. Last release: 0.51, 2007-02-19, which probably means that it's not very</span> </td>
+                      </tr><tr>
+                        <th>64</th><th> </th><td class="l"><span>much used or supported. Use RDF::Trine unless you have a good reason not to.</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>62</th><td class="r"><span>Another pure Perl RDF framework. [http://search.cpan.org/~dpokorny/RDF-Core/ CPAN]. Last release: 0.51, 2007-02-19, which probably means that it's not very much used or supported. Use RDF::Trine unless you have a good reason not to.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>65</th><th>63</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>66</th><th>64</th><td class="l"><span>Notes:</span> </td>
+                  </tr><tr>
+                          <th>67</th><th>65</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>68</th><th> </th><td class="l"><span>&nbsp;* A pretty complete RDF package written in Perl, including parser and</span> </td>
+                      </tr><tr>
+                        <th>69</th><th> </th><td class="l"><span>&nbsp; serializer, model with its own query language, and storage with</span> </td>
+                      </tr><tr>
+                        <th>70</th><th> </th><td class="l"><span>&nbsp; either Berkeley DB, in-memory, or PostgreSQL as backend.</span> </td>
+                      </tr><tr>
+                        <th>71</th><th> </th><td class="l"><span>&nbsp;* It's unfortunate that it has its own query language, should be</span> </td>
+                      </tr><tr>
+                        <th>72</th><th> </th><td class="l"><span>&nbsp; SPARQL.</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>66</th><td class="r"><span>&nbsp;* A pretty complete RDF package written in Perl, including parser and serializer, model with its own query language, and storage with either Berkeley DB, in-memory, or PostgreSQL as backend.</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>67</th><td class="r"><span>&nbsp;* It's unfortunate that it has its own query language, should be SPARQL.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>73</th><th>68</th><td class="l"><span>&nbsp;* RDF/XML serialization and parsing only.</span> </td>
+                  </tr><tr>
+                          <th>74</th><th>69</th><td class="l"><span>&nbsp;* Has a Schema module to work with RDFS, didn't try it.</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>75</th><th> </th><td class="l"><span>&nbsp;* Greg Williams of RDF::Trine, the other, more complete and up-to-date</span> </td>
+                      </tr><tr>
+                        <th>76</th><th> </th><td class="l"><span>&nbsp; RDF framework, tried to contribute to RDF::Core but was</span> </td>
+                      </tr><tr>
+                        <th>77</th><th> </th><td class="l"><span>&nbsp; "[met with resistance, rejection, or frustratingly long delays](http://kasei.us/archives/2006/09/23/perl_performance)". Not</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>70</th><td class="r"><span>&nbsp;* Greg Williams of RDF::Trine, the other, more complete and up-to-date RDF framework, tried to contribute to RDF::Core but was</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>71</th><td class="r"><span>&nbsp; "[http://kasei.us/archives/2006/09/23/perl_performance met with resistance, rejection, or frustratingly long delays]". Not</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>78</th><th>72</th><td class="l"><span>&nbsp; good.</span> </td>
+                  </tr><tr>
+                          <th>79</th><th>73</th><td class="l"><span>&nbsp; </span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="StateOfPerlAndRdf@version=3.html#L86">…</a></th>
+                  <th><a href="StateOfPerlAndRdf@version=4.html#L80">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>86</th><th>80</th><td class="l"><span>=== Wrappers ===</span> </td>
+                  </tr><tr>
+                          <th>87</th><th>81</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>88</th><th> </th><td class="l"><span>&nbsp;* [http://search.cpan.org/~mndrix/RDF-Sesame-0.17/lib/RDF/Sesame.pm RDF-Sesame] is a wrapper for the REST API of [Sesame](http://openrdf.org/), to</span> </td>
+                      </tr><tr>
+                        <th>89</th><th> </th><td class="l"><span>&nbsp; ask [SerQL](http://www.openrdf.org/doc/sesame/users/ch06.html)</span> </td>
+                      </tr><tr>
+                        <th>90</th><th> </th><td class="l"><span>&nbsp; queries and get the results in tabular form.</span> </td>
+                      </tr><tr>
+                        <th>91</th><th> </th><td class="l"><span></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>82</th><td class="r"><span>&nbsp;* [http://search.cpan.org/~mndrix/RDF-Sesame-0.17/lib/RDF/Sesame.pm RDF-Sesame] is a wrapper for the REST API of [http://openrdf.org/ Sesame], to ask [http://www.openrdf.org/doc/sesame/users/ch06.html SerQL]&nbsp; queries and get the results in tabular form.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>92</th><th>83</th><td class="l"><span>&nbsp;* [http://search.cpan.org/~ekawas/MOBY-1.12/ MOBY], a BioMoby client, has MOBY::RDF.</span> </td>
+                  </tr><tr>
+                          <th>93</th><th>84</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+      </div>
+  </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="../about.html"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

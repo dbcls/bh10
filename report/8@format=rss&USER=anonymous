@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  
+
+  <channel>
+    <title>BioHackathon 2010: {8} Active Tickets, Mine first</title>
+    <link>http://hackathon3.dbcls.jp/report/8</link>
+    <description>Trac Report -
+ * List all active tickets by priority.
+ * Show all tickets owned by the logged in user in a group first.
+</description>
+    <language>en-us</language>
+    <image>
+      <title>BioHackathon 2010</title>
+      <url>http://hackathon3.dbcls.jp/raw-attachment/wiki/LogoGallery/trac_logo.png</url>
+      <link>http://hackathon3.dbcls.jp/report/8</link>
+    </image>
+    <generator>Trac v0.11.6</generator>
+  </channel>
+</rss>

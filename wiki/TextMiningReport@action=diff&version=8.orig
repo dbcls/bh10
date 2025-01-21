@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+    <html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      TextMiningReport (diff) – BioHackathon 2010
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="up" href="/wiki/TextMiningReport?action=history" title="Page history" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/diff.css" type="text/css" />
+        <link rel="prev" href="/wiki/TextMiningReport?action=diff&amp;version=7" title="Version 7" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search BioHackathon 2010" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script><script type="text/javascript" src="/chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="/chrome/common/css/diff.css" /><meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon3.dbcls.jp/"><img src="http://hackathon3.dbcls.jp/raw-attachment/wiki/LogoGallery/trac_logo.png" alt="DBCLS BioHackathon 2010" width="200" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="/wiki/TextMiningReport?action=diff&amp;version=7" title="Version 7">Previous Change</a></span></li><li><a href="/wiki/TextMiningReport?action=history" title="Page history">Wiki History</a></li><li class="last"><span class="missing">Next Change &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <h1>Changes
+        between
+          <a href="/wiki/TextMiningReport?version=7">Version 7</a> and
+        <a href="/wiki/TextMiningReport?version=8">Version 8</a> of
+        <a href="/wiki/TextMiningReport?version=8">TextMiningReport</a>
+      </h1>
+      <form method="post" id="prefs" action="/wiki/TextMiningReport?version=8"><div><input type="hidden" name="__FORM_TOKEN" value="9b92f779110146561b41c442" /></div>
+        <div>
+          <input type="hidden" name="action" value="diff" />
+          <input type="hidden" name="version" value="8" />
+          <input type="hidden" name="old_version" value="7" />
+    <label for="style">View differences</label>
+    <select id="style" name="style">
+      <option selected="selected" value="inline">inline</option>
+      <option value="sidebyside">side by side</option>
+    </select>
+    <div class="field">
+      Show <input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+      <label for="contextlines">lines around each change</label>
+    </div>
+    <fieldset id="ignore">
+      <legend>Ignore:</legend>
+      <div class="field">
+        <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+        <label for="ignoreblanklines">Blank lines</label>
+      </div>
+      <div class="field">
+        <input type="checkbox" id="ignorecase" name="ignorecase" />
+        <label for="ignorecase">Case changes</label>
+      </div>
+      <div class="field">
+        <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+        <label for="ignorewhitespace">White space changes</label>
+      </div>
+    </fieldset>
+    <div class="buttons">
+      <input type="submit" name="update" value="Update" />
+    </div>
+        </div>
+      </form>
+      <dl id="overview">
+        <dt class="property time">Timestamp:</dt>
+        <dd class="time">
+          2010/03/07 02:06:43 (<a class="timeline" href="/timeline?from=2010-03-07T02%3A06%3A43%2B0900&amp;precision=second" title="2010-03-07T02:06:43+0900 in Timeline">15 years</a> ago)
+        </dd>
+        <dt class="property author">Author:</dt>
+        <dd class="author">
+          alabarga
+        </dd>
+        <dt class="property message">Comment:</dt>
+        <dd class="message">
+          
+          <p>
+--
+</p>
+
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+            <dt class="mod"></dt><dd>Modified</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="/wiki/TextMiningReport?version=8">TextMiningReport</a>
+        </h2>
+        <table class="inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Version 7">
+                    <a href="/wiki/TextMiningReport?version=7#L22">
+                      v7</a>
+                  </th>
+                  <th title="Version 8">
+                    <a href="/wiki/TextMiningReport?version=8#L22">
+                      v8</a>
+                  </th>
+                  <th> </th>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>22</th><th>22</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>23</th><th>23</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>24</th><td class="r"><ins>== For the paper ==</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>24</th><th>25</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>26</th><td class="r"><ins>Modern biology increasingly depends on the availability of computational tools to process, analyze, interpret, and integrate large collections of heterogeneous data. As has been described above, biological knowledge is increasingly being represented as a collection of triplets (entity-relationship-entity) that can be queried and mined in order to discover and create knowledge.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>27</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>28</th><td class="r"><ins>However, biological databases alone cannot capture the richness of scientific information and argumentation contained in the literature, neither can provide support for the novel ways in which scientists will interrogate these databases. </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>29</th><td class="r"><ins>A considerable fraction of the existing data in biology consists of natural language texts used to describe and communicate new discoveries, and so, scientific papers constitute a resource with crucial importance for life sciences. As the amount of scholarly communication increases, it is increasingly difficult for specific core scientific statements to be found, connected and curated.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>30</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>31</th><td class="r"><ins>The biomedical text mining community has been working for a long time in the development of reliable information extraction applications. Both name entity recognition and conceptual analysis are needed in order to map from natural language texts to a formal representation of the objects and concepts represented by the text, with direct links to online resources that explicitly expose those concepts semantics.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>32</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>33</th><td class="r"><ins>Different web tools allow researchers to search literature databases and integrate semantic information extracted from text with external databases and ontologies. Our work concentrated in Whatizit (http://www.ebi.ac.uk/webservices/whatizit), Reflect (http://reflect.ws/) and Medie (http://www-tsujii.is.s.u-tokyo.ac.jp/medie/).</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>34</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>35</th><td class="r"><ins>Semantic Web technologies provide a platform to extract statements and facts from existing literature and share them in a way that will allow computational agents to discover, aggregate and interpret these facts. The advantages of semantic web approaches are clear, and ideally, the concepts in a statement and the statement itself will have some unique identity that connects each instance of a statement across the web of published material.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>36</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>37</th><td class="r"><ins>During the Text Mining sessions of the BioHackathon reported here, we aimed to investigate how to automatically annotate atomic components of research papers in life sciences and how to express those annotations in RDF.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>38</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>39</th><td class="r"><ins>Beyond the SPARQL and Linked Data approaches, we investigated how to embed annotations in the output of exiting services, and found RDFa a suitable technology for this. RDFa (or Resource Description Framework - in - attributes) is a W3C Recommendation that adds a set of attribute level extensions to XHTML for embedding rich metadata within Web documents. The RDF data model mapping enables its use for embedding RDF triples within XHTML documents, it also enables the extraction of RDF model triples by compliant user agents.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>40</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>41</th><td class="r"><ins>The use of RDFa enabled output can be seen in the Science Commons text annotation service (http://whatizit.neurocommons.org/) and (http://reflect.cbs.dtu.dk/).</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>42</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+      </div>
+  </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

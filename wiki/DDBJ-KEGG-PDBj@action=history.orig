@@ -1,0 +1,730 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      DDBJ-KEGG-PDBj (history) – BioHackathon 2010
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search BioHackathon 2010" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon3.dbcls.jp/"><img src="http://hackathon3.dbcls.jp/raw-attachment/wiki/LogoGallery/trac_logo.png" alt="DBCLS BioHackathon 2010" width="200" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="last first"><a href="/wiki/DDBJ-KEGG-PDBj">Back to DDBJ-KEGG-PDBj</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="ticket">
+      <h1>Change History for <a href="/wiki/DDBJ-KEGG-PDBj">DDBJ-KEGG-PDBj</a></h1>
+      <form class="printableform" method="get" action="">
+        <div class="buttons">
+          <input type="hidden" name="action" value="diff" />
+          <input type="submit" value="View changes" />
+        </div>
+        <table id="fieldhist" class="listing" summary="Change history">
+          <thead>
+            <tr>
+              <th class="diff"></th>
+              <th class="version">Version</th>
+              <th class="date">Date</th>
+              <th class="author">Author</th>
+              <th class="comment">Comment</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="even">
+              <td class="diff">
+                <input type="radio" name="old_version" value="58" />
+                <input type="radio" name="version" value="58" checked="checked" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=58" title="View this version">58</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-17T15%3A42%3A24%2B0900&amp;precision=second" title="2010-02-17T15:42:24+0900 in Timeline">15 years</a></td>
+              <td class="author">akinjo</td>
+              <td class="comment"></td>
+            </tr><tr class="odd">
+              <td class="diff">
+                <input type="radio" name="old_version" value="57" checked="checked" />
+                <input type="radio" name="version" value="57" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=57" title="View this version">57</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-17T15%3A42%3A09%2B0900&amp;precision=second" title="2010-02-17T15:42:09+0900 in Timeline">15 years</a></td>
+              <td class="author">akinjo</td>
+              <td class="comment"></td>
+            </tr><tr class="even">
+              <td class="diff">
+                <input type="radio" name="old_version" value="56" />
+                <input type="radio" name="version" value="56" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=56" title="View this version">56</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-17T15%3A34%3A44%2B0900&amp;precision=second" title="2010-02-17T15:34:44+0900 in Timeline">15 years</a></td>
+              <td class="author">akinjo</td>
+              <td class="comment"></td>
+            </tr><tr class="odd">
+              <td class="diff">
+                <input type="radio" name="old_version" value="55" />
+                <input type="radio" name="version" value="55" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=55" title="View this version">55</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-15T18%3A15%3A13%2B0900&amp;precision=second" title="2010-02-15T18:15:13+0900 in Timeline">15 years</a></td>
+              <td class="author">akinjo</td>
+              <td class="comment"></td>
+            </tr><tr class="even">
+              <td class="diff">
+                <input type="radio" name="old_version" value="54" />
+                <input type="radio" name="version" value="54" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=54" title="View this version">54</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-15T18%3A14%3A08%2B0900&amp;precision=second" title="2010-02-15T18:14:08+0900 in Timeline">15 years</a></td>
+              <td class="author">akinjo</td>
+              <td class="comment"></td>
+            </tr><tr class="odd">
+              <td class="diff">
+                <input type="radio" name="old_version" value="53" />
+                <input type="radio" name="version" value="53" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=53" title="View this version">53</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-15T18%3A12%3A39%2B0900&amp;precision=second" title="2010-02-15T18:12:39+0900 in Timeline">15 years</a></td>
+              <td class="author">akinjo</td>
+              <td class="comment"></td>
+            </tr><tr class="even">
+              <td class="diff">
+                <input type="radio" name="old_version" value="52" />
+                <input type="radio" name="version" value="52" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=52" title="View this version">52</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-15T18%3A11%3A32%2B0900&amp;precision=second" title="2010-02-15T18:11:32+0900 in Timeline">15 years</a></td>
+              <td class="author">akinjo</td>
+              <td class="comment"></td>
+            </tr><tr class="odd">
+              <td class="diff">
+                <input type="radio" name="old_version" value="51" />
+                <input type="radio" name="version" value="51" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=51" title="View this version">51</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-15T18%3A10%3A26%2B0900&amp;precision=second" title="2010-02-15T18:10:26+0900 in Timeline">15 years</a></td>
+              <td class="author">akinjo</td>
+              <td class="comment"></td>
+            </tr><tr class="even">
+              <td class="diff">
+                <input type="radio" name="old_version" value="50" />
+                <input type="radio" name="version" value="50" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=50" title="View this version">50</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-15T18%3A09%3A33%2B0900&amp;precision=second" title="2010-02-15T18:09:33+0900 in Timeline">15 years</a></td>
+              <td class="author">akinjo</td>
+              <td class="comment"></td>
+            </tr><tr class="odd">
+              <td class="diff">
+                <input type="radio" name="old_version" value="49" />
+                <input type="radio" name="version" value="49" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=49" title="View this version">49</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-14T21%3A26%3A44%2B0900&amp;precision=second" title="2010-02-14T21:26:44+0900 in Timeline">15 years</a></td>
+              <td class="author">admin</td>
+              <td class="comment"></td>
+            </tr><tr class="even">
+              <td class="diff">
+                <input type="radio" name="old_version" value="48" />
+                <input type="radio" name="version" value="48" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=48" title="View this version">48</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-13T14%3A59%3A37%2B0900&amp;precision=second" title="2010-02-13T14:59:37+0900 in Timeline">15 years</a></td>
+              <td class="author">hhorn</td>
+              <td class="comment"></td>
+            </tr><tr class="odd">
+              <td class="diff">
+                <input type="radio" name="old_version" value="47" />
+                <input type="radio" name="version" value="47" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=47" title="View this version">47</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-13T14%3A23%3A36%2B0900&amp;precision=second" title="2010-02-13T14:23:36+0900 in Timeline">15 years</a></td>
+              <td class="author">akinjo</td>
+              <td class="comment"></td>
+            </tr><tr class="even">
+              <td class="diff">
+                <input type="radio" name="old_version" value="46" />
+                <input type="radio" name="version" value="46" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=46" title="View this version">46</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-13T14%3A17%3A50%2B0900&amp;precision=second" title="2010-02-13T14:17:50+0900 in Timeline">15 years</a></td>
+              <td class="author">akinjo</td>
+              <td class="comment"></td>
+            </tr><tr class="odd">
+              <td class="diff">
+                <input type="radio" name="old_version" value="45" />
+                <input type="radio" name="version" value="45" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=45" title="View this version">45</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-13T14%3A16%3A03%2B0900&amp;precision=second" title="2010-02-13T14:16:03+0900 in Timeline">15 years</a></td>
+              <td class="author">akinjo</td>
+              <td class="comment"></td>
+            </tr><tr class="even">
+              <td class="diff">
+                <input type="radio" name="old_version" value="44" />
+                <input type="radio" name="version" value="44" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=44" title="View this version">44</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-13T14%3A13%3A59%2B0900&amp;precision=second" title="2010-02-13T14:13:59+0900 in Timeline">15 years</a></td>
+              <td class="author">akinjo</td>
+              <td class="comment"></td>
+            </tr><tr class="odd">
+              <td class="diff">
+                <input type="radio" name="old_version" value="43" />
+                <input type="radio" name="version" value="43" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=43" title="View this version">43</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-13T14%3A10%3A21%2B0900&amp;precision=second" title="2010-02-13T14:10:21+0900 in Timeline">15 years</a></td>
+              <td class="author">akinjo</td>
+              <td class="comment"></td>
+            </tr><tr class="even">
+              <td class="diff">
+                <input type="radio" name="old_version" value="42" />
+                <input type="radio" name="version" value="42" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=42" title="View this version">42</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-12T16%3A57%3A34%2B0900&amp;precision=second" title="2010-02-12T16:57:34+0900 in Timeline">15 years</a></td>
+              <td class="author">admin</td>
+              <td class="comment"></td>
+            </tr><tr class="odd">
+              <td class="diff">
+                <input type="radio" name="old_version" value="41" />
+                <input type="radio" name="version" value="41" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=41" title="View this version">41</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-12T16%3A39%3A10%2B0900&amp;precision=second" title="2010-02-12T16:39:10+0900 in Timeline">15 years</a></td>
+              <td class="author">shuichi</td>
+              <td class="comment"></td>
+            </tr><tr class="even">
+              <td class="diff">
+                <input type="radio" name="old_version" value="40" />
+                <input type="radio" name="version" value="40" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=40" title="View this version">40</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-12T16%3A35%3A30%2B0900&amp;precision=second" title="2010-02-12T16:35:30+0900 in Timeline">15 years</a></td>
+              <td class="author">shuichi</td>
+              <td class="comment"></td>
+            </tr><tr class="odd">
+              <td class="diff">
+                <input type="radio" name="old_version" value="39" />
+                <input type="radio" name="version" value="39" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=39" title="View this version">39</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-12T16%3A33%3A56%2B0900&amp;precision=second" title="2010-02-12T16:33:56+0900 in Timeline">15 years</a></td>
+              <td class="author">shuichi</td>
+              <td class="comment"></td>
+            </tr><tr class="even">
+              <td class="diff">
+                <input type="radio" name="old_version" value="38" />
+                <input type="radio" name="version" value="38" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=38" title="View this version">38</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-12T16%3A33%3A10%2B0900&amp;precision=second" title="2010-02-12T16:33:10+0900 in Timeline">15 years</a></td>
+              <td class="author">shuichi</td>
+              <td class="comment"></td>
+            </tr><tr class="odd">
+              <td class="diff">
+                <input type="radio" name="old_version" value="37" />
+                <input type="radio" name="version" value="37" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=37" title="View this version">37</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-12T16%3A32%3A19%2B0900&amp;precision=second" title="2010-02-12T16:32:19+0900 in Timeline">15 years</a></td>
+              <td class="author">shuichi</td>
+              <td class="comment"></td>
+            </tr><tr class="even">
+              <td class="diff">
+                <input type="radio" name="old_version" value="36" />
+                <input type="radio" name="version" value="36" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=36" title="View this version">36</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-12T16%3A29%3A59%2B0900&amp;precision=second" title="2010-02-12T16:29:59+0900 in Timeline">15 years</a></td>
+              <td class="author">shuichi</td>
+              <td class="comment"></td>
+            </tr><tr class="odd">
+              <td class="diff">
+                <input type="radio" name="old_version" value="35" />
+                <input type="radio" name="version" value="35" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=35" title="View this version">35</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-12T15%3A05%3A03%2B0900&amp;precision=second" title="2010-02-12T15:05:03+0900 in Timeline">15 years</a></td>
+              <td class="author">yshigemo</td>
+              <td class="comment"></td>
+            </tr><tr class="even">
+              <td class="diff">
+                <input type="radio" name="old_version" value="34" />
+                <input type="radio" name="version" value="34" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=34" title="View this version">34</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-12T15%3A04%3A27%2B0900&amp;precision=second" title="2010-02-12T15:04:27+0900 in Timeline">15 years</a></td>
+              <td class="author">yshigemo</td>
+              <td class="comment"></td>
+            </tr><tr class="odd">
+              <td class="diff">
+                <input type="radio" name="old_version" value="33" />
+                <input type="radio" name="version" value="33" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=33" title="View this version">33</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-12T14%3A59%3A16%2B0900&amp;precision=second" title="2010-02-12T14:59:16+0900 in Timeline">15 years</a></td>
+              <td class="author">yshigemo</td>
+              <td class="comment"></td>
+            </tr><tr class="even">
+              <td class="diff">
+                <input type="radio" name="old_version" value="32" />
+                <input type="radio" name="version" value="32" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=32" title="View this version">32</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-12T14%3A28%3A25%2B0900&amp;precision=second" title="2010-02-12T14:28:25+0900 in Timeline">15 years</a></td>
+              <td class="author">akinjo</td>
+              <td class="comment"></td>
+            </tr><tr class="odd">
+              <td class="diff">
+                <input type="radio" name="old_version" value="31" />
+                <input type="radio" name="version" value="31" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=31" title="View this version">31</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-12T14%3A28%3A08%2B0900&amp;precision=second" title="2010-02-12T14:28:08+0900 in Timeline">15 years</a></td>
+              <td class="author">akinjo</td>
+              <td class="comment"></td>
+            </tr><tr class="even">
+              <td class="diff">
+                <input type="radio" name="old_version" value="30" />
+                <input type="radio" name="version" value="30" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=30" title="View this version">30</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-12T14%3A27%3A49%2B0900&amp;precision=second" title="2010-02-12T14:27:49+0900 in Timeline">15 years</a></td>
+              <td class="author">akinjo</td>
+              <td class="comment"></td>
+            </tr><tr class="odd">
+              <td class="diff">
+                <input type="radio" name="old_version" value="29" />
+                <input type="radio" name="version" value="29" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=29" title="View this version">29</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-12T14%3A25%3A55%2B0900&amp;precision=second" title="2010-02-12T14:25:55+0900 in Timeline">15 years</a></td>
+              <td class="author">admin</td>
+              <td class="comment"></td>
+            </tr><tr class="even">
+              <td class="diff">
+                <input type="radio" name="old_version" value="28" />
+                <input type="radio" name="version" value="28" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=28" title="View this version">28</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-12T14%3A08%3A33%2B0900&amp;precision=second" title="2010-02-12T14:08:33+0900 in Timeline">15 years</a></td>
+              <td class="author">akinjo</td>
+              <td class="comment"></td>
+            </tr><tr class="odd">
+              <td class="diff">
+                <input type="radio" name="old_version" value="27" />
+                <input type="radio" name="version" value="27" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=27" title="View this version">27</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-12T14%3A07%3A16%2B0900&amp;precision=second" title="2010-02-12T14:07:16+0900 in Timeline">15 years</a></td>
+              <td class="author">akinjo</td>
+              <td class="comment"></td>
+            </tr><tr class="even">
+              <td class="diff">
+                <input type="radio" name="old_version" value="26" />
+                <input type="radio" name="version" value="26" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=26" title="View this version">26</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-12T14%3A05%3A01%2B0900&amp;precision=second" title="2010-02-12T14:05:01+0900 in Timeline">15 years</a></td>
+              <td class="author">admin</td>
+              <td class="comment"></td>
+            </tr><tr class="odd">
+              <td class="diff">
+                <input type="radio" name="old_version" value="25" />
+                <input type="radio" name="version" value="25" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=25" title="View this version">25</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-12T13%3A51%3A34%2B0900&amp;precision=second" title="2010-02-12T13:51:34+0900 in Timeline">15 years</a></td>
+              <td class="author">akinjo</td>
+              <td class="comment"></td>
+            </tr><tr class="even">
+              <td class="diff">
+                <input type="radio" name="old_version" value="24" />
+                <input type="radio" name="version" value="24" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=24" title="View this version">24</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-12T13%3A50%3A18%2B0900&amp;precision=second" title="2010-02-12T13:50:18+0900 in Timeline">15 years</a></td>
+              <td class="author">admin</td>
+              <td class="comment"></td>
+            </tr><tr class="odd">
+              <td class="diff">
+                <input type="radio" name="old_version" value="23" />
+                <input type="radio" name="version" value="23" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=23" title="View this version">23</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-12T13%3A50%3A01%2B0900&amp;precision=second" title="2010-02-12T13:50:01+0900 in Timeline">15 years</a></td>
+              <td class="author">admin</td>
+              <td class="comment"></td>
+            </tr><tr class="even">
+              <td class="diff">
+                <input type="radio" name="old_version" value="22" />
+                <input type="radio" name="version" value="22" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=22" title="View this version">22</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-12T13%3A49%3A32%2B0900&amp;precision=second" title="2010-02-12T13:49:32+0900 in Timeline">15 years</a></td>
+              <td class="author">admin</td>
+              <td class="comment"></td>
+            </tr><tr class="odd">
+              <td class="diff">
+                <input type="radio" name="old_version" value="21" />
+                <input type="radio" name="version" value="21" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=21" title="View this version">21</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-12T13%3A48%3A19%2B0900&amp;precision=second" title="2010-02-12T13:48:19+0900 in Timeline">15 years</a></td>
+              <td class="author">shuichi</td>
+              <td class="comment"></td>
+            </tr><tr class="even">
+              <td class="diff">
+                <input type="radio" name="old_version" value="20" />
+                <input type="radio" name="version" value="20" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=20" title="View this version">20</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-12T13%3A32%3A25%2B0900&amp;precision=second" title="2010-02-12T13:32:25+0900 in Timeline">15 years</a></td>
+              <td class="author">yshigemo</td>
+              <td class="comment"></td>
+            </tr><tr class="odd">
+              <td class="diff">
+                <input type="radio" name="old_version" value="19" />
+                <input type="radio" name="version" value="19" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=19" title="View this version">19</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-12T13%3A18%3A49%2B0900&amp;precision=second" title="2010-02-12T13:18:49+0900 in Timeline">15 years</a></td>
+              <td class="author">shuichi</td>
+              <td class="comment"></td>
+            </tr><tr class="even">
+              <td class="diff">
+                <input type="radio" name="old_version" value="18" />
+                <input type="radio" name="version" value="18" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=18" title="View this version">18</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-12T13%3A06%3A01%2B0900&amp;precision=second" title="2010-02-12T13:06:01+0900 in Timeline">15 years</a></td>
+              <td class="author">shuichi</td>
+              <td class="comment"></td>
+            </tr><tr class="odd">
+              <td class="diff">
+                <input type="radio" name="old_version" value="17" />
+                <input type="radio" name="version" value="17" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=17" title="View this version">17</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-12T13%3A02%3A04%2B0900&amp;precision=second" title="2010-02-12T13:02:04+0900 in Timeline">15 years</a></td>
+              <td class="author">shuichi</td>
+              <td class="comment"></td>
+            </tr><tr class="even">
+              <td class="diff">
+                <input type="radio" name="old_version" value="16" />
+                <input type="radio" name="version" value="16" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=16" title="View this version">16</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-12T11%3A43%3A58%2B0900&amp;precision=second" title="2010-02-12T11:43:58+0900 in Timeline">15 years</a></td>
+              <td class="author">yshigemo</td>
+              <td class="comment"></td>
+            </tr><tr class="odd">
+              <td class="diff">
+                <input type="radio" name="old_version" value="15" />
+                <input type="radio" name="version" value="15" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=15" title="View this version">15</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-12T11%3A19%3A15%2B0900&amp;precision=second" title="2010-02-12T11:19:15+0900 in Timeline">15 years</a></td>
+              <td class="author">shuichi</td>
+              <td class="comment"></td>
+            </tr><tr class="even">
+              <td class="diff">
+                <input type="radio" name="old_version" value="14" />
+                <input type="radio" name="version" value="14" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=14" title="View this version">14</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-12T10%3A13%3A18%2B0900&amp;precision=second" title="2010-02-12T10:13:18+0900 in Timeline">15 years</a></td>
+              <td class="author">yjkim8</td>
+              <td class="comment"></td>
+            </tr><tr class="odd">
+              <td class="diff">
+                <input type="radio" name="old_version" value="13" />
+                <input type="radio" name="version" value="13" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=13" title="View this version">13</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-12T10%3A12%3A59%2B0900&amp;precision=second" title="2010-02-12T10:12:59+0900 in Timeline">15 years</a></td>
+              <td class="author">yjkim8</td>
+              <td class="comment"></td>
+            </tr><tr class="even">
+              <td class="diff">
+                <input type="radio" name="old_version" value="12" />
+                <input type="radio" name="version" value="12" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=12" title="View this version">12</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-12T09%3A42%3A41%2B0900&amp;precision=second" title="2010-02-12T09:42:41+0900 in Timeline">15 years</a></td>
+              <td class="author">yjkim8</td>
+              <td class="comment"></td>
+            </tr><tr class="odd">
+              <td class="diff">
+                <input type="radio" name="old_version" value="11" />
+                <input type="radio" name="version" value="11" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=11" title="View this version">11</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-12T09%3A41%3A31%2B0900&amp;precision=second" title="2010-02-12T09:41:31+0900 in Timeline">15 years</a></td>
+              <td class="author">yjkim8</td>
+              <td class="comment"></td>
+            </tr><tr class="even">
+              <td class="diff">
+                <input type="radio" name="old_version" value="10" />
+                <input type="radio" name="version" value="10" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=10" title="View this version">10</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-12T09%3A20%3A05%2B0900&amp;precision=second" title="2010-02-12T09:20:05+0900 in Timeline">15 years</a></td>
+              <td class="author">akinjo</td>
+              <td class="comment"></td>
+            </tr><tr class="odd">
+              <td class="diff">
+                <input type="radio" name="old_version" value="9" />
+                <input type="radio" name="version" value="9" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=9" title="View this version">9</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-12T01%3A58%3A43%2B0900&amp;precision=second" title="2010-02-12T01:58:43+0900 in Timeline">15 years</a></td>
+              <td class="author">admin</td>
+              <td class="comment"></td>
+            </tr><tr class="even">
+              <td class="diff">
+                <input type="radio" name="old_version" value="8" />
+                <input type="radio" name="version" value="8" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=8" title="View this version">8</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-11T20%3A37%3A07%2B0900&amp;precision=second" title="2010-02-11T20:37:07+0900 in Timeline">15 years</a></td>
+              <td class="author">hhorn</td>
+              <td class="comment"></td>
+            </tr><tr class="odd">
+              <td class="diff">
+                <input type="radio" name="old_version" value="7" />
+                <input type="radio" name="version" value="7" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=7" title="View this version">7</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-11T16%3A18%3A13%2B0900&amp;precision=second" title="2010-02-11T16:18:13+0900 in Timeline">15 years</a></td>
+              <td class="author">yshigemo</td>
+              <td class="comment"></td>
+            </tr><tr class="even">
+              <td class="diff">
+                <input type="radio" name="old_version" value="6" />
+                <input type="radio" name="version" value="6" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=6" title="View this version">6</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-11T16%3A16%3A24%2B0900&amp;precision=second" title="2010-02-11T16:16:24+0900 in Timeline">15 years</a></td>
+              <td class="author">yshigemo</td>
+              <td class="comment"></td>
+            </tr><tr class="odd">
+              <td class="diff">
+                <input type="radio" name="old_version" value="5" />
+                <input type="radio" name="version" value="5" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=5" title="View this version">5</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-11T16%3A07%3A10%2B0900&amp;precision=second" title="2010-02-11T16:07:10+0900 in Timeline">15 years</a></td>
+              <td class="author">akinjo</td>
+              <td class="comment"></td>
+            </tr><tr class="even">
+              <td class="diff">
+                <input type="radio" name="old_version" value="4" />
+                <input type="radio" name="version" value="4" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=4" title="View this version">4</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-11T15%3A53%3A14%2B0900&amp;precision=second" title="2010-02-11T15:53:14+0900 in Timeline">15 years</a></td>
+              <td class="author">akinjo</td>
+              <td class="comment"></td>
+            </tr><tr class="odd">
+              <td class="diff">
+                <input type="radio" name="old_version" value="3" />
+                <input type="radio" name="version" value="3" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=3" title="View this version">3</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-11T15%3A49%3A43%2B0900&amp;precision=second" title="2010-02-11T15:49:43+0900 in Timeline">15 years</a></td>
+              <td class="author">akinjo</td>
+              <td class="comment"></td>
+            </tr><tr class="even">
+              <td class="diff">
+                <input type="radio" name="old_version" value="2" />
+                <input type="radio" name="version" value="2" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=2" title="View this version">2</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-11T14%3A43%3A50%2B0900&amp;precision=second" title="2010-02-11T14:43:50+0900 in Timeline">15 years</a></td>
+              <td class="author">akinjo</td>
+              <td class="comment"></td>
+            </tr><tr class="odd">
+              <td class="diff">
+                <input type="radio" name="old_version" value="1" />
+                <input type="radio" name="version" value="1" />
+              </td>
+              <td class="version">
+                <a href="/wiki/DDBJ-KEGG-PDBj?version=1" title="View this version">1</a>
+              </td>
+              <td class="date"><a class="timeline" href="/timeline?from=2010-02-11T14%3A42%3A23%2B0900&amp;precision=second" title="2010-02-11T14:42:23+0900 in Timeline">15 years</a></td>
+              <td class="author">akinjo</td>
+              <td class="comment"></td>
+            </tr>
+          </tbody>
+        </table>
+          <div class="buttons">
+            <input type="submit" value="View changes" />
+          </div>
+      </form>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

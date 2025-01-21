@@ -1,0 +1,475 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+    <html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      Data_exchange (diff) – BioHackathon 2010
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="up" href="/wiki/Data_exchange?action=history" title="Page history" />
+        <link rel="next" href="/wiki/Data_exchange?action=diff&amp;version=3" title="Version 3" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/diff.css" type="text/css" />
+        <link rel="prev" href="/wiki/Data_exchange?action=diff&amp;version=1" title="Version 1" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search BioHackathon 2010" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script><script type="text/javascript" src="/chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="/chrome/common/css/diff.css" /><meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon3.dbcls.jp/"><img src="http://hackathon3.dbcls.jp/raw-attachment/wiki/LogoGallery/trac_logo.png" alt="DBCLS BioHackathon 2010" width="200" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="/wiki/Data_exchange?action=diff&amp;version=1" title="Version 1">Previous Change</a></span></li><li><a href="/wiki/Data_exchange?action=history" title="Page history">Wiki History</a></li><li class="last"><span><a class="next" href="/wiki/Data_exchange?action=diff&amp;version=3" title="Version 3">Next Change</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <h1>Changes
+        between
+          <a href="/wiki/Data_exchange?version=1">Version 1</a> and
+        <a href="/wiki/Data_exchange?version=2">Version 2</a> of
+        <a href="/wiki/Data_exchange?version=2">Data_exchange</a>
+      </h1>
+      <form method="post" id="prefs" action="/wiki/Data_exchange?version=2"><div><input type="hidden" name="__FORM_TOKEN" value="9b92f779110146561b41c442" /></div>
+        <div>
+          <input type="hidden" name="action" value="diff" />
+          <input type="hidden" name="version" value="2" />
+          <input type="hidden" name="old_version" value="1" />
+    <label for="style">View differences</label>
+    <select id="style" name="style">
+      <option selected="selected" value="inline">inline</option>
+      <option value="sidebyside">side by side</option>
+    </select>
+    <div class="field">
+      Show <input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+      <label for="contextlines">lines around each change</label>
+    </div>
+    <fieldset id="ignore">
+      <legend>Ignore:</legend>
+      <div class="field">
+        <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+        <label for="ignoreblanklines">Blank lines</label>
+      </div>
+      <div class="field">
+        <input type="checkbox" id="ignorecase" name="ignorecase" />
+        <label for="ignorecase">Case changes</label>
+      </div>
+      <div class="field">
+        <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+        <label for="ignorewhitespace">White space changes</label>
+      </div>
+    </fieldset>
+    <div class="buttons">
+      <input type="submit" name="update" value="Update" />
+    </div>
+        </div>
+      </form>
+      <dl id="overview">
+        <dt class="property time">Timestamp:</dt>
+        <dd class="time">
+          2010/02/12 16:46:19 (<a class="timeline" href="/timeline?from=2010-02-12T16%3A46%3A19%2B0900&amp;precision=second" title="2010-02-12T16:46:19+0900 in Timeline">15 years</a> ago)
+        </dd>
+        <dt class="property author">Author:</dt>
+        <dd class="author">
+          gmicklem
+        </dd>
+        <dt class="property message">Comment:</dt>
+        <dd class="message">
+          
+          <p>
+--
+</p>
+
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+            <dt class="mod"></dt><dd>Modified</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="/wiki/Data_exchange?version=2">Data_exchange</a>
+        </h2>
+        <table class="inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Version 1">
+                    <a href="/wiki/Data_exchange?version=1#L2">
+                      v1</a>
+                  </th>
+                  <th title="Version 2">
+                    <a href="/wiki/Data_exchange?version=2#L2">
+                      v2</a>
+                  </th>
+                  <th> </th>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>2</th><th>2</th><td class="l"><span>Wednesday 10th February p.m. - Room 516</span> </td>
+                  </tr><tr>
+                          <th>3</th><th>3</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>4</th><th> </th><td class="l"><span>Semantic Data Exchange</span> </td>
+                      </tr><tr>
+                        <th>5</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>6</th><th> </th><td class="l"><span>Gos Micklem</span> </td>
+                      </tr><tr>
+                        <th>7</th><th> </th><td class="l"><span>Richard Smith</span> </td>
+                      </tr><tr>
+                        <th>8</th><th> </th><td class="l"><span>James Taylor</span> </td>
+                      </tr><tr>
+                        <th>9</th><th> </th><td class="l"><span>Arek Kasprzyk</span> </td>
+                      </tr><tr>
+                        <th>10</th><th> </th><td class="l"><span>Soichi Ogishima</span> </td>
+                      </tr><tr>
+                        <th>11</th><th> </th><td class="l"><span>Brad Chapman</span> </td>
+                      </tr><tr>
+                        <th>12</th><th> </th><td class="l"><span>Christian Zmasek</span> </td>
+                      </tr><tr>
+                        <th>13</th><th> </th><td class="l"><span>Peter Cock</span> </td>
+                      </tr><tr>
+                        <th>14</th><th> </th><td class="l"><span>Hideyuki Morita</span> </td>
+                      </tr><tr>
+                        <th>15</th><th> </th><td class="l"><span>Ryosuke Ishiwata</span> </td>
+                      </tr><tr>
+                        <th>16</th><th> </th><td class="l"><span>Kei Ono</span> </td>
+                      </tr><tr>
+                        <th>17</th><th> </th><td class="l"><span>Shinobu Okamoto</span> </td>
+                      </tr><tr>
+                        <th>18</th><th> </th><td class="l"><span>Alberto Labarga</span> </td>
+                      </tr><tr>
+                        <th>19</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>20</th><th> </th><td class="l"><span>------------------------------------------------------------------------------</span> </td>
+                      </tr><tr>
+                        <th>21</th><th> </th><td class="l"><span>Discussion on possibilities/need for improving data exchange between</span> </td>
+                      </tr><tr>
+                        <th>22</th><th> </th><td class="l"><span>e.g. InterMine, Galaxy, BioMart, Cytoscape...</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>4</th><td class="r"><span>''' Semantic Data Exchange'''</span> </td>
+                      </tr><tr>
+                        <th> </th><th>5</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>6</th><td class="r"><span>&nbsp;* Gos Micklem</span> </td>
+                      </tr><tr>
+                        <th> </th><th>7</th><td class="r"><span>&nbsp;* Richard Smith</span> </td>
+                      </tr><tr>
+                        <th> </th><th>8</th><td class="r"><span>&nbsp;* James Taylor</span> </td>
+                      </tr><tr>
+                        <th> </th><th>9</th><td class="r"><span>&nbsp;* Arek Kasprzyk</span> </td>
+                      </tr><tr>
+                        <th> </th><th>10</th><td class="r"><span>&nbsp;* Soichi Ogishima</span> </td>
+                      </tr><tr>
+                        <th> </th><th>11</th><td class="r"><span>&nbsp;* Brad Chapman</span> </td>
+                      </tr><tr>
+                        <th> </th><th>12</th><td class="r"><span>&nbsp;* Christian Zmasek</span> </td>
+                      </tr><tr>
+                        <th> </th><th>13</th><td class="r"><span>&nbsp;* Peter Cock</span> </td>
+                      </tr><tr>
+                        <th> </th><th>14</th><td class="r"><span>&nbsp;* Hideyuki Morita</span> </td>
+                      </tr><tr>
+                        <th> </th><th>15</th><td class="r"><span>&nbsp;* Ryosuke Ishiwata</span> </td>
+                      </tr><tr>
+                        <th> </th><th>16</th><td class="r"><span>&nbsp;* Kei Ono</span> </td>
+                      </tr><tr>
+                        <th> </th><th>17</th><td class="r"><span>&nbsp;* Shinobu Okamoto</span> </td>
+                      </tr><tr>
+                        <th> </th><th>18</th><td class="r"><span>&nbsp;* Alberto Labarga</span> </td>
+                      </tr><tr>
+                        <th> </th><th>19</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>20</th><td class="r"><span>'''Discussion on possibilities/need for improving data exchange between</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>21</th><td class="r"><span>e.g. InterMine, Galaxy, BioMart, Cytoscape...'''</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>23</th><th>22</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>24</th><th>23</th><td class="l"><span>Would typing of arbitrary data exchange improve communication between</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="/wiki/Data_exchange?version=1#L27">…</a></th>
+                  <th><a href="/wiki/Data_exchange?version=2#L26">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>27</th><th>26</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>28</th><th>27</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>29</th><th> </th><td class="l"><span>Current situation:</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>28</th><td class="r"><span>'''Current situation:'''</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>30</th><th>29</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>31</th><th>30</th><td class="l"><span>It was felt that the current situation wasn't so bad: however it would</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="/wiki/Data_exchange?version=1#L42">…</a></th>
+                  <th><a href="/wiki/Data_exchange?version=2#L41">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>42</th><th>41</th><td class="l"><span>&nbsp; &nbsp;needed&gt;</span> </td>
+                  </tr><tr>
+                          <th>43</th><th>42</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>44</th><th> </th><td class="l"><span>&nbsp; &nbsp;Cytoscape (http://www.cytoscape.org)<del>/</del>BioMart: REST API used.&nbsp; Perhaps SOAP would be better but</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>43</th><td class="r"><span>&nbsp; &nbsp;Cytoscape (http://www.cytoscape.org)<ins>&nbsp;&amp; </ins>BioMart: REST API used.&nbsp; Perhaps SOAP would be better but</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>45</th><th>44</th><td class="l"><span>&nbsp; &nbsp;this still requires some development.&nbsp; REST was fine for data</span> </td>
+                  </tr><tr>
+                          <th>46</th><th>45</th><td class="l"><span>&nbsp; &nbsp;retrieval.</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="/wiki/Data_exchange?version=1#L141">…</a></th>
+                  <th><a href="/wiki/Data_exchange?version=2#L140">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>141</th><th>140</th><td class="l"><span>large-scale users/providers can start to comply.</span> </td>
+                  </tr><tr>
+                          <th>142</th><th>141</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>143</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>144</th><th> </th><td class="l"><span>Data exchange conclusions:</span> </td>
+                      </tr><tr>
+                        <th>145</th><th> </th><td class="l"><span>*** A namespace for file formats would be useful.</span> </td>
+                      </tr><tr>
+                        <th>146</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>147</th><th> </th><td class="l"><span>*** A namespace for column of tabular data would be useful.&nbsp; Could</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>142</th><td class="r"><span>'''Data exchange conclusions:'''</span> </td>
+                      </tr><tr>
+                        <th> </th><th>143</th><td class="r"><span>&nbsp;* A namespace for file formats would be useful.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>144</th><td class="r"><span></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>145</th><td class="r"><span>&nbsp;* A namespace for column of tabular data would be useful.&nbsp; Could</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>148</th><th>146</th><td class="l"><span>&nbsp; &nbsp; also be used to describe data in other formats e.g. XML, though</span> </td>
+                  </tr><tr>
+                          <th>149</th><th>147</th><td class="l"><span>&nbsp; &nbsp; this could be rather verbose.</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>150</th><th> </th><td class="l"><span><del>**</del>* Investigate whether the above exist.</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>148</th><td class="r"><span><ins>&nbsp;</ins>* Investigate whether the above exist.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>151</th><th>149</th><td class="l"><span>&nbsp; &nbsp; Ontology Lookup Service (http://www.ebi.ac.uk/ontology-lookup)</span> </td>
+                  </tr><tr>
+                          <th>152</th><th>150</th><td class="l"><span>&nbsp; &nbsp; and/orLife Science Resource Name Project (http://www.lsrn.org)</span> </td>
+                  </tr><tr>
+                          <th>153</th><th>151</th><td class="l"><span>&nbsp; &nbsp; applicable ?</span> </td>
+                  </tr><tr>
+                          <th>154</th><th>152</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>155</th><th> </th><td class="l"><span><del>**</del>* At the moment namespaces for columns is probably more important</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>153</th><td class="r"><span><ins>&nbsp;</ins>* At the moment namespaces for columns is probably more important</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>156</th><th>154</th><td class="l"><span>&nbsp; &nbsp; than URIs for each data element in a column.</span> </td>
+                  </tr><tr>
+                          <th>157</th><th>155</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>158</th><th> </th><td class="l"><span><del></del>Agreed that worthwhile to pass URIs to describe columns.&nbsp; Agreed that</span> </td>
+                      </tr><tr>
+                        <th>159</th><th> </th><td class="l"><span><del></del>arbitrary human-friendly names are also good.</span> </td>
+                      </tr><tr>
+                        <th>160</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>161</th><th> </th><td class="l"><span><del>**</del>* Agreed to dump all BioMart/ InterMine column headings out, find</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>156</th><td class="r"><span><ins>&nbsp;* </ins>Agreed that worthwhile to pass URIs to describe columns.&nbsp; Agreed that</span> </td>
+                      </tr><tr>
+                        <th> </th><th>157</th><td class="r"><span><ins>&nbsp; </ins>arbitrary human-friendly names are also good.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>158</th><td class="r"><span></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>159</th><td class="r"><span><ins>&nbsp;</ins>* Agreed to dump all BioMart/ InterMine column headings out, find</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>162</th><th>160</th><td class="l"><span>&nbsp; &nbsp; the common/commonly-used ones and work on naming.</span> </td>
+                  </tr><tr>
+                          <th>163</th><th>161</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>164</th><th>162</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>165</th><th>163</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>166</th><th> </th><td class="l"><span>========== Discussion turned to genome builds:</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>164</th><td class="r"><span>'''Discussion turned to genome builds:'''</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>167</th><th>165</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>168</th><th>166</th><td class="l"><span>There is no-where to go to find out if entities/ coordinates come from</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="/wiki/Data_exchange?version=1#L201">…</a></th>
+                  <th><a href="/wiki/Data_exchange?version=2#L199">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>201</th><th>199</th><td class="l"><span>version.</span> </td>
+                  </tr><tr>
+                          <th>202</th><th>200</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>203</th><th> </th><td class="l"><span>Genome version summary:</span> </td>
+                      </tr><tr>
+                        <th>204</th><th> </th><td class="l"><span>* Investigate whether is there a standard available for describing genome version *</span> </td>
+                      </tr><tr>
+                        <th>205</th><th> </th><td class="l"><span>* Consider whether to base naming on ensembl genome/ annotation versions *</span> </td>
+                      </tr><tr>
+                        <th>206</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>207</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>208</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>209</th><th> </th><td class="l"><span>=========== Thoughts on RDF:</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>201</th><td class="r"><span>'''Genome version summary:'''</span> </td>
+                      </tr><tr>
+                        <th> </th><th>202</th><td class="r"><span>&nbsp;* Investigate whether is there a standard available for describing genome version</span> </td>
+                      </tr><tr>
+                        <th> </th><th>203</th><td class="r"><span>&nbsp;* Consider whether to base naming on ensembl genome/ annotation versions</span> </td>
+                      </tr><tr>
+                        <th> </th><th>204</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>205</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>206</th><td class="r"><span></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>207</th><td class="r"><span>'''Thoughts on RDF:'''</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>210</th><th>208</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>211</th><th>209</th><td class="l"><span>If everyone is expressing their data in RDF with a common underlying</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+      </div>
+  </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

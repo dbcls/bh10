@@ -1,0 +1,47 @@
+
+== MEDIE & Enju API ==
+----
+'''''Services concerning Tsujii lab. are being stopped until Feb. 24 due to a construction of a server facility.'''''
+--> '''FINISHED'''
+----
+[http://www-tsujii.is.s.u-tokyo.ac.jp/medie/search.cgi MEDIE] is an intelligent search engine to retrieve biomedical correlations from MEDLINE, based on indexing by Natural Language Processing and Text Mining techniques.
+[http://www-tsujii.is.s.u-tokyo.ac.jp/enju/ Enju] is a syntactic parser for English.
+MEDIE's excellent search function can be programmatically accessed using its API.
+In addition, parsing results of Enju on the all MEDLINE records can be accessed programmatically.
+
+'''Attention: Please cite [http://www-tsujii.is.s.u-tokyo.ac.jp/medie/search.cgi MEDIE] when using the API.'''
+
+ * [http://www-tsujii.is.s.u-tokyo.ac.jp/enju-medline/ Enju API Document]
+ * Enju API endpoint: [http://www-tsujii.is.s.u-tokyo.ac.jp/enju-medline/enju-medline.cgi]
+ * MEDIE API endpoint: [http://www-tsujii.is.s.u-tokyo.ac.jp/medie/dbcls.cgi]
+  * Arguments
+   * subject: alpha-numerics
+   * verb: ditto
+   * object: ditto
+   * count: 1 to 100 (the number of the results, default is 3)
+   * sm: 0 or 1 (sm means "semantics")
+   * position: value of the <next> tag
+   * pmid: !PubMed ID
+  * Sample URLs
+   * [http://www-tsujii.is.s.u-tokyo.ac.jp/medie/dbcls.cgi?subject=p53&verb=activate&sm=1]
+   * [http://www-tsujii.is.s.u-tokyo.ac.jp/medie/dbcls.cgi?subject=p53&verb=activate&sm=1&count=10]
+   * [http://www-tsujii.is.s.u-tokyo.ac.jp/medie/dbcls.cgi?subject=p53&verb=activate&sm=1&position=medline09n0893-7388931]
+   * [http://www-tsujii.is.s.u-tokyo.ac.jp/medie/dbcls.cgi?pmid=19116711&count=1]
+
+The above services are provided by [http://www-tsujii.is.s.u-tokyo.ac.jp/ Tsujii Laboratory].
+
+== Obtaining Subject, Verb, and Object of each sentence of MEDLINE titles/abstracts ==
+
+ * Endpoint: [http://purl.org/togodoc/medieconv]
+ * Endpoint: {{{http://docman.dbcls.jp/medieconv}}} --> '''OBSOLETED'''
+  * argument: pmid (!PubMed ID, multiple IDs can be accepted using bar "|" as a delimiter)
+  * Example: [http://purl.org/togodoc/medieconv?pmid=17551671%7C18424370]
+
+ * Another service (Slower but latest documents can be retrieved)
+  * same as the above.
+  * Example: [http://purl.org/togodoc/pubmedsvo/18424370.rdf]
+  * Below is '''OBSOLETED'''
+  * Example: {{{http://docman.dbcls.jp/getsvo?pmid=17551671|18424370}}}
+  * Example: {{{http://docman.dbcls.jp/pubmedsvo/18424370.rdf}}}
+
+[TextMining Back to TextMining Wiki]

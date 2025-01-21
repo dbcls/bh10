@@ -1,0 +1,55 @@
+From scratch:
+Get the Virtuoso package provided by Francois.
+These are zipped information, plz refer to the official guide for better explenation.
+
+Install the required packages in ubuntu server edition 9.10 [[BR]]
+
+6.31-17-generic-pae #54-Ubuntu SMP Thu Dec 10 17:23:29 UTC 2009 i686 GNU/Linux:
+
+{{{
+sudo aptitude install autoconf automake libtool flex bison gperf gawk m4 make libssl-dev
+tar xzvf virtuoso.tar.gz
+cd virtuoso
+./configure --prefix=/usr/local
+make
+sudo make install
+cd /usr/local/var/lib/virtuoso/db/
+sudo virtuoso-t -f & 
+}}}
+
+If you are using VirtualBox and you have installed Virtuose inside the Ubuntu(Guest) and you have the NAT enabled for it add these lines into "yourhome\.VirtualBox\Machines\YourMachine.xml" CLOSE YOUR VIRTUAL MACHINE AND VIRTUAL BOX BEFORE DO THAT.
+
+{{{
+      <ExtraDataItem name="VBoxInternal/Devices/pcnet/0/LUN#0/Config/virtuoso/GuestPort" value="8890"/>
+      <ExtraDataItem name="VBoxInternal/Devices/pcnet/0/LUN#0/Config/virtuoso/HostPort" value="8890"/>
+      <ExtraDataItem name="VBoxInternal/Devices/pcnet/0/LUN#0/Config/virtuoso/Protocol" value="TCP"/>
+}}}
+
+
+
+
+
+----
+
+For the SemWeb installation contest I was looking on the web for a simple way to install Virtuoso on my virtualized Ubuntu server 9.10[[BR]]
+
+Note: Virtuoso v5.0.12[[BR]]
+
+
+It seems that kubuntu guys are very excited about semantic web & desktop [http://www.kubuntu.org/news/kde-sc-4.4-rc-2] and their interest come from this application [http://nepomuk.semanticdesktop.org/xwiki/bin/view/Main1/].[[BR]]
+
+
+just few lines: 
+
+{{{
+sudo aptitude install python-software-properties
+sudo add-apt-repository ppa:kubuntu-ppa/beta
+sudo apt-get update
+sudo aptitude install virtuoso-server
+sudo aptitude install virtuoso-drivers
+}}}
+
+
+
+
+

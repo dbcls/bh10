@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      ImplementationBootcamp – BioHackathon 2010
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="alternate" href="/wiki/ImplementationBootcamp?version=43&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="/wiki/ImplementationBootcamp" title="View latest version" />
+        <link rel="next" href="/wiki/ImplementationBootcamp?version=44" title="Version 44" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" />
+        <link rel="prev" href="/wiki/ImplementationBootcamp?version=42" title="Version 42" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search BioHackathon 2010" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon3.dbcls.jp/"><img src="http://hackathon3.dbcls.jp/raw-attachment/wiki/LogoGallery/trac_logo.png" alt="DBCLS BioHackathon 2010" width="200" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="/wiki/ImplementationBootcamp?version=42" title="Version 42">Previous Version</a></span></li><li><a href="/wiki/ImplementationBootcamp" title="View latest version">View Latest Version</a></li><li><span><a class="next" href="/wiki/ImplementationBootcamp?version=44" title="Version 44">Next Version</a> &rarr;</span></li><li class="last"><a href="/wiki/ImplementationBootcamp?action=diff&amp;version=43">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 43 (modified by RutgerVos, <a class="timeline" href="/timeline?from=2010-02-11T22%3A01%3A54%2B0900&amp;precision=second" title="2010-02-11T22:01:54+0900 in Timeline">15 years</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+--
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <h1 id="ImplementationBootcamp">Implementation Bootcamp</h1>
+<p>
+</p><div class="wiki-toc"><ol><li><a href="#ImplementationBootcamp">Implementation Bootcamp</a><ol><li><a href="#ImplementationtipsandtricksFAQ">Implementation tips and tricks / FAQ</a></li><li>
+<a href="#Triplestores">Triplestores</a><ol><li><a href="#IhavetobuildatriplestorewhattoolshouldIuseunderwhatcircumstances">I have to build a triplestore, what tool should I use under what …</a></li><li>
+<a href="#HowtoaccessatriplestoreinPerlRubyPythonJavaetc.">How to access a triplestore in Perl/Ruby/Python/Java etc.?</a></li></ol></li><li>
+<a href="#Ontologizing">Ontologizing</a><ol><li><a href="#IhavetobuildanOWLmodelofmydata-howdoIgoaboutdoingthis">I have to build an OWL model of my data - how do I go about doing this?</a></li><li>
+<a href="#WhichversionofProtegeshouldIuse">Which version of Protege should I use?</a></li><li>
+<a href="#HowdoInamespacemyterms">How do I namespace my terms?</a></li><li>
+<a href="#Whatarethesimilaritiesanddifferencesbetweenthevarioussharednamesproposals">What are the similarities and differences between the various shared names …</a></li></ol></li><li>
+<a href="#Webservices">Web services</a><ol><li><a href="#IhaveananalysistoolhowdoIexposeitasasemanticwebresource">I have an analysis tool, how do I expose it as a semantic web resource?</a></li><li>
+<a href="#WhensomeonecallsGETonmyURLswhatshouldIreturninordertobesemanticwebby">When someone calls GET on my URLs, what should I return in order to be …</a></li><li>
+<a href="#HowdoIcreateaSADIservice">How do I create a SADI service?</a></li></ol></li><li>
+<a href="#GeneratingRDF">Generating RDF</a><ol><li><a href="#HowdoIconvertOBOtoRDF">How do I convert OBO to RDF?</a></li><li>
+<a href="#WhatXSLprocessortouseshouldyouwanttoconvertlegacyxmltordf">What XSL processor to use, should you want to convert legacy xml to rdf?</a></li><li>
+<a href="#WhattodowithRDFametadata">What to do with RDFa metadata?</a></li><li>
+<a href="#IhavedatabaseinRMDBhowcanIconvertthemdirectlytoRDF">I have database in RMDB, how can I convert them directly to RDF?</a></li><li>
+<a href="#HowgranularshouldmyreturnedRDFbe">How granular should my returned RDF be?</a></li><li>
+<a href="#WheredoIvalidatemyRDFXML">Where do I validate my RDF/XML?</a></li></ol></li></ol></li></ol></div><p>
+</p>
+<h2 id="ImplementationtipsandtricksFAQ">Implementation tips and tricks / FAQ</h2>
+<p>
+Here we collect useful tips and tricks so that we don't all have to reinvent the wheel. Please add any answers and/or questions!
+</p>
+<h2 id="Triplestores">Triplestores</h2>
+<h3 id="IhavetobuildatriplestorewhattoolshouldIuseunderwhatcircumstances">I have to build a triplestore, what tool should I use under what circumstances?</h3>
+<p>
+Francois Belleau seems to prefer virtuoso, though he assures us he has no commercial interest in them :)
+</p>
+<blockquote class="citation">
+<p>
+ MDW:  Virtuoso seems to be the triple-store of choice at the moment, but it does suffer from problems with data import.  We (Wilkinson lab, Belleau/Bio2RDF, Dumontier lab) have considerable experience with this, that we will write tutorials about and add the link here soon!
+</p>
+</blockquote>
+<p>
+There is also a <a class="wiki" href="/wiki/Stores">wiki page</a> devoted to the various solutions available.
+</p>
+<h3 id="HowtoaccessatriplestoreinPerlRubyPythonJavaetc.">How to access a triplestore in Perl/Ruby/Python/Java etc.?</h3>
+<p>
+In Python, you have <a class="ext-link" href="http://www.rdflib.net/"><span class="icon"> </span>RDFlib</a>. And for Java <a class="ext-link" href="http://jena.sourceforge.net/"><span class="icon"> </span>Jena</a> is your best option. The <a class="ext-link" href="http://www.perlrdf.org/"><span class="icon"> </span>PerlRDF</a> site lists the options for Perl.
+</p>
+<h2 id="Ontologizing">Ontologizing</h2>
+<h3 id="IhavetobuildanOWLmodelofmydata-howdoIgoaboutdoingthis">I have to build an OWL model of my data - how do I go about doing this?</h3>
+<p>
+For understanding what you're supposed to do (and what you're getting into...), read
+</p>
+<ul><li><a class="ext-link" href="http://www.w3.org/TR/owl2-primer/"><span class="icon"> </span>The OWL 2 primer</a> to learn about OWL,
+</li><li><a class="ext-link" href="http://www.w3.org/TR/sw-oosd-primer/"><span class="icon"> </span>A Semantic Web Primer for Object-Oriented Software Developers</a> if you know anything about OO modeling in software, as it will help avoid a lot of common pitfalls, and
+</li><li><a class="ext-link" href="http://workingontologist.org/"><span class="icon"> </span>Semantic Web for the Working Ontologist</a> if you want in-depth explanation with lots of examples.
+</li><li><a class="wiki" href="/wiki/OWL">The hackathon wiki page on OWL</a>
+</li></ul><p>
+Then use <a class="ext-link" href="http://protege.stanford.edu/"><span class="icon"> </span>Protege</a> to actually build the ontology.
+</p>
+<blockquote class="citation">
+<p>
+ MDW:  I highly recommend that you "make friends" with someone who has a deep understanding of OWL, and the consequences of various OWL constructs, as you go through your learning experience.  While the existing tutorials are good for telling you what is possible, they aren't always entirely clear about the consequences of choosing one encoding method versus another... and this dramatically affects your ability to "reason over" your data!!  Unfortunately, there are few shortcuts - OWL is hard!  
+</p>
+</blockquote>
+<h3 id="WhichversionofProtegeshouldIuse">Which version of Protege should I use?</h3>
+<p>
+Why not the latest one? You get the current OWL 2.
+</p>
+<blockquote class="citation">
+<p>
+ MDW:  Protege 3 and Protege 4 are "philosophically" different, and represent a split in the global ontology community that runs roughly along the lines of the "OBO-fans" and the "OWL-DL-fans" (that's over-simplifying the situation, but I think it is by-and-large correct).  The two development communities had different target-audiences in mind when developing the software, and those audiences are reflected in the decisions made.  Protege 4 uses the Manchester OWL API "under the hood", and is somewhat more capable of manipulating OWL than Protege 3 is (IMO).  On the other hand, if you are planning to use Protege to generate RDF data ("individuals") manually, then Protege 3 might be more useful for you.  This is all entirely my opinion, so please don't flame me if you are a fan of one or the other :-)
+</p>
+</blockquote>
+<h3 id="HowdoInamespacemyterms">How do I namespace my terms?</h3>
+<p>
+It is best to do this such that they can actually be resolved (unlike XML), preferably to an OWL file, e.g. "<a class="ext-link" href="http://example.org/terms.owl"><span class="icon"> </span>http://example.org/terms.owl</a>#"
+</p>
+<blockquote class="citation">
+<p>
+ MDW:  Can we re-phrase the question to be clear what we are asking?  :-)
+</p>
+</blockquote>
+<h3 id="Whatarethesimilaritiesanddifferencesbetweenthevarioussharednamesproposals">What are the similarities and differences between the various shared names proposals?</h3>
+<p>
+Shared names proposals such as LSRN? <a class="missing wiki">UniProt?</a>?
+</p>
+<blockquote class="citation">
+<p>
+ MDW:  See above, and ask specific questions that I can try to answer myself, or invite the representatives from the other proposals to answer.  (Get well soon, Alan!!!!)
+</p>
+</blockquote>
+<h2 id="Webservices">Web services</h2>
+<h3 id="IhaveananalysistoolhowdoIexposeitasasemanticwebresource">I have an analysis tool, how do I expose it as a semantic web resource?</h3>
+<blockquote class="citation">
+<p>
+ MDW:  SADI please :-)   Luke gave the Java tutorial today, and I gave the Perl tutorial.  Edward Kawas from my lab has produced movies detailing how to create services in Perl for SADI, and I will be doing the voice-over for these movies and putting them up on <a class="missing wiki">YouTube?</a> in the next week.  I will add a link here.  We will do the same for the Java side once we have the extra-cool Java functionalities coded and ~stable.  In particular, Luke <a class="missing wiki">McCarthy?</a> and Paul Gordon have been working together at the Hackathon finding simple ways to put SADI Java services into the Google Cloud... so you might not even have to consume your own compute resources to achieve this!
+</p>
+</blockquote>
+<h3 id="WhensomeonecallsGETonmyURLswhatshouldIreturninordertobesemanticwebby">When someone calls GET on my URLs, what should I return in order to be semantic webby?</h3>
+<p>
+You should probably use <a class="ext-link" href="http://en.wikipedia.org/wiki/Content_negotiation"><span class="icon"> </span>Content Negotation</a> using the HTTP Accept: header. That way you can return HTML and RDF under the same URI. However, it's fine for the time being to just accept a ".rdf" suffix or an "&amp;format=rdf" URL parameter.
+</p>
+<p>
+At <a class="ext-link" href="http://www.uniprot.org"><span class="icon"> </span>UniProt</a>, we use content negotiation for our OWL documentation, but not (yet) for the actual data. Example:
+</p>
+<pre class="wiki">&gt; wget --header='Accept: application/rdf+xml' http://purl.uniprot.org/core/recommendedName
+[...]
+Saving to: `recommendedName.rdf
+
+&gt; wget --header='Accept: text/html' http://purl.uniprot.org/core/recommendedName
+[...]
+Saving to: `recommendedName.html
+</pre><blockquote class="citation">
+<p>
+ MDW:  As an aside, the idea of content-negotiation has been extensively discussed within the Semantic Web for Healthcare and Life Science community, and it was not widely welcomed.  The point of the Semantic Web is that things should be <i>explicit</i>, so there is some preference given to explicitly indicating (in your RDF metadata) that any given URI is going to return one syntax or another.  (though I have to agree, I am quite a fan of content-negotiation, given that this is exactly the problem that it was designed to solve!!  :-) )
+</p>
+</blockquote>
+<blockquote class="citation">
+<p>
+ MDW:  Going back as far as 2004, when the LSID specification was being finalized, this issue was a top-priority, so there is a sub-commmunity of bioinformatics data providers who have thought about this problem for many many years! :-)  This has led to a variety of "shared names" proposals, including the Science Commons, Semantic Science, LSRN, and others.  In SADI (and now LSRN, since my lab has taken-over the LSRN project in the past 2 months) we have decided to work with the Semantic Science shared-names proposal from Michel Dumontier.  He has developed an ontology (I will provide a link to this as soon as Michel decides that the ontology is "final"... within days!!).  The ontology defines how a URI should "behave" during resolution, depending on the kind of "thing" that the URI represents - e.g. a biological/physical entity, a database record, or a particular <i>representation</i> of a database record in html, xml, rdf, etc.  Within the SADI project, we will be writing all of our support code to make compliance with the Semantic Science ontology as automatic as possible.  We are also in the process of doing the same for URIs resolved through the LSRN resolution system... so if you use SADI or LSRN, you should get compliance with this ontology "for free" within the next week or two!  <i>In My Opinion This Is One Of The Most Important Issues We Have Addressed At This Hackathon!''  The Semantic Web works SO much better if we are careful to pay attention to what our URIs REPRESENT: things, records, or representations of records.  It sounds tedious, but we're doing everything we can to shield the data providers from having to think deeply about the problem, and trying to encode the complexity in our respective codebases.
+</i></p>
+</blockquote>
+<h3 id="HowdoIcreateaSADIservice">How do I create a SADI service?</h3>
+<p>
+Links to tutorials coming soon!!!
+</p>
+<h2 id="GeneratingRDF">Generating RDF</h2>
+<h3 id="HowdoIconvertOBOtoRDF">How do I convert OBO to RDF?</h3>
+<p>
+If your input data is represented in <a class="ext-link" href="http://www.geneontology.org/GO.format.obo-1_2.shtml"><span class="icon"> </span>OBO format</a>, you can use the <strong>obo2rdf.pl</strong> script provided by <a class="ext-link" href="http://search.cpan.org/~easr/ONTO-PERL/"><span class="icon"> </span>ONTO-PERL</a>
+</p>
+<h3 id="WhatXSLprocessortouseshouldyouwanttoconvertlegacyxmltordf">What XSL processor to use, should you want to convert legacy xml to rdf?</h3>
+<p>
+@yokofakun uses xsltproc which work fine. For example see:
+</p>
+<ul><li><a class="ext-link" href="http://plindenbaum.blogspot.com/2010/02/linkedinxslt-foaf-people-from.html"><span class="icon"> </span>http://plindenbaum.blogspot.com/2010/02/linkedinxslt-foaf-people-from.html</a>
+</li><li><a class="ext-link" href="http://plindenbaum.blogspot.com/2010/02/searching-for-genotypes-with-sparql.html"><span class="icon"> </span>http://plindenbaum.blogspot.com/2010/02/searching-for-genotypes-with-sparql.html</a>
+</li></ul><p>
+@rvosa is using a stylesheet that uses XSL2.0 features, which libxslt doesn't like. He therefore uses <a class="ext-link" href="http://saxon.sourceforge.net/"><span class="icon"> </span>saxon</a> to transform NeXML into RDF.
+</p>
+<h3 id="WhattodowithRDFametadata">What to do with RDFa metadata?</h3>
+<p>
+RDFa embedded inside HTML or XML can be turned into proper RDF/XML triples using this xsl stylesheet: <a class="ext-link" href="http://nexml-dev.nescent.org/nexml/xslt/RDFa2RDFXML.xsl"><span class="icon"> </span>http://nexml-dev.nescent.org/nexml/xslt/RDFa2RDFXML.xsl</a>
+</p>
+<h3 id="IhavedatabaseinRMDBhowcanIconvertthemdirectlytoRDF">I have database in RMDB, how can I convert them directly to RDF?</h3>
+<p>
+Use protege plug-in? or porvide web service?
+</p>
+<p>
+There is <a class="ext-link" href="http://www4.wiwiss.fu-berlin.de/bizer/d2rq/"><span class="icon"> </span>D2RQ</a> which works okey but lacks a bit performance-wise.
+</p>
+<blockquote class="citation">
+<p>
+ MDW:  This really depends on whether or not you intend to publish your database as a SPARQL endpoint.  The poll that Pierre and I took over the past couple of days suggests that only 5 data providers (within Tweet-shot of us) currently provide SQL access to their data resources.  IMO this does not bode well for having data providers set-up SPARQL endpoints!!  (why would they open themselves to a new, unfamiliar technology when they don't open themselves to a well-known, tested, secure, and highly powerful technology???)   We have tried to make a compelling argument that exposing resources via SADI Web Services gives you the best of both worlds - a highly-granular control over what data you expose, how you expose it, and over the distribution of large numbers of requests over your compute-resources; yet our SHARE client helps make it *appear* that the entire world is one big SPARQL endpoint (on steroids, since you can SPARQL data that doesn't even exist until you ask the question!)  My opinion (biased!) is that SADI Web Services are a better way to expose RDF data compared to SPARQL endpoints.  Moreover, it doesn't require you to change your existing data infrastructure in any way - you don't need to have a triple-store to expose your data as triples via SADI.  With a Web Service-based exposure, you can migrate your data gradually/modularly, a few properties at a time, rather than attempting to move your entire database to the Semantic Web in one shot... and gain experience as you go!  Given that it is currently not (natively) possible to SPARQL query over multiple endpoints, you aren't losing anything by going the SADI route either.  Finally, <strong>all</strong> of your resources (both database and analytical tools) are exposed in exactly the same way, meaning that they are all accessed by clients in exactly the same way, simplifying client design :-)
+</p>
+</blockquote>
+<p>
+  
+</p>
+<h3 id="HowgranularshouldmyreturnedRDFbe">How granular should my returned RDF be?</h3>
+<blockquote class="citation">
+<p>
+ MDW:  There was a VERY brief discussion of this issue on Thursday... the answer was "be pragmatic".  Highly granular data (like absolute expression-level changes for microarrays) might not be appropriate for conversion into RDF because it explodes the size of the dataset in a circumstance where (a) the dataset is generally going to be used as a whole anyway, and (b) there are completely adequate parsers for existing file-formats, and (c) the benefit of being able to reason over an RDF representation of the data is limited, or absent.  
+</p>
+</blockquote>
+<h3 id="WheredoIvalidatemyRDFXML">Where do I validate my RDF/XML?</h3>
+<p>
+<a class="ext-link" href="http://www.w3.org/RDF/Validator/"><span class="icon"> </span>http://www.w3.org/RDF/Validator/</a>
+</p>
+
+        
+        
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="/wiki/ImplementationBootcamp?version=43&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

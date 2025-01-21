@@ -1,0 +1,645 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+    <html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      Data_exchange (diff) – BioHackathon 2010
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="up" href="/wiki/Data_exchange?action=history" title="Page history" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/diff.css" type="text/css" />
+        <link rel="prev" href="/wiki/Data_exchange?action=diff&amp;version=3" title="Version 3" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search BioHackathon 2010" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script><script type="text/javascript" src="/chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="/chrome/common/css/diff.css" /><meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon3.dbcls.jp/"><img src="http://hackathon3.dbcls.jp/raw-attachment/wiki/LogoGallery/trac_logo.png" alt="DBCLS BioHackathon 2010" width="200" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="/wiki/Data_exchange?action=diff&amp;version=3" title="Version 3">Previous Change</a></span></li><li><a href="/wiki/Data_exchange?action=history" title="Page history">Wiki History</a></li><li class="last"><span class="missing">Next Change &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <h1>Changes
+        between
+          <a href="/wiki/Data_exchange?version=3">Version 3</a> and
+        <a href="/wiki/Data_exchange?version=4">Version 4</a> of
+        <a href="/wiki/Data_exchange?version=4">Data_exchange</a>
+      </h1>
+      <form method="post" id="prefs" action="/wiki/Data_exchange?version=4"><div><input type="hidden" name="__FORM_TOKEN" value="9b92f779110146561b41c442" /></div>
+        <div>
+          <input type="hidden" name="action" value="diff" />
+          <input type="hidden" name="version" value="4" />
+          <input type="hidden" name="old_version" value="3" />
+    <label for="style">View differences</label>
+    <select id="style" name="style">
+      <option selected="selected" value="inline">inline</option>
+      <option value="sidebyside">side by side</option>
+    </select>
+    <div class="field">
+      Show <input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+      <label for="contextlines">lines around each change</label>
+    </div>
+    <fieldset id="ignore">
+      <legend>Ignore:</legend>
+      <div class="field">
+        <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+        <label for="ignoreblanklines">Blank lines</label>
+      </div>
+      <div class="field">
+        <input type="checkbox" id="ignorecase" name="ignorecase" />
+        <label for="ignorecase">Case changes</label>
+      </div>
+      <div class="field">
+        <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+        <label for="ignorewhitespace">White space changes</label>
+      </div>
+    </fieldset>
+    <div class="buttons">
+      <input type="submit" name="update" value="Update" />
+    </div>
+        </div>
+      </form>
+      <dl id="overview">
+        <dt class="property time">Timestamp:</dt>
+        <dd class="time">
+          2010/02/14 18:14:06 (<a class="timeline" href="/timeline?from=2010-02-14T18%3A14%3A06%2B0900&amp;precision=second" title="2010-02-14T18:14:06+0900 in Timeline">15 years</a> ago)
+        </dd>
+        <dt class="property author">Author:</dt>
+        <dd class="author">
+          admin
+        </dd>
+        <dt class="property message">Comment:</dt>
+        <dd class="message">
+          
+          <p>
+--
+</p>
+
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+            <dt class="mod"></dt><dd>Modified</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="/wiki/Data_exchange?version=4">Data_exchange</a>
+        </h2>
+        <table class="inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Version 3">
+                    <a href="/wiki/Data_exchange?version=3#L1">
+                      v3</a>
+                  </th>
+                  <th title="Version 4">
+                    <a href="/wiki/Data_exchange?version=4#L1">
+                      v4</a>
+                  </th>
+                  <th> </th>
+                </tr>
+              </thead>
+            <tbody class="mod">
+                      <tr class="first">
+                        <th>1</th><th> </th><td class="l"><span></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>1</th><td class="r"><span>[[PageOutline]] </span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>2</th><th>2</th><td class="l"><span>Wednesday 10th February p.m. - Room 516</span> </td>
+                  </tr><tr>
+                          <th>3</th><th>3</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>4</th><th> </th><td class="l"><span>''' Semantic Data Exchange'''</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>4</th><td class="r"><span>= Semantic Data Exchange =</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>5</th><th>5</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>6</th><th>6</th><td class="l"><span>&nbsp;* Gos Micklem</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="/wiki/Data_exchange?version=3#L18">…</a></th>
+                  <th><a href="/wiki/Data_exchange?version=4#L18">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>18</th><th>18</th><td class="l"><span>&nbsp;* Alberto Labarga</span> </td>
+                  </tr><tr>
+                          <th>19</th><th>19</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>20</th><th> </th><td class="l"><span>'''Discussion on possibilities/need for improving data exchange between</span> </td>
+                      </tr><tr>
+                        <th>21</th><th> </th><td class="l"><span>e.g. !InterMine, Galaxy, !BioMart, Cytoscape...'''</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>20</th><td class="r"><span>== Discussion on possibilities/need for improving data exchange between e.g. !InterMine, Galaxy, !BioMart, Cytoscape... ==</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>22</th><th>21</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>23</th><th>22</th><td class="l"><span>Would typing of arbitrary data exchange improve communication between</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="/wiki/Data_exchange?version=3#L26">…</a></th>
+                  <th><a href="/wiki/Data_exchange?version=4#L25">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>26</th><th>25</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>27</th><th>26</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>28</th><th> </th><td class="l"><span>'''Current situation:'''</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>27</th><td class="r"><span>== Current situation: ==</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>29</th><th>28</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>30</th><th>29</th><td class="l"><span>It was felt that the current situation wasn't so bad: however it would</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="/wiki/Data_exchange?version=3#L53">…</a></th>
+                  <th><a href="/wiki/Data_exchange?version=4#L52">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>53</th><th>52</th><td class="l"><span>&nbsp; &nbsp;these aren't used.</span> </td>
+                  </tr><tr>
+                          <th>54</th><th>53</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>55</th><th> </th><td class="l"><span>&nbsp; &nbsp;<del>&nbsp;</del>Interoperation of Marts: this is the only place where must get the</span> </td>
+                      </tr><tr>
+                        <th>56</th><th> </th><td class="l"><span>&nbsp; &nbsp;<del>&nbsp; </del>semantics correct.&nbsp; If one mart calls something a !UniProt</span> </td>
+                      </tr><tr>
+                        <th>57</th><th> </th><td class="l"><span>&nbsp; &nbsp;<del>&nbsp; </del>identifier and the other one does too then essential that they are</span> </td>
+                      </tr><tr>
+                        <th>58</th><th> </th><td class="l"><span>&nbsp; &nbsp;<del>&nbsp; </del>refering to the same identifier.&nbsp; Perhaps would be good to have</span> </td>
+                      </tr><tr>
+                        <th>59</th><th> </th><td class="l"><span>&nbsp; &nbsp;<del>&nbsp; </del>controlled name-space for this and/or a hand-shake to check that do</span> </td>
+                      </tr><tr>
+                        <th>60</th><th> </th><td class="l"><span>&nbsp; &nbsp;<del>&nbsp; </del>have matching values.</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>54</th><td class="r"><span>&nbsp; &nbsp;<ins></ins>Interoperation of Marts: this is the only place where must get the</span> </td>
+                      </tr><tr>
+                        <th> </th><th>55</th><td class="r"><span>&nbsp; &nbsp;<ins></ins>semantics correct.&nbsp; If one mart calls something a !UniProt</span> </td>
+                      </tr><tr>
+                        <th> </th><th>56</th><td class="r"><span>&nbsp; &nbsp;<ins></ins>identifier and the other one does too then essential that they are</span> </td>
+                      </tr><tr>
+                        <th> </th><th>57</th><td class="r"><span>&nbsp; &nbsp;<ins></ins>refering to the same identifier.&nbsp; Perhaps would be good to have</span> </td>
+                      </tr><tr>
+                        <th> </th><th>58</th><td class="r"><span>&nbsp; &nbsp;<ins></ins>controlled name-space for this and/or a hand-shake to check that do</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>59</th><td class="r"><span>&nbsp; &nbsp;<ins></ins>have matching values.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>61</th><th>60</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>62</th><th>61</th><td class="l"><span>&nbsp; &nbsp;!InterMine (http://www.intermine.org): multiple organisms can use the same identifiers</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="/wiki/Data_exchange?version=3#L72">…</a></th>
+                  <th><a href="/wiki/Data_exchange?version=4#L71">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>72</th><th>71</th><td class="l"><span>useful.</span> </td>
+                  </tr><tr>
+                          <th>73</th><th>72</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>74</th><th> </th><td class="l"><span>&nbsp; &nbsp;Available data-describing controlled vocabularies: OICR cancer data</span> </td>
+                      </tr><tr>
+                        <th>75</th><th> </th><td class="l"><span>&nbsp; &nbsp;experience is that there are rather limited naming systems.</span> </td>
+                      </tr><tr>
+                        <th>76</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>77</th><th> </th><td class="l"><span>&nbsp; &nbsp;Thought to be a good idea to expose/ export current naming systems.</span> </td>
+                      </tr><tr>
+                        <th>78</th><th> </th><td class="l"><span>&nbsp; &nbsp;The Cancer Genome Atlas (TCGA: http://cancergenome.nih.gov/) have done</span> </td>
+                      </tr><tr>
+                        <th>79</th><th> </th><td class="l"><span>&nbsp; &nbsp;some thinking along these lines.</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>73</th><td class="r"><span>&nbsp; &nbsp;Available data-describing controlled vocabularies: OICR cancer data experience is that there are rather limited naming systems.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>74</th><td class="r"><span></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>75</th><td class="r"><span>&nbsp; &nbsp;Thought to be a good idea to expose/ export current naming systems. The Cancer Genome Atlas (TCGA: http://cancergenome.nih.gov/) have done some thinking along these lines.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>80</th><th>76</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>81</th><th>77</th><td class="l"><span>&nbsp; &nbsp;Galaxy: has xml to describe file formats:</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>82</th><th> </th><td class="l"><span>&nbsp; &nbsp;biopython/bioperl/bioruby/biojava have more-or-less agreed</span> </td>
+                      </tr><tr>
+                        <th>83</th><th> </th><td class="l"><span>&nbsp; &nbsp;filenames.</span> </td>
+                      </tr><tr>
+                        <th>84</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>85</th><th> </th><td class="l"><span>Just thinking of FASTA format for sequence there are quite a number of</span> </td>
+                      </tr><tr>
+                        <th>86</th><th> </th><td class="l"><span>Flavours:</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>78</th><td class="r"><span>&nbsp; &nbsp;biopython/bioperl/bioruby/biojava have more-or-less agreed&nbsp; filenames.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>79</th><td class="r"><span></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>80</th><td class="r"><span>Just thinking of FASTA format for sequence there are quite a number of Flavours:</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>87</th><th>81</th><td class="l"><span>&nbsp;- DNA vs protein sequences</span> </td>
+                  </tr><tr>
+                          <th>88</th><th>82</th><td class="l"><span>&nbsp;- use of ambiguity codes or not</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="/wiki/Data_exchange?version=3#L125">…</a></th>
+                  <th><a href="/wiki/Data_exchange?version=4#L119">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>125</th><th>119</th><td class="l"><span>Kei: PSI-MI EBI website:&nbsp; global definitions:</span> </td>
+                  </tr><tr>
+                          <th>126</th><th>120</th><td class="l"><span>http://www.ebi.ac.uk/ontology-lookup/browse.do?ontName=MI</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>127</th><th> </th><td class="l"><span></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>121</th><td class="r"><span>{{{</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>128</th><th>122</th><td class="l"><span>&nbsp; &nbsp;molecular-interaction</span> </td>
+                  </tr><tr>
+                          <th>129</th><th>123</th><td class="l"><span>&nbsp; &nbsp;--&gt; database citation</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="/wiki/Data_exchange?version=3#L131">…</a></th>
+                  <th><a href="/wiki/Data_exchange?version=4#L125">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>131</th><th>125</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;--&gt; gene ontology (double click for definition)</span> </td>
+                  </tr><tr>
+                          <th>132</th><th>126</th><td class="l"><span>&nbsp; &nbsp; &nbsp; http://www.ebi.ac.uk/ontology-lookup/?termId=MI%3A0448</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>133</th><th> </th><td class="l"><span></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>127</th><td class="r"><span>}}}</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>134</th><th>128</th><td class="l"><span>Semantics needs to be regulated regardless of the technology (So RDF</span> </td>
+                  </tr><tr>
+                          <th>135</th><th>129</th><td class="l"><span>isn't necessarily the point here)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="/wiki/Data_exchange?version=3#L140">…</a></th>
+                  <th><a href="/wiki/Data_exchange?version=4#L134">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>140</th><th>134</th><td class="l"><span>large-scale users/providers can start to comply.</span> </td>
+                  </tr><tr>
+                          <th>141</th><th>135</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>142</th><th> </th><td class="l"><span>'''Data exchange conclusions:'''</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>136</th><td class="r"><span>== Data exchange conclusions: ==</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>143</th><th>137</th><td class="l"><span>&nbsp;* A namespace for file formats would be useful.</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>144</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>145</th><th> </th><td class="l"><span>&nbsp;* A namespace for column of tabular data would be useful.&nbsp; Could</span> </td>
+                      </tr><tr>
+                        <th>146</th><th> </th><td class="l"><span>&nbsp; &nbsp; also be used to describe data in other formats e.g. XML, though</span> </td>
+                      </tr><tr>
+                        <th>147</th><th> </th><td class="l"><span>&nbsp; &nbsp; this could be rather verbose.</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>138</th><td class="r"><span>&nbsp;* A namespace for column of tabular data would be useful.&nbsp; Could also be used to describe data in other formats e.g. XML, though this could be rather verbose.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>148</th><th>139</th><td class="l"><span>&nbsp;* Investigate whether the above exist.</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>149</th><th> </th><td class="l"><span>&nbsp; &nbsp; Ontology Lookup Service (http://www.ebi.ac.uk/ontology-lookup)</span> </td>
+                      </tr><tr>
+                        <th>150</th><th> </th><td class="l"><span>&nbsp; &nbsp; and/orLife Science Resource Name Project (http://www.lsrn.org)</span> </td>
+                      </tr><tr>
+                        <th>151</th><th> </th><td class="l"><span>&nbsp; &nbsp; applicable ?</span> </td>
+                      </tr><tr>
+                        <th>152</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>153</th><th> </th><td class="l"><span>&nbsp;* At the moment namespaces for columns is probably more important</span> </td>
+                      </tr><tr>
+                        <th>154</th><th> </th><td class="l"><span>&nbsp; &nbsp; than URIs for each data element in a column.</span> </td>
+                      </tr><tr>
+                        <th>155</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>156</th><th> </th><td class="l"><span>&nbsp;* Agreed that worthwhile to pass URIs to describe columns.&nbsp; Agreed that</span> </td>
+                      </tr><tr>
+                        <th>157</th><th> </th><td class="l"><span>&nbsp; arbitrary human-friendly names are also good.</span> </td>
+                      </tr><tr>
+                        <th>158</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>159</th><th> </th><td class="l"><span>&nbsp;* Agreed to dump all !BioMart/ !InterMine column headings out, find</span> </td>
+                      </tr><tr>
+                        <th>160</th><th> </th><td class="l"><span>&nbsp; &nbsp; the common/commonly-used ones and work on naming.</span> </td>
+                      </tr><tr>
+                        <th>161</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>162</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>163</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>164</th><th> </th><td class="l"><span>'''Discussion turned to genome builds:'''</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>140</th><td class="r"><span>&nbsp; &nbsp;* Ontology Lookup Service (http://www.ebi.ac.uk/ontology-lookup) and/orLife Science Resource Name Project (http://www.lsrn.org) applicable ?</span> </td>
+                      </tr><tr>
+                        <th> </th><th>141</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>142</th><td class="r"><span>&nbsp;* At the moment namespaces for columns is probably more important than URIs for each data element in a column.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>143</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>144</th><td class="r"><span>&nbsp;* Agreed that worthwhile to pass URIs to describe columns.&nbsp; Agreed that arbitrary human-friendly names are also good.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>145</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>146</th><td class="r"><span>&nbsp;* Agreed to dump all !BioMart/ !InterMine column headings out, find the common/commonly-used ones and work on naming.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>147</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>148</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>149</th><td class="r"><span></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>150</th><td class="r"><span>== Discussion turned to genome builds: ==</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>165</th><th>151</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>166</th><th>152</th><td class="l"><span>There is no-where to go to find out if entities/ coordinates come from</span> </td>
+                  </tr><tr>
+                          <th>167</th><th>153</th><td class="l"><span>the same versions of genomes.&nbsp; Agreed Versioning is important.</span> </td>
+                  </tr><tr>
+                          <th>168</th><th>154</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>169</th><th> </th><td class="l"><span>&nbsp; !BioMart/ UCSC do have versions</span> </td>
+                      </tr><tr>
+                        <th>170</th><th> </th><td class="l"><span>&nbsp; available but not necessarily using the same namespaces.</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>155</th><td class="r"><span>&nbsp; !BioMart/ UCSC do have versions available but not necessarily using the same namespaces.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>171</th><th>156</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>172</th><th>157</th><td class="l"><span>&nbsp; biomart has place-holders for versions and could easily expose these.</span> </td>
+                  </tr><tr>
+                          <th>173</th><th>158</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>174</th><th> </th><td class="l"><span>Issue with resources generated from'old' genome versions e.g. affy</span> </td>
+                      </tr><tr>
+                        <th>175</th><th> </th><td class="l"><span>chips: difficult to force people to use just one version of the</span> </td>
+                      </tr><tr>
+                        <th>176</th><th> </th><td class="l"><span>genome.</span> </td>
+                      </tr><tr>
+                        <th>177</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>178</th><th> </th><td class="l"><span>Can make gene identifiers unique by organism-specific prefix, or by</span> </td>
+                      </tr><tr>
+                        <th>179</th><th> </th><td class="l"><span>qualifier.</span> </td>
+                      </tr><tr>
+                        <th>180</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>181</th><th> </th><td class="l"><span>Ensembl (http://www.ensembl.org) does a good job and plans on</span> </td>
+                      </tr><tr>
+                        <th>182</th><th> </th><td class="l"><span>supporting all genomes.&nbsp; ensembl: systematic</span> </td>
+                      </tr><tr>
+                        <th>183</th><th> </th><td class="l"><span>about mapping their versions to others e.g. from UCSC.</span> </td>
+                      </tr><tr>
+                        <th>184</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>185</th><th> </th><td class="l"><span>Assembly version and ensembl gene-build version are sufficient to</span> </td>
+                      </tr><tr>
+                        <th>186</th><th> </th><td class="l"><span>resolve all ambiguities.</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>159</th><td class="r"><span>Issue with resources generated from'old' genome versions e.g. affy chips: difficult to force people to use just one version of the genome.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>160</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>161</th><td class="r"><span>Can make gene identifiers unique by organism-specific prefix, or by qualifier.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>162</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>163</th><td class="r"><span>Ensembl (http://www.ensembl.org) does a good job and plans on supporting all genomes.&nbsp; ensembl: systematic about mapping their versions to others e.g. from UCSC.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>164</th><td class="r"><span></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>165</th><td class="r"><span>Assembly version and ensembl gene-build version are sufficient to resolve all ambiguities.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>187</th><th>166</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>188</th><th>167</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="/wiki/Data_exchange?version=3#L199">…</a></th>
+                  <th><a href="/wiki/Data_exchange?version=4#L178">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>199</th><th>178</th><td class="l"><span>version.</span> </td>
+                  </tr><tr>
+                          <th>200</th><th>179</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>201</th><th> </th><td class="l"><span>'''Genome version summary:'''</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>180</th><td class="r"><span>== Genome version summary: ==</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>202</th><th>181</th><td class="l"><span>&nbsp;* Investigate whether is there a standard available for describing genome version</span> </td>
+                  </tr><tr>
+                          <th>203</th><th>182</th><td class="l"><span>&nbsp;* Consider whether to base naming on ensembl genome/ annotation versions</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="/wiki/Data_exchange?version=3#L205">…</a></th>
+                  <th><a href="/wiki/Data_exchange?version=4#L184">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>205</th><th>184</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>206</th><th>185</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>207</th><th> </th><td class="l"><span>'''Thoughts on RDF:'''</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>186</th><td class="r"><span>== Thoughts on RDF: ==</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>208</th><th>187</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>209</th><th>188</th><td class="l"><span>If everyone is expressing their data in RDF with a common underlying</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+      </div>
+  </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

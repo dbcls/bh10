@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      StateOfPerlAndRdf – BioHackathon 2010
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="alternate" href="/wiki/StateOfPerlAndRdf?version=5&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="/wiki/StateOfPerlAndRdf" title="View latest version" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" />
+        <link rel="prev" href="/wiki/StateOfPerlAndRdf?version=4" title="Version 4" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search BioHackathon 2010" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon3.dbcls.jp/"><img src="http://hackathon3.dbcls.jp/raw-attachment/wiki/LogoGallery/trac_logo.png" alt="DBCLS BioHackathon 2010" width="200" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="/wiki/StateOfPerlAndRdf?version=4" title="Version 4">Previous Version</a></span></li><li><a href="/wiki/StateOfPerlAndRdf" title="View latest version">View Latest Version</a></li><li><span class="missing">Next Version &rarr;</span></li><li class="last"><a href="/wiki/StateOfPerlAndRdf?action=diff&amp;version=5">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 5 (modified by tkappler, <a class="timeline" href="/timeline?from=2010-03-12T02%3A57%3A42%2B0900&amp;precision=second" title="2010-03-12T02:57:42+0900 in Timeline">15 years</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+Integrated <a class="wiki" href="/wiki/SerializationPerlModules">SerializationPerlModules</a> by yy.
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <h1 id="TheStateofRDFsupportinPerl">The State of RDF support in Perl</h1>
+<h2 id="Experimenting">Experimenting</h2>
+<p>
+tkappler created a git repository <a class="ext-link" href="http://github.com/thomas11/perl-rdf-experiments"><span class="icon"> </span>http://github.com/thomas11/perl-rdf-experiments</a> to experiment with RDF in Perl, see what existing modules can do, etc. Biohackathoners, please fork and contribute!
+</p>
+<h2 id="Existingmodules">Existing modules</h2>
+<p>
+Also see <a class="ext-link" href="http://www.perlrdf.org"><span class="icon"> </span>http://www.perlrdf.org</a>!
+</p>
+<h3 id="RDF::Query">RDF::Query</h3>
+<p>
+Generic query interface working with several RDF modules. Powerful but complex. Am working with the author, Greg Williams of RDF::Trine, on some docs/tutorials.
+</p>
+<p>
+It can talk to a Sparql endpoint via the HTTP Sparql protocol.
+</p>
+<h3 id="RDF::Trine">RDF::Trine</h3>
+<p>
+<a class="ext-link" href="http://search.cpan.org/~gwilliams/RDF-Trine-0.117/"><span class="icon"> </span>RDF::Trine</a> is a complete RDF package written in Perl. It is the only one that has parsers for RDF serializations other than RDF/XML (including JSON), and that has a SPARQL wrapper. It implements the
+<a class="ext-link" href="http://www.w3.org/TR/2008/REC-rdf-sparql-protocol-20080115/#query-bindings-http"><span class="icon"> </span>SPARQL protocol</a> and can thus talk to any SPARQL endpoint.
+</p>
+<p>
+Last release: 0.117, 2010-02-04.
+</p>
+<p>
+tkappler is in touch with the author, Gregory Williams, and it's a pleasure to work with him. Some patches contributed. Here's some of his advice that I intend to include in some more in-depth, step-by-step writeups.
+</p>
+<blockquote class="citation">
+<p>
+ In general you should be using RDF::Query for retrieving patterns
+ that are more complex than a single triple pattern. get_pattern
+ exists mostly for RDF::Query to use when the underlying store is
+ expected to be able to execute a complex join query more efficiently
+ than the perl implementation (for example, the DBI-based storage
+ backend). It's never been a part of the code that has felt very
+ stable, so I'd suggest always using the RDF::Query interface for
+ situations where get_statements doesn't do as much as you need.
+</p>
+</blockquote>
+<p>
+<strong>yy's serialization notes:</strong> The output (RDF/XML) has some redundancies. The module groups statements that share the subject, and embraces them by "&lt;rdf:Description&gt;" tags. It's OK, but declaration of user-defined namespaces is not at the first "&lt;rdf:RDF&gt;" tag, but at each rdf-description tag. This will probably be configurable from the next release, though. Also, the nesting level is one, and you cannot define a QNAME of a name space as "foaf" or "rdfs", but the module defines arbitrarily.
+Even so, it's more compact than that of RDF::Redland.
+</p>
+<h4 id="RDF::TrineShortcuts">RDF::<a class="missing wiki">TrineShortcuts?</a></h4>
+<p>
+<a class="ext-link" href="http://search.cpan.org/perldoc?RDF::TrineShortcuts"><span class="icon"> </span>A toolkit for RDF::Trine</a> that implements common tasks. Makes a lot of my hackathon work redundant, but I discovered it only afterward...
+</p>
+<p>
+It comes with two command line tools: trapper to read and write RDF and count triples (-c), and toquet to send a Sparql query to an endpoint over HTTP.
+</p>
+<h3 id="RDF::Redland">RDF::Redland</h3>
+<p>
+<a class="ext-link" href="http://search.cpan.org/~djbeckett/Redland-1.0.5.4/redland/docs/redland.pod"><span class="icon"> </span>RDF::Redland</a> is a wrapper for the [Redland C library](<a class="ext-link" href="http://librdf.org/"><span class="icon"> </span>http://librdf.org/</a>). Looks pretty complete.
+</p>
+<p>
+I couldn't build it as I have the new version 0.9.17 of librasqal, the query library for Redland, which is API incompatible with its predecessor on which RDF::Redland apparently depends.
+</p>
+<p>
+Another hint for building it is that the test script assumes that libraries generated by swig are in the shared library paths.
+After taking care of it by adding the following paths to LD_LIBRARY_PAT, no problem occurred for yy:
+</p>
+<pre class="wiki">Redland-1.0.5.4/redland/rasqal/src/.libs
+Redland-1.0.5.4/redland/raptor/src/.libs
+</pre><h3 id="Test::RDF">Test::RDF</h3>
+<p>
+<a class="ext-link" href="http://search.cpan.org/~mndrix/Test-RDF-0.0.3/lib/Test/RDF.pm"><span class="icon"> </span>Test::RDF</a> supports checking for data validity, and comparing two graphs for equivalence. It does not explain the differences when they are not equal, however. Builds on RDF::Redland.
+</p>
+<h3 id="RDF::Core">RDF::Core</h3>
+<p>
+Another pure Perl RDF framework. <a class="ext-link" href="http://search.cpan.org/~dpokorny/RDF-Core/"><span class="icon"> </span>CPAN</a>. Last release: 0.51, 2007-02-19, which probably means that it's not very much used or supported. Use RDF::Trine unless you have a good reason not to.
+</p>
+<p>
+Notes:
+</p>
+<ul><li>A pretty complete RDF package written in Perl, including parser and serializer, model with its own query language, and storage with either Berkeley DB, in-memory, or PostgreSQL as backend.
+</li><li>It's unfortunate that it has its own query language, should be SPARQL.
+</li><li>RDF/XML serialization and parsing only.
+</li><li>Has a Schema module to work with RDFS, didn't try it.
+</li><li>Greg Williams of RDF::Trine, the other, more complete and up-to-date RDF framework, tried to contribute to RDF::Core but was
+"<a class="ext-link" href="http://kasei.us/archives/2006/09/23/perl_performance"><span class="icon"> </span>met with resistance, rejection, or frustratingly long delays</a>". Not
+good.
+</li></ul><p>
+<strong>yy's serialization notes:</strong> RDF::Core is a bit old and cannot handle a blank node (rdf:nodeID), but the serialized output (RDF/XML) is better organized than the others. You cannot define a QNAME of a name space.
+</p>
+<h3 id="RDF::Simple">RDF::Simple</h3>
+<p>
+<a class="ext-link" href="http://search.cpan.org/~mthurn/RDF-Simple-0.415/"><span class="icon"> </span>RDF::Simple (0.415)</a> - very basic.
+</p>
+<p>
+<strong>yy's serialization notes:</strong> RDF::Simple is literally "simple", so IMO it is useful only for understanding how serialization works, but not for a practical use. As the module page says, it doesn't care the node type. You cannot declare whether a node is a URI or literal. On the other hand, a serialized output (RDF/XML) is better organized (more nested and size is smaller) than RDF::Trine and RDF::Redland.
+</p>
+<h3 id="Onto-Perl">Onto-Perl</h3>
+<p>
+<a class="ext-link" href="http://search.cpan.org/~easr/ONTO-PERL-1.14/"><span class="icon"> </span>ONTO-PERL</a> by fellow Biohackathoner Erick Antezana can translate between OBO, OBO-in-OWL, and RDF (among other things).
+</p>
+<h3 id="Wrappers">Wrappers</h3>
+<ul><li><a class="ext-link" href="http://search.cpan.org/~mndrix/RDF-Sesame-0.17/lib/RDF/Sesame.pm"><span class="icon"> </span>RDF-Sesame</a> is a wrapper for the REST API of <a class="ext-link" href="http://openrdf.org/"><span class="icon"> </span>Sesame</a>, to ask <a class="ext-link" href="http://www.openrdf.org/doc/sesame/users/ch06.html"><span class="icon"> </span>SerQL</a>  queries and get the results in tabular form.
+</li><li><a class="ext-link" href="http://search.cpan.org/~ekawas/MOBY-1.12/"><span class="icon"> </span>MOBY</a>, a <a class="missing wiki">BioMoby?</a> client, has MOBY::RDF.
+</li></ul><h2 id="FutureWork">Future Work</h2>
+<p>
+A lot. Add if you think of something.
+</p>
+<p>
+<a class="missing wiki">UniProt?</a> has a very simple RDF reader that only works with <a class="missing wiki">UniProt?</a> RDF. It's still useful as it's very easy to use, tkappler is working on packaging it up.
+</p>
+
+        
+        
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="/wiki/StateOfPerlAndRdf?version=5&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+[[PageOutline]] 
+= Tools =
+
+Creating generic-yet-usable end user tools that work directly with the RDF graph data model.
+
+== Open Bio* ==
+
+ * Common API
+  * User-side APIs
+  * DB-side APIs (for triple store, Linked Data on the web)
+
+ * Programs
+  * Data format converters
+  * Tools for import/export/search
+
+ * Projects
+  * BioRuby
+  * !BioPython
+  * !BioPerl
+  * !BioJava
+  * !BioLib
+
+== Text mining ==
+
+ * GO !PubMed
+   * NER for genes, diseases, drugs
+ * MEDIE
+ * Query builder from natural language
+
+== End-user software ==
+
+ * Cytoscape
+  * RDFScape Plugin
+  * BioPAX Reader
+ * !BioMart
+ * !InterMine
+ * Galaxy
+ * G-language
+
+== Tutorial ==
+* SparqlTutorial
+
+[wiki:Tools/EndUserClients Development plan and idea for end-user clients]
+
+== Basic Libraries ==
+ * [http://librdf.org/raptor/ Raptor RDF Parser Library]
+   * [http://librdf.org/raptor/rapper.html rapper − Raptor RDF parsing and serializing utility]
+ * [http://librdf.org/rasqal/ Rasqal RDF Query Library]
+ * [http://clarkparsia.com/ pellet] owl reasoning and data validation

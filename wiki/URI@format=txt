@@ -1,0 +1,18 @@
+[[PageOutline]] 
+
+== Which URI to use in your RDF? ==
+
+=== Guideline 1: Be polite. ===
+When referring to third-party data, use the URL that the data provider uses.
+
+Ideally there should be no HTTP GET arguments in that URL, but if there are to avoid ambiguity for string comparison sort them in alphabetical order (e.g. http://www.example.com/?a=100&b=2 sorting a before b).  When minting new URLs for use as URIs please avoid this.
+
+=== Guideline 2: If there is no official URL ===
+Often a provider offers multiple URLs for the same resource. e.g. the entrez query http://www.ncbi.nlm.nih.gov/sites/entrez?Db=pubmed&Cmd=ShowDetailView&TermToSearch=22177139 is the same as http://www.ncbi.nlm.nih.gov/pubmed/22177139 (the community recommend to use the later) or http://www.ebi.uniprot.org/entry/P05067 is the same as http://purl.uniprot.org/uniprot/P05067 (where !UniProt asks you use the later, which will give RDF if your HTTP header requests it). 
+
+Document the URI pattern you use on freebase, to encourage uniformity. Exact Freebase URL to be confirmed, see http://www.freebase.com/view/user/biohackathon/
+
+If you want to link to a provider for which the official URL is not clear, document the one you use on Freebase. State that you do not know if it is supported. Other providers should follow this first-come-first-served convention UNTIL the original provide states otherwise (see Guideline 1).
+
+=== Guideline 3: Confusion ===
+Sometimes there is more than provider and thus more than one official URI for a record about a common concept, which can happen with consortia. e.g. PDB is available at PDBj, PDBe, RCSB PDB. Then choose the one that you prefer. When the multiple URL's talk about the same concept consider adding owl:sameAs references to each to encode that these URL's talk about the same thing. When they are strongly related but have important differences in content/concept consider using skos:exactMatch or rdfs:seeAlso references.

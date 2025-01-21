@@ -1,0 +1,40 @@
+[[PageOutline]] 
+
+= Hackathon Outputs = 
+
+== Day 1 (Tuesday) ==
+   * The first activity of the group was to watch [http://www.ted.com/talks/tim_berners_lee_on_the_next_web.html Tim Berner Lee presentation about Linked Data at TED] The whole group also shouted RAW DATA NOW for the the life science.
+   * [wiki:RDF_Lecture RDF primer lecture by François Belleau]
+   * SadiDayOne
+   * TextMiningDayOne
+   * OpenBio
+   * (ongoing: [wiki:ImplementationBootcamp FAQ])
+
+== Day 2 (Wednesday) ==
+   * [wiki:SPARQL_lecture SPARQL primer lecture by François Belleau]
+   * TextMiningDayTwo
+   * 16:30  [wiki:Data_Provider_Session Data provider session]
+   * NextGenerationSequencing
+   * (ongoing: [wiki:ImplementationBootcamp FAQ])
+
+== Day 3 (Thursday) ==
+  * Predicate
+  * [wiki:DDBJ-KEGG-PDBj]
+  * TextMiningDayThree
+  * (ongoing: [wiki:ImplementationBootcamp FAQ])
+
+== Day 4 (Friday) ==
+  * TextMiningDayFour
+  * (ongoing: [wiki:ImplementationBootcamp FAQ])
+
+== Hacks ==
+ * [wiki:G-languageProject]
+ * [wiki:SystemsBiologySBML]
+ * [wiki:VirutuosoQuickPrimer]
+ * VisualizationAndInteraction
+
+
+
+
+  * [wiki:GFF3toRDF]
+  * [wiki:PDB2RDF]

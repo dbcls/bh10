@@ -1,0 +1,11 @@
+= Whatizit =
+
+Use [http://www.ebi.ac.uk/webservices/whatizit/helpws.jsp SOAP web service] as described [http://www.ebi.ac.uk/webservices/whatizit/helpws.jsp here].
+
+= Reflect =
+
+Use [http://reflect.cbs.dtu.dk/restAPI.html REST API] as described [http://reflect.cbs.dtu.dk/restAPI.html here].
+
+= Medie =
+
+See TextMiningMedieAndEnju documentation.

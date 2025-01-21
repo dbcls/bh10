@@ -1,0 +1,57 @@
+[[PageOutline]] 
+= Stores =
+ * 35 Database/datastores and 5 SPARQL tools listed at http://www.semantic-web.at/30.9917.semantic-web-tools.htm
+ * Large Triple Stores http://esw.w3.org/topic/LargeTripleStores
+== Existing storage ==
+
+ * Triple stores
+   * [http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/ Virtuoso Semantic Web Tools] [UbuntuInstallation] [SparqlTutorial]
+     * $ cvs -d:pserver:anonymous@virtuoso.cvs.sourceforge.net:/cvsroot/virtuoso co -r VOS-6_1_0 virtuoso-opensource 
+   * [http://4store.org/ 4store]
+      * [http://dl.dropbox.com/u/152468/4store-1.0.2.dmg Mac OS X 10.6 Mach-O 64-bit executable x86_64 package]
+      * [http://ftp1.de.freebsd.org/Publications/CEUR-WS/Vol-517/ssws09-paper7.pdf Steve Harris, et al., 4store: The Design and Implementation of a Clustered RDF Store, SSWS09] 
+   * !AllegroGraph
+   * [http://www.openrdf.org/ Sesame]
+   * [http://jena.sourceforge.net/ Jena]
+   * [http://www.joseki.org/ Joseki]
+   * [http://librdf.org Redland]
+   * [http://mulgara.org Mulgara]
+   * [http://sourceforge.net/projects/bigdata/ bigdata] 
+   * [http://www.ontotext.com/owlim/]
+   * [http://arc.semsol.org/ ARC RDF classes for PHP - Easy RDF and SPARQL for LAMP systems]
+   * ORACLE
+   * :
+
+ * RDB, NoSQL, KVS (Key-value store) ?
+  * [http://1978th.net/tokyocabinet/index.html TokyoCabinet] is a library of routines for managing a database. The database is a simple data file containing records, each is a pair of a key and a value. Every key and value is serial bytes with variable length. Both binary data and character string can be used as a key and a value. There is neither concept of data tables nor data types. Records are organized in hash table, B+ tree, or fixed-length array.
+  * [http://couchdb.apache.org/ CouchDB] is a document-oriented database that can be queried and indexed in a !MapReduce fashion using !JavaScript. CouchDB also offers incremental replication with bi-directional conflict detection and resolution.
+  * [http://code.google.com/p/terrastore/ Terrastore] is based on Terracotta, so it relies on an industry-proven, fast (and cool) clustering technology. Is a modern document store which provides advanced scalability and elasticity features without sacrificing consistency. 
+  * [http://neo4j.org/ Neo4j] is a graph database. It is an embedded, disk-based, fully transactional Java persistence engine that stores data structured in graphs rather than in tables.
+  * MongoDB
+
+== Query interfaces ==
+
+ * SPARQL 
+   * [http://relfinder.semanticweb.org/ RelFinder]
+   * [http://www.sheaflight.com/browser/ Sheaflight]
+   * [http://visinav.deri.org/ VisiNav]
+   * [http://www.simile-widgets.org/exhibit SIMILE/Exhibit]
+   * [http://lod.openlinksw.com/fct]
+   * [http://lod.openinksw.com/isparql]
+   * [http://www.tecweb.inf.puc-rio.br/explorator]
+   * [http://www4.wiwiss.fu-berlin.de/pubby/ Pubby]
+ * SPARQL endpoints
+   * [http://www.freebase.com/view/user/bio2rdf/public/sparql SPARQL endpoint provided by Bio2RDF]
+   * http://atlas.bio2rdf.org/sparql 
+   * http://beta.dbcls.jp/virtuoso/sparql
+   * http://lod.openlinksw.com/sparql
+   * http://rdf.myexperiment.org/sparql
+
+
+
+
+== Evaluation ==
+
+ * Scale?
+ * Speed
+ * Interface

@@ -1,0 +1,299 @@
+http://4store.org/trac/wiki/Documentation 
+
+= Installation =
+
+For Mac OS X with MacPorts user.
+{{{
+git clone git@github.com:nakao/4store.git
+cd 4store
+./configure
+}}}
+
+{{{
+port install pkg-config
+port install raptor  
+port install rasqal  
+port install glib2 
+port install libxml2 
+port install pcre 
+port install ncurses  
+port instal readline  
+port install zlib 
+}}}
++universal variant configuration may be useful.
+Install
+{{{
+./configure
+make
+make test
+}}}
+
+Making a Mac .dmg package
+{{{
+make macdmg
+}}}
+
+or
+
+Install
+{{{
+sudo make install
+}}}
+
+
+= Usage =
+4store Commands 
+{{{
+$ ls /Applications/4store.app/Contents/MacOS/bin/
+4s-backend*          4s-cluster-create*               4s-httpd*
+4s-backend-copy*     4s-cluster-destroy*              4s-import*
+4s-backend-destroy*  4s-cluster-file-backup*          4s-info*
+4s-backend-info*     4s-cluster-info*                 4s-query*
+4s-backend-passwd*   4s-cluster-replication-disable*  4s-resolve*
+4s-backend-setup*    4s-cluster-start*                4s-restore*
+4s-bind*             4s-cluster-stop*                 4s-reverse-bind*
+4s-cluster-cache*    4s-delete-model*                 4s-size*
+4s-cluster-copy*     4s-dump*                         4s-update*
+}}}
+
+
+To setup a knowledge base (named demo) by 4s-backend-setup 
+http://4store.org/trac/wiki/CreateDatabase
+
+
+{{{
+$ 4s-backend-setup demo
+4store[39388]: backend-setup.c:176 erased files for KB demo
+4store[39388]: backend-setup.c:301 created RDF metadata for KB demo
+}}}
+
+You can find the database files at /var/lib/4store/demo .
+
+
+
+To boot a backend process by 4s-backend
+{{{
+4s-backend demo
+}}}
+
+
+
+To import triples by 4s-import
+http://4store.org/trac/wiki/ImportData
+
+{{{
+curl -O 
+$ 4s-import -v demo data/tiger/tiger_features.rdf
+removing old data
+Reading <file:///Users/nakao/Applications/4store/4store/data/tiger/tiger_features.rdf>;
+Pass 1, processed 748 triples (748)
+Pass 2, processed 748 triples, 90250 triples/s
+Updating index
+Index update took 1.469478 seconds
+Imported 748 triples, average 505 triples/s
+}}}
+
+
+4s-query is a interactive query shell
+http://4store.org/trac/wiki/Query
+
+{{{
+$ 4s-query demo4store> SELECT * WHERE {?s ?p ?o}
+#EOQ
+?s     ?p     ?o
+<http://www.census.gov/tiger/2002/CFCC/D85>;     <http://www.w3.org/2000/01/rdf-schema#subClassOf>;     <http://www.census.gov/tiger/2002/CFCC/D8>;
+<http://www.census.gov/tiger/2002/CFCC/F40>;     <http://www.w3.org/2000/01/rdf-schema#subClassOf>;     <http://www.census.gov/tiger/2002/CFCC/F4>;
+<http://www.census.gov/tiger/2002/CFCC/E0>;     <http://www.w3.org/2000/01/rdf-schema#subClassOf>;     <http://www.census.gov/tiger/2002/CFCC/E>;
+}}}
+Ctrl+D
+
+To query in one-liner
+{{{
+$ 4s-query demo 'SELECT * WHERE { ?s ?p ?o } LIMIT 1'
+<?xml version="1.0"?>
+<sparql xmlns="http://www.w3.org/2005/sparql-results#">;
+  <head>
+    <variable name="s"/>
+    <variable name="p"/>
+    <variable name="o"/>
+  </head>
+  <results>
+    <result>
+      <binding name="s"><uri>http://www.census.gov/tiger/2002/CFCC/D85</uri></binding>;
+      <binding name="p"><uri>http://www.w3.org/2000/01/rdf-schema#subClassOf</uri></binding>;
+      <binding name="o"><uri>http://www.census.gov/tiger/2002/CFCC/D8</uri></binding>;
+    </result>
+  </results>
+</sparql>
+}}}
+
+in JSON format
+{{{
+$ 4s-query -f json demo 'SELECT * WHERE { ?s ?p ?o } LIMIT 1'
+{"head":{"vars":["s","p","o"]},
+ "results": {
+  "bindings":[
+   {"s":{"type":"uri","value":"http://www.census.gov/tiger/2002/CFCC/D85";},
+    "p":{"type":"uri","value":"http://www.w3.org/2000/01/rdf-schema#subClassOf";},
+    "o":{"type":"uri","value":"http://www.census.gov/tiger/2002/CFCC/D8";}}
+  ]
+ }}
+}}}
+[http://www.w3.org/TR/rdf-sparql-json-res/ Serializing SPARQL Query Results in JSON]
+
+in SPARQL-RESULTS format
+
+{{{
+$ 4s-query -f sparql demo 'SELECT * WHERE { ?s ?p ?o } LIMIT 1'
+<?xml version="1.0"?>
+<sparql xmlns="http://www.w3.org/2005/sparql-results#">;
+  <head>
+    <variable name="s"/>
+    <variable name="p"/>
+    <variable name="o"/>
+  </head>
+  <results>
+    <result>
+      <binding name="s"><uri>http://www.census.gov/tiger/2002/CFCC/D85</uri></binding>;
+      <binding name="p"><uri>http://www.w3.org/2000/01/rdf-schema#subClassOf</uri></binding>;
+      <binding name="o"><uri>http://www.census.gov/tiger/2002/CFCC/D8</uri></binding>;
+    </result>
+  </results>
+</sparql>
+}}}
+[http://www.w3.org/TR/rdf-sparql-XMLres/ SPARQL Query Results XML Format]
+
+
+in a text format
+
+{{{
+$ 4s-query -f text demo 'SELECT * WHERE { ?s ?p ?o } LIMIT 1'
+?s     ?p     ?o
+<http://www.census.gov/tiger/2002/CFCC/D85>;     <http://www.w3.org/2000/01/rdf-schema#subClassOf>;     <http://www.census.gov/tiger/2002/CFCC/D8>;
+}}}
+
+in RDF test case format (Turtle)
+
+{{{
+$ 4s-query -f testcase demo 'SELECT * WHERE { ?s ?p ?o } LIMIT 1'
+@prefix rs: <http://www.w3.org/2001/sw/DataAccess/tests/result-set#>; .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>; .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>; .
+
+[] rdf:type rs:ResultSet ;
+   rs:resultVariable "s", "p", "o" ;
+   rs:solution [
+      rs:binding [ rs:variable "s" ;
+                   rs:value <http://www.census.gov/tiger/2002/CFCC/D85> ] ;
+      rs:binding [ rs:variable "p" ;
+                   rs:value <http://www.w3.org/2000/01/rdf-schema#subClassOf> ] ;
+      rs:binding [ rs:variable "o" ;
+                   rs:value <http://www.census.gov/tiger/2002/CFCC/D8> ]
+   ] .
+}}}
+[http://www.w3.org/TeamSubmission/turtle/ Turtle]
+
+
+4s-httpd for a SPARQL endpoint
+{{{
+$ 4s-httpd -p 8000 demo
+}}}
+
+
+[[Image(http://img.skitch.com/20100106-ey6gcjsu42qsege2gimq316ia6.jpg)]]
+
+[[Image(http://img.skitch.com/20100106-nsq5ir2j1c6ynbkmif43t5a9p8.jpg)]]
+
+[[Image(http://img.skitch.com/20100106-cb9dq16jare8b33q82exaq12c.jpg)]]
+
+[[Image(http://img.skitch.com/20100106-x8hfwfdjt3xkexyn9nwcg346nh.jpg)]]
+
+[[Image(http://img.skitch.com/20100106-8g2w2r4tsycy8sdwrnxa6966hp.jpg)]]
+
+
+
+RESTful interface
+
+PUT
+{{{
+$ curl -T file.rdf http://localhost:8000/sparql/file.rdf
+}}}
+
+DELETE
+{{{
+$ curl -X DELETE http://localhost:8000/sparql/file.rdf
+}}}
+Note: http://4store.org/trac/wiki/TODO
+
+
+Connecting from script language
+
+http://4store.org/trac/wiki/ClientLibraries
+available php, python, ruby and Java (no Perl)
+
+To install the ruby client
+{{{
+$ gem build 4store-ruby.gemspec
+WARNING:  no rubyforge_project specified
+  Successfully built RubyGem
+  Name: 4store-ruby
+  Version: 0.0.3
+  File: 4store-ruby-0.0.3.gem
+$ sudo gem install 4store-ruby-0.0.3.gem
+}}}
+
+Usage
+{{{
+>> require 'four_store/store'
+=> true
+>> FourStore
+=> FourStore
+>> FourStore::Store
+=> FourStore::Store
+>> ep = FourStore::Store.new("http://localhost:8000/sparql/")
+=> #<FourStore::Store:0x101763890 @endpoint=#<URI::HTTP:0x101763548 URL:http://localhost:8000/sparql/>>;
+>> res = ep.select("SELECT * WHERE { ?s ?p ?o } LIMIT 10")
+?> "
+"
+=> "\n"
+>> require 'pp'
+=> true
+>> pp res
+[{"o"=>"http://www.census.gov/tiger/2002/CFCC/D8";,
+  "p"=>"http://www.w3.org/2000/01/rdf-schema#subClassOf";,
+  "s"=>"http://www.census.gov/tiger/2002/CFCC/D85";},
+ {"o"=>"http://www.census.gov/tiger/2002/CFCC/F4";,
+  "p"=>"http://www.w3.org/2000/01/rdf-schema#subClassOf";,
+  "s"=>"http://www.census.gov/tiger/2002/CFCC/F40";},
+ {"o"=>"http://www.census.gov/tiger/2002/CFCC/E";,
+  "p"=>"http://www.w3.org/2000/01/rdf-schema#subClassOf";,
+  "s"=>"http://www.census.gov/tiger/2002/CFCC/E0";},
+ {"o"=>"http://www.census.gov/tiger/2002/CFCC/B";,
+  "p"=>"http://www.w3.org/2000/01/rdf-schema#subClassOf";,
+  "s"=>"http://www.census.gov/tiger/2002/CFCC/B4";},
+ {"o"=>"http://www.census.gov/tiger/2002/CFCC/D2";,
+  "p"=>"http://www.w3.org/2000/01/rdf-schema#subClassOf";,
+  "s"=>"http://www.census.gov/tiger/2002/CFCC/D27";},
+ {"o"=>"http://www.census.gov/tiger/2002/CFCC/A";,
+  "p"=>"http://www.w3.org/2000/01/rdf-schema#subClassOf";,
+  "s"=>"http://www.census.gov/tiger/2002/CFCC/A5";},
+ {"o"=>"http://www.census.gov/tiger/2002/CFCC/A2";,
+  "p"=>"http://www.w3.org/2000/01/rdf-schema#subClassOf";,
+  "s"=>"http://www.census.gov/tiger/2002/CFCC/A21";},
+ {"o"=>"http://www.census.gov/tiger/2002/CFCC/H7";,
+  "p"=>"http://www.w3.org/2000/01/rdf-schema#subClassOf";,
+  "s"=>"http://www.census.gov/tiger/2002/CFCC/H70";},
+ {"o"=>"http://www.census.gov/tiger/2002/CFCC/B5";,
+  "p"=>"http://www.w3.org/2000/01/rdf-schema#subClassOf";,
+  "s"=>"http://www.census.gov/tiger/2002/CFCC/B52";},
+ {"o"=>"http://www.census.gov/tiger/2002/CFCC/D4";,
+  "p"=>"http://www.w3.org/2000/01/rdf-schema#subClassOf";,
+  "s"=>"http://www.census.gov/tiger/2002/CFCC/D43";}]
+=> nil
+}}}
+
+Methods in FourStore::Store class.
+{{{
+>> FourStore::Store.instance_methods - Object.methods
+=> ["delete", "add", "set", "select", "load"]
+}}}

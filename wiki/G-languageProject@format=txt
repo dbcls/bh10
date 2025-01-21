@@ -1,0 +1,54 @@
+[[PageOutline]] 
+
+= G-language Bookmarklet =
+
+== Participants ==
+
+ * Kazuharu Arakawa
+ * Nobuhiro Kido
+ * Kazuki Oshita
+ * Nobuaki Kono (remote participation)
+
+== Overview ==
+
+ * Create a bookmark with the following in the address field:
+
+{{{
+javascript:(function(){var%20url='http://www.g-language.org/cube/cube.js';if(!url.match(/\?/))url+='?t='+(new%20Date()).getTime();var%20d=document;var%20e=d.createElement('script');e.charset='utf-8';e.src=url;d.getElementsByTagName('head')[0].appendChild(e);})();
+}}}
+
+
+ * For detailed documentation about the tool, see http://www.g-language.org/wiki/bookmarklet.
+
+
+== Philosophy ==
+=== Ease and amusement for use ===
+Searches and database queries nowadays mostly take place on the WWW. Therefore, a generic querying interface should be able to run on any website at the time of need. Moreover, it should run without any installation of specialized software or plugin. G-language Bookmarklet is therefore implemented as a bookmarklet coded with HTML/CSS/Javascript, runs on almost all browsers, and can be invoked from any websites. Users can simply highlight the words of interest and invoke the bookmarklet to search that term in numerous biological databases as well as in websites such as Wikipedia, Google, and Eijiro (Japanese-English dictionary).
+
+The ring interface and availability of icons allows direct visual understanding at a glance, and the sound feedback gives a sense of control for the tool. The ring interface is adopted from the game "Secrets of Mana" by SQUARE ENIX Co. Ltd., and it is an entertaining interface to use.
+
+=== Querying interface for the Triples ===
+Semantic Web is based on the concept of triples. Each data is represented as the Triple (Subject - Predicate - Object), and the connection of these triples form a gigantic graph of linked data. Therefore, a feasible interface to query the data is to start from a keyword (Subject), display a list of available predicates related to the term, and jump to a list of objects. Ring interface is an effective implementation for this purpose, whereby the predicates and objects are displayed as a series of rings. Each ring contains a limited set of possible connections for the given data, shown graphically with icons.
+
+=== SW is a complement to existing data ===
+Semantic Web should be a complement to existing data, as opposed to being the replacement, at least until this new technology is adopted by a wide range of users. Meanwhile, data in biology is mostly already linked, well curated in major data providers such NCBI, EBI, and KEGG-DDBJ-PDBJ. So we provide a unique and consistent intuitive user interface for all of these. There is Google and Wikipedia, queries for Entrez, EB-eye, and bfind, and SPARQL wrapper around bio2rdf. In this way, users can take advantage of the semantic web coherently with existing data.
+
+=== Semantic web is a small world and scale free ===
+Basically semantic web is an upgraded version of WWW, where all data get linked in addition to the web pages that are already linked. Therefore, likewise the WWW, semantic web will also be a small world, and will be a scale-free network. In such network, large hubs of information exist, that are linked to a large number of data. Hubs are known to grow by rich-get-richer model, so it is a modest assumption that the large data providers such as NCBI, EBI, and KEGG will continue to be the largest hubs in the semantic biology web. Use of hubs and links between the hubs is the easiest way to jump around the small world, so the availability of existing linked data and query interface for NCBI, EBI and KEGG will complement queries in the semantic web.
+
+=== Multi-touch ready ===
+Ring menu graphically displays a number of choices on the screen. It is a more direct representation of available choices than simple lists or context menus, and is a more feasible user interface for multi-touch user interface, which is expected to be more popular in the coming days.
+
+== To Do ==
+ * ~~merge EB-eye support~~
+ * ~~merge sequence input (BLAT to SwissProt)~~
+ * ~~merge icons with number counts~~
+ * ~~EMBOSS support~~
+ * ~~KBWS support~~
+ * ~~customizable user-defined rings~~
+ * infinite traversal for bio2rdf
+ * query filtering mode for bio2rdf
+ * input interpretation for organism names
+
+== Possible Additions ==
+ * support for other RDF-store (in addition to bio2rdf)

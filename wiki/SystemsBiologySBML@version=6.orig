@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      SystemsBiologySBML – BioHackathon 2010
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="alternate" href="/wiki/SystemsBiologySBML?version=6&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="/wiki/SystemsBiologySBML" title="View latest version" />
+        <link rel="next" href="/wiki/SystemsBiologySBML?version=7" title="Version 7" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" />
+        <link rel="prev" href="/wiki/SystemsBiologySBML?version=5" title="Version 5" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search BioHackathon 2010" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon3.dbcls.jp/"><img src="http://hackathon3.dbcls.jp/raw-attachment/wiki/LogoGallery/trac_logo.png" alt="DBCLS BioHackathon 2010" width="200" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="/wiki/SystemsBiologySBML?version=5" title="Version 5">Previous Version</a></span></li><li><a href="/wiki/SystemsBiologySBML" title="View latest version">View Latest Version</a></li><li><span><a class="next" href="/wiki/SystemsBiologySBML?version=7" title="Version 7">Next Version</a> &rarr;</span></li><li class="last"><a href="/wiki/SystemsBiologySBML?action=diff&amp;version=6">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 6 (modified by ogishima, <a class="timeline" href="/timeline?from=2010-02-12T19%3A19%3A33%2B0900&amp;precision=second" title="2010-02-12T19:19:33+0900 in Timeline">15 years</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+--
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <h1 id="SystemsBiologySBML">SystemsBiologySBML</h1>
+<p>
+</p><div class="wiki-toc"><ol><li><a href="#SystemsBiologySBML">SystemsBiologySBML</a></li><li>
+<a href="#Datasets">Datasets</a></li><li>
+<a href="#Convertor">Convertor</a><ol><li><ol><li><a href="#BioPAXLevel3">BioPAX Level 3</a></li><li>
+<a href="#BioPAXLevel2">BioPAX Level 2</a></li></ol></li></ol></li><li>
+<a href="#Store">Store</a><ol><li><ol><li><a href="#a4store">4store</a></li><li>
+<a href="#Virtuoso">Virtuoso</a></li></ol></li></ol></li><li>
+<a href="#Query">Query</a><ol><li><ol><li><a href="#a4store1">4store</a></li><li>
+<a href="#Virtuoso1">Virtuoso</a></li></ol></li></ol></li><li>
+<a href="#SPARQLendpoint">SPARQL end point</a></li><li>
+<a href="#Usecasegoal">Usecase (goal)</a></li><li>
+<a href="#ProblemsToDo">Problems &amp; ToDo?</a></li><li>
+<a href="#Visualization">Visualization</a></li><li>
+<a href="#Member">Member</a></li></ol></div><p> 
+</p>
+<p>
+In systems biology field, most curated models are developed by for example <a class="ext-link" href="http://www.celldesigner.org/"><span class="icon"> </span>CellDesigner</a>, and are described in SBML format. Each model is publised in each paper, and in each SBML file. To integrate published models,  semantic web approach is very useful. BioPAX provides a common exchange format for biological pathways and models in OWL. <a class="ext-link" href="http://www.biopax.org/"><span class="icon"> </span>http://www.biopax.org/</a> Please see usecase (goal) as described below.
+</p>
+<h1 id="Datasets">Datasets</h1>
+<ul><li>BioPAX <a class="ext-link" href="http://www.biopax.org/"><span class="icon"> </span>http://www.biopax.org/</a>
+<ul><li>Level 3 (RC3): <a class="missing wiki">BioCyc?</a>, <a class="missing wiki">HumanCyc?</a>
+</li><li>Level 2: Reactome, <a class="missing wiki">BioCyc?</a>, INOH, Nature/NCI Pathway Interaction Database, Cancer Cell Map, Pathway Commons
+</li><li>Level 1: <a class="missing wiki">BioCyc?</a>, KEGG
+</li></ul></li></ul><ul><li><a class="missing wiki">BioModels?</a> Database (EMBL-EBI) <a class="ext-link" href="http://www.ebi.ac.uk/biomodels/"><span class="icon"> </span>http://www.ebi.ac.uk/biomodels/</a>
+stores over 400 published systems biology models in not only SBML and but also BioPAX Level 2 OWL.
+</li></ul><ul><li>Mol Syst Biol - Structural Data Archive (in SBML) <a class="ext-link" href="http://www.nature.com/msb/sdata/index.html"><span class="icon"> </span>http://www.nature.com/msb/sdata/index.html</a>
+</li></ul><ul><li>E-cell Model Repository - SBML Models <a class="ext-link" href="http://www.e-cell.org/ecell-models/repository/SBML"><span class="icon"> </span>http://www.e-cell.org/ecell-models/repository/SBML</a>
+</li></ul><ul><li>Model Format OWL (MFO) <a class="ext-link" href="http://cisban-silico.cs.ncl.ac.uk/MFO/"><span class="icon"> </span>http://cisban-silico.cs.ncl.ac.uk/MFO/</a> is an alternative OWL.
+<ul><li>BioPAX problems are described in <a class="ext-link" href="http://themindwobbles.wordpress.com/tag/semantic-data-integration/"><span class="icon"> </span>ESBML in OWL: some thoughts on Model Format OWL (MFO)</a>
+</li></ul></li></ul><h1 id="Convertor">Convertor</h1>
+<h3 id="BioPAXLevel3">BioPAX Level 3</h3>
+<p>
+No convertor now.
+</p>
+<h3 id="BioPAXLevel2">BioPAX Level 2</h3>
+<p>
+The convertor sbml2biopax from SBML to BioPAX OWL is provided by <a class="missing wiki">BioModels?</a> Compneur Group.
+</p>
+<ul><li><a class="ext-link" href="http://www.ebi.ac.uk/compneur-srv/sbml/convertors/SBMLtoBioPax.html"><span class="icon"> </span>http://www.ebi.ac.uk/compneur-srv/sbml/convertors/SBMLtoBioPax.html</a>
+</li></ul><p>
+The sbml2biopax requires <a class="ext-link" href="http://sbml.org/Software/libSBML"><span class="icon"> </span>libSBML</a>, and it works with the latest libSBML (libsbml.4.0.1).
+</p>
+<pre class="wiki">$ wget http://www.ebi.ac.uk/compneur-srv/sbml/convertors/sbml2biopax-1.3.tar.gz
+$ tar xvfz sbml2biopax-1.3.tar.gz; cd sbml2biopax-1.3; cp ~/mymodel.xml .
+$ sh sbml2biopax.sh mymodel.xml
+</pre><pre class="wiki">$ wget http://www.nature.com/msb/journal/v1/n1/extref/msb4100014-s3.xml -O Oda_EGFR_2005.xml
+$ sh sbml2biopax.sh Oda_EGFR_2005.xml
+$ wget http://www.nature.com/msb/journal/v1/n1/extref/msb4100057-s1.xml -O Oda_TLR_2006.xml
+$ sh sbml2biopax.sh Oda_TLR_2006.xml
+</pre><p>
+The sbml2biopax generate BioPAX Level 2 OWL file from given SBML file.
+</p>
+<h1 id="Store">Store</h1>
+<h3 id="a4store">4store</h3>
+<pre class="wiki">$ 4s-backend-setup biopax_lv2
+4store[2577]: backend-setup.c:176 erased files for KB biopax_lv2
+4store[2577]: backend-setup.c:301 created RDF metadata for KB biopax_lv2
+$ 4s-backend biopax_lv2
+$ 4s-import -v biopax_lv2 Oda_EGFR_2005.owl 
+removing old data
+Reading &lt;file:///Users/ogishima/.../Oda_EGFR_2005.owl&gt;
+Pass 1, processed 4951 triples (4951)
+Pass 2, processed 4951 triples, 61233 triples/s
+Updating index
+Index update took 2.412844 seconds
+Imported 4951 triples, average 1985 triples/s
+$ 4s-import -v biopax_lv2 Oda_TLR_2006.owl
+removing old data
+Reading &lt;file:///Users/ogishima/.../Oda_TLR_2006.owl&gt;
+Pass 1, processed 10087 triples (10087)
+Pass 2, processed 10087 triples, 78545 triples/s
+Updating index
+Index update took 0.605142 seconds
+Imported 10087 triples, average 13330 triples/s
+</pre><h3 id="Virtuoso">Virtuoso</h3>
+<p>
+Coming soon.
+</p>
+<h1 id="Query">Query</h1>
+<h3 id="a4store1">4store</h3>
+<pre class="wiki">$ 4s-query biopax_lv2
+4store&gt;SELECT * WHERE {?s ?p ?o}
+   &gt;#EOQ
+?s	?p	?o
+&lt;http://www.ebi.ac.uk/biomodels/biopax.owl#c3&gt;	&lt;http://www.biopax.org/release/biopax-level2.owl#TERM&gt;	"late_br_endsome"
+&lt;http://www.ebi.ac.uk/biomodels/biopax.owl#c2&gt;	&lt;http://www.biopax.org/release/biopax-level2.owl#TERM&gt;	"recycling_br_endsome"
+...
+results.c:1655 hit soft limit 2 times
+# hit complexity limit 2 times, increasing soft limit may give more results
+#EOR
+</pre><h3 id="Virtuoso1">Virtuoso</h3>
+<p>
+Coming soon.
+</p>
+<h1 id="SPARQLendpoint">SPARQL end point</h1>
+<p>
+SPARQL end point is now under construction, and will appear soon. :-)
+</p>
+<h1 id="Usecasegoal">Usecase (goal)</h1>
+<p>
+Usecase is an integration of models, in other words, pathways. Each pathway is in each SBML file. However, as you know, pathways are closely related each other. For example, TMD systems biology group (<a class="ext-link" href="http://bioinfo.tmd.ac.jp/sysbio/"><span class="icon"> </span>http://bioinfo.tmd.ac.jp/sysbio/</a>) has developed a database for Alzheimer disease named <a class="missing wiki">AlzPathway?</a>. <a class="missing wiki">AlzPathway?</a> collects signaling pathways relevant to Alzheimer disease, however, these pathways are not exclusively relevant to Alzheimer disease; Alzheimer disease pathway is closely related to apoptosis pathway, and if someone published a model for apoptosis, an integration of <a class="missing wiki">AlzPathway?</a> and apoptosis pathway will be very helpful for researchers in Alzheimer disease to obtain novel insight and hypothesis.
+</p>
+<h1 id="ProblemsToDo">Problems &amp; <a class="missing wiki">ToDo?</a></h1>
+<ul><li>BioPAX OWL might be too complicate to archive the above usecase (goal). SPARQL search might took so much time to return results. Appropriate reduction of information of SBML model is required to convert from SBML to RDF (not OWL).
+</li><li>In the case of conversion from SBML to RDF, mapping of name among models is required. 
+</li></ul><h1 id="Visualization">Visualization</h1>
+<ul><li><a class="missing wiki">RelFinder?</a> in Virtuoso
+</li><li>Cytoscape: <a class="ext-link" href="http://chianti.ucsd.edu/Cyto-2_7-beta/"><span class="icon"> </span>Cytoscape 2.7.0 beta</a> supports BioPAX Level 3 by Ono-san.  See <a class="wiki" href="/wiki/VisualizationAndInteraction">VisualizationAndInteraction</a>.
+</li><li><a class="ext-link" href="http://newton.tmd.ac.jp/"><span class="icon"> </span>BioCichlid</a>: <a class="missing wiki">BioCichlid?</a> will support BioPAX Level 2 (now under implementing).
+</li></ul><h1 id="Member">Member</h1>
+<ul><li>Soichi Ogishima (<a class="missing wiki">BioCichlid?</a>, <a class="missing wiki">AlzPathway?</a>; TMD systems biology group, JAPAN)
+</li><li>Ryosuke Ishiwata (<a class="missing wiki">BioCichlid?</a>; TMD systems biology group, JAPAN)
+</li></ul>
+        
+        
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="/wiki/SystemsBiologySBML?version=6&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

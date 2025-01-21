@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      TextMiningReport – BioHackathon 2010
+    </title>
+        <link rel="search" href="../search.1.html" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://hackathon3.dbcls.jp/wiki/TextMiningReport?version=8&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="TextMiningReport.html" title="View latest version" />
+        <link rel="start" href="../wiki.1.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="prev" href="TextMiningReport@version=7.html" title="Version 7" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../search/opensearch" title="Search BioHackathon 2010" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="../index.html"><img src="http://hackathon3.dbcls.jp/raw-attachment/wiki/LogoGallery/trac_logo.png" alt="DBCLS BioHackathon 2010" width="200" /></a>
+      </div>
+      <form id="search" action="../search.1.html" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://hackathon3.dbcls.jp/login">Login</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li><a href="../about.html">About Trac</a></li><li class="last"><a href="../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.1.html">Wiki</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../roadmap.html">Roadmap</a></li><li><a href="../browser.html">Browse Source</a></li><li><a href="../report.html">View Tickets</a></li><li class="last"><a href="../search.1.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="TextMiningReport@version=7.html" title="Version 7">Previous Version</a></span></li><li><a href="TextMiningReport.html" title="View latest version">View Latest Version</a></li><li><span class="missing">Next Version &rarr;</span></li><li class="last"><a href="TextMiningReport@action=diff&amp;version=8.html">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 8 (modified by alabarga, <a class="timeline" href="../timeline@from=2010-03-07T02%253A06%253A43+0900&amp;precision=second.html" title="2010-03-07T02:06:43+0900 in Timeline">15 years</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+--
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <h2 id="Presentation">Presentation</h2>
+<p>
+<a class="ext-link" href="http://www.slideshare.net/alabarga/textmining-activities-at-biohackathon-2010"><span class="icon"> </span>http://www.slideshare.net/alabarga/textmining-activities-at-biohackathon-2010</a>
+</p>
+<h2 id="Usecase">Use case</h2>
+<p>
+We performed this query to Pubmed and retrieved 200 pmids.
+</p>
+<pre class="wiki">
+
+</pre><p>
+The abstracts were annotated  using Whatizit, Reflect and Medie.
+</p>
+<p>
+and the results converted to RDF using the following convention:
+</p>
+<p>
+The results are available as RDF here: Whatizit.RDF Reflect.RDf and Medie.RDF.
+</p>
+<p>
+Pubmed information in RDF format was retrieved for all abstracts using TogoWS, together with Uniprot RDF for the annotated proteins.
+</p>
+<h2 id="Forthepaper">For the paper</h2>
+<p>
+Modern biology increasingly depends on the availability of computational tools to process, analyze, interpret, and integrate large collections of heterogeneous data. As has been described above, biological knowledge is increasingly being represented as a collection of triplets (entity-relationship-entity) that can be queried and mined in order to discover and create knowledge.
+</p>
+<p>
+However, biological databases alone cannot capture the richness of scientific information and argumentation contained in the literature, neither can provide support for the novel ways in which scientists will interrogate these databases. 
+A considerable fraction of the existing data in biology consists of natural language texts used to describe and communicate new discoveries, and so, scientific papers constitute a resource with crucial importance for life sciences. As the amount of scholarly communication increases, it is increasingly difficult for specific core scientific statements to be found, connected and curated.
+</p>
+<p>
+The biomedical text mining community has been working for a long time in the development of reliable information extraction applications. Both name entity recognition and conceptual analysis are needed in order to map from natural language texts to a formal representation of the objects and concepts represented by the text, with direct links to online resources that explicitly expose those concepts semantics.
+</p>
+<p>
+Different web tools allow researchers to search literature databases and integrate semantic information extracted from text with external databases and ontologies. Our work concentrated in Whatizit (<a class="ext-link" href="http://www.ebi.ac.uk/webservices/whatizit"><span class="icon"> </span>http://www.ebi.ac.uk/webservices/whatizit</a>), Reflect (<a class="ext-link" href="http://reflect.ws/"><span class="icon"> </span>http://reflect.ws/</a>) and Medie (<a class="ext-link" href="http://www-tsujii.is.s.u-tokyo.ac.jp/medie/"><span class="icon"> </span>http://www-tsujii.is.s.u-tokyo.ac.jp/medie/</a>).
+</p>
+<p>
+Semantic Web technologies provide a platform to extract statements and facts from existing literature and share them in a way that will allow computational agents to discover, aggregate and interpret these facts. The advantages of semantic web approaches are clear, and ideally, the concepts in a statement and the statement itself will have some unique identity that connects each instance of a statement across the web of published material.
+</p>
+<p>
+During the Text Mining sessions of the <a class="missing wiki">BioHackathon?</a> reported here, we aimed to investigate how to automatically annotate atomic components of research papers in life sciences and how to express those annotations in RDF.
+</p>
+<p>
+Beyond the SPARQL and Linked Data approaches, we investigated how to embed annotations in the output of exiting services, and found RDFa a suitable technology for this. RDFa (or Resource Description Framework - in - attributes) is a W3C Recommendation that adds a set of attribute level extensions to XHTML for embedding rich metadata within Web documents. The RDF data model mapping enables its use for embedding RDF triples within XHTML documents, it also enables the extraction of RDF model triples by compliant user agents.
+</p>
+<p>
+The use of RDFa enabled output can be seen in the Science Commons text annotation service (<a class="ext-link" href="http://whatizit.neurocommons.org/"><span class="icon"> </span>http://whatizit.neurocommons.org/</a>) and (<a class="ext-link" href="http://reflect.cbs.dtu.dk/"><span class="icon"> </span>http://reflect.cbs.dtu.dk/</a>).
+</p>
+
+        
+        
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="http://hackathon3.dbcls.jp/wiki/TextMiningReport?version=8&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="../about.html"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+    <html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      Data_Provider_Session (diff) – BioHackathon 2010
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="up" href="/wiki/Data_Provider_Session?action=history" title="Page history" />
+        <link rel="next" href="/wiki/Data_Provider_Session?action=diff&amp;version=19" title="Version 19" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/diff.css" type="text/css" />
+        <link rel="prev" href="/wiki/Data_Provider_Session?action=diff&amp;version=17" title="Version 17" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search BioHackathon 2010" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script><script type="text/javascript" src="/chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="/chrome/common/css/diff.css" /><meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon3.dbcls.jp/"><img src="http://hackathon3.dbcls.jp/raw-attachment/wiki/LogoGallery/trac_logo.png" alt="DBCLS BioHackathon 2010" width="200" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="/wiki/Data_Provider_Session?action=diff&amp;version=17" title="Version 17">Previous Change</a></span></li><li><a href="/wiki/Data_Provider_Session?action=history" title="Page history">Wiki History</a></li><li class="last"><span><a class="next" href="/wiki/Data_Provider_Session?action=diff&amp;version=19" title="Version 19">Next Change</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <h1>Changes
+        between
+          <a href="/wiki/Data_Provider_Session?version=17">Version 17</a> and
+        <a href="/wiki/Data_Provider_Session?version=18">Version 18</a> of
+        <a href="/wiki/Data_Provider_Session?version=18">Data_Provider_Session</a>
+      </h1>
+      <form method="post" id="prefs" action="/wiki/Data_Provider_Session?version=18"><div><input type="hidden" name="__FORM_TOKEN" value="9b92f779110146561b41c442" /></div>
+        <div>
+          <input type="hidden" name="action" value="diff" />
+          <input type="hidden" name="version" value="18" />
+          <input type="hidden" name="old_version" value="17" />
+    <label for="style">View differences</label>
+    <select id="style" name="style">
+      <option selected="selected" value="inline">inline</option>
+      <option value="sidebyside">side by side</option>
+    </select>
+    <div class="field">
+      Show <input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+      <label for="contextlines">lines around each change</label>
+    </div>
+    <fieldset id="ignore">
+      <legend>Ignore:</legend>
+      <div class="field">
+        <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+        <label for="ignoreblanklines">Blank lines</label>
+      </div>
+      <div class="field">
+        <input type="checkbox" id="ignorecase" name="ignorecase" />
+        <label for="ignorecase">Case changes</label>
+      </div>
+      <div class="field">
+        <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+        <label for="ignorewhitespace">White space changes</label>
+      </div>
+    </fieldset>
+    <div class="buttons">
+      <input type="submit" name="update" value="Update" />
+    </div>
+        </div>
+      </form>
+      <dl id="overview">
+        <dt class="property time">Timestamp:</dt>
+        <dd class="time">
+          2010/02/12 11:04:20 (<a class="timeline" href="/timeline?from=2010-02-12T11%3A04%3A20%2B0900&amp;precision=second" title="2010-02-12T11:04:20+0900 in Timeline">15 years</a> ago)
+        </dd>
+        <dt class="property author">Author:</dt>
+        <dd class="author">
+          peter
+        </dd>
+        <dt class="property message">Comment:</dt>
+        <dd class="message">
+          
+          <p>
+Added a notes section on possible NCBI URIs (non RDF URLs)
+</p>
+
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+            <dt class="mod"></dt><dd>Modified</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="/wiki/Data_Provider_Session?version=18">Data_Provider_Session</a>
+        </h2>
+        <table class="inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Version 17">
+                    <a href="/wiki/Data_Provider_Session?version=17#L135">
+                      v17</a>
+                  </th>
+                  <th title="Version 18">
+                    <a href="/wiki/Data_Provider_Session?version=18#L135">
+                      v18</a>
+                  </th>
+                  <th> </th>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>135</th><th>135</th><td class="l"><span>The BioHackathon community will start the curation of namespace and predicate and will share its work on the Internet.&nbsp; The first leader of the curation group is ????.</span> </td>
+                  </tr><tr>
+                          <th>136</th><th>136</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>137</th><td class="r"><ins>== Notes ==</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>138</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>139</th><td class="r"><ins>The NCBI don't (yet) provide their data in RDF format, but they do provide a lot of different URLs for their resources (in various formats), some of which follow the pattern above:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>140</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>141</th><td class="r"><ins>http://www.ncbi.nlm.nih.gov/taxonomy/9606</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>142</th><td class="r"><ins>http://www.ncbi.nlm.nih.gov/gene/15275</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>143</th><td class="r"><ins>http://www.ncbi.nlm.nih.gov/pubmed/18472304</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>144</th><td class="r"><ins>http://www.ncbi.nlm.nih.gov/pmc/2755819 (this redirects)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>145</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>146</th><td class="r"><ins>However, it is unclear if this pattern covers all their databases or if they regard these as URLs they intend to support long term. Moreover, these URLs currently give HTML (although in the long term the NCBI could return RDF by content negotiation?). Could we or ''should'' we use these NCBI URLs as URIs right now?</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>147</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>148</th><td class="r"><ins>For publications with a DOI, do these URLs also make good URIs? The all redirect to the journal websites which tend to give you an HTML page:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>149</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>150</th><td class="r"><ins>http://dx.doi.org/10.1016/j.jbi.2008.03.004</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>151</th><td class="r"><ins>http://dx.doi.org/10.1186/1471-2105-10-S10-S11</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>152</th><td class="r"><ins></ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>153</th><td class="r"><ins>Peter</ins> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+      </div>
+  </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

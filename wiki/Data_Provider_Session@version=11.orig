@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      Data_Provider_Session – BioHackathon 2010
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="alternate" href="/wiki/Data_Provider_Session?version=11&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="/wiki/Data_Provider_Session" title="View latest version" />
+        <link rel="next" href="/wiki/Data_Provider_Session?version=12" title="Version 12" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" />
+        <link rel="prev" href="/wiki/Data_Provider_Session?version=10" title="Version 10" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search BioHackathon 2010" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon3.dbcls.jp/"><img src="http://hackathon3.dbcls.jp/raw-attachment/wiki/LogoGallery/trac_logo.png" alt="DBCLS BioHackathon 2010" width="200" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="/wiki/Data_Provider_Session?version=10" title="Version 10">Previous Version</a></span></li><li><a href="/wiki/Data_Provider_Session" title="View latest version">View Latest Version</a></li><li><span><a class="next" href="/wiki/Data_Provider_Session?version=12" title="Version 12">Next Version</a> &rarr;</span></li><li class="last"><a href="/wiki/Data_Provider_Session?action=diff&amp;version=11">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 11 (modified by francoisbelleau, <a class="timeline" href="/timeline?from=2010-02-11T23%3A55%3A48%2B0900&amp;precision=second" title="2010-02-11T23:55:48+0900 in Timeline">15 years</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+--
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <h2 id="ThefirsteverofficialDataProvidersessionwhowillofferRAWDATA">The first ever official Data Provider session who will offer RAW DATA</h2>
+<p>
+After a 1:30 hour brain storming discussion, the group take a break and get ready for the Data Provider session.
+</p>
+<p>
+The representative from the following official data provider were presents :
+</p>
+<ul><li>DBCLS <a class="ext-link" href="http://dbcls.rois.ac.jp/"><span class="icon"> </span>http://dbcls.rois.ac.jp/</a>
+</li><li>DDBJ <a class="ext-link" href="http://www.ddbj.nig.ac.jp/"><span class="icon"> </span>http://www.ddbj.nig.ac.jp/</a>
+</li><li>Korean <a class="missing wiki">HapMap?</a> <a class="ext-link" href="http://www.khapmap.org/"><span class="icon"> </span>http://www.khapmap.org/</a>
+</li><li>KEGG <a class="ext-link" href="http://www.genome.jp/"><span class="icon"> </span>http://www.genome.jp/</a>
+</li><li>PDBj <a class="ext-link" href="http://www.pdbj.org/"><span class="icon"> </span>http://www.pdbj.org/</a>
+</li><li><a class="missing wiki">UniProt?</a> <a class="ext-link" href="http://www.uniprot.org/"><span class="icon"> </span>http://www.uniprot.org/</a>
+</li><li>TreeBASE <a class="ext-link" href="http://treebase.org"><span class="icon"> </span>v.1</a>,<a class="ext-link" href="http://treebase-dev.nescent.org:6666/treebase-web"><span class="icon"> </span>v.2</a>
+</li></ul><p>
+The representative from the following data integration project offering a SPARQL endpoint:
+</p>
+<ul><li><a class="ext-link" href="http://bio2rdf.org/"><span class="icon"> </span>http://bio2rdf.org/</a> <a class="ext-link" href="http://delicious.com/fbelleau/bio2rdf:sparql"><span class="icon"> </span>SPARQL endpoint list</a>
+</li><li><a class="ext-link" href="http://www.semantic-systems-biology.org/"><span class="icon"> </span>http://www.semantic-systems-biology.org/</a> <a class="ext-link" href="http://www.semantic-systems-biology.org/biogateway/endpoint"><span class="icon"> </span>SPARQL endpoint</a>
+</li><li><a class="ext-link" href="http://hcls.deri.ie/"><span class="icon"> </span>http://hcls.deri.ie/</a> <a class="ext-link" href="http://hcls.deri.ie/sparql"><span class="icon"> </span>SPARQL endpoint</a>
+</li></ul><p>
+These are the objectives that were discussed :
+</p>
+<ul><li>RAW DATA available as N-TRIPLES dump should be produced by the data provider and made available from their FTP or HTTP server
+</li><li>SPARQL endpoint for each dataset should be made available
+</li><li>Standard URIs should be used in triple
+</li><li>Standard predicate should be used in triple
+</li></ul><h2 id="RAWDatadump">RAW Data dump</h2>
+<p>
+<a class="missing wiki">UniProt?</a> already offer raw data in RDF from their own <a class="ext-link" href="ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/rdf/"><span class="icon"> </span>FTP server</a>, and on the fly for query results by appending '&amp;format=rdf' to the URL. TreeBASE does the latter also, and can make an RDF dump available easily. DDBJ, PDBJ and KEEG will do the same.
+</p>
+<h2 id="SPARQLendpoint">SPARQL endpoint</h2>
+<p>
+There is already a certain number of SPARQL endpoints available but none are owned by the official data provider.
+</p>
+<p>
+There is a need for an hosting service offering SPARQL endpoint in which it will be possible to load the official raw data provided by the data provider.
+</p>
+<h2 id="StandardURIs">Standard URIs</h2>
+<pre class="wiki">Rule #1  When a data provider has given a derefencable URI to a topic, this is the only accepted URI that should be published on the [http://dig.csail.mit.edu/breadcrumbs/node/215 GGG].  Other data provider must make reference to it in their own dataset.
+</pre><p>
+Actually the following data provider have created their own derefencable URI :
+</p>
+<ul><li><a class="missing wiki">UniProt?</a>
+</li><li>Gene Ontology
+</li></ul><p>
+those providers will apply Rule <a class="missing ticket">#1</a> when they start to publish RDF.
+</p>
+<ul><li>DBCLS
+</li><li>KEGG
+</li><li>PDBJ 
+</li></ul><p>
+Now that data provider will share a common naming for URI, it is necessary to adopt a simple design rule for URIs.
+</p>
+<pre class="wiki">Rule #2  The syntax of a derefencable URI is as follow :
+            http://providerDomaineName/publicNamesapce/privateId
+</pre><p>
+For example the folowing URI are valid :
+</p>
+<ul><li><a class="ext-link" href="http://purl.uniprot.org/uniprot/P17710"><span class="icon"> </span>http://purl.uniprot.org/uniprot/P17710</a>
+</li><li><a class="ext-link" href="http://pdbj.org/pdbid/2yhx"><span class="icon"> </span>http://pdbj.org/pdbid/2yhx</a>
+</li><li><a class="ext-link" href="http://dbcls.jp/insc/AAB57760"><span class="icon"> </span>http://dbcls.jp/insc/AAB57760</a>
+</li><li><a class="ext-link" href="http://genome.jp/ec/2.7.1.1"><span class="icon"> </span>http://genome.jp/ec/2.7.1.1</a>
+</li></ul><p>
+ 
+but not these :
+</p>
+<p>
+* <a class="ext-link" href="http://www.genome.jp/dbget-bin/www_bget?ec:2.7.1.1"><span class="icon"> </span>http://www.genome.jp/dbget-bin/www_bget?ec:2.7.1.1</a>
+</p>
+<h2 id="Standardpredicates">Standard predicates</h2>
+<h2 id="TokyoManifesto">Tokyo Manifesto</h2>
+<p>
+The rules number 1, 2 and 3 constitute the Tokyo Manifesto that only data provider may endorse.
+</p>
+
+        
+        
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="/wiki/Data_Provider_Session?version=11&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

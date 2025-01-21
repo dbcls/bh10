@@ -1,0 +1,165 @@
+[[PageOutline]] 
+
+= Day-1 (2/6) =
+== BioRuby Roadmap ==
+
+10:30-18:00, Room 408, DBCLS (Faculty of Engineering Bldg. 12, Univ. of Tokyo)
+
+Participants:
+ * Pjotr Prins
+ * Jan Aerts
+ * Toshiaki Katayama
+ * Mitsuteru Nakao
+ * Naohisa Goto
+ * Raoul Jean Pierre Bonnal
+
+= Day0 (2/7) =
+== BioRuby Roadmap ==
+
+10:00-18:00, Room 408
+
+Participants:
+ * Pjotr Prins
+ * Jan Aerts
+ * Toshiaki Katayama
+ * Mitsuteru Nakao
+ * Naohisa Goto
+ * Raoul Jean Pierre Bonnal
+ * Christian M Zmasek
+ * Shuichi Kawashima
+ * Kazuhiro Hayashi
+
+= Day1 =
+
+= Day2 =
+== Designing a mechanism to output object using the ERb template engine for writing data in RDF ==
+
+ * Mitsuteru Nakao
+ * Naohisa Goto
+ * Toshiaki Katayama
+ * Raoul Jean Pierre Bonnal
+
+=== Basic idea ===
+{{{
+medline = Bio::MEDLINE.new(medline_flatfile)
+puts medline.output_rdf # => print a medline abstract in RDF format.
+}}}
+ * Writing a Bio::DB object data in RDF format
+ * Using the Erb template system
+ * Template replaceablity
+
+
+=== Proposed architecture ===
+
+Adding a module Bio::OutputErb
+{{{
+module Bio
+  module OutputErb
+    require 'erb'
+    def output_method_erb(m, t)
+      erb = ERB.new(File.read(t))
+      erb.def_method(self, m, t)
+    end
+  end
+end
+}}}
+
+Extending the Bio::MEDLINE
+{{{
+class MEDLINE
+  extend OutputErb
+  def_output_method_erb("output_ttl", 'bio/bio/db/medline/medline.ttl.erb')
+
+  def output(t)
+    send("output_#{t.to_s}")
+  end
+end
+}}}
+
+An Erb template file medline.ttl.erb for RDF/Turtle (partial)
+{{{
+<%
+require 'date'
+# http://www.nlm.nih.gov/bsd/mms/medlineelements.html
+# A generic RDF subject URI at the TogoWS REST
+@prefix = "http://togows.dbcls.jp/entry/ncbi-pubmed"
+
+def uri
+  "<#{@prefix}/#{c(pubmed['PMID'])}>"
+end
+
+# Generate a generic RDF predicate URI at the TogoWS REST.
+def predicate(field_name)
+  "<http://togows.dbcls.jp/nezu/1.0/ncbi-pubmed##{field_name}>"
+end
+
+def ndate(str)
+  str.strip
+  case str
+  when /^\d+$/
+    str.gsub(/(\d{4})(\d{2})(\d{2})/) { "#{$1}-#{$2}-#{$3}"}
+  else
+    str.gsub("/", '-')
+  end
+end
+
+def ndatetime(str)
+  d,t = str.split(" ")
+  [ndate(d), t].join(" ")
+end
+%><%= uri %>    <%= predicate('pmid') %>        "<%=c pubmed['PMID'] %>" .
+<%= uri %>      <http://www.w3.org/2000/01/rdf-schema#label>    "pmid:<%=c pubmed['PMID'] %>" .
+<%= uri %>      <http://purl.org/dc/elements/1.1/title> "pmid:<%=c pubmed['PMID'] %>" .
+<%= uri %>      <http://purl.org/dc/elements/1.1/identifier>    <http://pubmed.org/<%=c pubmed['PMID'] %>> .
+<%= uri %>      <%= predicate('own') %> "<%=c pubmed['OWN'] %>" .
+<%= uri %>      <%= predicate('stat') %>        "<%=c pubmed['STAT'] %>" .
+<%= uri %>      <%= predicate('da') %>  "<%= ndate(c pubmed['DA']) %>" .
+<%= uri %>      <%= predicate('dcom') %>        "<%=ndate(c pubmed['DCOM']) %>" .
+<%= uri %>      <%= predicate('lr') %>  "<%=ndate(c pubmed['LR']) %>" .
+<% pubmed['IS'].scan(/(\d+-\d+ \(\S+\))/).flatten.each do |is| %>
+<%= uri %>      <%= predicate('is') %>  "<%=c "#{is}" %>" .
+<% end %>
+<%= uri %>      <%= predicate('vi') %>  "<%=c pubmed['VI'] %>" .
+<%= uri %>      <http://prismstandard.org/namespaces/2.0/basic/volume>  "<%=c pubmed['VI'] %>" .
+<%= uri %>      <%= predicate('dp') %>  "<%=c pubmed['DP'] %>" .
+...
+}}}
+
+On using 
+{{{
+medline = Bio::MEDLINE.new(medline_flatfile)
+
+mdeline.output_ttl # .ttl == RDF/Turtle
+mdeline.output(:ttl) # alias 
+medline.to_ttl # alias 
+medline.to(:ttl) # alias 
+}}}
+
+Use user template
+{{{
+class MEDLINE
+  def_output_method_erb("output_rdfxml", 'bio/bio/db/medline/medline.rdfxml.erb')
+end
+
+medline = Bio::MEDLINE.new(medline_flatfile)
+mdeline.output_rdfxml
+}}}
+
+File arrangement
+ * lib/bio/db/
+   * medline.rb
+   * medline/medline.ttl.erb
+
+=== Issues ===
+Naming issue
+ * Choice: Bio::Renderer / Bio::Render / Bio::Template / Bio::Output / Bio::Export / Bio::Exporter / Bio::Writer / Bio::OutputErb 
+ * Choice: medline.output_ttl / medline.output(:ttl) / medline.to_ttl / medline.to(:ttl)
+   * Pros: the to_ttl naming is easy for beginner. 
+   * Cons: to_ttl style name is  for converting class. The to_s method is to convert a object to String expression. And to_json may be confusional.
+Method namespace
+ * Functions defined at the template file contaminates the namespace of the Bio::MEDLINE class.
+Performance issue
+ * Reading template file every time may be heavy because it uses eval.
+   * ERB#def_method (or def_class or def_module) may help, but another problem: it always reads the template when the method (or class/module) is defined even if the output is not needed.
+Format variants and options
+ * How to specify format variants and options? For example, it is better to have many html output variants.

@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      Queries – BioHackathon 2010
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="alternate" href="/wiki/Queries?version=15&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="/wiki/Queries" title="View latest version" />
+        <link rel="next" href="/wiki/Queries?version=16" title="Version 16" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" />
+        <link rel="prev" href="/wiki/Queries?version=14" title="Version 14" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search BioHackathon 2010" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon3.dbcls.jp/"><img src="http://hackathon3.dbcls.jp/raw-attachment/wiki/LogoGallery/trac_logo.png" alt="DBCLS BioHackathon 2010" width="200" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="/wiki/Queries?version=14" title="Version 14">Previous Version</a></span></li><li><a href="/wiki/Queries" title="View latest version">View Latest Version</a></li><li><span><a class="next" href="/wiki/Queries?version=16" title="Version 16">Next Version</a> &rarr;</span></li><li class="last"><a href="/wiki/Queries?action=diff&amp;version=15">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 15 (modified by yy, <a class="timeline" href="/timeline?from=2010-01-28T22%3A02%3A28%2B0900&amp;precision=second" title="2010-01-28T22:02:28+0900 in Timeline">15 years</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+--
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <p>
+</p><div class="wiki-toc"><ol><li><a href="#Queries">Queries</a><ol><li><a href="#Expectedquerytypes">Expected query types</a></li><li>
+<a href="#Prospectedqueries">Prospected queries</a><ol><li><a href="#FromTRECGenomicsTrac">From <span class="icon"> </span>TREC Genomics Trac</a></li><li>
+<a href="#FromFlyMineTemplates">From <span class="icon"> </span>FlyMine Templates</a></li><li>
+<a href="#Fromparticipants">From participants</a></li></ol></li></ol></li></ol></div><p> 
+</p>
+<h1 id="Queries">Queries</h1>
+<p>
+Targeted queries to be resolved by Semantic Web technologies.
+</p>
+<p>
+One of our goal would be to implement an advanced search engine -- something like a Wolfram Alpha for biology. In this page, we will gather meaningful and challenging queries for the Semantic Web technology and will define some goals of the BioHackathon 2010 from them.
+</p>
+<h2 id="Expectedquerytypes">Expected query types</h2>
+<p>
+Queries may vary from simple google-like keyword or phrase search to biological objects as its input. This section itemize prospected types of query arbitrary.
+</p>
+<ul><li>Gene ID
+</li><li>Technical terms
+</li><li>Phrase search (e.g. "ortholog genes of gene A")
+</li><li>DNA or protein sequence
+</li><li> :
+</li></ul><h2 id="Prospectedqueries">Prospected queries</h2>
+<h3 id="FromTRECGenomicsTrac">From <a class="ext-link" href="http://ir.ohsu.edu/genomics/2007protocol.html"><span class="icon"> </span>TREC Genomics Trac</a></h3>
+<p>
+<a class="ext-link" href="http://trec.nist.gov/"><span class="icon"> </span>TREC</a> (Text REtreival Conference) held a competition for information extraction (IE) or text mining (TM) researchers and raised following 14 challenging questions to retrieve answering passages automatically. Some of these may also be considered as targets for Semantic Web.
+</p>
+<ul><li>&lt;T1&gt;What [ANTIBODIES] have been used to detect protein TLR4?
+</li><li>&lt;T2&gt;What [BIOLOGICAL SUBSTANCES] have been used to measure toxicity in response to cytarabine?
+</li><li>&lt;T3&gt;What [CELL OR TISSUE TYPES] express members of the mammalian TIM gene family?
+</li><li>&lt;T4&gt;What [DISEASES] are associated with lysosomal abnormalities in the nervous system?
+</li><li>&lt;T5&gt;What [DRUGS] have been tested in mouse models of Alzheimer's disease?
+</li><li>&lt;T6&gt;What centrosomal [GENES] are implicated in diseases of brain development?
+</li><li>&lt;T7&gt;What [MOLECULAR FUNCTIONS] does helicase protein NS3 play in HCV (Hepatitis C virus)?
+</li><li>&lt;T8&gt;What [MUTATIONS] in apolipoprotein genes are associated with disease?
+</li><li>&lt;T9&gt;Which [PATHWAYS] are possibly involved in the disease ADPKD?
+</li><li>&lt;T10&gt;What [PROTEINS] does epsin1 interact with during endocytosis?
+</li><li>&lt;T11&gt;What Streptococcus pneumoniae [STRAINS] are resistent to penicillin and erythromycin?
+</li><li>&lt;T12&gt;What [SIGNS OR SYMPTOMS] of anxiety disorder are related to lipid levels?
+</li><li>&lt;T13&gt;What [TOXICITIES] are associated with cytarabine?
+</li><li>&lt;T14&gt;What [TUMOR TYPES] are associated with Rb1 mutations?
+</li></ul><p>
+Is there any way of translating a natural language query to a SPARQL one? or should we need to develop?<br />
+Some "buffer" layer, which bridges the gap between highly structured language such as SPARQL and unstructured one (i.e., natural language), might be needed.
+<a class="ext-link" href="http://swoogle.umbc.edu/"><span class="icon"> </span>Swoogle</a> may be useful.
+</p>
+<ul><li><a class="ext-link" href="http://swoogle.umbc.edu/index.php?option=com_frontpage&amp;service=search&amp;queryType=search_swt&amp;searchString=uri%3Aantibody&amp;searchStart=1"><span class="icon"> </span>Antibody</a>
+</li><li><a class="ext-link" href="http://swoogle.umbc.edu/index.php?option=com_frontpage&amp;service=search&amp;queryType=search_swt&amp;searchString=uri%3Abiological+substance&amp;searchStart=1"><span class="icon"> </span>Biological substance</a>
+</li><li><a class="ext-link" href="http://swoogle.umbc.edu/index.php?option=com_frontpage&amp;service=search&amp;queryType=search_swt&amp;searchString=uri%3Acell+or+tissue+type&amp;searchStart=1"><span class="icon"> </span>Cell or tissue type</a>
+</li><li><a class="ext-link" href="http://swoogle.umbc.edu/index.php?option=com_frontpage&amp;service=search&amp;queryType=search_swt&amp;searchString=uri%3Adisease&amp;searchStart=1"><span class="icon"> </span>Disease</a>
+</li><li><a class="ext-link" href="http://swoogle.umbc.edu/index.php?option=com_frontpage&amp;service=search&amp;queryType=search_swt&amp;searchString=uri%3Adrug&amp;searchStart=1"><span class="icon"> </span>Drug</a>
+</li><li><a class="ext-link" href="http://swoogle.umbc.edu/index.php?option=com_frontpage&amp;service=search&amp;queryType=search_swt&amp;searchString=uri%3Agene&amp;searchStart=1"><span class="icon"> </span>Gene</a>
+</li><li><a class="ext-link" href="http://swoogle.umbc.edu/index.php?option=com_frontpage&amp;service=search&amp;queryType=search_swt&amp;searchString=uri%3Amolecular+function&amp;searchStart=1"><span class="icon"> </span>Molecular function</a>
+</li><li><a class="ext-link" href="http://swoogle.umbc.edu/index.php?option=com_frontpage&amp;service=search&amp;queryType=search_swt&amp;searchString=uri%3Amutation&amp;searchStart=1"><span class="icon"> </span>Mutation</a>
+</li><li><a class="ext-link" href="http://swoogle.umbc.edu/index.php?option=com_frontpage&amp;service=search&amp;queryType=search_swt&amp;searchString=uri%3Apathway&amp;searchStart=1"><span class="icon"> </span>Pathway</a>
+</li><li><a class="ext-link" href="http://swoogle.umbc.edu/index.php?option=com_frontpage&amp;service=search&amp;queryType=search_swt&amp;searchString=uri%3Aprotein&amp;searchStart=1"><span class="icon"> </span>Protein</a>
+</li><li><a class="ext-link" href="http://swoogle.umbc.edu/index.php?option=com_frontpage&amp;service=search&amp;queryType=search_swt&amp;searchString=uri%3Astrain&amp;searchStart=1"><span class="icon"> </span>Strain</a>
+</li><li><a class="ext-link" href="http://swoogle.umbc.edu/index.php?option=com_frontpage&amp;service=search&amp;queryType=search_swt&amp;searchString=uri%3Asign+or+symptom&amp;searchStart=1"><span class="icon"> </span>Sign or symptom</a>
+</li><li><a class="ext-link" href="http://swoogle.umbc.edu/index.php?option=com_frontpage&amp;service=search&amp;queryType=search_swt&amp;searchString=uri%3Atoxicity&amp;searchStart=1"><span class="icon"> </span>Toxicity</a>
+</li><li><a class="ext-link" href="http://swoogle.umbc.edu/index.php?option=com_frontpage&amp;service=search&amp;queryType=search_swt&amp;searchString=uri%3Atumor+type&amp;searchStart=1"><span class="icon"> </span>Tumore type</a>
+</li></ul><h3 id="FromFlyMineTemplates">From <a class="ext-link" href="http://www.flymine.org/release-20.0/templates.do"><span class="icon"> </span>FlyMine Templates</a></h3>
+<p>
+InterMine/FlyMine provides a curated set of typical query templates. As these are checked by the biologists, most of them seems to be meaningful compared to computationally generated queries based on combinations of available resources.
+</p>
+<ul><li>Disease [Human] --&gt; Genes + D. melanogaster homologues (filter on BLAST E-Value).
+<ul><li>For a specified human disease, show all associated human genes and their Drosophila homologues as identified with BLAST. Results are filtered by a specified E-Value, the lower the E-Value, the better the match. (Data Source: Homophila).
+</li></ul></li></ul><ul><li>EST clone [A. gambiae] --&gt; Chromosomal location + Gene + D. melanogaster orthologue + Pathway.
+<ul><li>For a particular A. gambiae EST clone, show its chromosomal location, the corresponding A. gambiae gene, the D. melanogaster orthologue and the pathway. (Data Source: VectorBase, InParanoid, KEGG, Reactome, FlyReactome).
+</li></ul></li></ul><h3 id="Fromparticipants">From participants</h3>
+<p>
+Please add your own use cases here:
+</p>
+<ul><li>Q: I have a set of predicted genes from a newly sequenced genome of a Theileria species. What is a unique characteristic of this set from the view point of the biological pathway? Is it natural that this organism lacks thiolase in the mevalonate pathway? (Toshiaki Katayama)
+<ul><li>To resolve this sample question, we need taxonomically classified list of biological modules in the pathway filled with a phylogenetic profile of orthologous genes among related species. Then we can confirm its absence with protein2genome mapping, predicted sub cellular localization of the enzyme, knowledge on reaction in the organelle (apicoplast) from related journal articles and reviews. Most of components are already in databases but none of them are semantically linked with each other.
+</li></ul></li></ul><ul><li>Q: What is the largest gene expression regulation network ever known coming with expression level data? (Itoshi Nikaido)
+<ul><li>What actually wanted is a "graph structure" and "feature labels" of each node.
+</li></ul></li></ul>
+        
+        
+      </div>
+          <h3>Attachments</h3>
+          <ul>
+              <li>
+      <a href="/attachment/wiki/Queries/TREC_QA_Sample_enju.txt" title="View attachment">TREC_QA_Sample_enju.txt</a>
+      <a href="/raw-attachment/wiki/Queries/TREC_QA_Sample_enju.txt" title="Download" class="trac-rawlink"><img src="/chrome/common/download.png" alt="Download" /></a>
+      (<span title="10487 bytes">10.2 KB</span>) - added by <em>yy</em>
+      <a class="timeline" href="/timeline?from=2010-01-29T20%3A24%3A42%2B0900&amp;precision=second" title="2010-01-29T20:24:42+0900 in Timeline">15 years</a> ago.
+                <q>A parsed result of TREC Questions using enju.</q>
+              </li>
+              <li>
+      <a href="/attachment/wiki/Queries/TREC_QA_Sample_metamap.txt" title="View attachment">TREC_QA_Sample_metamap.txt</a>
+      <a href="/raw-attachment/wiki/Queries/TREC_QA_Sample_metamap.txt" title="Download" class="trac-rawlink"><img src="/chrome/common/download.png" alt="Download" /></a>
+      (<span title="34940 bytes">34.1 KB</span>) - added by <em>yy</em>
+      <a class="timeline" href="/timeline?from=2010-01-30T02%3A17%3A52%2B0900&amp;precision=second" title="2010-01-30T02:17:52+0900 in Timeline">15 years</a> ago.
+                <q>A parsed result of TREC Questions using MetaMap.</q>
+              </li>
+          </ul>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="/wiki/Queries?version=15&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

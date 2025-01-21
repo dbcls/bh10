@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      Datasets – BioHackathon 2010
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="alternate" href="/wiki/Datasets?version=13&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="/wiki/Datasets" title="View latest version" />
+        <link rel="next" href="/wiki/Datasets?version=14" title="Version 14" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" />
+        <link rel="prev" href="/wiki/Datasets?version=12" title="Version 12" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search BioHackathon 2010" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon3.dbcls.jp/"><img src="http://hackathon3.dbcls.jp/raw-attachment/wiki/LogoGallery/trac_logo.png" alt="DBCLS BioHackathon 2010" width="200" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="/wiki/Datasets?version=12" title="Version 12">Previous Version</a></span></li><li><a href="/wiki/Datasets" title="View latest version">View Latest Version</a></li><li><span><a class="next" href="/wiki/Datasets?version=14" title="Version 14">Next Version</a> &rarr;</span></li><li class="last"><a href="/wiki/Datasets?action=diff&amp;version=13">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 13 (modified by admin, <a class="timeline" href="/timeline?from=2010-01-13T18%3A01%3A45%2B0900&amp;precision=second" title="2010-01-13T18:01:45+0900 in Timeline">15 years</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+--
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <p>
+</p><div class="wiki-toc"><ol><li><a href="#Datasets">Datasets</a><ol><li><a href="#Availableresources">Available resources</a></li><li>
+<a href="#Missingresources">Missing resources</a></li></ol></li></ol></div><p> 
+</p>
+<h1 id="Datasets">Datasets</h1>
+<p>
+Lists currently available and still missing datasets (as Linked Data / RDF).
+</p>
+<h2 id="Availableresources">Available resources</h2>
+<p>
+Let's make a list of all RDF resources currently available and evaluate them according to its contents and quality.
+Extraction of meaningful triples (relations) from original data sources requires good understanding of their contents and it could be a key for the resulting usefulness.
+</p>
+<ul><li><a class="ext-link" href="http://sourceforge.net/apps/mediawiki/bio2rdf/index.php"><span class="icon"> </span>Bio2RDF</a> <a class="ext-link" href="http://sourceforge.net/apps/mediawiki/bio2rdf/index.php?title=Namespace"><span class="icon"> </span>Namespace</a>
+<ul><li>Ensembl - genes
+</li><li>OBO - GO terms, ChEBI compounds
+</li><li>NCBI - genes, sequences, mesh terms, disease (omim), pubmed articles
+</li><li>KEGG - pathways, genes, enzymes, compounds, drugs, glycans, reactions
+</li><li>MGI - genes
+</li><li>PDB - structures
+</li><li>UniProt - proteins, keywords, taxonomy
+</li></ul></li><li><a class="ext-link" href="http://neurocommons.org/page/Main_Page"><span class="icon"> </span>NeuroCommons Project</a>
+<ul><li><a class="ext-link" href="http://sparql.neurocommons.org/"><span class="icon"> </span>http://sparql.neurocommons.org/</a>
+</li><li><a class="ext-link" href="http://sparql.neurocommons.org/sparql"><span class="icon"> </span>http://sparql.neurocommons.org/sparql</a>? -- SPARQL endpoint
+</li><li><a class="ext-link" href="http://neurocommons.org/page/RDF_distribution"><span class="icon"> </span>http://neurocommons.org/page/RDF_distribution</a>
+</li><li><a class="ext-link" href="http://neurocommons.org/page/Bundles"><span class="icon"> </span>http://neurocommons.org/page/Bundles</a>
+</li><li><a class="ext-link" href="http://ashby.csail.mit.edu/presentations/The_Neurocommons_Common_names_and_ontologies_for_open_source_knowledge_integration_on_the_Semantic_Web.pdf"><span class="icon"> </span>http://ashby.csail.mit.edu/presentations/The_Neurocommons_Common_names_and_ontologies_for_open_source_knowledge_integration_on_the_Semantic_Web.pdf</a>
+</li></ul></li><li>uniprot RDF
+<ul><li><a class="ext-link" href="http://dev.isb-sib.ch/projects/uniprot-rdf/"><span class="icon"> </span>http://dev.isb-sib.ch/projects/uniprot-rdf/</a>
+</li><li><a class="ext-link" href="http://dev.isb-sib.ch/projects/uniprot-rdf/migration.html"><span class="icon"> </span>http://dev.isb-sib.ch/projects/uniprot-rdf/migration.html</a>
+</li><li><a class="ext-link" href="http://dev.isb-sib.ch/projects/uniprot-rdf/shorthand.html"><span class="icon"> </span>http://dev.isb-sib.ch/projects/uniprot-rdf/shorthand.html</a>
+</li><li><a class="ext-link" href="http://dev.isb-sib.ch/projects/uniprot-rdf/owl/"><span class="icon"> </span>http://dev.isb-sib.ch/projects/uniprot-rdf/owl/</a> 
+</li></ul></li><li>Linked Data
+</li><li>DBCLS RDFs
+</li></ul><p>
+    
+</p>
+<p>
+We should categorize these according to their format (e.g. RDF) and extracted relationships (not only by their original source databases).
+</p>
+<h2 id="Missingresources">Missing resources</h2>
+<p>
+Not sure that they are actually unavailable, but let's lists wanted relations (triples) to solve biological queries.
+</p>
+<ul><li>Taxonomy &lt;-&gt; Pathway module
+</li><li>Taxonomy &lt;-&gt; Ortholog cluster
+</li><li>Gene &lt;-&gt; Expression patterns (from multiple experiments)
+</li><li>Enzyme &lt;-&gt; Activity
+</li><li>Protein architectures (domain combinations) &lt;-&gt; Taxonomy
+</li></ul><p>
+We should add intended reasons (what for these relations are required).
+</p>
+<ul><li>Contents of the <a class="ext-link" href="http://togodb.dbcls.jp/"><span class="icon"> </span>TogoDB</a> should be exported as RDF through <a class="ext-link" href="http://togows.dbcls.jp/"><span class="icon"> </span>TogoWS</a> at DBCLS
+</li></ul>
+        
+        
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="/wiki/Datasets?version=13&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

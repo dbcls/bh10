@@ -1,0 +1,94 @@
+[[PageOutline]] 
+= Day 1:  SADI Web Services = 
+
+=== We are beginning to publish a set of best practices for service providers by codifying the lessons we've learned in the last year of service-building. This is our first attempt to describe these "rules" ===
+
+Since, for most of you, this will be the first time you have "played with" the Semantic Web, and will also be the first time you have seen a Web Service defined using Semantic Web languages, I need to say DON'T BE AFRAID!  The discussion below contains many details that are handled for you by the SADI codebase!!  As you become more comfortable with OWL ontologies, this is all going to sound very VERY trivial!!
+
+KEENER ALERT:  If you want to see the service running then jump straight to WatchSadiGo
+
+Okay, so let's begin...
+
+Let's say we are creating a service '[http://sadiframework.org/services/getKEGGParalogsByGene getKEGGParalogsByGene]', which will provide the KEGG ID of the paralogs of any input KEGG gene id. Click on the link to see the full service description - '''note that you do not have to generate this document yourself'''''''!!  It is auto-generated for you by the SADI codebase!!
+
+The input class is '''http://purl.oclc.org/SADI/LSRN/KEGG_Record'''.  This input class defined by a third-party ontology (hosted at purl.oclc.org), and we are simply saying "we consume THAT kind of data" - a KEGG Record:
+
+{{{
+<a:inputParameter>
+  <a:parameter rdf:about="illuminae.comgetKEGGParalogsByGeneddd">
+    <a:hasParameterNameText>
+       input
+    </a:hasParameterNameText>
+    <a:objectType rdf:resource="http://purl.oclc.org/SADI/LSRN/KEGG_Record"/>
+  </a:parameter>
+</a:inputParameter>
+}}}
+
+
+The output class 'getKEGGParalogsByGene_Output' is specific to our service (since our service is creating a new 'kind' of data, based on the input class) and is defined in '''http://sadiframework.org/ontologies/service_objects.owl#getKEGGParalogsByGene_Output''':
+
+{{{
+<a:outputParameter>
+  <a:parameter rdf:about="illuminae.comgetKEGGParalogsByGeneeee">
+     <a:hasParameterNameText>
+        output
+     </a:hasParameterNameText>
+     <a:objectType rdf:resource="http://sadiframework.org/ontologies/service_objects.owl#getKEGGParalogsByGene_Output"/>
+  </a:parameter>
+</a:outputParameter>
+}}}
+
+Let's have a look at the OWL ontology that defines our output class.  I have "pruned" the service_objects.owl ontology to show only the relevant parts for this discussion... :
+
+{{{
+
+<rdf:RDF 
+ xml:base="http://sadiframework.org/ontologies/service_objects.owl#" 
+ xmlns:service="http://sadiframework.org/ontologies/service_objects.owl#" 
+ xmlns:owl="http://www.w3.org/2002/07/owl#" 
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+ xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+ xmlns="http://sadiframework.org/ontologies/service_objects.owl#">
+
+<!-- Ontology Information -->
+<owl:Ontology rdf:about="">
+  <owl:imports>
+    <owl:Ontology rdf:about="http://sadiframework.org/ontologies/service_objects.owl#"/>
+  </owl:imports>
+  <owl:imports>
+    <owl:Ontology rdf:about="http://purl.oclc.org/SADI/LSRN"/>
+  </owl:imports>
+</owl:Ontology>
+
+<owl:SymmetricProperty rdf:about="http://sadiframework.org/ontologies/service_objects.owl#isParalogOf">
+     <rdfs:comment>This predicate is used to join two identifiers representing molecules - genes or proteins - that are      biological paralogs of one another </rdfs:comment>
+</owl:SymmetricProperty>
+
+<owl:Class rdf:about="http://sadiframework.org/ontologies/service_objects.owl#getKEGGParalogsByGene_Output">
+   <rdfs:subClassOf rdf:resource="http://purl.oclc.org/SADI/LSRN/KEGG_Record"/>
+   <rdfs:subClassOf>
+      <owl:Restriction>
+          <owl:onProperty rdf:resource="http://sadiframework.org/ontologies/service_objects.owl#isParalogOf"/>
+          <owl:someValuesFrom rdf:resource="http://purl.oclc.org/SADI/LSRN/KEGG_Record"/>
+      </owl:Restriction>
+   </rdfs:subClassOf>
+</owl:Class>
+
+</rdf:RDF>
+}}}
+
+The important things to note are:
+
+ 1. we are explicitly importing any ontology we refer to
+
+ 2. our output class is a subclass of the input class (in this case, a KEGG_Record)
+
+ 3. our output class includes a restriction indicating that the service returns KEGG_Records related to the input by the 'isParalogOf' predicate (i.e.: KEGG_Records that are paralogs of the input KEGG_Record).  The owl:valuesFrom property on the restriction allows us to do reasoning about how to chain services together.  It is important that we put this restriction here instead of in the owl definition of the predicate itself, since it allows us to constrain OUR use of the predicate, without constraining its range for anyone else!
+
+ 4.  the "#isParalogOf" property is symmetric (symmetry is an OWL logical function), meaning that if X is a paralog of Y, then Y is also a paralog of X.  Note also that, in this case, I am defining the #isParalogOf property in my service ontology; however '''THIS IS NOT ALWAYS NECESSARY''' - if you produce data that represents a relationship that has been adequately defined by someone else, then you are free to use that third-party's predicate and you don't need to define it yourself.  Re-use Re-use Re-use :-)  That's what the Semantic Web is all about!  ...in fact, the Semantic Web works BETTER if we all look for, and re-use predicates that have been defined by someone else!
+
+The SADI Taverna plugin has been updated to use the information in these restrictions for service discovery.
+
+§
+
+We have written a tool that generates an OWL ontology from a Java class hierarchy.  Although this is quite opposite to the way things are usually done, we think it will be a useful tool for the BioHackathon audience to understand the SADI approach to OWL reasoning and ontology building.  I am putting together a downloadable (and documented) package so you can play with it, but for now you can check out the code in the SADI repository at http://code.google.com/p/sadi/source/browse/#svn/trunk/sadi.common/src/main/java/ca/wilkinsonlab/sadi/jowl (the tools: !OntModelBuilder for building an OWL ontology from a Java class hierarchy and !InstanceSerializer for converting a Java instance to an RDF serialization) and http://code.google.com/p/sadi/source/browse/#svn/trunk/sadi.common/src/test/java/ca/wilkinsonlab/sadi/jowl (test cases).  Apologies for the present lack of documentation, but that's why it's a Hackathon and not an Engineerathon, no?

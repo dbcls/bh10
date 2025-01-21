@@ -1,0 +1,227 @@
+[[PageOutline]]
+= Group activities: Day One =
+
+
+ * [TextMining Open space discussion]
+ * TextMiningDayOne
+ * TextMiningDayTwo
+ * TextMiningDayThree
+ * TextMiningDayFour
+ * TextMiningReport
+
+
+==== Reflect RDFa snippets ====
+
+Idea 1 (interlaced with the text):
+{{{
+<div xmlns:sioc="http://rdfs.org/sioc/ns#" typeof="sioc:Item">
+<span class='reflect_protein'><a rel="sioc:topic" resource="http://purl.uniprot.org/uniprot/P05113"></a>IL-5</span>
+</div>
+}}}
+
+Idea 2 (at the end of the document, non-redundant):
+{{{
+<div xmlns:sioc="http://rdfs.org/sioc/ns#" typeof="sioc:Item">
+<span id='reflectEntity0'>9606.ENSP00000231454</span>
+<a rel="sioc:topic" resource="http://purl.uniprot.org/uniprot/P05113"></a>
+</div>
+}}}
+
+
+==== Whatizit RDFa service ====
+
+IL-5 Example:
+http://whatizit.neurocommons.org/index.py/text_query?pipeline=whatizitEBIMedDiseaseChemicals&query=IL-5&format=atag&max_results=10
+
+Converted to Turtle: WhatizitAsTurtle
+
+This uses a W3 service (http://www.w3.org/2007/08/pyRdfa)
+
+==== Uniprot RDF ====
+
+
+ http://www.uniprot.org/uniprot/P12345.n4
+
+{{{
+
+uniprot:P12345
+  rdf:type Protein
+  alternativeName 
+    rdf:type Structured_Name
+    fullName "Transaminase A"
+  citation <http://purl.uniprot.org/citations/4030726>
+    rdf:type Journal_Citation
+    title 
+      "Aspartate aminotransferase isozymes from rabbit liver. Purification 
+       and properties."
+    author "Kuramitsu S."
+    author "Inoue K."
+    author "Kondo K."
+    author "Aki K."
+    author "Kagamiyama H."
+    skos:exactMatch <http://purl.uniprot.org/medline/85289123>
+    skos:exactMatch <http://purl.uniprot.org/pubmed/4030726>
+    date 1985
+    name "J. Biochem."
+    volume 97
+    pages "1337-1345"
+    +rdf:type Citation_Statement
+    +scope "PROTEIN SEQUENCE"
+    +context 
+      rdf:type Tissue
+      rdfs:label "Liver"
+
+
+}}}
+
+==== Pubmed RDF @ TogoWS ====
+
+ http://togows.dbcls.jp/entry/pubmed/4030726.ttl
+
+{{{
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://togows.dbcls.jp/ns/ncbi-pubmed#pmid>	"4030726" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://www.w3.org/2000/01/rdf-schema#label>	"pmid:4030726" .          
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://purl.org/dc/elements/1.1/title>	"pmid:4030726" .          
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://purl.org/dc/elements/1.1/identifier>	<http://pubmed.org/4030726> .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://togows.dbcls.jp/ns/ncbi-pubmed#own>	"NLM" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://togows.dbcls.jp/ns/ncbi-pubmed#stat>	"MEDLINE" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://togows.dbcls.jp/ns/ncbi-pubmed#da>	"1985-10-09" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://togows.dbcls.jp/ns/ncbi-pubmed#dcom>	"1985-10-09" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://togows.dbcls.jp/ns/ncbi-pubmed#lr>	"2007-12-19" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://togows.dbcls.jp/ns/ncbi-pubmed#vi>	"97" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://prismstandard.org/namespaces/2.0/basic/volume>	"97" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://togows.dbcls.jp/ns/ncbi-pubmed#dp>	"1985 May" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://prismstandard.org/namespaces/2.0/basic/prism:publicationDate>	"1985-05" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://togows.dbcls.jp/ns/ncbi-pubmed#ti>	"Aspartate aminotransferase isozymes from rabbit liver. Purification and properties." .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://purl.org/dc/elements/1.1/title>	"Aspartate aminotransferase isozymes from rabbit liver. Purification and properties." .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://togows.dbcls.jp/ns/ncbi-pubmed#pg>	"1337-45" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://prismstandard.org/namespaces/2.0/basic/startingPage>	"1337" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://togows.dbcls.jp/ns/ncbi-pubmed#ab>	"Cytosolic and mitochondrial isozymes of aspartate aminotransferase (L-aspartate:2-oxoglutarate aminotransferase [EC 2.6.1.1] ) were purified to homogeneity from rabbit liver. The rabbit liver isozymes were closely similar to the corresponding isozymes from other sources, including human heart, pig heart, chicken heart, and rat liver, in their molecular weights, absorption spectra, amino acid compositions, isoelectric points, and Michaelis constants for the substrates. The NH2-terminal amino acid sequences of rabbit liver isozymes were identified up to 30 residues, and showed some differences from those of the corresponding isozymes obtained from other animals so far studied." .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://togows.dbcls.jp/ns/ncbi-pubmed#ad>	"" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://togows.dbcls.jp/ns/ncbi-pubmed#fau>	"Kuramitsu, S" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://purl.org/dc/terms/creator>	"Kuramitsu, S" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://togows.dbcls.jp/ns/ncbi-pubmed#fau>	"Inoue, K" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://purl.org/dc/terms/creator>	"Inoue, K" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://togows.dbcls.jp/ns/ncbi-pubmed#fau>	"Kondo, K" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://purl.org/dc/terms/creator>	"Kondo, K" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://togows.dbcls.jp/ns/ncbi-pubmed#fau>	"Aki, K" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://purl.org/dc/terms/creator>	"Aki, K" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://togows.dbcls.jp/ns/ncbi-pubmed#fau>	"Kagamiyama, H" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://purl.org/dc/terms/creator>	"Kagamiyama, H" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://togows.dbcls.jp/ns/ncbi-pubmed#au>	"Kuramitsu S" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://togows.dbcls.jp/ns/ncbi-pubmed#au>	"Inoue K" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://togows.dbcls.jp/ns/ncbi-pubmed#au>	"Kondo K" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://togows.dbcls.jp/ns/ncbi-pubmed#au>	"Aki K" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://togows.dbcls.jp/ns/ncbi-pubmed#au>	"Kagamiyama H" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://togows.dbcls.jp/ns/ncbi-pubmed#pt>	"Journal Article Research Support, Non-U.S. Gov't" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://togows.dbcls.jp/ns/ncbi-pubmed#pl>	"JAPAN" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://togows.dbcls.jp/ns/ncbi-pubmed#ta>	"J Biochem" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://prismstandard.org/namespaces/2.0/basic/publicationName>	"J Biochem" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://togows.dbcls.jp/ns/ncbi-pubmed#jt>	"Journal of biochemistry" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://togows.dbcls.jp/ns/ncbi-pubmed#jid>	"0376600" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://togows.dbcls.jp/ns/ncbi-pubmed#rn>	"0 (Isoenzymes)" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://togows.dbcls.jp/ns/ncbi-pubmed#sb>	"IM" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://togows.dbcls.jp/ns/ncbi-pubmed#mh>	"Amino Acid Sequence" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://togows.dbcls.jp/ns/ncbi-pubmed#mh>	"Amino Acids/analysis" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://togows.dbcls.jp/ns/ncbi-pubmed#mh>	"Animals" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://togows.dbcls.jp/ns/ncbi-pubmed#mh>	"Aspartate Aminotransferases/*isolation & purification/metabolism" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://togows.dbcls.jp/ns/ncbi-pubmed#mh>	"Isoelectric Point" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://togows.dbcls.jp/ns/ncbi-pubmed#mh>	"Isoenzymes/*isolation & purification/metabolism" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://togows.dbcls.jp/ns/ncbi-pubmed#mh>	"Kinetics" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://togows.dbcls.jp/ns/ncbi-pubmed#mh>	"Liver/*enzymology" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://togows.dbcls.jp/ns/ncbi-pubmed#mh>	"Molecular Weight" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://togows.dbcls.jp/ns/ncbi-pubmed#mh>	"Rabbits" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://togows.dbcls.jp/ns/ncbi-pubmed#mh>	"Spectrum Analysis" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://togows.dbcls.jp/ns/ncbi-pubmed#edat>	"1985-05-01" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://togows.dbcls.jp/ns/ncbi-pubmed#mhda>	"1985-05-01 00:01" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://togows.dbcls.jp/ns/ncbi-pubmed#crdt>	"1985-05-01 00:00" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://togows.dbcls.jp/ns/ncbi-pubmed#pst>	"ppublish" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://togows.dbcls.jp/ns/ncbi-pubmed#so>	"J Biochem. 1985 May;97(5):1337-45." .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/4030726>	<http://togows.dbcls.jp/ns/ncbi-pubmed#la>	"eng" .
+
+}}}
+
+==== Pubmed Linked Data @bio2rf ====
+
+http://bio2rdf.org/citations:4030726
+
+{{{
+
+http://bio2rdf.org/citations:4030726 	
+       http://bio2rdf.org/bio2rdf_resource:linkedToFrom 	
+                http://bio2rdf.org/uniprot:P12343
+		http://bio2rdf.org/uniprot:P12343_1
+		http://bio2rdf.org/uniprot:P12343_10
+		http://bio2rdf.org/uniprot:P12343_6
+		http://bio2rdf.org/uniprot:P12345
+		http://bio2rdf.org/uniprot:P12345_1
+		http://bio2rdf.org/uniprot:P12345_A
+	http://bio2rdf.org/bio2rdf_resource:url http://bio2rdf.org/html/citations:4030726 (Non-RDF URI)
+	http://creativecommons.org/ns#license 	http://bio2rdf.org/license/citations:4030726
+	http://purl.uniprot.org/core/author 	
+                Aki K.
+		Inoue K.
+		Kagamiyama H.
+		Kondo K.
+		Kuramitsu S.
+	http://purl.uniprot.org/core/date 	1985
+	http://purl.uniprot.org/core/name 	J. Biochem.
+	http://purl.uniprot.org/core/pages 	1337-1345
+	http://purl.uniprot.org/core/title 	Aspartate aminotransferase isozymes from rabbit liver. Purification and properties.
+	http://purl.uniprot.org/core/volume 	97
+	http://www.w3.org/1999/02/22-rdf-syntax-ns#type 	http://bio2rdf.org/core:Journal_Citation
+	http://www.w3.org/2002/07/owl#sameAs 	http://bio2rdf.org/medline:85289123 
+                                                http://bio2rdf.org/pubmed:4030726
+
+}}}
+
+==== Pubmed Linked Data @Uniprot ====
+
+http://www.uniprot.org/citations/4030726.rdf
+
+{{{
+@prefix <http://purl.uniprot.org/core/>
+@prefix rdf <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+@prefix rdfs <http://www.w3.org/2000/01/rdf-schema#>
+@prefix owl <http://www.w3.org/2002/07/owl#>
+@prefix skos <http://www.w3.org/2004/02/skos/core#>
+@prefix pubmed <http://purl.uniprot.org/pubmed/>
+
+pubmed:4030726
+	rdf:type Journal_Citation
+	title 
+		"Aspartate aminotransferase isozymes from rabbit liver. Purification and 
+		 properties."
+	author "Kuramitsu S."
+	author "Inoue K."
+	author "Kondo K."
+	author "Aki K."
+	author "Kagamiyama H."
+	skos:exactMatch <http://purl.uniprot.org/medline/85289123>
+	skos:exactMatch pubmed:4030726
+	date 1985
+	rdfs:comment 
+		"Cytosolic and mitochondrial isozymes of aspartate aminotransferase 
+		 (L-aspartate:2-oxoglutarate aminotransferase [EC 2.6.1.1] ) were 
+		 purified to homogeneity from rabbit liver. The rabbit liver isozymes 
+		 were closely similar to the corresponding isozymes from other sources, 
+		 including human heart, pig heart, chicken heart, and rat liver, in their 
+		 molecular weights, absorption spectra, amino acid compositions, 
+		 isoelectric points, and Michaelis constants for the substrates. The 
+		 NH2-terminal amino acid sequences of rabbit liver isozymes were 
+		 identified up to 30 residues, and showed some differences from those of 
+		 the corresponding isozymes obtained from other animals so far studied."
+	name "J. Biochem."
+	volume 97
+	pages "1337-1345"
+
+}}}
+
+http://srs.ebi.ac.uk/srsbin/cgi-bin/wgetz?-page+EntryPage+-id+kXl1bEXNu+-e+[MEDLINE:4030726]+-vn+2+-ascii
+http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=11748933,11700088&retmode=xml
+
+----
+
+TextMining
+
+

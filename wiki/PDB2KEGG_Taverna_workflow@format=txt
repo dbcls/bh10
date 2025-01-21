@@ -1,0 +1,41 @@
+We will build a Taverna worflow to consume PDBj, KEGG and 
+
+The SPARQL endpoints we are using :
+
+ * http://192.168.11.61:8890/sparql KEGG@Bio2RDF
+ * http://192.168.11.61:8891/sparql PDB@Bio2RDF
+ * http://192.168.11.61:8892/sparql PDBj+KEGG@DCLS 
+ * http://192.168.11.61:8893/sparql mashup
+ * http://sabi.ddbj.nig.ac.jp:8080/sparql sequence@DDBJ
+
+== Cool queries to discover your dataset ==
+
+ Number of triples :
+
+{{{
+select count(*)
+where { 
+?s ?p ?o . 
+}
+}}}
+
+ List of predicates :
+{{{
+select ?p count(*)
+where {
+   ?s ?p ?o . 
+}
+}}}
+
+ List of types :
+{{{
+select ?t count(*)
+where {
+   ?s a ?t . 
+}
+}}}
+
+
+
+
+

@@ -1,0 +1,106 @@
+[[PageOutline]] 
+
+This page describes brief summary how to set up a Virtuoso 6.0.0 server with the Facet search configuration.
+
+Goals
+ * Set up a SPARQL endpoint at http://localhost:8890/sparql/
+ * Set up facet search at  http://localhost:8890/fct
+
+= Installation =
+
+Check out the source code via CVS
+{{{
+$ cvs -d:pserver:anonymous@virtuoso.cvs.sourceforge.net:/cvsroot/virtuoso co -r VOS-6_1_0 virtuoso-opensource
+}}}
+
+223 MB files
+{{{
+$ du -sh * 
+223M	virtuoso-opensource/
+}}}
+
+{{{
+$ cd virtuoso-opensource
+$ sh autogen.sh
+}}}
+
+Build it (for 20-60 min.)
+{{{
+$ ./autogen.sh        # should only be needed in CVS checkout
+$ ./configure --with-readline=/opt/local
+$ make -j2
+$ make -j2
+$ make check
+$ make install
+$ ls /usr/local/virtuoso-opensource
+}}}
+
+
+= Startup =
+Set up a database directory (/some/where/db).
+{{{
+$ mkdir /some/where/db
+$ cd /some/where/db
+$ cp /usr/local/virtuoso-opensource/var/lib/virtuoso/db/virtuoso.ini .
+}}}
+
+Boot
+{{{
+$ pwd
+/some/where/db
+$ /usr/local/virtuoso-opensource/bin/virtuoso-t -f
+}}}
+
+Open http://localhost:8890 by your web browser. 
+
+
+
+== Startup with RAMDISK ==
+
+
+= Use Bio2RDF dump db =
+
+ 1. Download a virtuoso version 6.0 dump db file form http://quebec.bio2rdf.org/download/virtuoso/V6/
+ 2. Rename the dump db as "virtuoso.db" then deply at the db directory.
+ 3. That's it
+
+(These dump files will not work with version 6.1.0)
+
+{{{
+$ 
+}}}
+
+= Loading RDF =
+
+See [wiki:DDBJ-KEGG-PDBj#Howtoloaddatatovirtuoso]
+
+
+= Facet search setup =
+== Add full-text index and ranking ==
+
+{{{
+$ /usr/local/virtuoso-opensource/bin/isql 1111 dba dba fct-init.sql
+}}}
+'''NOTE''' This should NOT be done for version 6.1.0.
+(I don't know why...)
+
+== Install the fct package ==
+Install the fct VAD package to activate the facet search at http://localhost:8890/fct
+ 
+ 1. Login as dba user / dba password at http://localhost:8890/conductor/
+ 2. Go System admin tab.
+ 3. GO Packages sub-tab.
+ 4. Install the fct package.
+[[Image(Virtuoso Application Deployment.jpg)]]
+
+= Post-installation =
+Apply the following sql script for post installation settings.
+{{{
+$ /usr/local/virtuoso-opensource/bin/isql 1111 dba dba fct-index.sql
+}}}
+'''Note''' For version 6.1.0, use fct-index-6.1.0.sql attached below.
+
+== Use facet search ==
+
+Open http://localhost:8890/fct to use the facet search
+

@@ -1,0 +1,319 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      TextMiningDayOne – BioHackathon 2010
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="alternate" href="/wiki/TextMiningDayOne?version=18&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="/wiki/TextMiningDayOne" title="View latest version" />
+        <link rel="next" href="/wiki/TextMiningDayOne?version=19" title="Version 19" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" />
+        <link rel="prev" href="/wiki/TextMiningDayOne?version=17" title="Version 17" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search BioHackathon 2010" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon3.dbcls.jp/"><img src="http://hackathon3.dbcls.jp/raw-attachment/wiki/LogoGallery/trac_logo.png" alt="DBCLS BioHackathon 2010" width="200" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="/wiki/TextMiningDayOne?version=17" title="Version 17">Previous Version</a></span></li><li><a href="/wiki/TextMiningDayOne" title="View latest version">View Latest Version</a></li><li><span><a class="next" href="/wiki/TextMiningDayOne?version=19" title="Version 19">Next Version</a> &rarr;</span></li><li class="last"><a href="/wiki/TextMiningDayOne?action=diff&amp;version=18">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 18 (modified by yy, <a class="timeline" href="/timeline?from=2010-02-15T20%3A33%3A04%2B0900&amp;precision=second" title="2010-02-15T20:33:04+0900 in Timeline">15 years</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+--
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <p>
+</p><div class="wiki-toc"><ol><li><a href="#Groupactivities:DayOne">Group activities: Day One</a><ol><li><ol><li><ol><li><a href="#ReflectRDFasnippets">Reflect RDFa snippets</a></li><li>
+<a href="#WhatizitRDFaservice">Whatizit RDFa service</a></li><li>
+<a href="#UniprotRDF">Uniprot RDF</a></li><li>
+<a href="#PubmedRDFTogoWS">Pubmed RDF @ TogoWS</a></li><li>
+<a href="#PubmedLinkedDatabio2rf">Pubmed Linked Data @bio2rf</a></li><li>
+<a href="#PubmedLinkedDataUniprot">Pubmed Linked Data @Uniprot</a></li></ol></li></ol></li></ol></li></ol></div><p>
+</p>
+<h1 id="Groupactivities:DayOne">Group activities: Day One</h1>
+<ul><li><a class="wiki" href="/wiki/TextMining">Open space discussion</a>
+</li><li><a class="wiki" href="/wiki/TextMiningDayOne">TextMiningDayOne</a>
+</li><li><a class="wiki" href="/wiki/TextMiningDayTwo">TextMiningDayTwo</a>
+</li><li><a class="wiki" href="/wiki/TextMiningDayThree">TextMiningDayThree</a>
+</li><li><a class="wiki" href="/wiki/TextMiningDayFour">TextMiningDayFour</a>
+</li><li><a class="missing wiki">TextMiningPostHackathon?</a>
+</li></ul><h4 id="ReflectRDFasnippets">Reflect RDFa snippets</h4>
+<p>
+Idea 1 (interlaced with the text):
+</p>
+<pre class="wiki">&lt;div xmlns:sioc="http://rdfs.org/sioc/ns#" typeof="sioc:Item"&gt;
+&lt;span class='reflect_protein'&gt;&lt;a rel="sioc:topic" resource="http://purl.uniprot.org/uniprot/P05113"&gt;&lt;/a&gt;IL-5&lt;/span&gt;
+&lt;/div&gt;
+</pre><p>
+Idea 2 (at the end of the document, non-redundant):
+</p>
+<pre class="wiki">&lt;div xmlns:sioc="http://rdfs.org/sioc/ns#" typeof="sioc:Item"&gt;
+&lt;span id='reflectEntity0'&gt;9606.ENSP00000231454&lt;/span&gt;
+&lt;a rel="sioc:topic" resource="http://purl.uniprot.org/uniprot/P05113"&gt;&lt;/a&gt;
+&lt;/div&gt;
+</pre><h4 id="WhatizitRDFaservice">Whatizit RDFa service</h4>
+<p>
+IL-5 Example:
+<a class="ext-link" href="http://whatizit.neurocommons.org/index.py/text_query?pipeline=whatizitEBIMedDiseaseChemicals&amp;query=IL-5&amp;format=atag&amp;max_results=10"><span class="icon"> </span>http://whatizit.neurocommons.org/index.py/text_query?pipeline=whatizitEBIMedDiseaseChemicals&amp;query=IL-5&amp;format=atag&amp;max_results=10</a>
+</p>
+<p>
+Converted to Turtle: <a class="wiki" href="/wiki/WhatizitAsTurtle">WhatizitAsTurtle</a>
+</p>
+<p>
+This uses a W3 service (<a class="ext-link" href="http://www.w3.org/2007/08/pyRdfa"><span class="icon"> </span>http://www.w3.org/2007/08/pyRdfa</a>)
+</p>
+<h4 id="UniprotRDF">Uniprot RDF</h4>
+<blockquote>
+<p>
+<a class="ext-link" href="http://www.uniprot.org/uniprot/P12345.n4"><span class="icon"> </span>http://www.uniprot.org/uniprot/P12345.n4</a>
+</p>
+</blockquote>
+<pre class="wiki">
+uniprot:P12345
+  rdf:type Protein
+  alternativeName 
+    rdf:type Structured_Name
+    fullName "Transaminase A"
+  citation &lt;http://purl.uniprot.org/citations/4030726&gt;
+    rdf:type Journal_Citation
+    title 
+      "Aspartate aminotransferase isozymes from rabbit liver. Purification 
+       and properties."
+    author "Kuramitsu S."
+    author "Inoue K."
+    author "Kondo K."
+    author "Aki K."
+    author "Kagamiyama H."
+    skos:exactMatch &lt;http://purl.uniprot.org/medline/85289123&gt;
+    skos:exactMatch &lt;http://purl.uniprot.org/pubmed/4030726&gt;
+    date 1985
+    name "J. Biochem."
+    volume 97
+    pages "1337-1345"
+    +rdf:type Citation_Statement
+    +scope "PROTEIN SEQUENCE"
+    +context 
+      rdf:type Tissue
+      rdfs:label "Liver"
+
+
+</pre><h4 id="PubmedRDFTogoWS">Pubmed RDF @ TogoWS</h4>
+<blockquote>
+<p>
+<a class="ext-link" href="http://togows.dbcls.jp/entry/pubmed/4030726.ttl"><span class="icon"> </span>http://togows.dbcls.jp/entry/pubmed/4030726.ttl</a>
+</p>
+</blockquote>
+<pre class="wiki">&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://togows.dbcls.jp/ns/ncbi-pubmed#pmid&gt;	"4030726" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://www.w3.org/2000/01/rdf-schema#label&gt;	"pmid:4030726" .          
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://purl.org/dc/elements/1.1/title&gt;	"pmid:4030726" .          
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://purl.org/dc/elements/1.1/identifier&gt;	&lt;http://pubmed.org/4030726&gt; .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://togows.dbcls.jp/ns/ncbi-pubmed#own&gt;	"NLM" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://togows.dbcls.jp/ns/ncbi-pubmed#stat&gt;	"MEDLINE" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://togows.dbcls.jp/ns/ncbi-pubmed#da&gt;	"1985-10-09" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://togows.dbcls.jp/ns/ncbi-pubmed#dcom&gt;	"1985-10-09" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://togows.dbcls.jp/ns/ncbi-pubmed#lr&gt;	"2007-12-19" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://togows.dbcls.jp/ns/ncbi-pubmed#vi&gt;	"97" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://prismstandard.org/namespaces/2.0/basic/volume&gt;	"97" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://togows.dbcls.jp/ns/ncbi-pubmed#dp&gt;	"1985 May" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://prismstandard.org/namespaces/2.0/basic/prism:publicationDate&gt;	"1985-05" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://togows.dbcls.jp/ns/ncbi-pubmed#ti&gt;	"Aspartate aminotransferase isozymes from rabbit liver. Purification and properties." .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://purl.org/dc/elements/1.1/title&gt;	"Aspartate aminotransferase isozymes from rabbit liver. Purification and properties." .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://togows.dbcls.jp/ns/ncbi-pubmed#pg&gt;	"1337-45" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://prismstandard.org/namespaces/2.0/basic/startingPage&gt;	"1337" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://togows.dbcls.jp/ns/ncbi-pubmed#ab&gt;	"Cytosolic and mitochondrial isozymes of aspartate aminotransferase (L-aspartate:2-oxoglutarate aminotransferase [EC 2.6.1.1] ) were purified to homogeneity from rabbit liver. The rabbit liver isozymes were closely similar to the corresponding isozymes from other sources, including human heart, pig heart, chicken heart, and rat liver, in their molecular weights, absorption spectra, amino acid compositions, isoelectric points, and Michaelis constants for the substrates. The NH2-terminal amino acid sequences of rabbit liver isozymes were identified up to 30 residues, and showed some differences from those of the corresponding isozymes obtained from other animals so far studied." .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://togows.dbcls.jp/ns/ncbi-pubmed#ad&gt;	"" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://togows.dbcls.jp/ns/ncbi-pubmed#fau&gt;	"Kuramitsu, S" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://purl.org/dc/terms/creator&gt;	"Kuramitsu, S" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://togows.dbcls.jp/ns/ncbi-pubmed#fau&gt;	"Inoue, K" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://purl.org/dc/terms/creator&gt;	"Inoue, K" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://togows.dbcls.jp/ns/ncbi-pubmed#fau&gt;	"Kondo, K" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://purl.org/dc/terms/creator&gt;	"Kondo, K" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://togows.dbcls.jp/ns/ncbi-pubmed#fau&gt;	"Aki, K" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://purl.org/dc/terms/creator&gt;	"Aki, K" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://togows.dbcls.jp/ns/ncbi-pubmed#fau&gt;	"Kagamiyama, H" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://purl.org/dc/terms/creator&gt;	"Kagamiyama, H" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://togows.dbcls.jp/ns/ncbi-pubmed#au&gt;	"Kuramitsu S" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://togows.dbcls.jp/ns/ncbi-pubmed#au&gt;	"Inoue K" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://togows.dbcls.jp/ns/ncbi-pubmed#au&gt;	"Kondo K" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://togows.dbcls.jp/ns/ncbi-pubmed#au&gt;	"Aki K" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://togows.dbcls.jp/ns/ncbi-pubmed#au&gt;	"Kagamiyama H" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://togows.dbcls.jp/ns/ncbi-pubmed#pt&gt;	"Journal Article Research Support, Non-U.S. Gov't" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://togows.dbcls.jp/ns/ncbi-pubmed#pl&gt;	"JAPAN" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://togows.dbcls.jp/ns/ncbi-pubmed#ta&gt;	"J Biochem" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://prismstandard.org/namespaces/2.0/basic/publicationName&gt;	"J Biochem" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://togows.dbcls.jp/ns/ncbi-pubmed#jt&gt;	"Journal of biochemistry" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://togows.dbcls.jp/ns/ncbi-pubmed#jid&gt;	"0376600" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://togows.dbcls.jp/ns/ncbi-pubmed#rn&gt;	"0 (Isoenzymes)" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://togows.dbcls.jp/ns/ncbi-pubmed#sb&gt;	"IM" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://togows.dbcls.jp/ns/ncbi-pubmed#mh&gt;	"Amino Acid Sequence" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://togows.dbcls.jp/ns/ncbi-pubmed#mh&gt;	"Amino Acids/analysis" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://togows.dbcls.jp/ns/ncbi-pubmed#mh&gt;	"Animals" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://togows.dbcls.jp/ns/ncbi-pubmed#mh&gt;	"Aspartate Aminotransferases/*isolation &amp; purification/metabolism" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://togows.dbcls.jp/ns/ncbi-pubmed#mh&gt;	"Isoelectric Point" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://togows.dbcls.jp/ns/ncbi-pubmed#mh&gt;	"Isoenzymes/*isolation &amp; purification/metabolism" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://togows.dbcls.jp/ns/ncbi-pubmed#mh&gt;	"Kinetics" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://togows.dbcls.jp/ns/ncbi-pubmed#mh&gt;	"Liver/*enzymology" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://togows.dbcls.jp/ns/ncbi-pubmed#mh&gt;	"Molecular Weight" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://togows.dbcls.jp/ns/ncbi-pubmed#mh&gt;	"Rabbits" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://togows.dbcls.jp/ns/ncbi-pubmed#mh&gt;	"Spectrum Analysis" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://togows.dbcls.jp/ns/ncbi-pubmed#edat&gt;	"1985-05-01" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://togows.dbcls.jp/ns/ncbi-pubmed#mhda&gt;	"1985-05-01 00:01" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://togows.dbcls.jp/ns/ncbi-pubmed#crdt&gt;	"1985-05-01 00:00" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://togows.dbcls.jp/ns/ncbi-pubmed#pst&gt;	"ppublish" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://togows.dbcls.jp/ns/ncbi-pubmed#so&gt;	"J Biochem. 1985 May;97(5):1337-45." .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/4030726&gt;	&lt;http://togows.dbcls.jp/ns/ncbi-pubmed#la&gt;	"eng" .
+
+</pre><h4 id="PubmedLinkedDatabio2rf">Pubmed Linked Data @bio2rf</h4>
+<p>
+<a class="ext-link" href="http://bio2rdf.org/citations:4030726"><span class="icon"> </span>http://bio2rdf.org/citations:4030726</a>
+</p>
+<pre class="wiki">
+http://bio2rdf.org/citations:4030726 	
+       http://bio2rdf.org/bio2rdf_resource:linkedToFrom 	
+                http://bio2rdf.org/uniprot:P12343
+		http://bio2rdf.org/uniprot:P12343_1
+		http://bio2rdf.org/uniprot:P12343_10
+		http://bio2rdf.org/uniprot:P12343_6
+		http://bio2rdf.org/uniprot:P12345
+		http://bio2rdf.org/uniprot:P12345_1
+		http://bio2rdf.org/uniprot:P12345_A
+	http://bio2rdf.org/bio2rdf_resource:url http://bio2rdf.org/html/citations:4030726 (Non-RDF URI)
+	http://creativecommons.org/ns#license 	http://bio2rdf.org/license/citations:4030726
+	http://purl.uniprot.org/core/author 	
+                Aki K.
+		Inoue K.
+		Kagamiyama H.
+		Kondo K.
+		Kuramitsu S.
+	http://purl.uniprot.org/core/date 	1985
+	http://purl.uniprot.org/core/name 	J. Biochem.
+	http://purl.uniprot.org/core/pages 	1337-1345
+	http://purl.uniprot.org/core/title 	Aspartate aminotransferase isozymes from rabbit liver. Purification and properties.
+	http://purl.uniprot.org/core/volume 	97
+	http://www.w3.org/1999/02/22-rdf-syntax-ns#type 	http://bio2rdf.org/core:Journal_Citation
+	http://www.w3.org/2002/07/owl#sameAs 	http://bio2rdf.org/medline:85289123 
+                                                http://bio2rdf.org/pubmed:4030726
+
+</pre><h4 id="PubmedLinkedDataUniprot">Pubmed Linked Data @Uniprot</h4>
+<p>
+<a class="ext-link" href="http://www.uniprot.org/citations/4030726.rdf"><span class="icon"> </span>http://www.uniprot.org/citations/4030726.rdf</a>
+</p>
+<pre class="wiki">@prefix &lt;http://purl.uniprot.org/core/&gt;
+@prefix rdf &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+@prefix rdfs &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+@prefix owl &lt;http://www.w3.org/2002/07/owl#&gt;
+@prefix skos &lt;http://www.w3.org/2004/02/skos/core#&gt;
+@prefix pubmed &lt;http://purl.uniprot.org/pubmed/&gt;
+
+pubmed:4030726
+	rdf:type Journal_Citation
+	title 
+		"Aspartate aminotransferase isozymes from rabbit liver. Purification and 
+		 properties."
+	author "Kuramitsu S."
+	author "Inoue K."
+	author "Kondo K."
+	author "Aki K."
+	author "Kagamiyama H."
+	skos:exactMatch &lt;http://purl.uniprot.org/medline/85289123&gt;
+	skos:exactMatch pubmed:4030726
+	date 1985
+	rdfs:comment 
+		"Cytosolic and mitochondrial isozymes of aspartate aminotransferase 
+		 (L-aspartate:2-oxoglutarate aminotransferase [EC 2.6.1.1] ) were 
+		 purified to homogeneity from rabbit liver. The rabbit liver isozymes 
+		 were closely similar to the corresponding isozymes from other sources, 
+		 including human heart, pig heart, chicken heart, and rat liver, in their 
+		 molecular weights, absorption spectra, amino acid compositions, 
+		 isoelectric points, and Michaelis constants for the substrates. The 
+		 NH2-terminal amino acid sequences of rabbit liver isozymes were 
+		 identified up to 30 residues, and showed some differences from those of 
+		 the corresponding isozymes obtained from other animals so far studied."
+	name "J. Biochem."
+	volume 97
+	pages "1337-1345"
+
+</pre><hr />
+<p>
+<a class="wiki" href="/wiki/TextMining">TextMining</a>
+</p>
+
+        
+        
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="/wiki/TextMiningDayOne?version=18&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

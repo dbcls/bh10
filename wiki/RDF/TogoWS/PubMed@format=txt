@@ -1,0 +1,537 @@
+[[PageOutline]] 
+
+== MEDLINE/PubMed data in RDF ==
+
+MEDLINE/PubMed data spec.
+ * http://www.nlm.nih.gov/bsd/mms/medlineelements.html
+
+A PubMed entry URI
+ * http://togows.dbcls.jp/entry/pubmed/10975656
+ * http://pubmed.org/10975656
+
+Related works
+ * http://neurocommons.org/page/Bundles
+   *  http://neurocommons.org/page/Bundles/mesh/mesh-skos
+   * http://neurocommons.org/page/Bundles/mesh/qualified-headings
+   * http://neurocommons.org/page/Bundles/medline/subject-headings
+   * http://neurocommons.org/page/Bundles/medline/titles-years
+   * http://neurocommons.org/page/Bundles/ncbi/gene-pubmed
+   * http://neurocommons.org/page/Bundles/omim
+ * [http://hublog.hubmed.org/archives/001789.html UniProt / RDF / SPARQL] 
+ * [http://labs.intellidimension.com/uniprot/default.rsp Experiments with Uniprot RDF and RDF Gateway]
+ * [http://dev.isb-sib.ch/projects/uniprot-rdf/migration.html#uniprot-r uniprot RDF :: Migration Guide]
+
+=== MEDLINE/PubMed record sample ===
+{{{
+PMID- 10975656
+OWN - NLM
+STAT- MEDLINE
+DA  - 20001211
+DCOM- 20010111
+LR  - 20011128
+IS  - 0894-0282 (Print)
+IS  - 0894-0282 (Linking)
+VI  - 13
+IP  - 9
+DP  - 2000 Sep
+TI  - Proteome analysis of differentially displayed proteins as a tool for the
+      investigation of symbiosis.
+PG  - 995-1009
+AB  - Two-dimensional gel electrophoresis was used to identify differentially
+      displayed proteins expressed during the symbiotic interaction between the
+      bacterium Sinorhizobium meliloti strain 1021 and the legume Melilotus alba
+      (white sweetclover). Our aim was to characterize novel symbiosis proteins
+      and to determine how the two symbiotic partners alter their respective
+      metabolisms as part of the interaction, by identifying gene products that
+      are differentially present between the symbiotic and non-symbiotic states.
+      Proteome maps from control M. alba roots, wild-type nodules, cultured S.
+      meliloti, and S. meliloti bacteroids were generated and compared. Over 250
+      proteins were induced or up-regulated in the nodule, compared with the
+      root, and over 350 proteins were down-regulated in the bacteroid form of
+      the rhizobia, compared with cultured cells. N-terminal amino acid
+      sequencing and matrix-assisted laser desorption/ionization time-of-flight
+      mass spectrometry peptide mass fingerprint analysis, in conjunction with
+      data base searching, were used to assign putative identity to nearly 100
+      nodule, bacterial, and bacteroid proteins. These included the previously
+      identified nodule proteins leghemoglobin and NifH as well as proteins
+      involved in carbon and nitrogen metabolism in S. meliloti. Bacteroid cells
+      showed down-regulation of several proteins involved in nitrogen
+      acquisition, including glutamine synthetase, urease, a urea-amide binding
+      protein, and a PII isoform, indicating that the bacteroids were nitrogen
+      proficient. The down-regulation of several enzymes involved in
+      polyhydroxybutyrate synthesis and a cell division protein was also
+      observed. This work shows that proteome analysis will be a useful strategy
+      to link sequence information and functional genomics.
+AD  - Plant-Microbe Interaction Group, Research School of Biological Sciences,
+      Australian National University, Canberra City.
+FAU - Natera, S H
+AU  - Natera SH
+FAU - Guerreiro, N
+AU  - Guerreiro N
+FAU - Djordjevic, M A
+AU  - Djordjevic MA
+LA  - eng
+PT  - Journal Article
+PL  - UNITED STATES
+TA  - Mol Plant Microbe Interact
+JT  - Molecular plant-microbe interactions : MPMI
+JID - 9107902
+RN  - 0 (Proteome)
+RN  - 7727-37-9 (Nitrogen)
+SB  - IM
+MH  - Electrophoresis, Gel, Two-Dimensional
+MH  - Fabaceae/*genetics/metabolism/microbiology
+MH  - Nitrogen/metabolism
+MH  - *Plants, Medicinal
+MH  - *Proteome
+MH  - Sinorhizobium meliloti/*genetics/metabolism
+MH  - Spectrometry, Mass, Matrix-Assisted Laser Desorption-Ionization
+MH  - *Symbiosis
+EDAT- 2000/09/07
+MHDA- 2001/02/28
+CRDT- 2000/09/07
+AID - 10.1094/MPMI.2000.13.9.995 [doi]
+PST - ppublish
+SO  - Mol Plant Microbe Interact. 2000 Sep;13(9):995-1009.
+}}}
+
+== Semantics annotation ==
+=== gopubmed ===
+http://gopubmed.org/ 
+{{{
+<rdf:Description about="info:pmid/20077120">
+<dc:title>
+Thymic stromal lymphopoietin induces tight junction protein claudin-7 via NF-kappaB in dendritic cells.
+</dc:title>
+<dcterms:abstract>
+Epithelial-derived thymic stromal lymphopoietin (TSLP) is an IL-7-like cytokine that triggers dendritic cell (DC)-mediated Th2-type inflammatory responses. ...
+</dcterms:abstract>
+<dcterms:creator>Kamekura, Ryuta</dcterms:creator>
+<dcterms:creator>Kojima, Takashi</dcterms:creator>
+<dcterms:creator>Takashima, Akira</dcterms:creator>
+<dcterms:creator>Koizumi, Jun-Ichi</dcterms:creator>
+<dcterms:creator>Ogasawara, Noriko</dcterms:creator>
+<dcterms:creator>Go, Mitsuru</dcterms:creator>
+<dcterms:creator>Takano, Ken-Ichi</dcterms:creator>
+<dcterms:creator>Murata, Masaki</dcterms:creator>
+<dcterms:creator>Tanaka, Satoshi</dcterms:creator>
+<dcterms:creator>Ichimiya, Shingo</dcterms:creator>
+<dcterms:creator>Himi, Tetsuo</dcterms:creator>
+<dcterms:creator>Sawada, Norimasa</dcterms:creator>
+<prism:publicationName>Histochem Cell Biol</prism:publicationName>
+<prism:publicationDate>2010-Jan-14</prism:publicationDate>
+<prism:publicationVolume/>
+<prism:isPartOf>urn:issn:1432-119X</prism:isPartOf>
+</rdf:Description>
+}}}
+
+ * dcterms
+ * prism
+
+=== DBLP ===
+
+
+
+== Rakefile ==
+{{{
+require 'open-uri'
+require 'bio'
+
+class Bio::MEDLINE
+  def subject_uri
+    "<http://pubmed.org/#{self.pmid}>"
+  end
+  def predicate(field)
+    "<http://www.nlm.nih.gov/bsd/mms/medlineelements.html##{field.downcase}>" 
+  end
+  def to_rdf
+    pubmed.keys.map do |field|
+      case field
+      when 'AU','FAU','MH','IS','RN'
+        self.pubmed[field].chomp.split("\n").map do |object|
+          [subject_uri, predicate(field), "\"#{object}\" ."].join("\t") 
+        end
+      when 'AB','TI','AD'
+        [subject_uri, predicate(field), "\"#{self.pubmed[field].chomp.gsub("\n", ' ')}\" ."].join("\t") 
+      else
+        [subject_uri, predicate(field), "\"#{self.pubmed[field].chomp}\" ."].join("\t") 
+      end
+    end
+  end
+end
+
+desc 'test'
+task :test do
+  pm = open("http://togows.dbcls.jp/entry/pubmed/10975656").read
+  pm = Bio::MEDLINE.new(pm)
+  puts pm.to_rdf
+end
+}}}
+
+== Simple but psuedo RDF  ==
+ * subjects: http://pubmed.org/${PMID}
+ * predicates: http://www.nlm.nih.gov/bsd/mms/medlineelements.html#${field_name}
+ * objects: Literal
+
+=== Convert task. ===
+
+{{{
+$ rake test -s > test.n3
+}}}
+
+
+=== test.n3 a PubMed in RDF ===
+
+{{{
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#pmid>	"10975656" .
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#own>	"NLM" .
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#stat>	"MEDLINE" .
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#da>	"20001211" .
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#dcom>	"20010111" .
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#lr>	"20011128" .
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#is>	"0894-0282 (Print)" .
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#is>	"0894-0282 (Linking)" .
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#vi>	"13" .
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#ip>	"9" .
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#dp>	"2000 Sep" .
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#ti>	"Proteome analysis of differentially displayed proteins as a tool for the investigation of symbiosis." .
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#pg>	"995-1009" .
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#ab>	"Two-dimensional gel electrophoresis was used to identify differentially displayed proteins expressed during the symbiotic interaction between the bacterium Sinorhizobium meliloti strain 1021 and the legume Melilotus alba (white sweetclover). Our aim was to characterize novel symbiosis proteins and to determine how the two symbiotic partners alter their respective metabolisms as part of the interaction, by identifying gene products that are differentially present between the symbiotic and non-symbiotic states. Proteome maps from control M. alba roots, wild-type nodules, cultured S. meliloti, and S. meliloti bacteroids were generated and compared. Over 250 proteins were induced or up-regulated in the nodule, compared with the root, and over 350 proteins were down-regulated in the bacteroid form of the rhizobia, compared with cultured cells. N-terminal amino acid sequencing and matrix-assisted laser desorption/ionization time-of-flight mass spectrometry peptide mass fingerprint analysis, in conjunction with data base searching, were used to assign putative identity to nearly 100 nodule, bacterial, and bacteroid proteins. These included the previously identified nodule proteins leghemoglobin and NifH as well as proteins involved in carbon and nitrogen metabolism in S. meliloti. Bacteroid cells showed down-regulation of several proteins involved in nitrogen acquisition, including glutamine synthetase, urease, a urea-amide binding protein, and a PII isoform, indicating that the bacteroids were nitrogen proficient. The down-regulation of several enzymes involved in polyhydroxybutyrate synthesis and a cell division protein was also observed. This work shows that proteome analysis will be a useful strategy to link sequence information and functional genomics." .
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#ad>	"Plant-Microbe Interaction Group, Research School of Biological Sciences, Australian National University, Canberra City." .
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#fau>	"Natera, S H" .
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#fau>	"Guerreiro, N" .
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#fau>	"Djordjevic, M A" .
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#au>	"Natera SH" .
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#au>	"Guerreiro N" .
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#au>	"Djordjevic MA" .
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#la>	"eng" .
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#pt>	"Journal Article" .
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#pl>	"UNITED STATES" .
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#ta>	"Mol Plant Microbe Interact" .
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#jt>	"Molecular plant-microbe interactions : MPMI" .
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#jid>	"9107902" .
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#rn>	"0 (Proteome)" .
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#rn>	"7727-37-9 (Nitrogen)" .
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#sb>	"IM" .
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#mh>	"Electrophoresis, Gel, Two-Dimensional" .
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#mh>	"Fabaceae/*genetics/metabolism/microbiology" .
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#mh>	"Nitrogen/metabolism" .
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#mh>	"*Plants, Medicinal" .
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#mh>	"*Proteome" .
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#mh>	"Sinorhizobium meliloti/*genetics/metabolism" .
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#mh>	"Spectrometry, Mass, Matrix-Assisted Laser Desorption-Ionization" .
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#mh>	"*Symbiosis" .
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#edat>	"2000/09/07" .
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#mhda>	"2001/02/28" .
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#crdt>	"2000/09/07" .
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#aid>	"10.1094/MPMI.2000.13.9.995 [doi]" .
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#pst>	"ppublish" .
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#so>	"Mol Plant Microbe Interact. 2000 Sep;13(9):995-1009." .
+}}}
+
+
+
+=== Query and results ===
+Store it into 4store.
+{{{
+$ 4s-backend-setup pubmed
+$ 4s-backend pubmed
+$ 4s-import pubmed test.n3
+}}}
+
+Query.
+{{{
+$ 4s-query pubmed -f text 'select * where { ?s ?p ?o }' 
+?s	?p	?o
+
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#mh>	"Spectrometry, Mass, Matrix-Assisted Laser Desorption-Ionization"
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#mh>	"Nitrogen/metabolism"
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#mh>	"*Symbiosis"
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#mh>	"*Plants, Medicinal"
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#mh>	"Electrophoresis, Gel, Two-Dimensional"
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#mh>	"Fabaceae/*genetics/metabolism/microbiology"
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#mh>	"*Proteome"
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#mh>	"Sinorhizobium meliloti/*genetics/metabolism"
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#dcom>	"20010111"
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#edat>	"2000/09/07"
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#aid>	"10.1094/MPMI.2000.13.9.995 [doi]"
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#jid>	"9107902"
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#crdt>	"2000/09/07"
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#ab>	"Two-dimensional gel electrophoresis was used to identify differentially displayed proteins expressed during the symbiotic interaction between the bacterium Sinorhizobium meliloti strain 1021 and the legume Melilotus alba (white sweetclover). Our aim was to characterize novel symbiosis proteins and to determine how the two symbiotic partners alter their respective metabolisms as part of the interaction, by identifying gene products that are differentially present between the symbiotic and non-symbiotic states. Proteome maps from control M. alba roots, wild-type nodules, cultured S. meliloti, and S. meliloti bacteroids were generated and compared. Over 250 proteins were induced or up-regulated in the nodule, compared with the root, and over 350 proteins were down-regulated in the bacteroid form of the rhizobia, compared with cultured cells. N-terminal amino acid sequencing and matrix-assisted laser desorption/ionization time-of-flight mass spectrometry peptide mass fingerprint analysis, in conjunction with data base searching, were used to assign putative identity to nearly 100 nodule, bacterial, and bacteroid proteins. These included the previously identified nodule proteins leghemoglobin and NifH as well as proteins involved in carbon and nitrogen metabolism in S. meliloti. Bacteroid cells showed down-regulation of several proteins involved in nitrogen acquisition, including glutamine synthetase, urease, a urea-amide binding protein, and a PII isoform, indicating that the bacteroids were nitrogen proficient. The down-regulation of several enzymes involved in polyhydroxybutyrate synthesis and a cell division protein was also observed. This work shows that proteome analysis will be a useful strategy to link sequence information and functional genomics."
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#au>	"Djordjevic MA"
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#au>	"Guerreiro N"
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#au>	"Natera SH"
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#lr>	"20011128"
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#pl>	"UNITED STATES"
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#rn>	"0 (Proteome)"
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#rn>	"7727-37-9 (Nitrogen)"
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#ip>	"9"
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#jt>	"Molecular plant-microbe interactions : MPMI"
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#own>	"NLM"
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#dp>	"2000 Sep"
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#vi>	"13"
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#mhda>	"2001/02/28"
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#ta>	"Mol Plant Microbe Interact"
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#pg>	"995-1009"
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#ad>	"Plant-Microbe Interaction Group, Research School of Biological Sciences, Australian National University, Canberra City."
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#pst>	"ppublish"
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#la>	"eng"
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#fau>	"Djordjevic, M A"
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#fau>	"Guerreiro, N"
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#fau>	"Natera, S H"
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#is>	"0894-0282 (Print)"
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#is>	"0894-0282 (Linking)"
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#stat>	"MEDLINE"
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#da>	"20001211"
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#sb>	"IM"
+<http://pubmed.org/10975656>	<http://www.nlm.nih.gov/bsd/mms/medlineelements.html#pt>	"Journal Article"
+}}}
+
+mesh terms.
+{{{
+$ 4s-query pubmed -f text 'select * where { ?s <http://www.nlm.nih.gov/bsd/mms/medlineelements.html#mh> ?mesh }'                                                                                10-01-13
+?s	?mesh
+<http://pubmed.org/10975656>	"Spectrometry, Mass, Matrix-Assisted Laser Desorption-Ionization"
+<http://pubmed.org/10975656>	"Nitrogen/metabolism"
+<http://pubmed.org/10975656>	"*Symbiosis"
+<http://pubmed.org/10975656>	"*Plants, Medicinal"
+<http://pubmed.org/10975656>	"Electrophoresis, Gel, Two-Dimensional"
+<http://pubmed.org/10975656>	"Fabaceae/*genetics/metabolism/microbiology"
+<http://pubmed.org/10975656>	"*Proteome"
+<http://pubmed.org/10975656>	"Sinorhizobium meliloti/*genetics/metabolism"
+}}}
+
+authors.
+{{{
+$ 4s-query pubmed -f text 'select * where { ?s <http://www.nlm.nih.gov/bsd/mms/medlineelements.html#au> ?au }'                                                                                  10-01-13
+?s	?au
+<http://pubmed.org/10975656>	"Djordjevic MA"
+<http://pubmed.org/10975656>	"Guerreiro N"
+<http://pubmed.org/10975656>	"Natera SH"
+}}}
+
+title.
+{{{
+$ 4s-query pubmed -f text 'select * where { ?s <http://www.nlm.nih.gov/bsd/mms/medlineelements.html#ti> ?title }'                                                                               10-01-13
+?s	?title
+<http://pubmed.org/10975656>	"Proteome analysis of differentially displayed proteins as a tool for the investigation of symbiosis."
+}}}
+
+=== Issues ===
+ 1. Order of authors
+ 2. Typing: Date, title, person, etc.
+ 3. MeSH terms
+ 4. subjects
+
+== Simple RDF from XML ==
+
+=== MEDLINE Citation / PubMed Citation XML ===
+  * http://www.nlm.nih.gov/news/medlinedata.html
+  * http://www.nlm.nih.gov/databases/dtd/
+
+PMID:10975656 in the MedlineCitation XML
+{{{
+<PubmedArticle>
+    <MedlineCitation Owner="NLM" Status="MEDLINE">
+        <PMID>10975656</PMID>
+        <DateCreated>
+            <Year>2000</Year>
+            <Month>12</Month>
+            <Day>11</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2001</Year>
+            <Month>01</Month>
+            <Day>11</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2001</Year>
+            <Month>11</Month>
+            <Day>28</Day>
+        </DateRevised>
+        <Article PubModel="Print">
+            <Journal>
+                <ISSN IssnType="Print">0894-0282</ISSN>
+                <JournalIssue CitedMedium="Print">
+                    <Volume>13</Volume>
+                    <Issue>9</Issue>
+                    <PubDate>
+                        <Year>2000</Year>
+                        <Month>Sep</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Molecular plant-microbe interactions : MPMI</Title>
+                <ISOAbbreviation>Mol. Plant Microbe Interact.</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Proteome analysis of differentially displayed proteins as a tool for the investigation of symbiosis.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>995-1009</MedlinePgn>
+            </Pagination>
+            <Abstract>
+                <AbstractText>Two-dimensional gel electrophoresis was used to identify differentially displayed proteins expressed during the symbiotic interaction between the bacterium Sinorhizobium meliloti strain 1021 and the legume Melilotus alba (white sweetclover). Our aim was to characterize novel symbiosis proteins and to determine how the two symbiotic partners alter their respective metabolisms as part of the interaction, by identifying gene products that are differentially present between the symbiotic and non-symbiotic states. Proteome maps from control M. alba roots, wild-type nodules, cultured S. meliloti, and S. meliloti bacteroids were generated and compared. Over 250 proteins were induced or up-regulated in the nodule, compared with the root, and over 350 proteins were down-regulated in the bacteroid form of the rhizobia, compared with cultured cells. N-terminal amino acid sequencing and matrix-assisted laser desorption/ionization time-of-flight mass spectrometry peptide mass fingerprint analysis, in conjunction with data base searching, were used to assign putative identity to nearly 100 nodule, bacterial, and bacteroid proteins. These included the previously identified nodule proteins leghemoglobin and NifH as well as proteins involved in carbon and nitrogen metabolism in S. meliloti. Bacteroid cells showed down-regulation of several proteins involved in nitrogen acquisition, including glutamine synthetase, urease, a urea-amide binding protein, and a PII isoform, indicating that the bacteroids were nitrogen proficient. The down-regulation of several enzymes involved in polyhydroxybutyrate synthesis and a cell division protein was also observed. This work shows that proteome analysis will be a useful strategy to link sequence information and functional genomics.</AbstractText>
+            </Abstract>
+            <Affiliation>Plant-Microbe Interaction Group, Research School of Biological Sciences, Australian National University, Canberra City.</Affiliation>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Natera</LastName>
+                    <ForeName>S H</ForeName>
+                    <Initials>SH</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Guerreiro</LastName>
+                    <ForeName>N</ForeName>
+                    <Initials>N</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Djordjevic</LastName>
+                    <ForeName>M A</ForeName>
+                    <Initials>MA</Initials>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType>Journal Article</PublicationType>
+            </PublicationTypeList>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>UNITED STATES</Country>
+            <MedlineTA>Mol Plant Microbe Interact</MedlineTA>
+            <NlmUniqueID>9107902</NlmUniqueID>
+            <ISSNLinking>0894-0282</ISSNLinking>
+        </MedlineJournalInfo>
+        <ChemicalList>
+            <Chemical>
+                <RegistryNumber>0</RegistryNumber>
+                <NameOfSubstance>Proteome</NameOfSubstance>
+            </Chemical>
+            <Chemical>
+                <RegistryNumber>7727-37-9</RegistryNumber>
+                <NameOfSubstance>Nitrogen</NameOfSubstance>
+            </Chemical>
+        </ChemicalList>
+        <CitationSubset>IM</CitationSubset>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N">Electrophoresis, Gel, Two-Dimensional</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N">Fabaceae</DescriptorName>
+                <QualifierName MajorTopicYN="Y">genetics</QualifierName>
+                <QualifierName MajorTopicYN="N">metabolism</QualifierName>
+                <QualifierName MajorTopicYN="N">microbiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N">Nitrogen</DescriptorName>
+                <QualifierName MajorTopicYN="N">metabolism</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="Y">Plants, Medicinal</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="Y">Proteome</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N">Sinorhizobium meliloti</DescriptorName>
+                <QualifierName MajorTopicYN="Y">genetics</QualifierName>
+                <QualifierName MajorTopicYN="N">metabolism</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N">Spectrometry, Mass, Matrix-Assisted Laser Desorption-Ionization</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="Y">Symbiosis</DescriptorName>
+            </MeshHeading>
+        </MeshHeadingList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2000</Year>
+                <Month>9</Month>
+                <Day>7</Day>
+                <Hour>11</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2001</Year>
+                <Month>2</Month>
+                <Day>28</Day>
+                <Hour>10</Hour>
+                <Minute>1</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2000</Year>
+                <Month>9</Month>
+                <Day>7</Day>
+                <Hour>11</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">10975656</ArticleId>
+            <ArticleId IdType="doi">10.1094/MPMI.2000.13.9.995</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+}}}
+
+== TogoWS RDF/Turtle ==
+http://togows.dbcls.jp/entry/pubmed/10975656.ttl
+
+A mixture of the simple but psuedo RDF (above) and the prism vocabulary.
+  * prism http://prismstandard.org/namespaces/1.2/basic/
+{{{
+<http://togows.dbcls.jp/entry/ncbi-pubmed/10975656>	<http://togows.dbcls.jp/ontology/ncbi-pubmed#pmid>	"10975656" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/10975656>	<http://www.w3.org/2000/01/rdf-schema#label>	"pmid:10975656" .          
+<http://togows.dbcls.jp/entry/ncbi-pubmed/10975656>	<http://purl.org/dc/elements/1.1/identifier>	<http://pubmed.org/10975656> .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/10975656>	<http://togows.dbcls.jp/ontology/ncbi-pubmed#crdt>	"2000/09/07 11:00" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/10975656>	<http://togows.dbcls.jp/ontology/ncbi-pubmed#edat>	"2000/09/07 11:00" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/10975656>	<http://togows.dbcls.jp/ontology/ncbi-pubmed#mhda>	"2001/02/28 10:01" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/10975656>	<http://togows.dbcls.jp/ontology/ncbi-pubmed#stat>	"MEDLINE" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/10975656>	<http://togows.dbcls.jp/ontology/ncbi-pubmed#ti>	"Proteome analysis of differentially displayed proteins as a tool for the investigation of symbiosis." .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/10975656>	<http://purl.org/dc/elements/1.1/title>	"Proteome analysis of differentially displayed proteins as a tool for the investigation of symbiosis." .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/10975656>	<http://togows.dbcls.jp/ontology/ncbi-pubmed#ab>	"Two-dimensional gel electrophoresis was used to identify differentially displayed proteins expressed during the symbiotic interaction between the bacterium Sinorhizobium meliloti strain 1021 and the legume Melilotus alba (white sweetclover). Our aim was to characterize novel symbiosis proteins and to determine how the two symbiotic partners alter their respective metabolisms as part of the interaction, by identifying gene products that are differentially present between the symbiotic and non-symbiotic states. Proteome maps from control M. alba roots, wild-type nodules, cultured S. meliloti, and S. meliloti bacteroids were generated and compared. Over 250 proteins were induced or up-regulated in the nodule, compared with the root, and over 350 proteins were down-regulated in the bacteroid form of the rhizobia, compared with cultured cells. N-terminal amino acid sequencing and matrix-assisted laser desorption/ionization time-of-flight mass spectrometry peptide mass fingerprint analysis, in conjunction with data base searching, were used to assign putative identity to nearly 100 nodule, bacterial, and bacteroid proteins. These included the previously identified nodule proteins leghemoglobin and NifH as well as proteins involved in carbon and nitrogen metabolism in S. meliloti. Bacteroid cells showed down-regulation of several proteins involved in nitrogen acquisition, including glutamine synthetase, urease, a urea-amide binding protein, and a PII isoform, indicating that the bacteroids were nitrogen proficient. The down-regulation of several enzymes involved in polyhydroxybutyrate synthesis and a cell division protein was also observed. This work shows that proteome analysis will be a useful strategy to link sequence information and functional genomics." .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/10975656>	<http://purl.org/dc/terms/abstract>	"Two-dimensional gel electrophoresis was used to identify differentially displayed proteins expressed during the symbiotic interaction between the bacterium Sinorhizobium meliloti strain 1021 and the legume Melilotus alba (white sweetclover). Our aim was to characterize novel symbiosis proteins and to determine how the two symbiotic partners alter their respective metabolisms as part of the interaction, by identifying gene products that are differentially present between the symbiotic and non-symbiotic states. Proteome maps from control M. alba roots, wild-type nodules, cultured S. meliloti, and S. meliloti bacteroids were generated and compared. Over 250 proteins were induced or up-regulated in the nodule, compared with the root, and over 350 proteins were down-regulated in the bacteroid form of the rhizobia, compared with cultured cells. N-terminal amino acid sequencing and matrix-assisted laser desorption/ionization time-of-flight mass spectrometry peptide mass fingerprint analysis, in conjunction with data base searching, were used to assign putative identity to nearly 100 nodule, bacterial, and bacteroid proteins. These included the previously identified nodule proteins leghemoglobin and NifH as well as proteins involved in carbon and nitrogen metabolism in S. meliloti. Bacteroid cells showed down-regulation of several proteins involved in nitrogen acquisition, including glutamine synthetase, urease, a urea-amide binding protein, and a PII isoform, indicating that the bacteroids were nitrogen proficient. The down-regulation of several enzymes involved in polyhydroxybutyrate synthesis and a cell division protein was also observed. This work shows that proteome analysis will be a useful strategy to link sequence information and functional genomics." .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/10975656>	<http://togows.dbcls.jp/ontology/ncbi-pubmed#vi>	"13" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/10975656>	<http://prismstandard.org/namespaces/1.2/basic/volume>	"13" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/10975656>	<http://togows.dbcls.jp/ontology/ncbi-pubmed#pg>	"995-1009" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/10975656>	<http://prismstandard.org/namespaces/1.2/basic/startingPage>	"995" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/10975656>	<http://togows.dbcls.jp/ontology/ncbi-pubmed#dp>	"2000 Sep" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/10975656>	<http://togows.dbcls.jp/ontology/ncbi-pubmed#dep>	"" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/10975656>	<http://prismstandard.org/namespaces/1.2/basic/publicationDate>	"" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/10975656>	<http://togows.dbcls.jp/ontology/ncbi-pubmed#ta>	"Mol Plant Microbe Interact" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/10975656>	<http://prismstandard.org/namespaces/1.2/basic/publicationName>	"Mol Plant Microbe Interact" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/10975656>	<http://togows.dbcls.jp/ontology/ncbi-pubmed#jt>	"Molecular plant-microbe interactions : MPMI" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/10975656>	<http://togows.dbcls.jp/ontology/ncbi-pubmed#so>	"Mol Plant Microbe Interact. 2000 Sep;13(9):995-1009." .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/10975656>	<http://togows.dbcls.jp/ontology/ncbi-pubmed#sb>	"IM" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/10975656>	<http://togows.dbcls.jp/ontology/ncbi-pubmed#pt>	"Journal Article" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/10975656>	<http://togows.dbcls.jp/ontology/ncbi-pubmed#fau>	"Natera, S H" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/10975656>	<http://purl.org/dc/terms/creator>	"Natera, S H" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/10975656>	<http://togows.dbcls.jp/ontology/ncbi-pubmed#fau>	"Guerreiro, N" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/10975656>	<http://purl.org/dc/terms/creator>	"Guerreiro, N" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/10975656>	<http://togows.dbcls.jp/ontology/ncbi-pubmed#fau>	"Djordjevic, M A" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/10975656>	<http://purl.org/dc/terms/creator>	"Djordjevic, M A" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/10975656>	<http://togows.dbcls.jp/ontology/ncbi-pubmed#au>	"Natera SH" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/10975656>	<http://togows.dbcls.jp/ontology/ncbi-pubmed#au>	"Guerreiro N" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/10975656>	<http://togows.dbcls.jp/ontology/ncbi-pubmed#au>	"Djordjevic MA" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/10975656>	<http://togows.dbcls.jp/ontology/ncbi-pubmed#mh>	"Electrophoresis, Gel, Two-Dimensional" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/10975656>	<http://togows.dbcls.jp/ontology/ncbi-pubmed#mh>	"Fabaceae/*genetics/metabolism/microbiology" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/10975656>	<http://togows.dbcls.jp/ontology/ncbi-pubmed#mh>	"Nitrogen/metabolism" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/10975656>	<http://togows.dbcls.jp/ontology/ncbi-pubmed#mh>	"*Plants, Medicinal" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/10975656>	<http://togows.dbcls.jp/ontology/ncbi-pubmed#mh>	"*Proteome" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/10975656>	<http://togows.dbcls.jp/ontology/ncbi-pubmed#mh>	"Sinorhizobium meliloti/*genetics/metabolism" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/10975656>	<http://togows.dbcls.jp/ontology/ncbi-pubmed#mh>	"Spectrometry, Mass, Matrix-Assisted Laser Desorption-Ionization" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/10975656>	<http://togows.dbcls.jp/ontology/ncbi-pubmed#mh>	"*Symbiosis" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/10975656>	<http://togows.dbcls.jp/ontology/ncbi-pubmed#jid>	"9107902" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/10975656>	<http://togows.dbcls.jp/ontology/ncbi-pubmed#dcom>	"20010111" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/10975656>	<http://togows.dbcls.jp/ontology/ncbi-pubmed#pst>	"ppublish" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/10975656>	<http://togows.dbcls.jp/ontology/ncbi-pubmed#aid>	"10.1094/MPMI.2000.13.9.995 [doi]" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/10975656>	<http://togows.dbcls.jp/ontology/ncbi-pubmed#pmc>	"" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/10975656>	<http://togows.dbcls.jp/ontology/ncbi-pubmed#pl>	"UNITED STATES" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/10975656>	<http://togows.dbcls.jp/ontology/ncbi-pubmed#lr>	"20011128" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/10975656>	<http://togows.dbcls.jp/ontology/ncbi-pubmed#own>	"NLM" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/10975656>	<http://togows.dbcls.jp/ontology/ncbi-pubmed#da>	"20001211" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/10975656>	<http://togows.dbcls.jp/ontology/ncbi-pubmed#la>	"eng" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/10975656>	<http://togows.dbcls.jp/ontology/ncbi-pubmed#is>	"0894-0282 (Print) 0894-0282 (Linking)" .
+}}}

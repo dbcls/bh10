@@ -1,0 +1,177 @@
+[[PageOutline]] 
+= URL =
+ * PDBj http://www.pdbj.org/PDBID (PDBID = 1gof, 1a00, ...) This is a fake URL.
+ * KEGG http://togows.dbcls.jp/entry/kegg-DBNAME/ENTRYID
+ * DDBJ http://togows.dbcls.jp/entry/ddbj/ENTRYID
+ * !UniProt http://www.uniprot.org/uniprot/ENTRYID
+ * !PubMed http://www.ncbi.nlm.nih.gov/pubmed/ENTRYID
+ * Taxonomy http://www.ncbi.nlm.nih.gov/Taxonomy/TAXID (this is invalid URL)
+ * !HapMap http://www.khapmap.org/ENTRYID (this is invalid URL)
+ * gene_id http://www.ncbi.nlm.nih.gov/gene/ENTRYID (NCBI gene ID)
+
+= PDB things =
+ * ftp://ftp.protein.osaka-u.ac.jp/pub/pdb/data/structures/all/XML-noatom/{PDBID}-noatom.xml.gz
+ * /PDBx:datablock/PDBx:entity_src_genCategory/PDBx:entity_src_gen/PDBx:pdbx_gene_src_ncbi_taxonomy_id
+where {PDBID} should be something like "1a00" (in lowercase).
+
+== Converting PDBML to RDF ==
+tore.eriksson has made a tentative XSL stylesheet to convert PDBMLplus (some selected elements) into RDF.
+(but when I checked the output RDF with raptor converter (rapper), it had some errors...)
+
+While I (akinjo) was in Shinkansen from Tokyo to Osaka, I wrote an XSL stylesheet that convert the whole PDBML file
+into RDF (files attached). I noticed one good thing about PDBML.
+ * PDBML is based on mmCIF (PDB's original format)
+ * mmCIF is actually defined as an ontology.
+ * So, we can use mmCIF categories and items as predicates.
+ * An xpath REST interface for PDBMLplus is available at pdbj: e.g., http://service.pdbj.org/mine/xpath/1a00/PDBx:datablock/PDBx:entityCategory
+ * Thus, we can use xpaths as subjects and objects in RDF.
+
+Some examples of the triples are:
+{{{
+<http://service.pdbj.org/mine/xpath/1A00> <http://www.w3.org/2000/01/rdf-schema#label> "1A00" .
+<http://service.pdbj.org/mine/xpath/1A00/PDBx:datablock/PDBx:entityCategory/PDBx:entity[1]> <http://mmcif.pdbj.org/XML/pdbmlplus/pdbMLplus_v32.xsd/_entity.pdbx_description> "HEMOGLOBIN (ALPHA CHAIN)" .
+<http://service.pdbj.org/mine/xpath/1A00/PDBx:datablock/PDBx:entityCategory> <http://mmcif.pdbj.org/XML/pdbmlplus/pdbMLplus_v32.xsd/entity> <http://service.pdbj.org/mine/xpath/1A00/PDBx:datablock/PDBx:entityCategory/PDBx:entity[4]> .
+}}}
+(Predicate URI's are not valid at present.)
+
+=== To do ===
+ * Currently, PDBML files converted by using PDBMLplus2rdf.xsl and PDBML2rdf.xsl do not contain any links to other databases. For that we need to write other XSL stylesheets.
+ * There are also cross references within PDB, but these are not handled yet. To do so requires some analysis of the PDBML schema. 
+
+== 2010-02-15: PDBML schema to OWL ==
+I succeeded converting PDBML schema into OWL/RDF using XSLT. The resulting OWL file was validated as OWL/Full-compatible by !WonderWeb OWL Ontology validator
+( http://www.mygrid.org.uk/OWL/Validator )!
+
+=== To do ===
+ * Writing a XSL stylesheet that write another XSL stylesheet for converting PDBML files into RDF.
+That is, 
+{{{
+PDBML Schema (pdbx-v32.xsd) --(pdbx2pdbml2rdf.xsl)--> XSL Stylesheet (pdbml2rdf.xsl)
+PDBML file --(pdbml2rdf.xsl)--> PDBML/RDF
+}}}
+
+One big advantage of translating PDBML schema is that it contains cross-references to many items within a PDBML file.
+= DDBJ things =
+ * http://xml.nig.ac.jp/rest/Invoke?service=DDBJ&method=getXMLEntry&accession=<ACCESSION>
+    e.g. http://xml.nig.ac.jp/rest/Invoke?service=DDBJ&method=getXMLEntry&accession=AL121903
+ * URL which returns prototype RDF
+ * http://sabi.ddbj.nig.ac.jp/ddbj/data/<ACCESSION>
+    e.g. http://sabi.ddbj.nig.ac.jp/ddbj/data/Z48241
+ * URL which returns in flatfile format
+ * http://sabi.ddbj.nig.ac.jp/ddbj/<ACCESSION>
+    e.g. http://sabi.ddbj.nig.ac.jp/ddbj/Z48241
+ * URL which redirects HTML page
+ * http://sabi.ddbj.nig.ac.jp/ddbj/html/<ACCESSION>
+    e.g. http://sabi.ddbj.nig.ac.jp/ddbj/html/Z48241
+
+= KEGG things =
+ * Draft KEGG RDF download site (temporal) : http://www.hgc.jp/~shuichi/biohack2010/
+
+ * Note: I wouldn't recommend to display the following files in your web browsers because it's large text file.
+ * http://www.hgc.jp/~shuichi/biohack2010/kegg-genes2pdb.ttl (KEGG GENES2PDB / PDB2KEGG GENES turtle: 730,602 triples)
+ * http://www.hgc.jp/~shuichi/biohack2010/kegg-genes2kegg-ko.ttl (KEGG GENES2KO / KEGG KO2GENES turtle: 3,687,074 triples)
+ * http://www.hgc.jp/~shuichi/biohack2010/kegg-ko2kegg-pathway.ttl (KEGG KO2PATHWAY / KEGG PATHWAY2KO turtle: 22,774 triples)
+ * http://www.hgc.jp/~shuichi/biohack2010/kegg-genes2kegg-ko.ttl (KEGG GENES2NCBI GENE-ID / NCBI GENE-ID2KEGG GENES turtle: 3,687,074 triples)
+ * http://www.hgc.jp/~shuichi/biohack2010/kegg-ko2definition.ttl (KEGG KO2KO definition turtle: 13,211 triples)
+ * Total 14,391,245 triples
+
+= Reflect for pubmed =
+To use reflect on pubmed:
+http://reflect.cbs.dtu.dk/TEST/GetEntities?uri=http://www.ncbi.nlm.nih.gov/pubmed/20146332&entity_types=9606
+
+The result will contain XML code like seen at
+[http://reflect.cbs.dtu.dk/restAPI.html http://reflect.cbs.dtu.dk/restAPI.html]
+
+
+= SPARQL endpoint =
+
+Room 415 network
+ * Bio2RDF KEGG - http://192.168.11.61:8890/sparql/
+ * Bio2RDF PDB - http://192.168.11.61:8891/sparql/
+ * DDBJ+KEGG-PDBj -  http://192.168.11.61:8892/sparql/
+ * PDBj -
+ * KEGG - 
+ * DDBJ - 
+
+Facet
+ * Bio2RDF KEGG - http://192.168.11.61:8890/fct/
+ * Bio2RDF PDB - http://192.168.11.61:8891/fct/
+ * DDBJ-KEGG-PDBj -  http://192.168.11.61:8892/fct/
+ * PDBj - 
+ * KEGG - 
+ * DDBJ - 
+
+= Validating RDF/XML format =
+ * http://librdf.org/parse
+
+= How to load data to virtuoso =
+First, in the '''virtuoso.ini''' file, set the following parameter 
+{{{
+DirsAllowed                     = ., /usr/local/virtuoso-opensource/share/virtuoso/vad, /tmp
+}}}
+So the directory /tmp is allowed to have data to be loaded.
+
+Then put the data file in /tmp (e.g., all.ttl, ddbj.rdf).
+
+{{{
+% cat load.isql
+DB.DBA.TTLP_MT(file_to_string_output('/tmp/all.ttl'), '' ,'http://www.pdbj.org');
+checkpoint;
+
+DB.DBA.RDF_LOAD_RDFXML(file_to_string_output('/tmp/lala.rdf'), '' ,'http://www.pdbj.org');
+checkpoint;
+
+% isql 1111 dba dba < load.isql
+}}}
+
+Here the third argument for the functions '''TTLP_MT''' and '''RDF_LOAD_RDFXML''' is the name of the graph
+(in this case, it's '''http://www.pdbj.org''').
+
+= Results? =
+[[wiki:DDBJ-KEGG-PDBj/Results]]
+
+Developed the following on-the-fly DDBJ interface of RDF, Web API and HTML page
+ * URL which returns prototype RDF
+ * http://sabi.ddbj.nig.ac.jp/ddbj/data/<ACCESSION>
+    e.g. http://sabi.ddbj.nig.ac.jp/ddbj/data/Z48241
+ * URL which returns in flatfile format (URI?)
+ * http://sabi.ddbj.nig.ac.jp/ddbj/<ACCESSION>
+    e.g. http://sabi.ddbj.nig.ac.jp/ddbj/Z48241
+ * URL which redirects HTML page
+ * http://sabi.ddbj.nig.ac.jp/ddbj/html/<ACCESSION>
+    e.g. http://sabi.ddbj.nig.ac.jp/ddbj/html/Z48241
+
+Installed the following virtuoso at DDBJ site
+ * http://sabi.ddbj.nig.ac.jp:8080/sparql
+
+FAQ: How many triples ?
+{{{
+mnmq:pdbj bh10$ wc -l *.ttl
+ 1018388 all.ttl
+   25991 ddbj.ttl
+  730602 kegg-genes2pdb.ttl
+   18988 kegg-hsa2kegg-ko.ttl
+   51438 kegg-hsa2ncbi-gene_id.ttl
+   22774 kegg-ko2kegg-pathway.ttl
+ 15048785 kegg.ttl
+   61208 pubmed.ttl
+  831951 struct_title.ttl
+   57943 taxonomy.ttl
+   67286 uniprot.ttl
+}}}
+
+== PDBML2RDF ==
+ * The XSL stylesheet for converting PDBML Schema (pdbx-v32.xsd) to an OWL ontology is completed (pdbx2owl.xsl).
+ * The XSL stylesheet for converting PDBML Schema (pdbx-v32.xsd) to the XSL stylesheet that converts PDBML files to RDF files is completed (pdbx2pdbml2rdf.xsl).
+  * This converter generator also make internal cross-references within each PDB entry. However, there are a number of errors in the definition of cross-references in the PDBML Schema (using xsd:key and xsd:keyref), thus, the resulting cross-references are significantly flawed.
+Example of using the stylesheets
+{{{
+# creating OWL ontology
+% xsltproc pdbx2owl.xsl pdbx-v32.xsd > pdbx-v32.owl
+
+# creating PDBML-> RDF converter
+% xsltproc pdbx2pdbml2rdf.xsl pdbx-v32.xsd > PDBML2rdf.xsl
+
+# converting a PDBML file to RDF.
+% xsltproc PDBML2rdf.xsl 1a00-noatom.xml > 1a00-noatom.rdf
+}}}

@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      Data_Provider_Session – BioHackathon 2010
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="alternate" href="/wiki/Data_Provider_Session?version=4&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="/wiki/Data_Provider_Session" title="View latest version" />
+        <link rel="next" href="/wiki/Data_Provider_Session?version=5" title="Version 5" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" />
+        <link rel="prev" href="/wiki/Data_Provider_Session?version=3" title="Version 3" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search BioHackathon 2010" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon3.dbcls.jp/"><img src="http://hackathon3.dbcls.jp/raw-attachment/wiki/LogoGallery/trac_logo.png" alt="DBCLS BioHackathon 2010" width="200" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="/wiki/Data_Provider_Session?version=3" title="Version 3">Previous Version</a></span></li><li><a href="/wiki/Data_Provider_Session" title="View latest version">View Latest Version</a></li><li><span><a class="next" href="/wiki/Data_Provider_Session?version=5" title="Version 5">Next Version</a> &rarr;</span></li><li class="last"><a href="/wiki/Data_Provider_Session?action=diff&amp;version=4">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 4 (modified by francoisbelleau, <a class="timeline" href="/timeline?from=2010-02-11T08%3A53%3A47%2B0900&amp;precision=second" title="2010-02-11T08:53:47+0900 in Timeline">15 years</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+--
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <h2 id="ThefirsteverofficialDataProvidersessionwhowillofferRAWDATA">The first ever official Data Provider session who will offer RAW DATA</h2>
+<p>
+After a 1:30 hour brain storming discussion, the group take a break and get ready for the Data Provider session.
+</p>
+<p>
+The representative from the following official data provider were presents :
+</p>
+<ul><li>DBCLS
+</li><li>HAPMAP/Corean
+</li><li>KEGG
+</li><li>PDBj
+</li><li><a class="missing wiki">UniProt?</a>
+</li></ul><p>
+The representative from the following data integration project offering a SPARQL endpoint:
+</p>
+<ul><li><a class="ext-link" href="http://bio2rdf.org/"><span class="icon"> </span>http://bio2rdf.org/</a> <a class="ext-link" href="http://delicious.com/fbelleau/bio2rdf:sparql"><span class="icon"> </span>SPARQL endpoint list</a>
+</li><li><a class="ext-link" href="http://www.semantic-systems-biology.org/"><span class="icon"> </span>http://www.semantic-systems-biology.org/</a> <a class="ext-link" href="http://www.semantic-systems-biology.org/biogateway/endpoint"><span class="icon"> </span>SPARQL endpoint</a>
+</li><li><a class="ext-link" href="http://hcls.deri.ie/"><span class="icon"> </span>http://hcls.deri.ie/</a> <a class="ext-link" href="http://hcls.deri.ie/sparql"><span class="icon"> </span>SPARQL endpoint</a>
+</li></ul><p>
+These are the objectives that were discussed :
+</p>
+<ul><li>RAW DATA available as N-TRIPLES dump should be produced by the data provider and made available from their FTP or HTTP server
+</li><li>SPARQL endpoint for each dataset should be made available
+</li><li>Standard URIs should be used in triple
+</li><li>Standard predicate should be used in triple
+</li></ul><p>
+==RAW Data dump==
+</p>
+<p>
+<a class="missing wiki">UniProt?</a> already offer raw data in RDF from his own FTP server.  <a class="ext-link" href="ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/rdf/"><span class="icon"> </span>ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/rdf/</a>.
+<br />
+DDBJ, PDBJ and KEEG will do the same.
+</p>
+<p>
+==SPARQL endpoint==
+</p>
+<p>
+There is already a certain number of SPARQL endpoints available but none are owned by the official data provider.
+</p>
+<p>
+There is a need for an hosting service offering SPARQL endpoint in which it will be possible to load the official raw data provided by the data provider.
+</p>
+<h2 id="StandardURIs">Standard URIs</h2>
+<h2 id="Standardpredicates">Standard predicates</h2>
+
+        
+        
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="/wiki/Data_Provider_Session?version=4&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

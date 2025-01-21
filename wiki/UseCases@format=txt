@@ -1,0 +1,85 @@
+[[PageOutline]] 
+
+
+= UseCases =
+
+== Participants ==
+(Please add your name!)
+
+  * Kazuharu Arakawa
+  * Mark Wilkinson
+  * Francois Belleau
+  * Arek Kasprzyk
+  * Paul Gordon
+  * Yasunori Yamamoto
+  * Akira R. KINJO
+  * Gos Micklem
+  * Shuichi Kawashima
+  * Erick Antezana (dropping by ...)
+  * Raoul Bonnal
+  * Christian Zmasek
+
+== Summary ==
+
+Lots of use cases in data and service integrations are available in websites such as [http://www.myexperiment.org/ myExperiment] and [http://www.flymine.org/ FlyMine]. Using semantic web, any of the existing questions and use cases can be more efficient.
+
+So one use case/demonstration would be to compare how data can be published with existing & SW technology.
+
+= Cases where semantic web is more fruitful =
+
+  * questions that queries over separated DBs
+    * using in-house data -> NGS
+    * can be in different sources - less cost of integration
+    * small DBs (as opposed to NCBI, EBI, and KEGG)
+  * querying the predicates
+    * discovery of DBs
+    * hypothesis generation (See a few examples in Section [http://genomebiology.com/2009/10/5/R58 "Querying the Cell Cycle Ontology with SPARQL"]) 
+  * interpreted knowledge
+    * not numerical?
+    * not too raw?
+    * linked by predicates (even if numerical)
+  * data are linked
+  * users do not have to know the entire schema
+
+= possible use cases? =
+
+  * migrate SQL to simple SPARQL endpoints
+    * easy to convert 20 lines?
+    * convert PDB relational to Sparql (kinjo-san, Francois)
+    * miRbase (raoul)
+  * formulation of SPARQL queries -> RDFscape
+    * can be GUI.
+  * Taxonomy/Systematics (cmzmasek)
+    * Biodiversity informatics
+    * Metagenomics
+      * [http://en.wikipedia.org/wiki/Microbiome microbiome] projects (e.g. human gut and skin microbiomes)
+      * global ocean sampling expedition ([http://en.wikipedia.org/wiki/Global_Ocean_Sampling_Expedition GOS])
+    * How to deal with uncertainty of taxonomic assigments in metagenomics?   
+  * Domain combination database and queries (cmzmasek)
+    * replacing/enhancing systems like [http://bioinformatics.burnham.org/DomainGraph/ CADO]
+    * answering questions like (by example):
+      * which species contain NACHT-TIR combinations?
+      * what domains does NACHT combine with?  
+      * is domain/domain-combination expansion present? If so, species specific, lineage specific, or universal?
+      * what are the likely (inferred!) ancestral domain combinations, e.g. of the last eukaryotic common ancestor (LECA)?
+      * etc.
+  * Paul (biological hypothesis formulation)
+    * predict PPI using homologs (PPI in yeast -> homolog in human) see [http://www.biomedcentral.com/1471-2164/9/426]
+    * workflow overview: could use homolog, protein domain and protein-protein interaction resources (not all currently in one data warehouse so Sem Web could help).  In brackets are the values for a particular query, Inhibitor of Growth 1 (ING1).
+[[Image(http://www.biomedcentral.com/content/figures/1471-2164-9-426-1.jpg)]]
+   
+
+    * The query in Prolog would be something like (simplified so it's depending only on known protein domains, whereas in the publication we built our own domain models):
+
+      probableNovelInteractors(HumanGene1, HumanGene2) :- hasHomolog(HumanGene1, YeastGene1), hasInteractorFromDB(YeastGene1, YeastGene2), hasHomolog(YeastGene2, HumanGene2), hasHomolog(HumanGene2, OtherModelOrganismGene2), hasHomolog(YeastGene2, OtherModelOrganismGene2), hasProteinDomain(HumanGene1, TargetDomain), hasProteinDomain(OtherModelOrganismGene1, TargetDomain), hasInteractorFromDB(OtherModelOrganismGene1, OtherModelOrganismGene2)), \+ hasInteractorFromDB(HumanGene1, HumanGene2).
+
+      probableNovelInteractors(ing1, CandidateInteractor).
+
+      CandidateInteractor = p38MAPK ? ;
+      CandidateInteractor = MEKK4 ? ;
+
+    * Note the negation at the end of the logic, we only want to list those HumanGene2 possibilities that are not already known from the database.
+
+    * Now we just need the predicates to exists in various SPARQL endpoints to give use the RDF Facts with predicates corresponding to hasHomolog, hasInteractorFromDB, and hasProteinDomain.  Then we will use SHARE/SADI to create queries in SPARQL than span multiple services. :-)
+
+

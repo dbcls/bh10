@@ -1,0 +1,17 @@
+The links used are here :
+
+http://delicious.com/fbelleau/bh2010:sparql
+
+The following site could also be used to '''easily''' create some SPARQL queries and learn more about the syntax:
+
+   http://www.semantic-systems-biology.org/biogateway/querying
+
+Note that you can select sample (pre-canned) queries (biological and ontological) and modify them, also it is possible to build your own SPARQL queries using that interface.
+
+Finally, your SPARQL query result can also be '''visualized''' using the following browser:
+
+   http://www.semantic-systems-biology.org/biogateway/sparql-viewer/
+
+
+= References =
+ 1. [http://www.w3.org/TR/rdf-sparql-query/ SPARQL Query Language for RDF]

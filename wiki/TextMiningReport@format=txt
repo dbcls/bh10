@@ -1,0 +1,42 @@
+== Presentation ==
+
+[http://www.slideshare.net/alabarga/textmining-activities-at-biohackathon-2010]
+
+== Use case ==
+
+We performed this query to Pubmed and retrieved 200 pmids.
+
+{{{
+
+
+}}}
+
+The abstracts were annotated  using Whatizit, Reflect and Medie.
+
+
+and the results converted to RDF using the following convention:
+
+The results are available as RDF here: Whatizit.RDF Reflect.RDf and Medie.RDF.
+
+Pubmed information in RDF format was retrieved for all abstracts using TogoWS, together with Uniprot RDF for the annotated proteins.
+
+
+== For the paper ==
+
+Modern biology increasingly depends on the availability of computational tools to process, analyze, interpret, and integrate large collections of heterogeneous data. As has been described above, biological knowledge is increasingly being represented as a collection of triplets (entity-relationship-entity) that can be queried and mined in order to discover and create knowledge.
+
+However, biological databases alone cannot capture the richness of scientific information and argumentation contained in the literature, neither can provide support for the novel ways in which scientists will interrogate these databases. 
+A considerable fraction of the existing data in biology consists of natural language texts used to describe and communicate new discoveries, and so, scientific papers constitute a resource with crucial importance for life sciences. As the amount of scholarly communication increases, it is increasingly difficult for specific core scientific statements to be found, connected and curated.
+
+The biomedical text mining community has been working for a long time in the development of reliable information extraction applications. Both name entity recognition and conceptual analysis are needed in order to map from natural language texts to a formal representation of the objects and concepts represented by the text, with direct links to online resources that explicitly expose those concepts semantics.
+
+Different web tools allow researchers to search literature databases and integrate semantic information extracted from text with external databases and ontologies. Our work concentrated in Whatizit (http://www.ebi.ac.uk/webservices/whatizit), Reflect (http://reflect.ws/) and Medie (http://www-tsujii.is.s.u-tokyo.ac.jp/medie/).
+
+Semantic Web technologies provide a platform to extract statements and facts from existing literature and share them in a way that will allow computational agents to discover, aggregate and interpret these facts. The advantages of semantic web approaches are clear, and ideally, the concepts in a statement and the statement itself will have some unique identity that connects each instance of a statement across the web of published material.
+
+During the Text Mining sessions of the BioHackathon reported here, we aimed to investigate how to automatically annotate atomic components of research papers in life sciences and how to express those annotations in RDF.
+
+Beyond the SPARQL and Linked Data approaches, we investigated how to embed annotations in the output of exiting services, and found RDFa a suitable technology for this. RDFa (or Resource Description Framework - in - attributes) is a W3C Recommendation that adds a set of attribute level extensions to XHTML for embedding rich metadata within Web documents. The RDF data model mapping enables its use for embedding RDF triples within XHTML documents, it also enables the extraction of RDF model triples by compliant user agents.
+
+The use of RDFa enabled output can be seen in the Science Commons text annotation service (http://whatizit.neurocommons.org/) and (http://reflect.cbs.dtu.dk/).
+

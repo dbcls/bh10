@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      TextMiningDayFour – BioHackathon 2010
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="alternate" href="/wiki/TextMiningDayFour?version=14&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="/wiki/TextMiningDayFour" title="View latest version" />
+        <link rel="next" href="/wiki/TextMiningDayFour?version=15" title="Version 15" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" />
+        <link rel="prev" href="/wiki/TextMiningDayFour?version=13" title="Version 13" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search BioHackathon 2010" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon3.dbcls.jp/"><img src="http://hackathon3.dbcls.jp/raw-attachment/wiki/LogoGallery/trac_logo.png" alt="DBCLS BioHackathon 2010" width="200" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="/wiki/TextMiningDayFour?version=13" title="Version 13">Previous Version</a></span></li><li><a href="/wiki/TextMiningDayFour" title="View latest version">View Latest Version</a></li><li><span><a class="next" href="/wiki/TextMiningDayFour?version=15" title="Version 15">Next Version</a> &rarr;</span></li><li class="last"><a href="/wiki/TextMiningDayFour?action=diff&amp;version=14">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 14 (modified by yy, <a class="timeline" href="/timeline?from=2010-02-13T15%3A37%3A02%2B0900&amp;precision=second" title="2010-02-13T15:37:02+0900 in Timeline">15 years</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+--
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <h1 id="Groupactivities:DayFour">Group activities: Day Four</h1>
+<ul><li><a class="wiki" href="/wiki/TextMiningDayOne">TextMiningDayOne</a>
+</li><li><a class="wiki" href="/wiki/TextMiningDayTwo">TextMiningDayTwo</a>
+</li><li><a class="wiki" href="/wiki/TextMiningDayThree">TextMiningDayThree</a>
+</li><li><a class="wiki" href="/wiki/TextMiningDayFour">TextMiningDayFour</a>
+</li></ul><h2 id="ThepartoftheMEDIEresultXMLthatweshouldfocuson">The part of the MEDIE result XML that we should focus on</h2>
+<pre class="wiki">&lt;set&gt;
+	&lt;article&gt;
+		&lt;PMID&gt;19694806&lt;/PMID&gt;
+		
+		... &lt;sentence&gt;
+			Treatment with 5-aza-2'-deoxycytidine and/or the histone deacetylase inhibitor trichostatin A increased 
+			&lt;entity_name gena_id="GMM040544" species="Mus musculus" db_site="EntrezGene:13138|MGI:101864|PIR:S59630|SWISS-PROT:Q62165|TrEMBL:Q8BPJ7" type="gene_prod" confidence="1" filter_confidence="0.284761" id="entity-10" gene_symbol="Dag1"&gt;Dag1&lt;/entity_name&gt;
+ 			mRNA expression levels in myoblasts, and methylation decreased promoter activity in vitro.
+		     &lt;/sentence&gt;
+</pre><p>
+                     
+                
+</p>
+<h2 id="HowtogenerateRDF-friendlyURIsforrecognizedentities">How to generate RDF-friendly URIs for recognized entities</h2>
+<p>
+<tt> &lt;entity_name gena_id="GMM040544" species="Mus musculus" db_site="EntrezGene:13138|MGI:101864|PIR:S59630|SWISS-PROT:Q62165|TrEMBL:Q8BPJ7" </tt>
+</p>
+<p>
+---&gt;  <a class="ext-link" href="http://purl.uniprot.org/uniprot/Q62165"><span class="icon"> </span>http://purl.uniprot.org/uniprot/Q62165</a>
+</p>
+<p>
+Note: If given the choice, prefer Swissprot over TrEMBL
+</p>
+<p>
+<tt> &lt;entity_name id="disease6" facta_id="UMLS:C0878544" type="disease"&gt;cardiomyopathy&lt;/entity_name&gt; </tt>
+</p>
+<p>
+---&gt; Unfortunately we still don't have well accepted URIs for UMLS yet. We could do a lookup and provide URIs pointing to the OBO disease ontology, but this is a bit computationally expensive.
+</p>
+<pre class="wiki">&lt;entity_name id="compound18615" facta_id="CAS:79-43-6" type="compound"&gt;Dichloroacetate&lt;/entity_name&gt;
+&lt;entity_name id="enzyme1375" facta_id="EC:3.5.3.22" type="enzyme"&gt;
+&lt;entity_name id="compound18620" facta_id="CAS:61-78-9" type="compound"&gt;PAH&lt;/entity_name&gt;
+&lt;/entity_name&gt;
+</pre><p>
+---&gt; CAS and EC numbers would  need to be mapped as well
+</p>
+<p>
+Using TogoDB, although not a primary database provider, you can use URI for UMLS (subset, those can be redistributed).<br />
+Note that currently we (DBCLS) haven't loaded the UMLS data to togoDB yet, so you will see an error page if you access to the following URL.
+But, we will prepare soon.
+</p>
+<p>
+<tt> http://togows.dbcls.jp/entry/togodb-umls/C08384423 </tt>
+</p>
+<h2 id="RDFformatdiscussion">RDF format discussion</h2>
+<pre class="wiki">&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/22333111&gt; &lt;ns:cites&gt; &lt;uniprot&gt;
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/22333111&gt; &lt;ns:cites&gt; &lt;genbank&gt;
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/22333111&gt; &lt;ns:contains&gt; _:hasG1
+
+_:hasG1 &lt;http://www.w3.org/2000/01/rdf-schema#label&gt; "p53"
+_:hasG1 &lt;rdf:type&gt; &lt;something:protein&gt;
+_:hasG1 &lt;something:taxonomy&gt; &lt;taxid:9399&gt;
+...
+
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/22333111&gt; &lt;*:hasSentences&gt; _:hasS1
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/22333111&gt; &lt;*:hasSentences&gt; _:hasS2
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/22333111&gt; &lt;*:hasSentences&gt; _:hasS3
+...
+
+_:hasS1 &lt;*:hasSubject&gt; _:sbj1
+_:hasS1 &lt;*:hasVerb&gt; _:verb1
+_:hasS1 &lt;*:hasObject&gt; _:obj1
+_:sbj1 &lt;http://www.w3.org/2000/01/rdf-schema#label&gt; "peripheral lymphocytes"
+_:verb1 &lt;http://www.w3.org/2000/01/rdf-schema#label&gt; "secreting"
+_:obj1 &lt;http://www.w3.org/2000/01/rdf-schema#label&gt; "a specific cytokine"
+
+
+
+&lt;http://www.w3.org/2000/01/rdf-schema#label&gt;
+
+&lt;http://purl.org/dc/elements/1.1/identifier&gt; &lt;http://pubmed.org/22333111&gt;
+&lt;http://purl.org/dc/elements/1.1/title&gt; "pmid:22333111"
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/22333111&gt;
+</pre><hr />
+<p>
+<a class="wiki" href="/wiki/TextMining">TextMining</a>
+</p>
+
+        
+        
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="/wiki/TextMiningDayFour?version=14&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

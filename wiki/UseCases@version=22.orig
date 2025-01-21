@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      UseCases – BioHackathon 2010
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="alternate" href="/wiki/UseCases?version=22&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="/wiki/UseCases" title="View latest version" />
+        <link rel="next" href="/wiki/UseCases?version=23" title="Version 23" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" />
+        <link rel="prev" href="/wiki/UseCases?version=21" title="Version 21" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search BioHackathon 2010" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon3.dbcls.jp/"><img src="http://hackathon3.dbcls.jp/raw-attachment/wiki/LogoGallery/trac_logo.png" alt="DBCLS BioHackathon 2010" width="200" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="/wiki/UseCases?version=21" title="Version 21">Previous Version</a></span></li><li><a href="/wiki/UseCases" title="View latest version">View Latest Version</a></li><li><span><a class="next" href="/wiki/UseCases?version=23" title="Version 23">Next Version</a> &rarr;</span></li><li class="last"><a href="/wiki/UseCases?action=diff&amp;version=22">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 22 (modified by cmzmasek, <a class="timeline" href="/timeline?from=2010-02-12T13%3A02%3A14%2B0900&amp;precision=second" title="2010-02-12T13:02:14+0900 in Timeline">15 years</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+Taxonomy/Systematics added
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <h1 id="UseCases"><a class="wiki" href="/wiki/UseCases">UseCases</a></h1>
+<h2 id="Participants">Participants</h2>
+<p>
+(Please add your name!)
+</p>
+<ul><li>Kazuharu Arakawa
+</li><li>Mark Wilkinson
+</li><li>Francois Belleau
+</li><li>Arek Kasprzyk
+</li><li>Paul Gordon
+</li><li>Yasunori Yamamoto
+</li><li>Akira R. KINJO
+</li><li>Gos Micklem
+</li><li>Shuichi Kawashima
+</li><li>Erick Antezana (dropping by ...)
+</li><li>Raoul Bonnal
+</li><li>Christian Zmasek
+</li></ul><h2 id="Summary">Summary</h2>
+<p>
+Lots of use cases in data and service integrations are available in websites such as <a class="ext-link" href="http://www.myexperiment.org/"><span class="icon"> </span>myExperiment</a> and <a class="ext-link" href="http://www.flymine.org/"><span class="icon"> </span>FlyMine</a>. Using semantic web, any of the existing questions and use cases can be more efficient.
+</p>
+<p>
+So one use case/demonstration would be to compare how data can be published with existing &amp; SW technology.
+</p>
+<h1 id="Caseswheresemanticwebismorefruitful">Cases where semantic web is more fruitful</h1>
+<ul><li>questions that queries over separated DBs
+<ul><li>using in-house data -&gt; NGS
+</li><li>can be in different sources - less cost of integration
+</li><li>small DBs (as opposed to NCBI, EBI, and KEGG)
+</li></ul></li><li>querying the predicates
+<ul><li>discovery of DBs
+</li><li>hypothesis generation (See a few examples in Section <a class="ext-link" href="http://genomebiology.com/2009/10/5/R58"><span class="icon"> </span>Querying the Cell Cycle Ontology with SPARQL</a>) 
+</li></ul></li><li>interpreted knowledge
+<ul><li>not numerical?
+</li><li>not too raw?
+</li><li>linked by predicates (even if numerical)
+</li></ul></li><li>data are linked
+</li><li>users do not have to know the entire schema
+</li></ul><h1 id="possibleusecases">possible use cases?</h1>
+<ul><li>migrate SQL to simple SPARQL endpoints
+<ul><li>easy to convert 20 lines?
+</li><li>convert PDB relational to Sparql (kinjo-san, Francois)
+</li><li>miRbase (raoul)
+</li></ul></li><li>formulation of SPARQL queries -&gt; RDFscape
+<ul><li>can be GUI.
+</li></ul></li><li>Taxonomy/Systematics
+<ul><li>Biodiversity informatics
+</li><li>Metagenomics (e.g. human gut microbiome)
+</li></ul></li><li>Paul (biological hypothesis formulation)
+<ul><li>predict PPI using homologs (PPI in yeast -&gt; homolog in human) see <a class="ext-link" href="http://www.biomedcentral.com/1471-2164/9/426"><span class="icon"> </span>http://www.biomedcentral.com/1471-2164/9/426</a>
+</li><li>workflow overview: could use homolog, protein domain and protein-protein interaction resources (not all currently in one data warehouse so Sem Web could help).  In brackets are the values for a particular query, Inhibitor of Growth 1 (ING1).
+</li></ul></li></ul><p>
+<a style="padding:0; border:none" href="http://www.biomedcentral.com/content/figures/1471-2164-9-426-1.jpg"><img src="http://www.biomedcentral.com/content/figures/1471-2164-9-426-1.jpg" alt="http://www.biomedcentral.com/content/figures/1471-2164-9-426-1.jpg" title="http://www.biomedcentral.com/content/figures/1471-2164-9-426-1.jpg" /></a>
+   
+</p>
+<ul><li>The query in Prolog would be something like (simplified so it's depending only on known protein domains, whereas in the publication we built our own domain models):
+</li></ul><blockquote>
+<blockquote>
+<p>
+probableNovelInteractors(<a class="missing wiki">HumanGene?</a>1, <a class="missing wiki">HumanGene?</a>2) :- hasHomolog(<a class="missing wiki">HumanGene?</a>1, <a class="missing wiki">YeastGene?</a>1), hasInteractorFromDB(<a class="missing wiki">YeastGene?</a>1, <a class="missing wiki">YeastGene?</a>2), hasHomolog(<a class="missing wiki">YeastGene?</a>2, <a class="missing wiki">HumanGene?</a>2), hasHomolog(<a class="missing wiki">HumanGene?</a>2, <a class="missing wiki">OtherModelOrganismGene?</a>2), hasHomolog(<a class="missing wiki">YeastGene?</a>2, <a class="missing wiki">OtherModelOrganismGene?</a>2), hasProteinDomain(<a class="missing wiki">HumanGene?</a>1, <a class="missing wiki">TargetDomain?</a>), hasProteinDomain(<a class="missing wiki">OtherModelOrganismGene?</a>1, <a class="missing wiki">TargetDomain?</a>), hasInteractorFromDB(<a class="missing wiki">OtherModelOrganismGene?</a>1, <a class="missing wiki">OtherModelOrganismGene?</a>2)), \+ hasInteractorFromDB(<a class="missing wiki">HumanGene?</a>1, <a class="missing wiki">HumanGene?</a>2).
+</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>
+probableNovelInteractors(ing1, <a class="missing wiki">CandidateInteractor?</a>).
+</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>
+<a class="missing wiki">CandidateInteractor?</a> = p38MAPK ? ;
+<a class="missing wiki">CandidateInteractor?</a> = MEKK4 ? ;
+</p>
+</blockquote>
+</blockquote>
+<ul><li>Note the negation at the end of the logic, we only want to list those <a class="missing wiki">HumanGene?</a>2 possibilities that are not already known from the database.
+</li></ul><ul><li>Now we just need the predicates to exists in various SPARQL endpoints to give use the RDF Facts with predicates corresponding to hasHomolog, hasInteractorFromDB, and hasProteinDomain.  Then we will use SHARE/SADI to create queries in SPARQL than span multiple services. :-)
+</li></ul>
+        
+        
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="/wiki/UseCases?version=22&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

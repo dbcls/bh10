@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      NextGenerationSequencing – BioHackathon 2010
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="alternate" href="/wiki/NextGenerationSequencing?version=3&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="/wiki/NextGenerationSequencing" title="View latest version" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" />
+        <link rel="prev" href="/wiki/NextGenerationSequencing?version=2" title="Version 2" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search BioHackathon 2010" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon3.dbcls.jp/"><img src="http://hackathon3.dbcls.jp/raw-attachment/wiki/LogoGallery/trac_logo.png" alt="DBCLS BioHackathon 2010" width="200" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="/wiki/NextGenerationSequencing?version=2" title="Version 2">Previous Version</a></span></li><li><a href="/wiki/NextGenerationSequencing" title="View latest version">View Latest Version</a></li><li><span class="missing">Next Version &rarr;</span></li><li class="last"><a href="/wiki/NextGenerationSequencing?action=diff&amp;version=3">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 3 (modified by plindenbaum, <a class="timeline" href="/timeline?from=2010-02-11T08%3A27%3A32%2B0900&amp;precision=second" title="2010-02-11T08:27:32+0900 in Timeline">15 years</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+code
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <p>
+<a style="padding:0; border:none" href="/attachment/wiki/NextGenerationSequencing/Photo%201.jpg"><img width="200px" src="/raw-attachment/wiki/NextGenerationSequencing/Photo%201.jpg" /></a>
+</p>
+<h1 id="TransformingthedataforSequenceReadArchiveSRAtoRDF">Transforming the data for Sequence Read Archive (SRA) to RDF</h1>
+<p>
+Just a proof of concept, We choose to use the XML data from the Sequence Reads Archive
+I've first tried to use <strong>XSLT</strong> to transform the data but it took to much time to analyse the <strong>XSD schemas</strong> for SRA and make the stylesheets so I wrote this short Java program that loads the DOM and export the RDF to stdout.
+</p>
+<p>
+I pasted the sources ( sorry quick'n stupid): <a class="ext-link" href="https://gist.github.com/67bb728957abb16a680b"><span class="icon"> </span>https://gist.github.com/67bb728957abb16a680b</a>
+</p>
+<p>
+for example: <strong>SRA010050.run.xml</strong> looks like this:
+</p>
+<pre class="wiki"> &lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;RUN_SET xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;RUN alias="GSM424847_1" instrument_model="Illumina Genome Analyzer" run_cente
+r="unspecified" total_data_blocks="1" accession="SRR029634"&gt;
+    &lt;EXPERIMENT_REF accession="SRX012521" refname="root_control_1"/&gt;
+    &lt;DATA_BLOCK&gt;
+      &lt;FILES&gt;
+        &lt;FILE filename="DM1.fastq" filetype="fastq"/&gt;
+      &lt;/FILES&gt;
+    &lt;/DATA_BLOCK&gt;
+    &lt;RUN_ATTRIBUTES&gt;
+      &lt;RUN_ATTRIBUTE&gt;
+        &lt;TAG&gt;quality_book_char&lt;/TAG&gt;
+        &lt;VALUE&gt;@&lt;/VALUE&gt;
+      &lt;/RUN_ATTRIBUTE&gt;
+      &lt;RUN_ATTRIBUTE&gt;
+        &lt;TAG&gt;quality_scoring_system&lt;/TAG&gt;
+        &lt;VALUE&gt;log odds&lt;/VALUE&gt;
+      &lt;/RUN_ATTRIBUTE&gt;
+    &lt;/RUN_ATTRIBUTES&gt;
+  &lt;/RUN&gt;
+(...)
+</pre><p>
+And here is the RDF version. Here I used some simple <i>urn</i> as the URIs (parsed successfully with the W3C validator) ...:
+</p>
+<pre class="wiki">&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;rdf:RDF xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:my="urn:mynamespace:"&gt;
+	&lt;my:Run rdf:about="urn:sra:run:SRR029634"&gt;
+		&lt;my:accession&gt;SRR029634&lt;/my:accession&gt;
+		&lt;my:alias&gt;GSM424847_1&lt;/my:alias&gt;
+		&lt;my:instrumentModel&gt;Illumina Genome Analyzer&lt;/my:instrumentModel&gt;
+		&lt;my:runCenter&gt;unspecified&lt;/my:runCenter&gt;
+		&lt;my:totalDataBlocks&gt;1&lt;/my:totalDataBlocks&gt;
+		&lt;my:hasExperiment&gt;
+			&lt;my:Experiment rdf:about="urn:sra:experiment:SRX012521"&gt;
+				&lt;my:accession&gt;SRX012521&lt;/my:accession&gt;
+				&lt;my:refname&gt;root_control_1&lt;/my:refname&gt;
+			&lt;/my:Experiment&gt;
+			
+		&lt;/my:hasExperiment&gt;
+		&lt;my:hasDataBlock&gt;
+			&lt;my:DataBlock&gt;
+				&lt;my:hasFile&gt;
+					&lt;my:File&gt;
+						&lt;my:filename&gt;DM1.fastq&lt;/my:filename&gt;
+						&lt;my:filetype rdf:resource="urn:sra:filetype:fastq"/&gt;
+					&lt;/my:File&gt;
+					
+				&lt;/my:hasFile&gt;
+			&lt;/my:DataBlock&gt;
+			
+		&lt;/my:hasDataBlock&gt;
+		&lt;my:hasRunAttribute&gt;
+			&lt;my:RunAttribute&gt;
+				&lt;my:tag&gt;quality_book_char&lt;/my:tag&gt;
+				&lt;my:value&gt;@&lt;/my:value&gt;
+			&lt;/my:RunAttribute&gt;
+			
+		&lt;/my:hasRunAttribute&gt;
+		&lt;my:hasRunAttribute&gt;
+			&lt;my:RunAttribute&gt;
+				&lt;my:tag&gt;quality_scoring_system&lt;/my:tag&gt;
+				&lt;my:value&gt;log odds&lt;/my:value&gt;
+			&lt;/my:RunAttribute&gt;
+			
+		&lt;/my:hasRunAttribute&gt;
+	&lt;/my:Run&gt;
+(...)
+</pre><h1 id="UsingXSLT">Using XSLT</h1>
+<p>
+The <strong>XSLT</strong> transformations are a valuable way to transform any XML source to RDF. For example, have a look at those two posts (<i>warning/self promotion ! </i>) where a set of stylesheets was used to extract some RDF from different sources of XML data: 
+</p>
+<ul><li><a class="ext-link" href="http://plindenbaum.blogspot.com/2010/02/linkedinxslt-foaf-people-from.html"><span class="icon"> </span>http://plindenbaum.blogspot.com/2010/02/linkedinxslt-foaf-people-from.html</a>
+</li><li><a class="ext-link" href="http://plindenbaum.blogspot.com/2010/02/searching-for-genotypes-with-sparql.html"><span class="icon"> </span>http://plindenbaum.blogspot.com/2010/02/searching-for-genotypes-with-sparql.html</a>
+</li></ul><h1 id="Links">Links</h1>
+<ul><li>SRA <a class="ext-link" href="http://www.ncbi.nlm.nih.gov/sra"><span class="icon"> </span>http://www.ncbi.nlm.nih.gov/sra</a>
+</li><li>the XSD files for SRA:  <a class="ext-link" href="http://www.ncbi.nlm.nih.gov/viewvc/v1/trunk/sra/doc/SRA"><span class="icon"> </span>http://www.ncbi.nlm.nih.gov/viewvc/v1/trunk/sra/doc/SRA</a>
+</li><li>XML files for DRA000039 <a class="ext-link" href="ftp://ftp.ncbi.nih.gov/sra/Submissions/DRA000/DRA000039/"><span class="icon"> </span>ftp://ftp.ncbi.nih.gov/sra/Submissions/DRA000/DRA000039/</a>
+</li></ul>
+        
+        
+      </div>
+          <h3>Attachments</h3>
+          <ul>
+              <li>
+      <a href="/attachment/wiki/NextGenerationSequencing/Photo%201.jpg" title="View attachment">Photo 1.jpg</a>
+      <a href="/raw-attachment/wiki/NextGenerationSequencing/Photo%201.jpg" title="Download" class="trac-rawlink"><img src="/chrome/common/download.png" alt="Download" /></a>
+      (<span title="2116136 bytes">2.0 MB</span>) - added by <em>kawaji</em>
+      <a class="timeline" href="/timeline?from=2010-02-09T01%3A30%3A55%2B0900&amp;precision=second" title="2010-02-09T01:30:55+0900 in Timeline">15 years</a> ago.
+              </li>
+          </ul>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="/wiki/NextGenerationSequencing?version=3&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

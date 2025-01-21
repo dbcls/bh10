@@ -1,0 +1,318 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+    <html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      ImplementationBootcamp (diff) – BioHackathon 2010
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="up" href="/wiki/ImplementationBootcamp?action=history" title="Page history" />
+        <link rel="next" href="/wiki/ImplementationBootcamp?action=diff&amp;version=79" title="Version 79" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/diff.css" type="text/css" />
+        <link rel="prev" href="/wiki/ImplementationBootcamp?action=diff&amp;version=77" title="Version 77" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search BioHackathon 2010" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script><script type="text/javascript" src="/chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="/chrome/common/css/diff.css" /><meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon3.dbcls.jp/"><img src="http://hackathon3.dbcls.jp/raw-attachment/wiki/LogoGallery/trac_logo.png" alt="DBCLS BioHackathon 2010" width="200" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="/wiki/ImplementationBootcamp?action=diff&amp;version=77" title="Version 77">Previous Change</a></span></li><li><a href="/wiki/ImplementationBootcamp?action=history" title="Page history">Wiki History</a></li><li class="last"><span><a class="next" href="/wiki/ImplementationBootcamp?action=diff&amp;version=79" title="Version 79">Next Change</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <h1>Changes
+        between
+          <a href="/wiki/ImplementationBootcamp?version=77">Version 77</a> and
+        <a href="/wiki/ImplementationBootcamp?version=78">Version 78</a> of
+        <a href="/wiki/ImplementationBootcamp?version=78">ImplementationBootcamp</a>
+      </h1>
+      <form method="post" id="prefs" action="/wiki/ImplementationBootcamp?version=78"><div><input type="hidden" name="__FORM_TOKEN" value="9b92f779110146561b41c442" /></div>
+        <div>
+          <input type="hidden" name="action" value="diff" />
+          <input type="hidden" name="version" value="78" />
+          <input type="hidden" name="old_version" value="77" />
+    <label for="style">View differences</label>
+    <select id="style" name="style">
+      <option selected="selected" value="inline">inline</option>
+      <option value="sidebyside">side by side</option>
+    </select>
+    <div class="field">
+      Show <input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+      <label for="contextlines">lines around each change</label>
+    </div>
+    <fieldset id="ignore">
+      <legend>Ignore:</legend>
+      <div class="field">
+        <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+        <label for="ignoreblanklines">Blank lines</label>
+      </div>
+      <div class="field">
+        <input type="checkbox" id="ignorecase" name="ignorecase" />
+        <label for="ignorecase">Case changes</label>
+      </div>
+      <div class="field">
+        <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+        <label for="ignorewhitespace">White space changes</label>
+      </div>
+    </fieldset>
+    <div class="buttons">
+      <input type="submit" name="update" value="Update" />
+    </div>
+        </div>
+      </form>
+      <dl id="overview">
+        <dt class="property time">Timestamp:</dt>
+        <dd class="time">
+          2010/02/16 11:07:17 (<a class="timeline" href="/timeline?from=2010-02-16T11%3A07%3A17%2B0900&amp;precision=second" title="2010-02-16T11:07:17+0900 in Timeline">15 years</a> ago)
+        </dd>
+        <dt class="property author">Author:</dt>
+        <dd class="author">
+          yy
+        </dd>
+        <dt class="property message">Comment:</dt>
+        <dd class="message">
+          
+          <p>
+--
+</p>
+
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+            <dt class="mod"></dt><dd>Modified</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="/wiki/ImplementationBootcamp?version=78">ImplementationBootcamp</a>
+        </h2>
+        <table class="inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Version 77">
+                    <a href="/wiki/ImplementationBootcamp?version=77#L54">
+                      v77</a>
+                  </th>
+                  <th title="Version 78">
+                    <a href="/wiki/ImplementationBootcamp?version=78#L54">
+                      v78</a>
+                  </th>
+                  <th> </th>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>54</th><th>54</th><td class="l"><span>For ontology integration, our work has led us to conclude that:</span> </td>
+                  </tr><tr>
+                          <th>55</th><th>55</th><td class="l"><span>&nbsp;* instance data should be fully ontologized. For example, our phenoscape use case could not be completed because phenoscape uses XML literals to express trait post-composition. These traits were consequently inaccessible for the purpose of data integration.</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>56</th><th> </th><td class="l"><span>&nbsp;* ontologies should be designed as reusable modules rather than monolithic artifacts. Aligning [http://www.evolutionaryontology.org/ CDAO] with [http://wiki.tdwg.org/twiki/bin/view/DarwinCore/WebHome DarwinCore] was relatively easy because <del>DarwinCore doesn't have a lot of structure (which is a good thing from the perspective of re-use). (although </del>DarwinCore still needs to be ontologized).</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>56</th><td class="r"><span>&nbsp;* ontologies should be designed as reusable modules rather than monolithic artifacts. Aligning [http://www.evolutionaryontology.org/ CDAO] with [http://wiki.tdwg.org/twiki/bin/view/DarwinCore/WebHome DarwinCore] was relatively easy because <ins>!DarwinCore doesn't have a lot of structure (which is a good thing from the perspective of re-use). (although !</ins>DarwinCore still needs to be ontologized).</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>57</th><th>57</th><td class="l"><span>&nbsp;* data integration is most easily achieved by developing small adaptor ontologies rather than merging of large (and potentially well-established and "stable") artifacts. Merging large ontologies has a greater potential to have irreconcilable incongruities. Adapting smaller ontologies requires immediate reconciliation, but insulates the practitioner from irrelevant inconsistencies. Implementations are likely to be more efficient and scalable. Nevertheless, if two domains have significant overlap, it is probably better to merge them, reconcile the inconsistencies and thereby decrease the overall noise subsequent use of the domain. </span> </td>
+                  </tr><tr>
+                          <th>58</th><th>58</th><td class="l"><span>&nbsp;* URIs (URLs) for terms should be carefully constructed, predictable and stabilized, perhaps using PURLs. For example, several queries failed to produce expected results due to omission of `www` prefixes or `#` suffixes in URLs.</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="/wiki/ImplementationBootcamp?version=77#L61">…</a></th>
+                  <th><a href="/wiki/ImplementationBootcamp?version=78#L61">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>61</th><th>61</th><td class="l"><span>===&nbsp; What are the similarities and differences between the various shared names proposals?&nbsp; ===</span> </td>
+                  </tr><tr>
+                          <th>62</th><th>62</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>63</th><th> </th><td class="l"><span>Shared names proposals such as LSRN? <del></del>UniProt?</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>63</th><td class="r"><span>Shared names proposals such as LSRN? <ins>!</ins>UniProt?</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>64</th><th>64</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>65</th><th>65</th><td class="l"><span>&gt; MDW:&nbsp; See above, and ask specific questions that I can try to answer myself, or invite the representatives from the other proposals to answer.&nbsp; (Get well soon, Alan!!!!)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="/wiki/ImplementationBootcamp?version=77#L74">…</a></th>
+                  <th><a href="/wiki/ImplementationBootcamp?version=78#L74">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>74</th><th>74</th><td class="l"><span>&nbsp;* URI documentation must be open so that it can be replicated and reused.</span> </td>
+                  </tr><tr>
+                          <th>75</th><th>75</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>76</th><th> </th><td class="l"><span>=== <del></del>UniProt PURLS ===</span> </td>
+                      </tr><tr>
+                        <th>77</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>78</th><th> </th><td class="l"><span><del></del>UniProt uses its own purls not only for their own data but also for all the cross references that we link to.</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>76</th><td class="r"><span>=== <ins>!</ins>UniProt PURLS ===</span> </td>
+                      </tr><tr>
+                        <th> </th><th>77</th><td class="r"><span></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>78</th><td class="r"><span><ins>!</ins>UniProt uses its own purls not only for their own data but also for all the cross references that we link to.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>79</th><th>79</th><td class="l"><span>&nbsp;* For example purl.uniprot.org/HGNC/37122 is redirected to http://www.genenames.org/data/hgnc_data.php?hgnc_id=37122</span> </td>
+                  </tr><tr>
+                          <th>80</th><th>80</th><td class="l"><span>&nbsp;* We do this because we have to maintain and keep stable links into the future. Meaning that when one of our cross reference databases changes their urls. We change the redirection. One maintenance location.</span> </td>
+                  </tr><tr>
+                          <th>81</th><th>81</th><td class="l"><span>&nbsp;* When merging datasets people have to collapse these different URL's into one. Using either a regexp or owl:sameAs statements.</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>82</th><th> </th><td class="l"><span>&nbsp;* Benefit to using <del></del>UniProt purls when available is that there is an ongoing maintenance effort.</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>82</th><td class="r"><span>&nbsp;* Benefit to using <ins>!</ins>UniProt purls when available is that there is an ongoing maintenance effort.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>83</th><th>83</th><td class="l"><span>&nbsp;* They are documented in [http://www.uniprot.org/docs/dbxref dbxref] for the external datasets.</span> </td>
+                  </tr><tr>
+                          <th>84</th><th>84</th><td class="l"><span>&nbsp;** And there is work being done to make this available in owl/rdf including the internal datasets.</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="/wiki/ImplementationBootcamp?version=77#L90">…</a></th>
+                  <th><a href="/wiki/ImplementationBootcamp?version=78#L90">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>90</th><th>90</th><td class="l"><span>===&nbsp; I have an analysis tool, how do I expose it as a semantic web resource? ===</span> </td>
+                  </tr><tr>
+                          <th>91</th><th>91</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>92</th><th> </th><td class="l"><span>SADI provides one solution.&nbsp; Luke !McCarthy gave a Java tutorial Thursday 11 February 2010, and Mark Wilkinson gave the Perl tutorial on the same day.&nbsp; Edward Kawas from the Wilkinson lab has produced movies detailing how to create services in Perl for SADI, and Mark will be doing the voice-over for these movies and putting them up on <del></del>YouTube in the second week of February 2010.&nbsp; Mark will add a link here.&nbsp; The same will be done for the Java side once we have the extra-cool Java functionalities coded and ~stable.&nbsp; In particular, Luke !McCarthy and Paul !Gordon have been working together at the Hackathon finding simple ways to put SADI Java services into the Google Cloud... so you might not even have to consume your own compute resources to achieve this!</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>92</th><td class="r"><span>SADI provides one solution.&nbsp; Luke !McCarthy gave a Java tutorial Thursday 11 February 2010, and Mark Wilkinson gave the Perl tutorial on the same day.&nbsp; Edward Kawas from the Wilkinson lab has produced movies detailing how to create services in Perl for SADI, and Mark will be doing the voice-over for these movies and putting them up on <ins>!</ins>YouTube in the second week of February 2010.&nbsp; Mark will add a link here.&nbsp; The same will be done for the Java side once we have the extra-cool Java functionalities coded and ~stable.&nbsp; In particular, Luke !McCarthy and Paul !Gordon have been working together at the Hackathon finding simple ways to put SADI Java services into the Google Cloud... so you might not even have to consume your own compute resources to achieve this!</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>93</th><th>93</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>94</th><th>94</th><td class="l"><span>===&nbsp; When someone calls GET on my URLs, what should I return in order to be semantic webby? ===</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="/wiki/ImplementationBootcamp?version=77#L289">…</a></th>
+                  <th><a href="/wiki/ImplementationBootcamp?version=78#L289">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>289</th><th>289</th><td class="l"><span>select ?p where (?p a :HumanKinase)</span> </td>
+                  </tr><tr>
+                          <th>290</th><th>290</th><td class="l"><span>}}}</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>291</th><th> </th><td class="l"><span>is much more readable to a human/biologist. This :<del></del>HumanKinase type can be generated on the fly using owl inference.</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>291</th><td class="r"><span>is much more readable to a human/biologist. This :<ins>!</ins>HumanKinase type can be generated on the fly using owl inference.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>292</th><th>292</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>293</th><th>293</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+      </div>
+  </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

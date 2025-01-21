@@ -1,0 +1,50 @@
+[[PageOutline]] 
+
+= Allie =
+http://allie.dbcls.jp 
+
+
+== RDF/Turtle example ==
+{{{
+<http://togows.dbcls.jp/entry/ncbi-pubmed/2731637> <http://purl.org/dc/elements/1.1/identifier> <http://pubmed.org/2731637> .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/2731637> <http://allie.dbcls.jp/ns/pair> <http://allie.dbcls.jp/pair/110198:43084> .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/2731637> <http://allie.dbcls.jp/ns/has-a-long-form> <http://allie.dbcls.jp/long/110198> .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/2731637> <http://purl.org/dc/elements/1.1/title> "pmid:2731637" .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/2731637> <http://allie.dbcls.jp/ns/has-a-short-form> <http://allie.dbcls.jp/short/43084> .
+
+<http://allie.dbcls.jp/pair/110198:43084> <http://allie.dbcls.jp/ns/long-form> <http://allie.dbcls.jp/long/110198> .
+<http://allie.dbcls.jp/pair/110198:43084> <http://allie.dbcls.jp/ns/short-form> <http://allie.dbcls.jp/short/43084> .
+
+<http://allie.dbcls.jp/long/110198> <http://allie.dbcls.jp/ns/abbrvation> <http://allie.dbcls.jp/short/43084> .
+<http://allie.dbcls.jp/long/110198> <http://www.w3.org/2000/01/rdf-schema#label> "Muscular dysgenesis" .
+
+<http://allie.dbcls.jp/short/43084> <http://allie.dbcls.jp/ns/long> <http://allie.dbcls.jp/long/110197> .
+<http://allie.dbcls.jp/short/43084> <http://allie.dbcls.jp/ns/long> <http://allie.dbcls.jp/long/110196> .
+<http://allie.dbcls.jp/short/43084> <http://allie.dbcls.jp/ns/long> <http://allie.dbcls.jp/long/10206> .
+<http://allie.dbcls.jp/short/43084> <http://allie.dbcls.jp/ns/long> <http://allie.dbcls.jp/long/109736> .
+<http://allie.dbcls.jp/short/43084> <http://allie.dbcls.jp/ns/long> <http://allie.dbcls.jp/long/110195> .
+<http://allie.dbcls.jp/short/43084> <http://allie.dbcls.jp/ns/long> <http://allie.dbcls.jp/long/110194> .
+<http://allie.dbcls.jp/short/43084> <http://allie.dbcls.jp/ns/long> <http://allie.dbcls.jp/long/110198> .
+<http://allie.dbcls.jp/short/43084> <http://www.w3.org/2000/01/rdf-schema#label> "MDG" .
+}}}
+
+== Data file size and storage ==
+
+== SPARQL endpoint ==
+http://beta.dbcls.jp/4store/allie/sparql/
+
+Test query at http://beta.dbcls.jp/4store/allie/test/
+
+== Sample queries ==
+
+Long forms of a short form "SPF".
+{{{
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?long_form WHERE {
+?short rdfs:label "SPF" .
+?short <http://allie.dbcls.jp/ns/long> ?long.
+?long rdfs:label ?long_form .
+} LIMIT 10
+}}}

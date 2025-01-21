@@ -1,0 +1,20 @@
+A relevant amount of interaction data is available in RDF.
+Most notably the whole collection of PathwayCommons (represented in BioPAX).
+
+Bruno Aranda is working on PSIQIQ (mispelled?) and has the intention to realize an RDF export for this resource. This will comprise most of interaction data available. In particular interaction data from this initiative are varied (protein-protein, genetic...), the export will likely be based on ontologies coming from PSI-MI.
+
+Note: Bind is not public anymore!
+
+In general an export of Kegg in RDF seems to be missing (can somebody correct here ?)
+
+As for the usage of interaction data:
+
+It seems there is a "common usage" where users search one or more "proteins" of interest, expand these via a network of interacting proteins, analyze the network (e.g.: clustering) and visualize it.
+
+There are no hints for better way to handle these data, except too much data is no data. Some 3D system is on the way, but it's not clear what this can add. 
+
+Overall Cytoscape seems to be the main platform for visualization of interaction data, which will be largely in RDF. A simple disciplines on URIs (suggested: Uniprot) would make intergation very easy.
+
+Automatic layout of pathways remains problematic.
+
+Should we open a googe group about visualization of/and interaction on the (bio) semantic web ?

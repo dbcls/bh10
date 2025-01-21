@@ -1,0 +1,448 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      Data_exchange – BioHackathon 2010
+    </title>
+        <link rel="search" href="../search.1.html" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://hackathon3.dbcls.jp/wiki/Data_exchange?version=1&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="Data_exchange.html" title="View latest version" />
+        <link rel="next" href="Data_exchange@version=2.html" title="Version 2" />
+        <link rel="start" href="../wiki.1.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../search/opensearch" title="Search BioHackathon 2010" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="../index.html"><img src="http://hackathon3.dbcls.jp/raw-attachment/wiki/LogoGallery/trac_logo.png" alt="DBCLS BioHackathon 2010" width="200" /></a>
+      </div>
+      <form id="search" action="../search.1.html" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://hackathon3.dbcls.jp/login">Login</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li><a href="../about.html">About Trac</a></li><li class="last"><a href="../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.1.html">Wiki</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../roadmap.html">Roadmap</a></li><li><a href="../browser.html">Browse Source</a></li><li><a href="../report.html">View Tickets</a></li><li class="last"><a href="../search.1.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span class="missing">&larr; Previous Version</span></li><li><a href="Data_exchange.html" title="View latest version">View Latest Version</a></li><li><span><a class="next" href="Data_exchange@version=2.html" title="Version 2">Next Version</a> &rarr;</span></li><li class="last"><a href="http://hackathon3.dbcls.jp/wiki/Data_exchange?action=diff&amp;version=1">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 1 (modified by gmicklem, <a class="timeline" href="../timeline@from=2010-02-12T16%253A37%253A36+0900&amp;precision=second.html" title="2010-02-12T16:37:36+0900 in Timeline">15 years</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+--
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <p>
+Wednesday 10th February p.m. - Room 516
+</p>
+<p>
+Semantic Data Exchange
+</p>
+<p>
+Gos Micklem
+Richard Smith
+James Taylor
+Arek Kasprzyk
+Soichi Ogishima
+Brad Chapman
+Christian Zmasek
+Peter Cock
+Hideyuki Morita
+Ryosuke Ishiwata
+Kei Ono
+Shinobu Okamoto
+Alberto Labarga
+</p>
+<hr />
+<p>
+Discussion on possibilities/need for improving data exchange between
+e.g. <a class="missing wiki">InterMine?</a>, Galaxy, <a class="missing wiki">BioMart?</a>, Cytoscape...
+</p>
+<p>
+Would typing of arbitrary data exchange improve communication between
+cytoscape/ biomart/ intermine/galaxy and reduce need for glue code/
+make life easier/ more robust?
+</p>
+<p>
+Current situation:
+</p>
+<p>
+It was felt that the current situation wasn't so bad: however it would
+be nice to avoid bespoke plugins for communication.
+</p>
+<blockquote>
+<p>
+Galaxy (<a class="ext-link" href="http://main.g2.bx.psu.edu/"><span class="icon"> </span>http://main.g2.bx.psu.edu/</a>): it is the responsibility of the user to make sure that the
+type of data used is correct for the analysis being performed.
+</p>
+</blockquote>
+<blockquote>
+<p>
+Galaxy/BioMart (<a class="ext-link" href="http://www.biomart.org"><span class="icon"> </span>http://www.biomart.org</a>) communication: neither biomart or Galaxy deal with
+semantics and communication works fine.
+</p>
+</blockquote>
+<blockquote>
+<p>
+Galaxy/UCSC table browser
+(<a class="ext-link" href="http://genome.ucsc.edu/cgi-bin/hgTables?command=start"><span class="icon"> </span>http://genome.ucsc.edu/cgi-bin/hgTables?command=start</a>): &lt;details
+needed&gt;
+</p>
+</blockquote>
+<blockquote>
+<p>
+Cytoscape (<a class="ext-link" href="http://www.cytoscape.org)/BioMart"><span class="icon"> </span>http://www.cytoscape.org)/BioMart</a>: REST API used.  Perhaps SOAP would be better but
+this still requires some development.  REST was fine for data
+retrieval.
+</p>
+</blockquote>
+<blockquote>
+<p>
+<a class="missing wiki">BioMart?</a>: the Mart deployer decides on the meta-data layer in
+biomart - the GUI uses this layer rather than the data.  It assumes
+that the user understands what you are talking about.  Sometimes
+points to ontologies.  Gui provides number of options but there is
+nothing to stop the user mis-naming things.  cf UCSC table browser:
+<a class="missing wiki">BioMart?</a> has place-holders for column descriptions, though current
+these aren't used.
+</p>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>
+Interoperation of Marts: this is the only place where must get the
+</p>
+<blockquote>
+<p>
+semantics correct.  If one mart calls something a <a class="missing wiki">UniProt?</a>
+identifier and the other one does too then essential that they are
+refering to the same identifier.  Perhaps would be good to have
+controlled name-space for this and/or a hand-shake to check that do
+have matching values.
+</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>
+<a class="missing wiki">InterMine?</a> (<a class="ext-link" href="http://www.intermine.org"><span class="icon"> </span>http://www.intermine.org</a>): multiple organisms can use the same identifiers
+e.g. across 12 drosophila genomes.  <a class="missing wiki">InterMines?</a> can ask each other
+what data they provide but can't be sure name-spaces are
+compatible.  Would be nice if <a class="missing wiki">InterMine?</a> or <a class="missing wiki">BioMart?</a> systems can talk
+and discover what they have and how they could communicate.  Agreed
+that would be good to have more formal description so that intended
+<a class="missing wiki">InterMine?</a> talking to <a class="missing wiki">BioMart?</a> backend could be easier.
+</p>
+</blockquote>
+<p>
+Discussed whether passing a header for column-based data would be
+useful.
+</p>
+<blockquote>
+<p>
+Available data-describing controlled vocabularies: OICR cancer data
+experience is that there are rather limited naming systems.
+</p>
+</blockquote>
+<blockquote>
+<p>
+Thought to be a good idea to expose/ export current naming systems.
+The Cancer Genome Atlas (TCGA: <a class="ext-link" href="http://cancergenome.nih.gov/"><span class="icon"> </span>http://cancergenome.nih.gov/</a>) have done
+some thinking along these lines.
+</p>
+</blockquote>
+<blockquote>
+<p>
+Galaxy: has xml to describe file formats:
+biopython/bioperl/bioruby/biojava have more-or-less agreed
+filenames.
+</p>
+</blockquote>
+<p>
+Just thinking of FASTA format for sequence there are quite a number of
+Flavours:
+</p>
+<ul><li>DNA vs protein sequences
+</li><li>use of ambiguity codes or not
+</li><li>softmasked sequence vs N-masking
+</li></ul><p>
+Likewise for files that transmit data about genome features:
+</p>
+<ul><li>0-based coordinates
+</li><li>1-based coordinates
+</li><li>in-between-base coordinates
+</li></ul><p>
+A naming scheme would be useful to capture this kind of complexity.
+</p>
+<p>
+Would be useful to have namespace that allows one to assert something
+is a particular file format.  With an appropriate URI one would know
+what kind of file was arriving.  Likewise if receive column of
+identifiers from two sources it would be useful to know that they are
+referring to the same thing.
+</p>
+<p>
+File formats vs labelling of data itself:
+</p>
+<p>
+BioMart/ <a class="missing wiki">InterMine?</a> can both provide column meaning "GO identifier",
+but where to assert they are the same thing?
+</p>
+<p>
+GO_ID + URI is all needed
+</p>
+<p>
+Is there a need for a central naming authority/ namespace provider?
+Given work on <a class="missing wiki">UniProt?</a> already, is EBI an natural location for this?
+DDBJ/ DBCLS/ NCBI?
+</p>
+<p>
+In a practical sense: if we want to take notions of semantics that are
+already applied to RDF: what do we apply to a column of data?  Want a
+standard identifier for saying a column is a column of GO identifiers.
+</p>
+<p>
+If every item in a column has the same RDF type, then can attach the
+URI of that type to the column and that is the unique identifier that
+we can use to be clear about what the column contents are.
+</p>
+<p>
+Agreed that we should use consistent URIs to label columns.
+</p>
+<p>
+Kei: PSI-MI EBI website:  global definitions:
+<a class="ext-link" href="http://www.ebi.ac.uk/ontology-lookup/browse.do?ontName=MI"><span class="icon"> </span>http://www.ebi.ac.uk/ontology-lookup/browse.do?ontName=MI</a>
+</p>
+<blockquote>
+<p>
+molecular-interaction
+--&gt; database citation
+</p>
+<blockquote>
+<p>
+--&gt; feature database
+</p>
+<blockquote>
+<p>
+--&gt; gene ontology (double click for definition)
+</p>
+</blockquote>
+<p>
+<a class="ext-link" href="http://www.ebi.ac.uk/ontology-lookup/?termId=MI%3A0448"><span class="icon"> </span>http://www.ebi.ac.uk/ontology-lookup/?termId=MI%3A0448</a>
+</p>
+</blockquote>
+</blockquote>
+<p>
+Semantics needs to be regulated regardless of the technology (So RDF
+isn't necessarily the point here)
+</p>
+<p>
+Agreed that would be good if allow semantics to be published/ exchanged
+rather than absolute requirement.  Absolute requirement causes stasis
+and makes things harder.  If make it easy then especially
+large-scale users/providers can start to comply.
+</p>
+<p>
+Data exchange conclusions:
+*** A namespace for file formats would be useful.
+</p>
+<p>
+*** A namespace for column of tabular data would be useful.  Could
+</p>
+<blockquote>
+<p>
+also be used to describe data in other formats e.g. XML, though
+this could be rather verbose.
+</p>
+</blockquote>
+<p>
+*** Investigate whether the above exist.
+</p>
+<blockquote>
+<p>
+Ontology Lookup Service (<a class="ext-link" href="http://www.ebi.ac.uk/ontology-lookup"><span class="icon"> </span>http://www.ebi.ac.uk/ontology-lookup</a>)
+and/orLife Science Resource Name Project (<a class="ext-link" href="http://www.lsrn.org"><span class="icon"> </span>http://www.lsrn.org</a>)
+applicable ?
+</p>
+</blockquote>
+<p>
+*** At the moment namespaces for columns is probably more important
+</p>
+<blockquote>
+<p>
+than URIs for each data element in a column.
+</p>
+</blockquote>
+<p>
+Agreed that worthwhile to pass URIs to describe columns.  Agreed that
+arbitrary human-friendly names are also good.
+</p>
+<p>
+*** Agreed to dump all BioMart/ <a class="missing wiki">InterMine?</a> column headings out, find
+</p>
+<blockquote>
+<p>
+the common/commonly-used ones and work on naming.
+</p>
+</blockquote>
+<p>
+========== Discussion turned to genome builds:
+</p>
+<p>
+There is no-where to go to find out if entities/ coordinates come from
+the same versions of genomes.  Agreed Versioning is important.
+</p>
+<blockquote>
+<p>
+BioMart/ UCSC do have versions
+available but not necessarily using the same namespaces.
+</p>
+</blockquote>
+<blockquote>
+<p>
+biomart has place-holders for versions and could easily expose these.
+</p>
+</blockquote>
+<p>
+Issue with resources generated from'old' genome versions e.g. affy
+chips: difficult to force people to use just one version of the
+genome.
+</p>
+<p>
+Can make gene identifiers unique by organism-specific prefix, or by
+qualifier.
+</p>
+<p>
+Ensembl (<a class="ext-link" href="http://www.ensembl.org"><span class="icon"> </span>http://www.ensembl.org</a>) does a good job and plans on
+supporting all genomes.  ensembl: systematic
+about mapping their versions to others e.g. from UCSC.
+</p>
+<p>
+Assembly version and ensembl gene-build version are sufficient to
+resolve all ambiguities.
+</p>
+<p>
+modMine (<a class="ext-link" href="http://intermine.modencode.org"><span class="icon"> </span>http://intermine.modencode.org</a>): the modENCODE project
+records the genome against which data were generated.  Liftover of
+data between genomes is provided.  Currently, when export data, does
+not record the genome version.
+</p>
+<p>
+Galaxy save the data orginally sent - this makes things simpler in the
+sense that the data actually used for some analysis are available
+indefinitely.  Galaxy remembers what analysis was done but users may not remember why/ what
+doing.  Galaxy encourages people to record the genome build
+version.
+</p>
+<p>
+Genome version summary:
+* Investigate whether is there a standard available for describing genome version *
+* Consider whether to base naming on ensembl genome/ annotation versions *
+</p>
+<p>
+=========== Thoughts on RDF:
+</p>
+<p>
+If everyone is expressing their data in RDF with a common underlying
+naming scheme then large-scale data integration will be easier,
+whether with a conventional warehouse or with a triple store.
+</p>
+<p>
+Data warehouses are perhaps the wrong place to start with RDF: should
+be the orginal data sources.  If warehouses self-define identifiers
+then potential problems if/when original sources start generating
+their own identifiers.
+</p>
+<p>
+For modENCODE data/ OICR cancer genome data we are the data
+originators so could generate IDs.
+</p>
+<p>
+modENCODE as example: would we provide data as RDF?  Could there be
+advantages?  How would the community feel about this?  RDF is vehicle:
+requires ontologies.  Felt that the first thing to try would be to
+represent meta-data as RDF.
+</p>
+<p>
+Agreed that production-oriented groups have to deliver things now to
+the research community - but awareness of semantics is important.
+Balance between cleanliness/ rigour and getting job down now.
+</p>
+<p>
+In some senses RDF vs databases is not an either/ or.  RDF view: does
+force once to think about defining things very clearly.
+</p>
+<p>
+Care is needed: can do RDF badly and will still work (locally) but not
+good for interoperation.  Similar situation with ontology use in
+databases.
+</p>
+
+        
+        
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="http://hackathon3.dbcls.jp/wiki/Data_exchange?version=1&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="../about.html"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

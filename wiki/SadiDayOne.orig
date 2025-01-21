@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      SadiDayOne – BioHackathon 2010
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="alternate" href="/wiki/SadiDayOne?format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search BioHackathon 2010" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon3.dbcls.jp/"><img src="http://hackathon3.dbcls.jp/raw-attachment/wiki/LogoGallery/trac_logo.png" alt="DBCLS BioHackathon 2010" width="200" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><a href="/wiki/WikiStart">Start Page</a></li><li><a href="/wiki/TitleIndex">Index</a></li><li><a href="/wiki/SadiDayOne?action=history">History</a></li><li class="last"><a href="/wiki/SadiDayOne?action=diff&amp;version=18">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <p>
+</p><div class="wiki-toc"><ol><li><a href="#Day1:SADIWebServices">Day 1:  SADI Web Services</a><ol><li><ol><li><a href="#Wearebeginningtopublishasetofbestpracticesforserviceprovidersbycodifyingthelessonswevelearnedinthelastyearofservice-building.Thisisourfirstattempttodescribetheserules">We are beginning to publish a set of best practices for service providers …</a></li></ol></li></ol></li></ol></div><p> 
+</p>
+<h1 id="Day1:SADIWebServices">Day 1:  SADI Web Services</h1>
+<h3 id="Wearebeginningtopublishasetofbestpracticesforserviceprovidersbycodifyingthelessonswevelearnedinthelastyearofservice-building.Thisisourfirstattempttodescribetheserules">We are beginning to publish a set of best practices for service providers by codifying the lessons we've learned in the last year of service-building. This is our first attempt to describe these "rules"</h3>
+<p>
+Since, for most of you, this will be the first time you have "played with" the Semantic Web, and will also be the first time you have seen a Web Service defined using Semantic Web languages, I need to say DON'T BE AFRAID!  The discussion below contains many details that are handled for you by the SADI codebase!!  As you become more comfortable with OWL ontologies, this is all going to sound very VERY trivial!!
+</p>
+<p>
+KEENER ALERT:  If you want to see the service running then jump straight to <a class="wiki" href="/wiki/WatchSadiGo">WatchSadiGo</a>
+</p>
+<p>
+Okay, so let's begin...
+</p>
+<p>
+Let's say we are creating a service '<a class="ext-link" href="http://sadiframework.org/services/getKEGGParalogsByGene"><span class="icon"> </span>getKEGGParalogsByGene</a>', which will provide the KEGG ID of the paralogs of any input KEGG gene id. Click on the link to see the full service description - <strong>note that you do not have to generate this document yourself</strong><i></i>!!  It is auto-generated for you by the SADI codebase!!
+</p>
+<p>
+The input class is <strong><a class="ext-link" href="http://purl.oclc.org/SADI/LSRN/KEGG_Record"><span class="icon"> </span>http://purl.oclc.org/SADI/LSRN/KEGG_Record</a></strong>.  This input class defined by a third-party ontology (hosted at purl.oclc.org), and we are simply saying "we consume THAT kind of data" - a KEGG Record:
+</p>
+<pre class="wiki">&lt;a:inputParameter&gt;
+  &lt;a:parameter rdf:about="illuminae.comgetKEGGParalogsByGeneddd"&gt;
+    &lt;a:hasParameterNameText&gt;
+       input
+    &lt;/a:hasParameterNameText&gt;
+    &lt;a:objectType rdf:resource="http://purl.oclc.org/SADI/LSRN/KEGG_Record"/&gt;
+  &lt;/a:parameter&gt;
+&lt;/a:inputParameter&gt;
+</pre><p>
+The output class 'getKEGGParalogsByGene_Output' is specific to our service (since our service is creating a new 'kind' of data, based on the input class) and is defined in <strong><a class="ext-link" href="http://sadiframework.org/ontologies/service_objects.owl#getKEGGParalogsByGene_Output"><span class="icon"> </span>http://sadiframework.org/ontologies/service_objects.owl#getKEGGParalogsByGene_Output</a></strong>:
+</p>
+<pre class="wiki">&lt;a:outputParameter&gt;
+  &lt;a:parameter rdf:about="illuminae.comgetKEGGParalogsByGeneeee"&gt;
+     &lt;a:hasParameterNameText&gt;
+        output
+     &lt;/a:hasParameterNameText&gt;
+     &lt;a:objectType rdf:resource="http://sadiframework.org/ontologies/service_objects.owl#getKEGGParalogsByGene_Output"/&gt;
+  &lt;/a:parameter&gt;
+&lt;/a:outputParameter&gt;
+</pre><p>
+Let's have a look at the OWL ontology that defines our output class.  I have "pruned" the service_objects.owl ontology to show only the relevant parts for this discussion... :
+</p>
+<pre class="wiki">
+&lt;rdf:RDF 
+ xml:base="http://sadiframework.org/ontologies/service_objects.owl#" 
+ xmlns:service="http://sadiframework.org/ontologies/service_objects.owl#" 
+ xmlns:owl="http://www.w3.org/2002/07/owl#" 
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+ xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+ xmlns="http://sadiframework.org/ontologies/service_objects.owl#"&gt;
+
+&lt;!-- Ontology Information --&gt;
+&lt;owl:Ontology rdf:about=""&gt;
+  &lt;owl:imports&gt;
+    &lt;owl:Ontology rdf:about="http://sadiframework.org/ontologies/service_objects.owl#"/&gt;
+  &lt;/owl:imports&gt;
+  &lt;owl:imports&gt;
+    &lt;owl:Ontology rdf:about="http://purl.oclc.org/SADI/LSRN"/&gt;
+  &lt;/owl:imports&gt;
+&lt;/owl:Ontology&gt;
+
+&lt;owl:SymmetricProperty rdf:about="http://sadiframework.org/ontologies/service_objects.owl#isParalogOf"&gt;
+     &lt;rdfs:comment&gt;This predicate is used to join two identifiers representing molecules - genes or proteins - that are      biological paralogs of one another &lt;/rdfs:comment&gt;
+&lt;/owl:SymmetricProperty&gt;
+
+&lt;owl:Class rdf:about="http://sadiframework.org/ontologies/service_objects.owl#getKEGGParalogsByGene_Output"&gt;
+   &lt;rdfs:subClassOf rdf:resource="http://purl.oclc.org/SADI/LSRN/KEGG_Record"/&gt;
+   &lt;rdfs:subClassOf&gt;
+      &lt;owl:Restriction&gt;
+          &lt;owl:onProperty rdf:resource="http://sadiframework.org/ontologies/service_objects.owl#isParalogOf"/&gt;
+          &lt;owl:someValuesFrom rdf:resource="http://purl.oclc.org/SADI/LSRN/KEGG_Record"/&gt;
+      &lt;/owl:Restriction&gt;
+   &lt;/rdfs:subClassOf&gt;
+&lt;/owl:Class&gt;
+
+&lt;/rdf:RDF&gt;
+</pre><p>
+The important things to note are:
+</p>
+<ol><li>we are explicitly importing any ontology we refer to
+</li></ol><ol start="2"><li>our output class is a subclass of the input class (in this case, a KEGG_Record)
+</li></ol><ol start="3"><li>our output class includes a restriction indicating that the service returns KEGG_Records related to the input by the 'isParalogOf' predicate (i.e.: KEGG_Records that are paralogs of the input KEGG_Record).  The owl:valuesFrom property on the restriction allows us to do reasoning about how to chain services together.  It is important that we put this restriction here instead of in the owl definition of the predicate itself, since it allows us to constrain OUR use of the predicate, without constraining its range for anyone else!
+</li></ol><ol start="4"><li> the "#isParalogOf" property is symmetric (symmetry is an OWL logical function), meaning that if X is a paralog of Y, then Y is also a paralog of X.  Note also that, in this case, I am defining the #isParalogOf property in my service ontology; however <strong>THIS IS NOT ALWAYS NECESSARY</strong> - if you produce data that represents a relationship that has been adequately defined by someone else, then you are free to use that third-party's predicate and you don't need to define it yourself.  Re-use Re-use Re-use :-)  That's what the Semantic Web is all about!  ...in fact, the Semantic Web works BETTER if we all look for, and re-use predicates that have been defined by someone else!
+</li></ol><p>
+The SADI Taverna plugin has been updated to use the information in these restrictions for service discovery.
+</p>
+<p>
+§
+</p>
+<p>
+We have written a tool that generates an OWL ontology from a Java class hierarchy.  Although this is quite opposite to the way things are usually done, we think it will be a useful tool for the <a class="missing wiki">BioHackathon?</a> audience to understand the SADI approach to OWL reasoning and ontology building.  I am putting together a downloadable (and documented) package so you can play with it, but for now you can check out the code in the SADI repository at <a class="ext-link" href="http://code.google.com/p/sadi/source/browse/#svn/trunk/sadi.common/src/main/java/ca/wilkinsonlab/sadi/jowl"><span class="icon"> </span>http://code.google.com/p/sadi/source/browse/#svn/trunk/sadi.common/src/main/java/ca/wilkinsonlab/sadi/jowl</a> (the tools: OntModelBuilder for building an OWL ontology from a Java class hierarchy and InstanceSerializer for converting a Java instance to an RDF serialization) and <a class="ext-link" href="http://code.google.com/p/sadi/source/browse/#svn/trunk/sadi.common/src/test/java/ca/wilkinsonlab/sadi/jowl"><span class="icon"> </span>http://code.google.com/p/sadi/source/browse/#svn/trunk/sadi.common/src/test/java/ca/wilkinsonlab/sadi/jowl</a> (test cases).  Apologies for the present lack of documentation, but that's why it's a Hackathon and not an Engineerathon, no?
+</p>
+
+        
+        
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="/wiki/SadiDayOne?format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

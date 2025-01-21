@@ -1,0 +1,12 @@
+== Some relevant links ==
+
+ * [http://bioportal.bioontology.org/]
+ * [http://sourceforge.net/projects/texai/files/ Texai project download page] Useful RDF for expressing English (including lexicon, grammars)
+
+ * [SerializationPerlModules About serialization (RDF/XML)] --> this is integrated to StateOfPerlAndRdf.
+
+Below is a bookmarklet that adds various semantic information to a page you browse and highlights those key terms.[[BR]]
+Currently, it uses [http://www.ebi.ac.uk/webservices/whatizit/info.jsf whatizit] to recognize terms, and embeds aTag data within a "<dbcls:atag>" tag.[[BR]]
+'''Remainder''': Sometimes whatizit doesn't respond, and nothing occurs in that case.
+
+[javascript:(function(){var%20d=document;var%20s=d.createElement('script');s.id='DBCLS_annot';s.src='http://purl.org/togodoc/annot2.js';d.getElementsByTagName('head')[0].appendChild(s);})()]

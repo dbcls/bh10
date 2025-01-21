@@ -1,0 +1,27 @@
+[[PageOutline]] 
+
+= Resources =
+
+Available [wiki:Datasets] and resources.
+
+ * [wiki:DBCLS_RDFs]
+ * [wiki:RDF/TogoWS/PubMed]
+ * [wiki:RDF/Allie]
+ * [wiki:RDF/KazusaAnnotation]
+
+= Namespaces =
+
+ * rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+ * rdfs: http://www.w3.org/2000/01/rdf-schema#
+ * dc: http://purl.org/dc/elements/1.1/
+ * owl: http://www.w3.org/2002/07/owl#
+ * ex: http://www.example.org/ (or http://www.example.com/)
+ * xsd: http://www.w3.org/2001/XMLSchema#
+
+
+
+= Links =
+
+ * W3C RDF http://www.w3.org/RDF/
+ * RDF Primer http://www.w3.org/TR/2004/REC-rdf-primer-20040210/
+ * W3C Semantic Web Health Care and Life Sciences (HCLS) Interest Group http://www.w3.org/blog/hcls

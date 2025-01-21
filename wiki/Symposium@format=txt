@@ -1,0 +1,64 @@
+[[PageOutline]] 
+= !BioHackathon 2010 Symposium =
+
+Public symposium
+
+ * Date: 8 February, 2010
+ * Time: 9:00-18:00
+ * Place: 11F Hall at CBRC, AIST, Odaiba, Tokyo
+ * USTREAM:  http://www.ustream.tv/channel/biohackathon2010
+
+Neither pre-registration nor symposium fee is required to participate.
+
+なお、懇親会は事前の[http://hackathon3.dbcls.jp/wiki/Registration 参加登録]が必要です。
+
+== Program ==
+=== Open 9:00 ===
+=== Talks 10:00-12:00 ===
+ 10:00-10:05 Toshihisa Takagi (DBCLS/DDBJ):: 
+  Opening remarks [http://www.ustream.tv/recorded/4550855 video]
+ 10:05-10:10 Toshiaki Katayama (HGC, University of Tokyo)::
+   Introduction to the !BioHackathon 2010 for Semantic Web
+ 10:10-10:40 Erick Antezana ::
+  [http://hackathon3.dbcls.jp/attachment/wiki/Symposium/E.Antezana.pdf Towards a Semantic Systems Biology: Biological Knowledge Management Using Semantic Web Technologies]
+ 10:40-11:00  Matthias Samwald ::
+  [http://hackathon3.dbcls.jp/attachment/wiki/Symposium/BioHackathon_Presentation_Samwald.pdf High-level knowledge representation on the Semantic Web: the Concept Web Alliance and related efforts]
+ 11:00-11:20  Thomas Kappler and Jerven Bolleman (Swiss Institute of Bioinformatics)::
+ [http://hackathon3.dbcls.jp/attachment/wiki/Symposium/Biohackaton3_uniprot_intro.pdf UniProt in RDF]
+ 11:20-11:40 François Belleau (Bio2RDF) ::
+   [http://www.slideshare.net/fbelleau/bio2-rdf-bh2010 Bio2RDF cognoscope : A killer app for the life science.]
+ 11:40-12:00 Heiko Horn (Novo Nordisk Foundation Centre for Protein Research) ::
+    [http://hackathon3.dbcls.jp/attachment/wiki/Symposium/reflect_biohackathon2010.pdf Reflect - text mining in Semantic Web]
+
+=== Lunch break ===
+=== Talks 13:30-14:50 ===
+ 13:30-13:50 Tetsuro Toyoda (RIKEN) ::
+   RIKEN SciNeS  
+ 13:50-14:10 Mark Wilkinson (Genome Canada Bioinformatics Platform)::
+   [http://www.slideshare.net/markmoby/sadi-swsip-09 SADI - Semantic Web Services]
+ 14:10-14:30 Andrea Splendiani (Rothamsted Research) ::
+   [http://hackathon3.dbcls.jp/attachment/wiki/Symposium/BioHackatonSymposium.pdf Visualization and analysis of biological networks on the Semantic Web]
+ 14:30-14:50 Mitsuteru Nakao (DBCLS) and Toshiaki Katayama (HGC, University of Tokyo) ::
+    [http://hackathon3.dbcls.jp/attachment/wiki/Symposium/bh10-katayama-nakao.key.pdf Extending TogoWS and Open Bio* libraries for Linked Data]
+ 
+=== Break ===
+=== Poster session 15:00-16:30 ===
+All invited participants
+=== Open space discussion 16:30-18:00 ===
+All attendees
+
+|| MINUTES FROM MEETINGS ||
+|| * ImplementationBootcamp ||
+|| * UseCases ||
+|| * VisualizationInteraction ||
+|| * OpenBio ||
+|| * NextGenerationSequencing ||
+|| * TextMining||
+
+=== Banquet 18:00-20:00 ===
+
+== Records ==
+
+ * [wiki:Symposium/Photos]
+ * http://chapmanb.posterous.com/biohackathon-2010-day-1
+ * Photos: http://picasaweb.google.com/tkappler/Biohackathon2010Day1#

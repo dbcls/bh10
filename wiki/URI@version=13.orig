@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      URI – BioHackathon 2010
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="alternate" href="/wiki/URI?version=13&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="/wiki/URI" title="View latest version" />
+        <link rel="next" href="/wiki/URI?version=14" title="Version 14" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" />
+        <link rel="prev" href="/wiki/URI?version=12" title="Version 12" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search BioHackathon 2010" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon3.dbcls.jp/"><img src="http://hackathon3.dbcls.jp/raw-attachment/wiki/LogoGallery/trac_logo.png" alt="DBCLS BioHackathon 2010" width="200" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="/wiki/URI?version=12" title="Version 12">Previous Version</a></span></li><li><a href="/wiki/URI" title="View latest version">View Latest Version</a></li><li><span><a class="next" href="/wiki/URI?version=14" title="Version 14">Next Version</a> &rarr;</span></li><li class="last"><a href="/wiki/URI?action=diff&amp;version=13">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 13 (modified by jerven, <a class="timeline" href="/timeline?from=2010-02-12T13%3A52%3A36%2B0900&amp;precision=second" title="2010-02-12T13:52:36+0900 in Timeline">15 years</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+GET get right
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <h2 id="WhichURItouseinyourRDF">Which URI to use in your RDF?</h2>
+<p>
+<strong>Guideline 1: Be polite.</strong>
+Use the data provider's URL as your identifier. Ideally there should be no HTTP GET arguments, but if there are to avoid ambiguity for string comparison sort them in alphabetical order (e.g. <a class="ext-link" href="http://www.example.com/?a=100&amp;b=2"><span class="icon"> </span>http://www.example.com/?a=100&amp;b=2</a> sorting a before b).
+</p>
+<p>
+<strong>Guideline 2. If there is no official URL</strong>
+Often a provider offers multiple URLs for the same resource. e.g. the entrez query <a class="ext-link" href="http://www.ncbi.nlm.nih.gov/sites/entrez?Db=pubmed&amp;Cmd=ShowDetailView&amp;TermToSearch=22177139"><span class="icon"> </span>http://www.ncbi.nlm.nih.gov/sites/entrez?Db=pubmed&amp;Cmd=ShowDetailView&amp;TermToSearch=22177139</a> is the same as <a class="ext-link" href="http://www.ncbi.nlm.nih.gov/pubmed/22177139"><span class="icon"> </span>http://www.ncbi.nlm.nih.gov/pubmed/22177139</a> (the community recommend to use the later) or <a class="ext-link" href="http://www.ebi.uniprot.org/entry/P05067"><span class="icon"> </span>http://www.ebi.uniprot.org/entry/P05067</a> is the same as <a class="ext-link" href="http://purl.uniprot.org/uniprot/P05067"><span class="icon"> </span>http://purl.uniprot.org/uniprot/P05067</a> (where <a class="missing wiki">UniProt?</a> asks you use the later, which will give RDF if your HTTP header requests it). 
+</p>
+<p>
+Document the URI pattern you use on freebase, to encourage uniformity. Exact Freebase URL to be confirmed, see <a class="ext-link" href="http://www.freebase.com/view/user/biohackathon/"><span class="icon"> </span>http://www.freebase.com/view/user/biohackathon/</a>
+</p>
+<p>
+If you want to link to a provider for which the official URL is not clear, document the one you use on Freebase. State that you do not know if it is supported. Other providers should follow this first-come-first-served convention UNTIL the original provide states otherwise (see Guideline 1).
+</p>
+<p>
+<strong>Guideline 3. Confusion</strong>
+Sometimes there is more than provider and thus more than one official URI for a record about a common concept, which can happen with consortia. e.g. PDB is available at PDBj, PDBe, RCSB PDB. Then choose the one that you prefer. Consider adding owl:seeAlso references between them, in strong preference over owl:sameAs due that giving misleading semantics.
+</p>
+
+        
+        
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="/wiki/URI?version=13&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

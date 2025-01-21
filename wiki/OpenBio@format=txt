@@ -1,0 +1,159 @@
+[[PageOutline]] 
+= Open Bio* Semantic Web tools =
+
+== Participants ==
+
+(Please add your name!)
+
+ * Toshiaki Katayama
+ * Erick Antezana
+ * Shuichi Kawashima
+ * Mitsuteru Nakao
+ * Brad Chapman
+ * Peter Cock
+ * Jan Aearts
+ * Kyung-Hoon Kwon
+ * Raoul Bonnal
+ * Christian Zmasek
+ * Keun-Joon Park
+ * Thomas Kappler
+
+=== RDF libraries in each language ===
+
+(Please add other languages as well!)
+
+Name of the available libraries:
+
+ * Ruby
+  * ActiveRDF: may depends on Rails
+  * We have a lot more. see --> http://raa.ruby-lang.org/search.rhtml?search=rdf
+ * Python
+  * RDFLib http://www.rdflib.net/
+  * SPARQLWrapper http://sparql-wrapper.sourceforge.net/
+ * Perl
+  * RDF:Trine: generic, actively developed RDF library
+  * RDF::Redland: Perl wrapper for the C library Redland (librdf.org)
+  * List of modules and community at http://www.perlrdf.org
+  * [http://search.cpan.org/dist/ONTO-PERL/ ONTO-PERL]: it might be used (it is, however, OBO-centric http://bioinformatics.oxfordjournals.org/cgi/content/abstract/btn042)
+  * StateOfPerlAndRdf
+
+Functionality
+
+ * RDF reader (in)
+ * RDF generator (out)
+ * SPARQL query helpers
+
+|| language || in || out || query ||
+|| Ruby || ? || ? || ? ||
+|| Python || o || o || ? ||
+|| Perl || o || o || o ||
+
+=== Tools to manipulate RDF data ===
+
+ * RDF grep
+ * RDF diff
+ * RDF sort
+ * RDF uniq
+ * RDF wc (triple count) (tkappler implemented a tiny one playing with RDF in Perl, it's at http://github.com/thomas11/perl-rdf-experiments, works only with small files)
+ * RDF cat (combine)
+  * (most of) these commands will output RDF graph :)
+  * "sort" before "diff" is better.
+  * it would be great if "diff" can have an option to ignore "empty node" which can shift internal IDs even if the graphs are almost same.
+
+=== RDF converters ===
+
+  * general:
+    * RDF --> JSON (for [http://couchdb.apache.org/ CouchDB], [http://www.mongodb.org/ mongoDB] etc.)
+      * easy to do with RDF::Trine (Perl) as it supports RDF/JSON, not sure about performance, though.
+  * biological:
+    * Bio DB entries -> RDF (in [http://bioruby.org BioRuby] for [http://togows.dbcls.jp TogoWS], for example)
+    * OBO <-> RDF (used in [http://cellcycleontology.org Cell Cycle Ontology] because ".obo" file format is easy to read for human): now in ONTO-PERL.
+  * Bio2RDF converters:
+    * Perl http://bio2rdf.svn.sourceforge.net/viewvc/bio2rdf/trunk/src/util/perl
+    * Python http://bio2rdf.svn.sourceforge.net/viewvc/bio2rdf/trunk/src/util/python/
+
+=== Interface for SPARQL endpoint ===
+
+DBI like interface to Query and obtain Result by SPARQL.
+
+ * automatically map to the relevant language object
+ * we can use SPARQL endpoint as a data source for [http://usegalaxy.org Galaxy], for example.
+ * sometimes, results can be huge
+
+Language availability
+
+|| language || generic || [http://4store.org/trac/wiki/ClientLibraries 4store] ||
+|| Ruby || o || o ||
+|| Python || o || o ||
+|| Perl || o || x ||
+|| Java || o || o ||
+|| R || ? || ? ||
+
+ * 4store
+  * database server http://4store.org/
+    * install doc in Japanese http://lifesciencedb.g.hatena.ne.jp/nakao_mitsuteru/20100105/1262713627
+    * binary download for mac http://dl.dropbox.com/u/152468/4store-1.0.2.dmg
+    * [wiki:4storeQuickPrimer]
+  * client library for Ruby/Python/Java http://4store.org/trac/wiki/ClientLibraries
+  * Supports HTTP-based Sparql Protocol, so can be used from any language that can do GET requests. Wrapper implemented by RDF::Query for Perl.
+ * Virtuoso
+  * database server http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/
+    * -> http://sourceforge.net/projects/virtuoso/files/
+
+Try "short read archive (metadata) SPARQL endpoint" which will be developed by the NextGenSeq open space discussion group.
+
+== Galaxy integration ==
+
+ * Plugin development
+ * Documentation
+ * See [http://bitbucket.org/easr/onto-toolkit/ ONTO-Toolkit]
+
+== Day2 ==
+
+RDF manipulation tools and library to produce RDF from biological objects are important for data providers, but most users are consumers of the data, so we will focus on how to access public biological SPARQL endpoint easily in each Open Bio* library.
+
+Suggested endpoint to play with:
+  * [http://kegg.bio2rdf.org/sparql Kegg on Bio2Rdf]
+  * [http://geneid.bio2rdf.org/sparql Gene on Bio2Rdf]
+  * [http://www.semantic-systems-biology.org/biogateway/endpoint BioGateway endpoint]
+  * More info at: [http://www.semantic-systems-biology.org/biogateway/querying Semantic Systems Biology]
+
+Implementations:
+
+  * Python SPARQL client for BioGateway: 
+     * Improved: http://chapmanb.posterous.com/biohackathon-2010-day-4-improved-python-sparq
+     * Initial: http://chapmanb.posterous.com/biohackathon-2010-day-2-python-sparql-query-b
+  * Initial python query client for InterMine: http://chapmanb.posterous.com/biohackathon-2010-day-3-fish-interoperating-a
+  * Ruby SPARQL client:
+    * [http://activerdf.org/ ActiveRDF] this is the original package, but it seems to be bugged with our endpoints. Two possible solutions:
+       * grab [http://github.com/net7/active_rdf_talia this] fork from github
+       * apply this [http://hackathon3.dbcls.jp/attachment/wiki/OpenBio/sparql.patch patch] to the file /var/lib/gems/1.8/gems/activerdf_sparql-1.3.6/lib/activerdf_sparql/sparql.rb (path depends on your configuration)
+    * we did tests using Bio2RDF endpoints, we plan to support BioGateway as well.
+    * we can explore the graph dinamically.
+    * AGILE NOW!!!!!!!!!!!!! you can see an example of agile sparql on [http://blog.raoulbonnal.net/?p=227 Raoul's blog]. 
+
+
+Todo:
+
+  * Survey existing SPARQL library in each language
+
+Todo:
+
+  * Can we have common interface for major biological SPARQL endpoints?
+  * Can we have nice SPARQL query builder? (see below for OWL notes)
+  * Convert retrieved results into language's object?
+  * What about getting not only a tabular result but also a result displaying a graph (nodes + edges)? (See [http://www.semantic-systems-biology.org/biogateway/sparql-viewer/ BioGateway browser])
+  * Map directly on Bio* interal objects
+
+Note:
+
+  * Half of the !BioRuby group will also tackle with to develop the DB (e.g. KEGG) -> RDF generator (will be used in Bio2RDF and TogoWS)
+
+
+=== Using OWL to support dynamic queries and exploration of RDF data ===
+
+This a short summary of a discussion on Friday, 2010-02-12.
+
+The plan is to work on a nice SPARQL query builder, as a joint effort between the Bio* communities. It could make use of an OWL ontology as a description of the data: it lists what things there are, and how they are related. These relations could be offered to the user, via a simple API to the programmer or even on a web page to the biologist.
+
+Erick pointed out the [http://www.co-ode.org/resources/reference/manchester_syntax/ Manchester OWL Syntax] as a possibly related effort.

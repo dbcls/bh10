@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      2010Q4Rutger – BioHackathon 2010
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="alternate" href="/wiki/2010Q4Rutger?version=3&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="/wiki/2010Q4Rutger" title="View latest version" />
+        <link rel="next" href="/wiki/2010Q4Rutger?version=4" title="Version 4" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" />
+        <link rel="prev" href="/wiki/2010Q4Rutger?version=2" title="Version 2" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search BioHackathon 2010" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon3.dbcls.jp/"><img src="http://hackathon3.dbcls.jp/raw-attachment/wiki/LogoGallery/trac_logo.png" alt="DBCLS BioHackathon 2010" width="200" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="/wiki/2010Q4Rutger?version=2" title="Version 2">Previous Version</a></span></li><li><a href="/wiki/2010Q4Rutger" title="View latest version">View Latest Version</a></li><li><span><a class="next" href="/wiki/2010Q4Rutger?version=4" title="Version 4">Next Version</a> &rarr;</span></li><li class="last"><a href="/wiki/2010Q4Rutger?action=diff&amp;version=3">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 3 (modified by RutgerVos, <a class="timeline" href="/timeline?from=2011-01-31T15%3A40%3A17%2B0900&amp;precision=second" title="2011-01-31T15:40:17+0900 in Timeline">14 years</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+--
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <h1 id="ProjectdescriptionforRutgerVossvisittoDBCLS24January-24February2011.">Project description for Rutger Vos's visit to DBCLS, 24 January - 24 February 2011.</h1>
+<h2 id="NeXMLIOasaBioRubyplugin">NeXML I/O as a <a class="wiki" href="/wiki/BioRuby">BioRuby</a> plugin</h2>
+<p>
+During the 2010 Google Summer of Code, student Anurag Priyam developed some classes for reading and writing NeXML (<a class="ext-link" href="http://www.nexml.org"><span class="icon"> </span>http://www.nexml.org</a>). However, these classes were built as part of the "core" <a class="wiki" href="/wiki/BioRuby">BioRuby</a> architecture. Best practices dictate that new code is instead released as a biogem plugin. To this end, I am refactoring Anurag's code. Steps taken so far:
+</p>
+<ul><li>Tools needed for biogem development and deployment (<a class="ext-link" href="http://bioruby.open-bio.org/wiki/BiogemInstallation"><span class="icon"> </span>http://bioruby.open-bio.org/wiki/BiogemInstallation</a>)
+<ul><li>Update <a class="missing wiki">RubyGems?</a>, i.e. <tt>sudo gem update --system</tt>
+</li><li>Install bio-gem, i.e. <tt>sudo gem install bio-gem</tt>
+</li><li>Install bio-gem dependency jeweler, i.e. <tt>sudo gem install jeweler</tt>
+</li><li>Install bio-gem dependency bundler, i.e. <tt>sudo gem install bundler</tt>
+</li></ul></li><li>Tools needed for git(hub):
+<ul><li>Install git
+</li><li>Fork yeban/bioruby on github
+</li><li><tt>git clone git@github.com:rvosa/bioruby.git</tt>
+</li><li><tt>git branch bioruby-nexml</tt>
+</li><li><tt>git checkout bioruby-nexml</tt>
+</li></ul></li><li>Make biogem compliant folder layout (<a class="ext-link" href="http://bioruby.open-bio.org/wiki/BiogemDevelopment"><span class="icon"> </span>http://bioruby.open-bio.org/wiki/BiogemDevelopment</a>)
+<ul><li><tt>biogem nexml</tt>
+</li><li>Merge bioruby-nexml classes, unit tests and test files in biogem folder structure
+</li></ul></li></ul><h2 id="NeXMLRDFasaBioRubyplugin">NeXML/RDF as a <a class="wiki" href="/wiki/BioRuby">BioRuby</a> plugin</h2>
+<p>
+Elements in NeXML documents can be annotated using RDFa. This means that every element (and the objects in which it can be de-serialized) can be the subject in an RDF triple. For example, TreeBASE uses this extensively to add metadata about submissions to its repository to the NeXML it produces (e.g. author names, NCBI taxonomy record identifiers, etc.). In order to fully implement NeXML functionality, the <a class="wiki" href="/wiki/BioRuby">BioRuby</a> objects that are generated when reading a NeXML file should therefore be able to be annotated with predicates (with namespaces) and with objects (also, perhaps, with namespaces). To make this possible, Anurag started some work on this, but this needs to be extended and released as a biogem (bio-rdf?)
+</p>
+<h2 id="BioHackathonmeetingreports"><a class="missing wiki">BioHackathon?</a> meeting reports</h2>
+<ul><li>finish abstract for <a class="missing wiki">BioHack?</a>09 meeting report
+</li><li>help finish <a class="missing wiki">BioHack?</a>10 meeting report for special issue of Journal of Biomedical Semantics
+</li></ul>
+        
+        
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="/wiki/2010Q4Rutger?version=3&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

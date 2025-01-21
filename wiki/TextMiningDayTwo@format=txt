@@ -1,0 +1,38 @@
+[[PageOutline]] 
+= Group activities: Day Two =
+
+ * TextMiningDayOne
+ * TextMiningDayTwo
+ * TextMiningDayThree
+ * TextMiningDayFour
+ * TextMiningReport
+
+=== Available datasets ===
+
+ [http://esw.w3.org/topic/HCLSIG/LODD/Data LODD-related datasets that the LODD group already made available as Linked Data]
+
+ [http://www.freebase.com/view/user/bio2rdf/public/sparql SPARQL endpoint provided by Bio2RDF]
+
+Example URI of a linked data representation of a Stitch compound: [http://www4.wiwiss.fu-berlin.de/stitch/resource/chemicals/1]
+and a protein: [http://www4.wiwiss.fu-berlin.de/stitch/resource/proteins/100018]  
+
+=== Available text mining webservices ===
+
+[http://reflect.cbs.dtu.dk/status.html Reflect]
+
+[http://www.ebi.ac.uk/webservices/whatizit Whatizit]
+
+[http://www-tsujii.is.s.u-tokyo.ac.jp/medie/ Medie]
+
+=== Modifications to the Reflect service ===
+
+ * Add RDFa to HTML result format  --> DONE
+ * Add a new function called "getRDF"
+ * Use STITCH URIs to identify Chemicals --> As for proteins, linking is made using [http://www4.wiwiss.fu-berlin.de/stitch/ http://www4.wiwiss.fu-berlin.de/stitch/]
+
+=== Ideas for MEDIE ===
+ * An example MEDIE result: [http://www-tsujii.is.s.u-tokyo.ac.jp/medie/search.cgi?search_type=semantic_search&verb=activate&object=p53&base_form=verb&ontology=verb]
+ * <del>results are also available as XML that we could transform, but we currently do not know how they identify !PubMed abstracts in their REST URIs</del>
+ * [TextMiningMedieAndEnju Refer this page]
+----
+TextMining

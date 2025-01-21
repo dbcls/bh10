@@ -1,0 +1,1461 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      WhatizitAsTurtle – BioHackathon 2010
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="alternate" href="/wiki/WhatizitAsTurtle?format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search BioHackathon 2010" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon3.dbcls.jp/"><img src="http://hackathon3.dbcls.jp/raw-attachment/wiki/LogoGallery/trac_logo.png" alt="DBCLS BioHackathon 2010" width="200" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><a href="/wiki/WikiStart">Start Page</a></li><li><a href="/wiki/TitleIndex">Index</a></li><li><a href="/wiki/WhatizitAsTurtle?action=history">History</a></li><li class="last"><a href="/wiki/WhatizitAsTurtle?action=diff&amp;version=2">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <pre class="wiki">@prefix chebi: &lt;http://purl.org/obo/owl/CHEBI#CHEBI_&gt; .
+@prefix commons: &lt;http://purl.org/commons/&gt; .
+@prefix dc: &lt;http://purl.org/dc/elements/1.1/&gt; .
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .
+@prefix ex: &lt;http://purl.org/example/&gt; .
+@prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .
+@prefix go: &lt;http://purl.org/obo/owl/GO#GO_&gt; .
+@prefix obi: &lt;http://obi.sourceforge.net/ontology/OBI.owl#&gt; .
+@prefix obo_interactomics: &lt;http://purl.org/zen/obo_interactomics.owl#&gt; .
+@prefix pmid: &lt;http://purl.org/commons/record/pmid/&gt; .
+@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix ro: &lt;http://www.obofoundry.org/ro/ro.owl#&gt; .
+@prefix sc: &lt;http://purl.org/science/owl/sciencecommons/&gt; .
+@prefix sioc: &lt;http://rdfs.org/sioc/ns#&gt; .
+@prefix uniprot: &lt;http://purl.org/commons/record/uniprotkb/&gt; .
+@prefix xhv: &lt;http://www.w3.org/1999/xhtml/vocab#&gt; .
+@prefix xml: &lt;http://www.w3.org/XML/1998/namespace&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+
+&lt;http://whatizit.neurocommons.org/index.py/text_query?pipeline=whatizitEBIMedDiseaseChemicals&amp;query=IL-5&amp;format=atag&amp;max_results=10&gt; xhv:stylesheet &lt;http://whatizit.neurocommons.org/creativecommons.css&gt; ;
+     rdfs:seeAlso
+         &lt;http://purl.org/commons/html/pmid/10880230&gt;,
+         &lt;http://purl.org/commons/html/pmid/11159044&gt;,
+         &lt;http://purl.org/commons/html/pmid/11498591&gt;,
+         &lt;http://purl.org/commons/html/pmid/11606047&gt;,
+         &lt;http://purl.org/commons/html/pmid/12969637&gt;,
+         &lt;http://purl.org/commons/html/pmid/15534922&gt;,
+         &lt;http://purl.org/commons/html/pmid/16217591&gt;,
+         &lt;http://purl.org/commons/html/pmid/17282969&gt;,
+         &lt;http://purl.org/commons/html/pmid/18410960&gt;,
+         &lt;http://purl.org/commons/html/pmid/8630733&gt;,
+         &lt;http://purl.org/commons/record/pmid/10880230&gt;,
+         &lt;http://purl.org/commons/record/pmid/11159044&gt;,
+         &lt;http://purl.org/commons/record/pmid/11498591&gt;,
+         &lt;http://purl.org/commons/record/pmid/11606047&gt;,
+         &lt;http://purl.org/commons/record/pmid/12969637&gt;,
+         &lt;http://purl.org/commons/record/pmid/15534922&gt;,
+         &lt;http://purl.org/commons/record/pmid/16217591&gt;,
+         &lt;http://purl.org/commons/record/pmid/17282969&gt;,
+         &lt;http://purl.org/commons/record/pmid/18410960&gt;,
+         &lt;http://purl.org/commons/record/pmid/8630733&gt;,
+         &lt;http://purl.org/commons/xml/pmid/10880230&gt;,
+         &lt;http://purl.org/commons/xml/pmid/11159044&gt;,
+         &lt;http://purl.org/commons/xml/pmid/11498591&gt;,
+         &lt;http://purl.org/commons/xml/pmid/11606047&gt;,
+         &lt;http://purl.org/commons/xml/pmid/12969637&gt;,
+         &lt;http://purl.org/commons/xml/pmid/15534922&gt;,
+         &lt;http://purl.org/commons/xml/pmid/16217591&gt;,
+         &lt;http://purl.org/commons/xml/pmid/17282969&gt;,
+         &lt;http://purl.org/commons/xml/pmid/18410960&gt;,
+         &lt;http://purl.org/commons/xml/pmid/8630733&gt; . 
+
+&lt;pmid:10880230&gt; dc:creator "C J Sanderson", "J Holland", "P E Czabotar" ;
+     dc:date "Jul 2000" ;
+     dc:publisher "Cytokine" ;
+     dc:title """
+
+Identification of regions within the third FnIII-like domain of the 
+&lt;a href="http://uniprot.org/uniprot/?query=P21183+or+Q01344" xmlns="http://www.w3.org/1999/xhtml"&gt;IL-5Ralpha&lt;/a&gt; involved in 
+&lt;a href="http://uniprot.org/uniprot/?query=O02699+or+O08987+or+O77515+or+P04401+or+P05113+or+P46685+or+P48093+or+P52173+or+Q08125+or+Q28586+or+Q62575+or+Q95J76+or+Q9ESI9+or+Q9XT91" xmlns="http://www.w3.org/1999/xhtml"&gt;IL-5&lt;/a&gt; interaction
+&lt;span class="atag" xmlns="http://www.w3.org/1999/xhtml"&gt; &amp;lt;a&lt;span about="[_:95]" content="Identification of regions within the third FnIII-like domain of the  IL-5Ralpha involved in IL-5 interaction" property="sioc:content" typeof="sioc:Item" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:sioc="http://rdfs.org/sioc/ns#"&gt;&lt;a href="http://purl.uniprot.org/uniprot/P21183" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/Q01344" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/O02699" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/O08987" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/O77515" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/P04401" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/P05113" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/P46685" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/P48093" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/P52173" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/Q08125" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/Q28586" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/Q62575" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/Q95J76" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/Q9ESI9" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/Q9XT91" rel="sioc:topic"/&gt;&lt;/span&gt;&amp;gt;&lt;/span&gt;. """^^rdf:XMLLiteral . 
+
+&lt;pmid:11159044&gt; dc:creator
+         "B P Monia",
+         "C Walker",
+         "E Lach-Trifilieff",
+         "J G Karras",
+         "R A McKay" ;
+     dc:date "Feb 2001" ;
+     dc:publisher "American journal of respiratory cell and molecular biology" ;
+     dc:title """
+
+ 
+&lt;a href="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:30430" xmlns="http://www.w3.org/1999/xhtml"&gt;In&lt;/a&gt; vitro and in vivo 
+&lt;a href="http://obofoundry.org/obo/REX:0000218" xmlns="http://www.w3.org/1999/xhtml"&gt;inhibition&lt;/a&gt; of interleukin (IL)-5-mediated eosinopoiesis by 
+murine  
+&lt;a href="http://uniprot.org/uniprot/?query=P21183+or+Q01344" xmlns="http://www.w3.org/1999/xhtml"&gt;IL-5Ralpha&lt;/a&gt; antisense oligonucleotide
+&lt;span class="atag" xmlns="http://www.w3.org/1999/xhtml"&gt; &amp;lt;a&lt;span about="[_:101]" content="In vitro and in vivo inhibition of interleukin (IL)-5-mediated eosinopoiesis by murine  IL-5Ralpha antisense oligonucleotide" property="sioc:content" typeof="sioc:Item" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:sioc="http://rdfs.org/sioc/ns#"&gt;&lt;a href="http://purl.org/obo/owl/CHEBI#CHEBI_30430" rel="sioc:topic"/&gt;&lt;a href="http://purl.org/obo/owl/REX#REX_0000218" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/P21183" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/Q01344" rel="sioc:topic"/&gt;&lt;/span&gt;&amp;gt;&lt;/span&gt;. """^^rdf:XMLLiteral . 
+
+&lt;pmid:11498591&gt; dc:creator
+         "C Pals",
+         "I J Uings",
+         "J A Raaijmakers",
+         "J Armstrong",
+         "J W Lammers",
+         "L Koenderman",
+         "M McKinnon",
+         "N Geijsen",
+         "P J Coffer" ;
+     dc:date "Aug 2001" ;
+     dc:publisher "Science (New York, N.Y.)" ;
+     dc:title """
+
+Cytokine-specific transcriptional regulation through an 
+&lt;a href="http://uniprot.org/uniprot/?query=P21183+or+Q01344" xmlns="http://www.w3.org/1999/xhtml"&gt;IL-5Ralpha&lt;/a&gt; interacting 
+protein 
+&lt;span class="atag" xmlns="http://www.w3.org/1999/xhtml"&gt; &amp;lt;a&lt;span about="[_:108]" content="Cytokine-specific transcriptional regulation through an  IL-5Ralpha interacting protein" property="sioc:content" typeof="sioc:Item" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:sioc="http://rdfs.org/sioc/ns#"&gt;&lt;a href="http://purl.uniprot.org/uniprot/P21183" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/Q01344" rel="sioc:topic"/&gt;&lt;/span&gt;&amp;gt;&lt;/span&gt;. """^^rdf:XMLLiteral . 
+
+&lt;pmid:11606047&gt; dc:creator
+         "A Bègue",
+         "A Capron",
+         "C Pierrot",
+         "C Szpirer",
+         "J Khalife",
+         "M Capron" ;
+     dc:date "Oct 2001" ;
+     dc:publisher "Biochemical and biophysical research communications" ;
+     dc:title """
+
+Cloning of the 
+rat  
+&lt;a href="http://uniprot.org/uniprot/?query=P21183+or+Q01344" xmlns="http://www.w3.org/1999/xhtml"&gt;IL-5Ralpha&lt;/a&gt; gene: analysis of 
+5'- upstream region and expression by B cells
+&lt;span class="atag" xmlns="http://www.w3.org/1999/xhtml"&gt; &amp;lt;a&lt;span about="[_:115]" content="Cloning of the  rat  IL-5Ralpha gene: analysis of 5'- upstream region and expression by B cells" property="sioc:content" typeof="sioc:Item" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:sioc="http://rdfs.org/sioc/ns#"&gt;&lt;a href="http://purl.uniprot.org/uniprot/P21183" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/Q01344" rel="sioc:topic"/&gt;&lt;/span&gt;&amp;gt;&lt;/span&gt;. """^^rdf:XMLLiteral . 
+
+&lt;pmid:12969637&gt; dc:creator
+         "D W Horohov",
+         "E Vandergrifft",
+         "F M Cunningham",
+         "M F Sepulveda",
+         "N T Goode",
+         "S R Bailey" ;
+     dc:date "Sep 2003" ;
+     dc:publisher "Veterinary immunology and immunopathology" ;
+     dc:title """
+
+Cloning, expression and biological activity of equine interleukin (IL)-5. """ . 
+
+&lt;pmid:15534922&gt; dc:creator
+         "Hatice Ertabaklar",
+         "Nevin Turgay",
+         "Sebnem Ustun",
+         "Songul-Bayram Delibas" ;
+     dc:date "Dec 2004" ;
+     dc:publisher "World journal of gastroenterology : WJG" ;
+     dc:title """
+
+Interleukin (IL) 5 levels and eosinophilia in patients with intestinal parasitic diseases. """ . 
+
+&lt;pmid:16217591&gt; dc:creator
+         "Byoung Whui Choi",
+         "Byung Lae Park",
+         "Choon-Sik Park",
+         "Hae-Sim Park",
+         "Hyoung Doo Shin",
+         "Hyun Sub Cheong",
+         "Lyoung Hyo Kim",
+         "Soo-Jong Hong",
+         "Yoo Hyun Choi" ;
+     dc:title """
+
+ 
+&lt;a href="http://obofoundry.org/obo/REX:0000150" xmlns="http://www.w3.org/1999/xhtml"&gt;Association&lt;/a&gt; analysis of interleukin 5 receptor 
+&lt;a href="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:30216" xmlns="http://www.w3.org/1999/xhtml"&gt;alpha&lt;/a&gt; subunit (
+&lt;a href="http://uniprot.org/uniprot/?query=Q01344" xmlns="http://www.w3.org/1999/xhtml"&gt;IL5RA&lt;/a&gt;) polymorphisms and 
+asthma 
+&lt;span class="atag" xmlns="http://www.w3.org/1999/xhtml"&gt; &amp;lt;a&lt;span about="[_:144]" content="Association analysis of interleukin 5 receptor alpha subunit (IL5RA) polymorphisms and asthma" property="sioc:content" typeof="sioc:Item" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:sioc="http://rdfs.org/sioc/ns#"&gt;&lt;a href="http://purl.org/obo/owl/REX#REX_0000150" rel="sioc:topic"/&gt;&lt;a href="http://purl.org/obo/owl/CHEBI#CHEBI_30216" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/Q01344" rel="sioc:topic"/&gt;&lt;/span&gt;&amp;gt;&lt;/span&gt;. """^^rdf:XMLLiteral . 
+
+&lt;pmid:17282969&gt; dc:creator
+         "Chia-Wei Hsieh",
+         "Huei-Mei Huang",
+         "Jaw-Ji Tsai",
+         "Joung-Liang Lan",
+         "Qiu Meng",
+         "Ya-Wen Cheng" ;
+     dc:date "Jan 2007" ;
+     dc:publisher "Journal of the Formosan Medical Association = Taiwan yi zhi" ;
+     dc:title """
+
+Eosinophil 
+&lt;a href="http://www.ebi.ac.uk/ego/DisplayGoTerm?id=GO:0006915" xmlns="http://www.w3.org/1999/xhtml"&gt;apoptosis&lt;/a&gt; induced by fungal immunomodulatory 
+&lt;a href="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16670" xmlns="http://www.w3.org/1999/xhtml"&gt;peptide&lt;/a&gt; -fve via reducing IL-5alpha receptor
+&lt;span class="atag" xmlns="http://www.w3.org/1999/xhtml"&gt; &amp;lt;a&lt;span about="[_:151]" content="Eosinophil  apoptosis induced by fungal immunomodulatory peptide -fve via reducing IL-5alpha receptor" property="sioc:content" typeof="sioc:Item" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:sioc="http://rdfs.org/sioc/ns#"&gt;&lt;a href="http://purl.org/obo/owl/GO#GO_0006915" rel="sioc:topic"/&gt;&lt;a href="http://purl.org/obo/owl/CHEBI#CHEBI_16670" rel="sioc:topic"/&gt;&lt;/span&gt;&amp;gt;&lt;/span&gt;. """^^rdf:XMLLiteral . 
+
+&lt;pmid:18410960&gt; dc:creator
+         "Alexandra H Filipovich",
+         "Amal H Assa'ad",
+         "Bridget K Buckmeier",
+         "Joyce M Villanueva",
+         "Marc E Rothenberg",
+         "Miguel L Stein",
+         "Yoshiyuki Yamada" ;
+     dc:date "Jun 2008" ;
+     dc:publisher "The Journal of allergy and clinical immunology" ;
+     dc:title """
+
+Anti- 
+&lt;a href="http://uniprot.org/uniprot/?query=O02699+or+O08987+or+O77515+or+P04401+or+P05113+or+P46685+or+P48093+or+P52173+or+Q08125+or+Q28586+or+Q62575+or+Q95J76+or+Q9ESI9+or+Q9XT91" xmlns="http://www.w3.org/1999/xhtml"&gt;IL-5&lt;/a&gt; (mepolizumab) therapy reduces 
+&lt;a href="http://www.ebi.ac.uk/ego/DisplayGoTerm?id=GO:0043307" xmlns="http://www.w3.org/1999/xhtml"&gt;eosinophil&lt;/a&gt; ex vivo and increases 
+&lt;a href="http://uniprot.org/uniprot/?query=O02699+or+O08987+or+O77515+or+P04401+or+P05113+or+P46685+or+P48093+or+P52173+or+Q08125+or+Q28586+or+Q62575+or+Q95J76+or+Q9ESI9+or+Q9XT91" xmlns="http://www.w3.org/1999/xhtml"&gt;IL-5&lt;/a&gt; and 
+&lt;a href="http://uniprot.org/uniprot/?query=O02699+or+O08987+or+O77515+or+P04401+or+P05113+or+P46685+or+P48093+or+P52173+or+Q08125+or+Q28586+or+Q62575+or+Q95J76+or+Q9ESI9+or+Q9XT91" xmlns="http://www.w3.org/1999/xhtml"&gt;IL-5&lt;/a&gt; receptor levels
+&lt;span class="atag" xmlns="http://www.w3.org/1999/xhtml"&gt; &amp;lt;a&lt;span about="[_:163]" content="Anti- IL-5 (mepolizumab) therapy reduces eosinophil  ex vivo and increases IL-5 and IL-5 receptor levels" property="sioc:content" typeof="sioc:Item" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:sioc="http://rdfs.org/sioc/ns#"&gt;&lt;a href="http://purl.uniprot.org/uniprot/O02699" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/O08987" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/O77515" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/P04401" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/P05113" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/P46685" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/P48093" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/P52173" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/Q08125" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/Q28586" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/Q62575" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/Q95J76" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/Q9ESI9" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/Q9XT91" rel="sioc:topic"/&gt;&lt;a href="http://purl.org/obo/owl/GO#GO_0043307" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/O02699" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/O08987" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/O77515" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/P04401" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/P05113" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/P46685" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/P48093" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/P52173" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/Q08125" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/Q28586" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/Q62575" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/Q95J76" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/Q9ESI9" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/Q9XT91" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/O02699" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/O08987" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/O77515" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/P04401" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/P05113" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/P46685" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/P48093" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/P52173" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/Q08125" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/Q28586" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/Q62575" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/Q95J76" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/Q9ESI9" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/Q9XT91" rel="sioc:topic"/&gt;&lt;/span&gt;&amp;gt;&lt;/span&gt;. """^^rdf:XMLLiteral . 
+
+&lt;pmid:8630733&gt; dc:creator
+         "H Kanazawa",
+         "H Sugaya",
+         "J Miyazaki",
+         "K Ikuta",
+         "K Maki",
+         "K Takatsu",
+         "K Yoshimura",
+         "M Takagi",
+         "S Sunaga",
+         "S Takaki",
+         "T Kinashi",
+         "T Yoshida" ;
+     dc:date "May 1996" ;
+     dc:publisher "Immunity" ;
+     dc:title """
+
+Defective B-1 
+&lt;a href="http://www.ebi.ac.uk/ego/DisplayGoTerm?id=GO:0048468" xmlns="http://www.w3.org/1999/xhtml"&gt;cell development&lt;/a&gt; and impaired immunity against 
+Angiostrongylus cantonensis in 
+&lt;a href="http://uniprot.org/uniprot/?query=P21183+or+Q01344" xmlns="http://www.w3.org/1999/xhtml"&gt;IL-5R alpha&lt;/a&gt; -deficient 
+mice 
+&lt;span class="atag" xmlns="http://www.w3.org/1999/xhtml"&gt; &amp;lt;a&lt;span about="[_:174]" content="Defective B-1  cell development and impaired immunity against Angiostrongylus cantonensis in IL-5R alpha -deficient mice" property="sioc:content" typeof="sioc:Item" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:sioc="http://rdfs.org/sioc/ns#"&gt;&lt;a href="http://purl.org/obo/owl/GO#GO_0048468" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/P21183" rel="sioc:topic"/&gt;&lt;a href="http://purl.uniprot.org/uniprot/Q01344" rel="sioc:topic"/&gt;&lt;/span&gt;&amp;gt;&lt;/span&gt;. """^^rdf:XMLLiteral . 
+
+ [ a sioc:Item ;
+         sioc:content "IL-5Ralpha  ASOs were identified which selectively and specifically suppress the expression of messenger RNA and proteins of both the membrane and the soluble form of the receptor in constitutively IL-5R -expressing murine BCL-1 cells in vitro" ;
+         sioc:topic
+             &lt;http://purl.org/obo/owl/CHEBI#CHEBI_33699&gt;,
+             &lt;http://purl.org/obo/owl/CHEBI#CHEBI_36080&gt;,
+             &lt;http://purl.org/obo/owl/GO#GO_0004914&gt;,
+             &lt;http://purl.org/obo/owl/GO#GO_0016020&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P14133&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P21183&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P24792&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P37064&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q01344&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q40588&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "Moreover, these  IL-5Ralpha -specific ASOs were able to selectively inhibit the IL-5 -induced eosinopoesis from murine fetal liver and bone marrow cells in vitro, suggesting that these molecules may affect the development of IL-5 -mediated eosinophilia in vivo" ;
+         sioc:topic
+             &lt;http://purl.org/obo/owl/CHEBI#CHEBI_25367&gt;,
+             &lt;http://purl.org/obo/owl/GO#GO_0007275&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O02699&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O08987&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O77515&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P04401&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P05113&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P14133&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P21183&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P24792&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P37064&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P46685&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P48093&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P52173&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q01344&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q08125&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q28586&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q40588&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q62575&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q95J76&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9ESI9&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9XT91&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "Indeed, intravenous administration of  IL-5Ralpha -specific ASOs not only suppressed the bone-marrow and blood eosinophilia in mice after short-term treatment with recombinant murine  IL-5 but also inhibited the development of blood and tissue eosinophilia in a ragweed-induced allergic peritonitis model" ;
+         sioc:topic
+             &lt;http://purl.org/obo/owl/GO#GO_0007275&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O02699&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O08987&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O77515&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P04401&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P05113&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P14133&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P21183&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P24792&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P37064&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P46685&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P48093&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P52173&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q01344&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q08125&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q28586&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q40588&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q62575&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q95J76&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9ESI9&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9XT91&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "Thus, blocking the expression of  IL-5Ralpha on eosinophil using ASOs may have therapeutic benefits in eosinophilic diseases such as asthma" ;
+         sioc:topic
+             &lt;http://purl.uniprot.org/uniprot/P14133&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P21183&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P24792&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P37064&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q01344&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q40588&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "The interleukin 5 (IL-5) receptor consists of an IL-5 -specific alpha -subunit (IL-5Ralpha) and a signal-transducing beta -subunit (betac) shared with the IL-3 and granulocyte-macrophage colony-stimulating factor (GM-CSF) receptors" ;
+         sioc:topic
+             &lt;http://purl.org/obo/owl/CHEBI#CHEBI_30216&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O02699&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O08987&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O62757&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O77515&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P01586&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P01587&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P04141&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P04401&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P04823&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P05113&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P06740&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P08700&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P11052&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P21183&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P25140&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P28773&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P46685&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P48093&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P48749&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P48750&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P49875&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P51445&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P51748&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P52173&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q01344&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q06435&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q08125&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q0MUT8&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q28334&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q28586&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q28809&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q29118&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q60481&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q62575&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q95J76&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9BDX4&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9ESI9&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9XT91&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "In this study, we sought to find a role for the cytoplasmic domain of IL-5Ralpha" ;
+         sioc:topic &lt;http://purl.org/obo/owl/CHEBI#CHEBI_30430&gt;, &lt;http://purl.uniprot.org/uniprot/P21183&gt;, &lt;http://purl.uniprot.org/uniprot/Q01344&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "We show that syntenin,  a protein containing PSD-95 /Discs large/zO-1 (PDZ) domains, associates with the cytoplasmic tail of the IL-5Ralpha" ;
+         sioc:topic
+             &lt;http://purl.uniprot.org/uniprot/P03161&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P03610&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P03631&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P03632&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P07394&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P15966&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P21183&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P25243&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P25244&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P31016&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P35823&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P78352&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P98005&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q01344&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q62108&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q6R005&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "Syntenin was found to directly associate with the  transcription factor Sox4" ;
+         sioc:topic &lt;http://purl.org/obo/owl/GO#GO_0006350&gt;, &lt;http://purl.uniprot.org/uniprot/Q06831&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "Association of syntenin with IL-5Ralpha was required for IL-5 -mediated activation of Sox4" ;
+         sioc:topic
+             &lt;http://purl.org/obo/owl/REX#REX_0000150&gt;,
+             &lt;http://purl.org/obo/owl/REX#REX_0000221&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O02699&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O08987&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O77515&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P04401&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P05113&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P21183&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P46685&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P48093&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P52173&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q01344&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q06831&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q08125&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q28586&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q62575&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q95J76&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9ESI9&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9XT91&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "These studies identify a mechanism of transcriptional  activation by cytokine-specific receptor subunits" ;
+         sioc:topic &lt;http://purl.org/obo/owl/REX#REX_0000221&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "Although  rats are widely used for the analysis of allergic reactions and parasitic infections where IL-5 is involved, nothing is currently known of the expression of IL-5 receptor in this species" ;
+         sioc:topic
+             &lt;http://purl.uniprot.org/uniprot/O02699&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O08987&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O77515&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P04401&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P05113&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P46685&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P48093&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P52173&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q08125&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q28586&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q62575&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q95J76&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9ESI9&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9XT91&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "In this study, the cDNA sequence, genomic structure and the transcriptional regulation of the rat  IL-5Ralpha were analyzed" ;
+         sioc:topic
+             &lt;http://purl.org/obo/owl/CHEBI#CHEBI_30430&gt;,
+             &lt;http://purl.org/obo/owl/FIX#FIX_0000300&gt;,
+             &lt;http://purl.org/obo/owl/FIX#FIX_0000482&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P21183&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q01344&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "The  rat  IL-5Ralpha gene, which we localized to chromosome 4q34-q41, spans more than 25 kb and consists of 12 exons" ;
+         sioc:topic &lt;http://purl.org/obo/owl/GO#GO_0005694&gt;, &lt;http://purl.uniprot.org/uniprot/P21183&gt;, &lt;http://purl.uniprot.org/uniprot/Q01344&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "Promoter activity was seen in different cell lines and analysis by deletion experiments allowed to identify two negative regulatory regions which did not differ when tested either with  IL-5Ralpha -negative or positive cells" ;
+         sioc:topic &lt;http://purl.uniprot.org/uniprot/P21183&gt;, &lt;http://purl.uniprot.org/uniprot/Q01344&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "Finally, the investigation of the expression of  IL-5Ralpha showed that it is expressed in lung, spleen, liver, and purified rat B cells from normal rat" ;
+         sioc:topic &lt;http://purl.uniprot.org/uniprot/P21183&gt;, &lt;http://purl.uniprot.org/uniprot/Q01344&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "This can provide an explanation for the role of  rat  IL-5 as B-cell growth factor and a relevant model in order to better understand the activity of IL-5 on human B cells" ;
+         sioc:topic
+             &lt;http://purl.uniprot.org/uniprot/O02699&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O08987&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O77515&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P04401&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P05113&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P46685&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P48093&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P52173&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q08125&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q28586&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q62575&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q95J76&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9ESI9&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9XT91&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "The cytokine, interleukin (IL)-5 stimulates  eosinophil differentiation, activation and survival and can prime these cells, increasing the response to other mediators" ;
+         sioc:topic &lt;http://purl.org/obo/owl/GO#GO_0030222&gt;, &lt;http://purl.org/obo/owl/REX#REX_0000221&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "In view of its many effects on eosinophils, IL-5 has been implicated in the pathogenesis of allergic disease in" ;
+         sioc:topic
+             &lt;http://purl.org/obo/owl/CHEBI#CHEBI_30430&gt;,
+             &lt;http://purl.org/obo/owl/GO#GO_0009405&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O02699&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O08987&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O77515&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P04401&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P05113&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P46685&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P48093&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P52173&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q08125&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q28586&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q62575&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q95J76&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9ESI9&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9XT91&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "Here we report the cloning of equine  IL-5 and expression of the recombinant protein by transfection of Chinese hamster ovary (CHO) cells" ;
+         sioc:topic
+             &lt;http://purl.org/obo/owl/CHEBI#CHEBI_24089&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O02699&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O08987&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O77515&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P04401&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P05113&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P46685&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P48093&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P52173&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q08125&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q28586&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q62575&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q95J76&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9ESI9&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9XT91&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "The cloned cDNA  sequence consisted of 405 nucleotides and encoded a protein of 135 amino acids" ;
+         sioc:topic
+             &lt;http://purl.org/obo/owl/CHEBI#CHEBI_33709&gt;,
+             &lt;http://purl.org/obo/owl/CHEBI#CHEBI_36976&gt;,
+             &lt;http://purl.org/obo/owl/FIX#FIX_0000300&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P03161&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P03610&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P03631&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P03632&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P07394&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P15966&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P25243&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P25244&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P35823&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P98005&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "Previously, two  binding sites for interleukin 5 (IL-5) were identified on the IL-5 receptor alpha chain (IL-5Ralpha)" ;
+         sioc:topic
+             &lt;http://purl.org/obo/owl/CHEBI#CHEBI_30216&gt;,
+             &lt;http://purl.org/obo/owl/GO#GO_0005488&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O02699&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O08987&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O77515&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P04401&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P05113&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P21183&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P46685&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P48093&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P52173&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q01344&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q08125&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q28586&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q62575&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q95J76&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9ESI9&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9XT91&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "There is &amp;gt;85% identity with feline,  bovine, ovine, canine, and human  IL-5 sequences at the nucleotide and protein level" ;
+         sioc:topic
+             &lt;http://purl.uniprot.org/uniprot/O02699&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O08987&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O77515&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P04401&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P05113&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P46685&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P48093&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P52173&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q08125&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q28586&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q62575&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q95J76&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9ESI9&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9XT91&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "Supernatants containing equine  IL-5 were also examined for biological activity" ;
+         sioc:topic
+             &lt;http://purl.uniprot.org/uniprot/O02699&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O08987&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O77515&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P04401&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P05113&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P46685&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P48093&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P52173&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q08125&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q28586&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q62575&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q95J76&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9ESI9&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9XT91&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "CHO supernatant containing equine recombinant (eqr) IL-5, like the human ortholog (hrIL-5), induced concentration dependent equine eosinophil adherence to autologous serum-coated plastic (9.7+/-1.5% with a 1:100 dilution of eqrIL-5 and 9.1+/-1.6% adherence with 1 nM hrIL-5; n = 4)" ;
+         sioc:topic
+             &lt;http://purl.org/obo/owl/CHEBI#CHEBI_24089&gt;,
+             &lt;http://purl.org/obo/owl/CHEBI#CHEBI_30222&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O02699&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O08987&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O77515&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P04401&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P05113&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P46685&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P48093&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P52173&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q08125&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q28586&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q62575&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q95J76&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9ESI9&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9XT91&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "The eqr  protein also caused concentration dependent superoxide production (11.9+/-2.4 nmol (reduced cytochrome (cyt) C)/10(6) cells at a 1:50 dilution, n = 4)" ;
+         sioc:topic
+             &lt;http://purl.org/obo/owl/CHEBI#CHEBI_18421&gt;,
+             &lt;http://purl.org/obo/owl/CHEBI#CHEBI_27594&gt;,
+             &lt;http://purl.org/obo/owl/CHEBI#CHEBI_30222&gt;,
+             &lt;http://purl.org/obo/owl/CHEBI#CHEBI_4056&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P95339&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "In contrast, hrIL-5 only caused significant superoxide production when diluted in conditioned CHO medium, an effect that was inhibited by the anti- human mAb, TRFK5 (4.4+/-0.3 versus 0.3+/-0.4 nmol/10(6) cells for 0.5 nM hrIL-5 in the presence of the isotype matched IgG1 control (10 microM) and TRFK5 (10 microM), respectively)" ;
+         sioc:topic &lt;http://purl.org/obo/owl/CHEBI#CHEBI_18421&gt;, &lt;http://purl.org/obo/owl/CHEBI#CHEBI_24089&gt;, &lt;http://purl.org/obo/owl/CHEBI#CHEBI_30430&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "TRFK5 also significantly inhibited  hrIL-5 induced adherence at concentrations of 0.3 microg/ml and above but had no significant inhibitory effect on either superoxide or adherence caused by eqrIL-5" ;
+         sioc:topic &lt;http://purl.org/obo/owl/CHEBI#CHEBI_18421&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "These results demonstrate that equine  IL-5 expressed by CHO cells stimulates equine eosinophils, suggesting that this cytokine could play a role in eosinophil recruitment and activation in equine allergic disease" ;
+         sioc:topic
+             &lt;http://purl.org/obo/owl/CHEBI#CHEBI_24089&gt;,
+             &lt;http://purl.org/obo/owl/REX#REX_0000221&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O02699&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O08987&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O77515&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P04401&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P05113&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P46685&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P48093&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P52173&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q08125&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q28586&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q62575&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q95J76&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9ESI9&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9XT91&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "Eosinophilia occurs as a result of  IL-5 synthesized from Th2 cells during allergic reactions" ;
+         sioc:topic
+             &lt;http://purl.uniprot.org/uniprot/O02699&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O08987&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O77515&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P04401&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P05113&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P46685&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P48093&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P52173&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q08125&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q28586&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q62575&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q95J76&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9ESI9&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9XT91&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "IL-5 acts as a factor activating eosinophils" ;
+         sioc:topic
+             &lt;http://purl.uniprot.org/uniprot/O02699&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O08987&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O77515&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P04401&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P05113&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P46685&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P48093&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P52173&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q08125&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q28586&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q62575&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q95J76&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9ESI9&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9XT91&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "The aim of this study was to compare the  IL-5 cytokine measurements in serum samples and cell cultures" ;
+         sioc:topic
+             &lt;http://purl.uniprot.org/uniprot/O02699&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O08987&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O77515&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P04401&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P05113&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P46685&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P48093&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P52173&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q08125&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q28586&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q62575&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q95J76&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9ESI9&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9XT91&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "They are located within the  CD loop of the first fibronectin type III (FnIII)-like domain and the EF loop of the second FnIII-like domain" ;
+         sioc:topic
+             &lt;http://purl.org/obo/owl/FIX#FIX_0000043&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P07589&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P11722&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q28275&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q28377&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q28749&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q91289&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q91400&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "IL-5 production in in vitro cell cultures prepared by using phytohemaglutinin (PHA) to stimulate peripheral blood mononuclear cells (PBMC) obtained from the blood samples taken from these patients were compared with the IL-5 level in serum" ;
+         sioc:topic
+             &lt;http://purl.uniprot.org/uniprot/O02699&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O08987&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O77515&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P04401&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P05113&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P46685&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P48093&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P52173&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P80463&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q08125&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q28586&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q62575&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q95J76&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9ESI9&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9XT91&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "Furthermore, the  IL-5 production in protozoon and helminth infections was also compared" ;
+         sioc:topic
+             &lt;http://purl.uniprot.org/uniprot/O02699&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O08987&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O77515&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P04401&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P05113&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P46685&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P48093&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P52173&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q08125&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q28586&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q62575&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q95J76&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9ESI9&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9XT91&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "Absolute eosinophil values in 1 mm(3) of blood were calculated by means of peripheral smear in both  groups within the scope of the study" ;
+         sioc:topic &lt;http://purl.org/obo/owl/CHEBI#CHEBI_24433&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "As regards the values of the sera in both patients with parasite infection and controls, the  IL-5 production was found to be higher in the cell culture supernatant (P &amp;lt;0.001 and P &amp;lt;0.05)" ;
+         sioc:topic
+             &lt;http://purl.uniprot.org/uniprot/O02699&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O08987&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O77515&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P04401&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P05113&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P46685&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P48093&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P52173&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q08125&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q28586&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q62575&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q95J76&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9ESI9&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9XT91&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "When the  IL-5 level of the patients with helminth parasites was compared with that of those with protozoon, it was determined that the IL-5 level in serum was more significant in the patients with protozoon than in those with helminth (P &amp;lt;0.05)" ;
+         sioc:topic
+             &lt;http://purl.uniprot.org/uniprot/O02699&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O08987&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O77515&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P04401&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P05113&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P46685&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P48093&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P52173&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q08125&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q28586&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q62575&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q95J76&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9ESI9&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9XT91&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "In the study group, the patients were found to have parasites, the percentage of eosinophil was 7.0% compared to 6.5% in the control group" ;
+         sioc:topic &lt;http://purl.org/obo/owl/CHEBI#CHEBI_24433&gt;, &lt;http://purl.org/obo/owl/CHEBI#CHEBI_30430&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "CONCLUSION: It was found that  IL-5 cytokine levels in serum samples from the patients with helminth and protozoon displayed more measurable values as compared to the IL-5 levels after stimulation with mitogen" ;
+         sioc:topic
+             &lt;http://purl.uniprot.org/uniprot/O02699&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O08987&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O77515&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P04401&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P05113&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P46685&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P48093&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P52173&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q08125&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q28586&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q62575&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q95J76&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9ESI9&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9XT91&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "It is concluded that  IL-5 acts as a triggering factor in the toxiallergic complaints commonly seen in helminth and protozoon infections" ;
+         sioc:topic
+             &lt;http://purl.uniprot.org/uniprot/O02699&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O08987&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O77515&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P04401&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P05113&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P46685&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P48093&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P52173&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q08125&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q28586&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q62575&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q95J76&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9ESI9&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9XT91&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "The  alpha subunit of interleukin 5 receptor (IL5RA) on chromosome 3p26- p24 is known to regulate the development and function of eosinophils" ;
+         sioc:topic
+             &lt;http://purl.org/obo/owl/CHEBI#CHEBI_30216&gt;,
+             &lt;http://purl.org/obo/owl/GO#GO_0005694&gt;,
+             &lt;http://purl.org/obo/owl/GO#GO_0007275&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O94811&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P06934&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P07749&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P21926&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P24078&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P25880&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P25881&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P25882&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P25884&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P25989&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P26668&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P27500&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P27920&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P29833&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P29996&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P29997&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P41678&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P69618&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P69619&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q01344&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q62397&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q81835&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q81842&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q8NNH6&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q91DH7&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q91DH8&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q91DH9&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q91QT2&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9CQM0&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9E925&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9T1S4&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9ZV04&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "In an effort to discover additional polymorphism(s) in genes whose variant(s) have been implicated in asthma, we investigated the genetic polymorphisms in IL5RA to evaluate the gene as a potential candidate for a host genetic study of asthma" ;
+         sioc:topic &lt;http://purl.org/obo/owl/CHEBI#CHEBI_30430&gt;, &lt;http://purl.org/obo/owl/GO#GO_0018995&gt;, &lt;http://purl.uniprot.org/uniprot/Q01344&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "The first  binding site was identified by exploiting the different abilities of human  IL-5Ralpha (hIL-5Ralpha) and mouse  IL-5Ralpha (mIL-5Ralpha) to bind hIL-5" ;
+         sioc:topic &lt;http://purl.org/obo/owl/GO#GO_0005488&gt;, &lt;http://purl.uniprot.org/uniprot/P21183&gt;, &lt;http://purl.uniprot.org/uniprot/Q01344&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "By direct  DNA sequencing in 24 individuals, we identified 22 sequence variants within exons and flanking regions including a 1.5-kb promoter region of IL5RA; 10 common polymorphic sites were selected for genotyping in our asthma cohort (n = 587)" ;
+         sioc:topic
+             &lt;http://purl.org/obo/owl/CHEBI#CHEBI_30222&gt;,
+             &lt;http://purl.org/obo/owl/FIX#FIX_0000300&gt;,
+             &lt;http://purl.org/obo/owl/FIX#FIX_0000873&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q01344&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "Statistical analysis revealed that one promoter SNP, c.-5993A &amp;gt; G, and one ins/ del polymorphism in intron 3, c.-480_482insdelGTT, showed significant association with the risk of asthma  development" ;
+         sioc:topic &lt;http://purl.org/obo/owl/GO#GO_0007275&gt;, &lt;http://purl.org/obo/owl/REX#REX_0000150&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "Our findings suggest that polymorphisms in  IL5RA might be among the genetic risk factors for asthma  development, especially in atopic populations" ;
+         sioc:topic &lt;http://purl.org/obo/owl/GO#GO_0007275&gt;, &lt;http://purl.uniprot.org/uniprot/Q01344&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "IL5RA variant/haplotype information identified in this study will provide valuable information for strategies for the control of asthma" ;
+         sioc:topic &lt;http://purl.uniprot.org/uniprot/Q01344&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "BACKGROUND/PURPOSE: Eosinophils are important  effector cells in the pathogenesis of allergic bronchial asthma" ;
+         sioc:topic &lt;http://purl.org/obo/owl/CHEBI#CHEBI_35224&gt;, &lt;http://purl.org/obo/owl/GO#GO_0009405&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "Enhancement of eosinophil  apoptosis has been considered to have therapeutic effect on allergic disease" ;
+         sioc:topic &lt;http://purl.org/obo/owl/GO#GO_0006915&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "Fungal immunomodulatory  peptide (FIP)-fve has been reported to possess immunoprophylactic activities for allergic diseases" ;
+         sioc:topic &lt;http://purl.org/obo/owl/CHEBI#CHEBI_16670&gt;, &lt;http://purl.uniprot.org/uniprot/Q15853&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "The purpose of this study was to investigate the modulation of  FIP -fve on human eosinophil survival derived from allergic asthmatic patients" ;
+         sioc:topic &lt;http://purl.uniprot.org/uniprot/Q15853&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "Apoptosis was assessed by annexin V and propidium iodide" ;
+         sioc:topic
+             &lt;http://purl.org/obo/owl/GO#GO_0006915&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P08758&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P14668&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P17153&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P48036&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P70075&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P81287&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q4R4H7&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q5R1W0&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "The apoptotic signal  protein, CD95 and IL-5 receptor expression were assessed by Western blot and flow cytometric analysis" ;
+         sioc:topic
+             &lt;http://purl.uniprot.org/uniprot/O02699&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O08987&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O77515&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P04401&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P05113&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P46685&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P48093&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P52173&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q08125&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q28586&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q62575&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q95J76&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9ESI9&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9XT91&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "Here we show that ovine  IL-5 (oIL-5) has the ability to activate the hIL-5Ralpha but not the mIL-5Ralpha" ;
+         sioc:topic
+             &lt;http://purl.uniprot.org/uniprot/O02699&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O08987&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O77515&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P04401&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P05113&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P46685&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P48093&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P52173&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q08125&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q28586&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q62575&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q95J76&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9ESI9&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9XT91&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "RESULTS: When the eosinophils were treated with  FIP -fve in the presence of IL-5, IL-5 -enhanced eosinophil survival diminished" ;
+         sioc:topic
+             &lt;http://purl.uniprot.org/uniprot/O02699&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O08987&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O77515&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P04401&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P05113&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P46685&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P48093&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P52173&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q08125&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q15853&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q28586&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q62575&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q95J76&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9ESI9&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9XT91&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "FIP -fve could reduce IL-5 -mediated survival of eosinophils and decrease IL-5Ralpha expression" ;
+         sioc:topic
+             &lt;http://purl.uniprot.org/uniprot/O02699&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O08987&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O77515&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P04401&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P05113&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P21183&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P46685&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P48093&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P52173&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q01344&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q08125&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q15853&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q28586&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q62575&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q95J76&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9ESI9&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9XT91&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "In the presence of FIP -fve, CD95 expression was upregulated and Bcl-xL and pro -caspase 3 expression were downregulated in cultured eosinophils" ;
+         sioc:topic
+             &lt;http://purl.org/obo/owl/CHEBI#CHEBI_30017&gt;,
+             &lt;http://purl.org/obo/owl/CHEBI#CHEBI_30430&gt;,
+             &lt;http://purl.org/obo/owl/CHEBI#CHEBI_32865&gt;,
+             &lt;http://purl.org/obo/owl/CHEBI#CHEBI_32866&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q15853&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "CONCLUSION: The results suggest that  FIP -fve can inhibit IL-5 -mediated survival of eosinophils through the modulation of cytokine receptor expression and apoptotic signal protein production" ;
+         sioc:topic
+             &lt;http://purl.uniprot.org/uniprot/O02699&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O08987&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O77515&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P04401&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P05113&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P46685&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P48093&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P52173&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q08125&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q15853&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q28586&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q62575&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q95J76&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9ESI9&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9XT91&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "The modulatory effect of  FIP -fve on eosinophil apoptosis in vitro indicates that it may have some therapeutic effect on eosinophil-related allergic inflammation in vivo" ;
+         sioc:topic &lt;http://purl.org/obo/owl/GO#GO_0006915&gt;, &lt;http://purl.uniprot.org/uniprot/Q15853&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "BACKGROUND: Anti- IL-5 might be a useful therapeutic agent for eosinophilic disorders, yet its immunologic consequences have not been well characterized" ;
+         sioc:topic
+             &lt;http://purl.uniprot.org/uniprot/O02699&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O08987&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O77515&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P04401&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P05113&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P46685&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P48093&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P52173&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q08125&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q28586&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q62575&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q95J76&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9ESI9&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9XT91&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "OBJECTIVE: We sought to characterize the hematologic and immunologic effects of anti- IL-5 in human subjects" ;
+         sioc:topic
+             &lt;http://purl.uniprot.org/uniprot/O02699&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O08987&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O77515&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P04401&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P05113&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P46685&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P48093&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P52173&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q08125&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q28586&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q62575&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q95J76&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9ESI9&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9XT91&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "Samples with increased  IL-5 levels after therapy were analyzed by using size exclusion filtration" ;
+         sioc:topic
+             &lt;http://purl.org/obo/owl/FIX#FIX_0000496&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O02699&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O08987&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O77515&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P04401&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P05113&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P46685&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P48093&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P52173&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q08125&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q28586&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q62575&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q95J76&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9ESI9&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9XT91&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "Immunoreactive  IL-5 fraction and plasma samples were subsequently precipitated with saturating concentrations of protein A /G" ;
+         sioc:topic
+             &lt;http://purl.uniprot.org/uniprot/O02699&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O08987&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O77515&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P02810&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P03064&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P04401&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P05113&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P07602&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P18164&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P26779&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P46685&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P48093&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P52173&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q08125&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q28586&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q62575&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q66929&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q95J76&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q96631&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q992J0&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q993M1&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9DIC5&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9ESI9&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9IMM4&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9J7Z2&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9QAZ8&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9XT91&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "RESULTS: Twenty-three patients responded to anti- IL-5 therapy with a decrease in blood eosinophil counts and a reduced percentage of CCR3 (+) cells by 20- and 13- fold, respectively (P &amp;lt; .0001)" ;
+         sioc:topic
+             &lt;http://purl.uniprot.org/uniprot/O02699&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O08987&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O54814&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O77515&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P04401&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P05113&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P46685&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P48093&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P51677&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P51678&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P52173&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P56483&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P56492&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q08125&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q28586&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q62575&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q64H34&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q95J76&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9BDS8&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9ESI9&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9XT91&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9Z2I3&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "These results show that regions of the third FnIII domain of  IL-5Ralpha are involved in binding, in addition to the regions in domains one and two of the IL-5Ralpha that were identified in an earlier study" ;
+         sioc:topic
+             &lt;http://purl.org/obo/owl/GO#GO_0005488&gt;,
+             &lt;http://purl.org/obo/owl/REX#REX_0000089&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P21183&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q01344&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "Responsiveness was not related to the levels of baseline plasma  IL-5 or the presence of FIP1L1 - PDGFRA fusion gene" ;
+         sioc:topic
+             &lt;http://purl.uniprot.org/uniprot/O02699&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O08987&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O77515&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P04401&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P05113&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P16234&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P46685&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P48093&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P52173&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q08125&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q28586&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q5RAA7&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q62575&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q6UN15&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q8AXC7&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q95J76&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9ESI9&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9PUF6&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9XT91&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "Therapy was associated with a large increase in blood  IL-5 levels, likely because of a circulating IL-5 /mepolizumab complex precipitated with protein A /G, a significant increase in eosinophil IL-5 receptor alpha expression, and increased percentage of CD4 (+) and CD8(+) cells producing intracellular  IL-5 (P &amp;lt; .05)" ;
+         sioc:topic
+             &lt;http://purl.org/obo/owl/CHEBI#CHEBI_30216&gt;,
+             &lt;http://purl.org/obo/owl/GO#GO_0005622&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O02699&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O08987&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O77515&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P01730&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P02810&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P03064&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P04401&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P05113&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P05542&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P07602&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P16003&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P16004&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P18164&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P26779&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P33705&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P46630&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P46685&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P48093&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P52173&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P79184&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P79185&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q08125&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q08336&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q08338&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q08339&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q08340&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q28586&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q29037&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q62575&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q66929&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q95J76&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q96631&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q992J0&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q993M1&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9DIC5&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9ESI9&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9IMM4&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9J7Z2&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9QAZ8&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9XS78&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9XT91&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "Additionally, anti- IL-5 therapy decreased eotaxin-stimulated eosinophil shape change ex vivo" ;
+         sioc:topic
+             &lt;http://purl.org/obo/owl/FIX#FIX_0000498&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O02699&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O08987&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O77515&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P04401&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P05113&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P46685&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P48093&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P52173&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q08125&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q28586&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q62575&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q95J76&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9ESI9&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9XT91&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "CONCLUSIONS: Anti- IL-5 therapy induces a dramatic and sustained decrease in blood eosinophilia (including CCR3 (+) cells), decreased eosinophil , and increased circulating levels of IL-5 in a variety of eosinophilic disorders" ;
+         sioc:topic
+             &lt;http://purl.org/obo/owl/GO#GO_0043307&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O02699&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O08987&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O54814&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O77515&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P04401&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P05113&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P46685&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P48093&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P51677&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P51678&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P52173&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P56483&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P56492&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q08125&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q28586&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q62575&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q64H34&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q95J76&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9BDS8&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9ESI9&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9XT91&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9Z2I3&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "Increased levels of  IL-5 receptor alpha and lymphocyte IL-5 production after anti- IL-5 therapy suggest an endogenous IL-5 autoregulatory pathway" ;
+         sioc:topic
+             &lt;http://purl.org/obo/owl/CHEBI#CHEBI_30216&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O02699&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O08987&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O77515&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P04401&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P05113&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P46685&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P48093&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P52173&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q08125&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q28586&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q62575&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q95J76&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9ESI9&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9XT91&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "We generated interleukin-5 receptor  alpha chain (IL-5R alpha)-deficient (IL-5R alpha -/-) mice by gene targeting" ;
+         sioc:topic &lt;http://purl.org/obo/owl/CHEBI#CHEBI_30216&gt;, &lt;http://purl.uniprot.org/uniprot/P21183&gt;, &lt;http://purl.uniprot.org/uniprot/Q01344&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "The  IL-5R alpha -/- mice showed decreased numbers of B-1 cells concomitant with low serum concentrations of IgM and IgG3" ;
+         sioc:topic &lt;http://purl.uniprot.org/uniprot/P21183&gt;, &lt;http://purl.uniprot.org/uniprot/Q01344&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "They showed no  IL-5 -induced enhancement of B cell responses to T-independent antigens" ;
+         sioc:topic
+             &lt;http://purl.uniprot.org/uniprot/O02699&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O08987&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O77515&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P04401&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P05113&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P46685&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P48093&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P52173&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q08125&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q28586&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q62575&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q95J76&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9ESI9&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9XT91&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "The number of  alpha  beta T cell receptor-positive thymocytes tended to decrease in 3- week-old IL-5R alpha -/- mice, returning to normal by 6 weeks of age" ;
+         sioc:topic
+             &lt;http://purl.org/obo/owl/CHEBI#CHEBI_30216&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P07700&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P21183&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q01344&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "The  IL-5R alpha -/- mice produced basal levels of eosinophils, while their bone marrow cells failed to form eosinophilic colonies in response to IL-5" ;
+         sioc:topic
+             &lt;http://purl.uniprot.org/uniprot/O02699&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O08987&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O77515&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P04401&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P05113&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P21183&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P46685&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P48093&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P52173&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q01344&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q08125&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q28586&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q62575&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q95J76&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9ESI9&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9XT91&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "The unique role of interleukin (IL)-5 in eosinophil production,  activation, and localization makes this cytokine a prime target for therapeutic intervention in diseases characterized by a selective blood and tissue eosinophilia" ;
+         sioc:topic &lt;http://purl.org/obo/owl/GO#GO_0051179&gt;, &lt;http://purl.org/obo/owl/REX#REX_0000221&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "Impaired eosinophilopoiesis in  IL-5R alpha -/- mice enhanced the survival of Angiostrongylus cantonensis" ;
+         sioc:topic &lt;http://purl.uniprot.org/uniprot/P21183&gt;, &lt;http://purl.uniprot.org/uniprot/Q01344&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "These results indicate that  IL-5 -induced eosinophils serve as potent effector cells in the killing of Angiostrongylus cantonensis in mice" ;
+         sioc:topic
+             &lt;http://purl.org/obo/owl/CHEBI#CHEBI_35224&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O02699&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O08987&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O77515&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P04401&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P05113&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P46685&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P48093&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P52173&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q08125&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q28586&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q62575&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q95J76&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9ESI9&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9XT91&gt;].
+
+ [ a sioc:Item ;
+         sioc:content "In an attempt to block the effects of IL-5 on eosinophils, a strategy was developed to suppress the expression of the IL-5 receptor alpha chain (IL-5Ralpha) by antisense oligonucleotides (ASOs)" ;
+         sioc:topic
+             &lt;http://purl.org/obo/owl/CHEBI#CHEBI_30216&gt;,
+             &lt;http://purl.org/obo/owl/CHEBI#CHEBI_30430&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O02699&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O08987&gt;,
+             &lt;http://purl.uniprot.org/uniprot/O77515&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P04401&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P05113&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P14133&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P21183&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P24792&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P37064&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P46685&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P48093&gt;,
+             &lt;http://purl.uniprot.org/uniprot/P52173&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q01344&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q08125&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q28586&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q40588&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q62575&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q95J76&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9ESI9&gt;,
+             &lt;http://purl.uniprot.org/uniprot/Q9XT91&gt;].
+
+</pre>
+        
+        
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="/wiki/WhatizitAsTurtle?format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

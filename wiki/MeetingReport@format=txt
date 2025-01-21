@@ -1,0 +1,56 @@
+[[PageOutline]] 
+
+= Visualization and Molecular Interactions =
+[wiki:VisualizationAndInteraction] 
+
+Possible issues to be mentioned:
+ * how can uncertainty be expressed?
+ * ways to describe experimental/compuational "evidence" 
+
+
+
+= [wiki:Data_exchange Semantic Data Exchange] =
+[wiki:Data_exchange Semantic Data Exchange] 
+
+Summary of Semantic Data Exchange for existing systems discussion
+
+Before wholesale conversion to RDF are there things that can be	done
+to improve existing/ legacy systems?
+
+Members	of BioMart, CytoScape, Galaxy, InterMine and others met	to
+discuss the possibilities/need for improving data exchange.
+
+== Conclusions: ==
+ * Data exchange:
+    * Current systems are arbitrary but work well.
+    * A namespace for file formats would be useful.
+    * A namespace for column of tabular data would be useful. Could also be used to describe data in other formats e.g. XML, though this could be rather verbose.
+
+    * At the moment namespaces for columns is probably more important than URIs for each data element in a column.
+
+    * Maybe are applicable to the above: Ontology Lookup Service (http://www.ebi.ac.uk/ontology-lookup) and/or Life Science Resource Name Project ( http://www.lsrn.org)
+
+    * Agreed that worthwhile to pass URIs to describe columns for tabular data. Agreed that arbitrary human-friendly names are also good.
+
+    * Agreed to dump all BioMart/ InterMine column headings out, find the common/commonly-used ones and work on naming.
+
+ * Genome Builds:
+    * Investigate whether is there a standard available for describing genome versions/	genome annotation versions.
+    * Consider whether to base naming on ensembl as planning to cover all genomes
+
+= [wiki:SystemsBiologySBML] =
+
+Sorry for no summary. Just see our [wiki:SystemsBiologySBML wiki page].
+
+= Text mining =
+
+ * Describe briefly what we did
+ * Biopython module
+ * Contribute to the use case
+
+ See TextMiningReport for more details
+
+= Next Generation Sequencing =
+
+ * [wiki:NextGenerationSequencing]
+

@@ -1,0 +1,613 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      RDF/TogoWS/PubMed – BioHackathon 2010
+    </title>
+        <link rel="search" href="../../../search.1.html" />
+        <link rel="help" href="../../TracGuide.html" />
+        <link rel="alternate" href="http://hackathon3.dbcls.jp/wiki/RDF/TogoWS/PubMed?version=1&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="PubMed.html" title="View latest version" />
+        <link rel="next" href="PubMed@version=2.html" title="Version 2" />
+        <link rel="start" href="../../../wiki.1.html" />
+        <link rel="stylesheet" href="../../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../../../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../../../chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../../../search/opensearch" title="Search BioHackathon 2010" />
+    <script type="text/javascript" src="../../../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../../../chrome/common/js/trac.js"></script><script type="text/javascript" src="../../../chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="../../../index.html"><img src="http://hackathon3.dbcls.jp/raw-attachment/wiki/LogoGallery/trac_logo.png" alt="DBCLS BioHackathon 2010" width="200" /></a>
+      </div>
+      <form id="search" action="../../../search.1.html" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://hackathon3.dbcls.jp/login">Login</a></li><li><a href="../../TracGuide.html">Help/Guide</a></li><li><a href="../../../about.html">About Trac</a></li><li class="last"><a href="../../../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../../../wiki.1.html">Wiki</a></li><li><a href="../../../timeline.html">Timeline</a></li><li><a href="../../../roadmap.html">Roadmap</a></li><li><a href="../../../browser.html">Browse Source</a></li><li><a href="../../../report.html">View Tickets</a></li><li class="last"><a href="../../../search.1.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span class="missing">&larr; Previous Version</span></li><li><a href="PubMed.html" title="View latest version">View Latest Version</a></li><li><span><a class="next" href="PubMed@version=2.html" title="Version 2">Next Version</a> &rarr;</span></li><li class="last"><a href="http://hackathon3.dbcls.jp/wiki/RDF/TogoWS/PubMed?action=diff&amp;version=1">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <p class="path noprint">
+        <a class="pathentry" title="View RDF" href="../../RDF.1.html">RDF</a><span class="pathentry sep">/</span><a class="pathentry" title="View RDF/TogoWS" href="http://hackathon3.dbcls.jp/wiki/RDF/TogoWS">TogoWS</a><span class="pathentry sep">/</span><a class="pathentry" title="View RDF/TogoWS/PubMed" href="PubMed.html">PubMed</a>
+        <br style="clear: both" />
+      </p>
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 1 (modified by admin, <a class="timeline" href="../../../timeline@from=2011-02-16T18%253A05%253A08+0900&amp;precision=second.html" title="2011-02-16T18:05:08+0900 in Timeline">14 years</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+--
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <h2 id="MEDLINEPubMeddatainRDF">MEDLINE/PubMed data in RDF</h2>
+<p>
+MEDLINE/PubMed data spec.
+</p>
+<ul><li><a class="ext-link" href="http://www.nlm.nih.gov/bsd/mms/medlineelements.html"><span class="icon"> </span>http://www.nlm.nih.gov/bsd/mms/medlineelements.html</a>
+</li></ul><p>
+A <a class="missing wiki">PubMed?</a> entry URI
+</p>
+<ul><li><a class="ext-link" href="http://togows.dbcls.jp/entry/pubmed/10975656"><span class="icon"> </span>http://togows.dbcls.jp/entry/pubmed/10975656</a>
+</li><li><a class="ext-link" href="http://pubmed.org/10975656"><span class="icon"> </span>http://pubmed.org/10975656</a>
+</li></ul><p>
+Related works
+</p>
+<ul><li><a class="ext-link" href="http://neurocommons.org/page/Bundles"><span class="icon"> </span>http://neurocommons.org/page/Bundles</a>
+<ul><li> <a class="ext-link" href="http://neurocommons.org/page/Bundles/mesh/mesh-skos"><span class="icon"> </span>http://neurocommons.org/page/Bundles/mesh/mesh-skos</a>
+</li><li><a class="ext-link" href="http://neurocommons.org/page/Bundles/mesh/qualified-headings"><span class="icon"> </span>http://neurocommons.org/page/Bundles/mesh/qualified-headings</a>
+</li><li><a class="ext-link" href="http://neurocommons.org/page/Bundles/medline/subject-headings"><span class="icon"> </span>http://neurocommons.org/page/Bundles/medline/subject-headings</a>
+</li><li><a class="ext-link" href="http://neurocommons.org/page/Bundles/medline/titles-years"><span class="icon"> </span>http://neurocommons.org/page/Bundles/medline/titles-years</a>
+</li><li><a class="ext-link" href="http://neurocommons.org/page/Bundles/ncbi/gene-pubmed"><span class="icon"> </span>http://neurocommons.org/page/Bundles/ncbi/gene-pubmed</a>
+</li><li><a class="ext-link" href="http://neurocommons.org/page/Bundles/omim"><span class="icon"> </span>http://neurocommons.org/page/Bundles/omim</a>
+</li></ul></li><li><a class="ext-link" href="http://hublog.hubmed.org/archives/001789.html"><span class="icon"> </span>UniProt / RDF / SPARQL</a> 
+</li><li><a class="ext-link" href="http://labs.intellidimension.com/uniprot/default.rsp"><span class="icon"> </span>Experiments with Uniprot RDF and RDF Gateway</a>
+</li><li><a class="ext-link" href="http://dev.isb-sib.ch/projects/uniprot-rdf/migration.html#uniprot-r"><span class="icon"> </span>uniprot RDF :: Migration Guide</a>
+</li></ul><h3 id="MEDLINEPubMedrecordsample">MEDLINE/PubMed record sample</h3>
+<pre class="wiki">PMID- 10975656
+OWN - NLM
+STAT- MEDLINE
+DA  - 20001211
+DCOM- 20010111
+LR  - 20011128
+IS  - 0894-0282 (Print)
+IS  - 0894-0282 (Linking)
+VI  - 13
+IP  - 9
+DP  - 2000 Sep
+TI  - Proteome analysis of differentially displayed proteins as a tool for the
+      investigation of symbiosis.
+PG  - 995-1009
+AB  - Two-dimensional gel electrophoresis was used to identify differentially
+      displayed proteins expressed during the symbiotic interaction between the
+      bacterium Sinorhizobium meliloti strain 1021 and the legume Melilotus alba
+      (white sweetclover). Our aim was to characterize novel symbiosis proteins
+      and to determine how the two symbiotic partners alter their respective
+      metabolisms as part of the interaction, by identifying gene products that
+      are differentially present between the symbiotic and non-symbiotic states.
+      Proteome maps from control M. alba roots, wild-type nodules, cultured S.
+      meliloti, and S. meliloti bacteroids were generated and compared. Over 250
+      proteins were induced or up-regulated in the nodule, compared with the
+      root, and over 350 proteins were down-regulated in the bacteroid form of
+      the rhizobia, compared with cultured cells. N-terminal amino acid
+      sequencing and matrix-assisted laser desorption/ionization time-of-flight
+      mass spectrometry peptide mass fingerprint analysis, in conjunction with
+      data base searching, were used to assign putative identity to nearly 100
+      nodule, bacterial, and bacteroid proteins. These included the previously
+      identified nodule proteins leghemoglobin and NifH as well as proteins
+      involved in carbon and nitrogen metabolism in S. meliloti. Bacteroid cells
+      showed down-regulation of several proteins involved in nitrogen
+      acquisition, including glutamine synthetase, urease, a urea-amide binding
+      protein, and a PII isoform, indicating that the bacteroids were nitrogen
+      proficient. The down-regulation of several enzymes involved in
+      polyhydroxybutyrate synthesis and a cell division protein was also
+      observed. This work shows that proteome analysis will be a useful strategy
+      to link sequence information and functional genomics.
+AD  - Plant-Microbe Interaction Group, Research School of Biological Sciences,
+      Australian National University, Canberra City.
+FAU - Natera, S H
+AU  - Natera SH
+FAU - Guerreiro, N
+AU  - Guerreiro N
+FAU - Djordjevic, M A
+AU  - Djordjevic MA
+LA  - eng
+PT  - Journal Article
+PL  - UNITED STATES
+TA  - Mol Plant Microbe Interact
+JT  - Molecular plant-microbe interactions : MPMI
+JID - 9107902
+RN  - 0 (Proteome)
+RN  - 7727-37-9 (Nitrogen)
+SB  - IM
+MH  - Electrophoresis, Gel, Two-Dimensional
+MH  - Fabaceae/*genetics/metabolism/microbiology
+MH  - Nitrogen/metabolism
+MH  - *Plants, Medicinal
+MH  - *Proteome
+MH  - Sinorhizobium meliloti/*genetics/metabolism
+MH  - Spectrometry, Mass, Matrix-Assisted Laser Desorption-Ionization
+MH  - *Symbiosis
+EDAT- 2000/09/07
+MHDA- 2001/02/28
+CRDT- 2000/09/07
+AID - 10.1094/MPMI.2000.13.9.995 [doi]
+PST - ppublish
+SO  - Mol Plant Microbe Interact. 2000 Sep;13(9):995-1009.
+</pre><h2 id="Semanticsannotation">Semantics annotation</h2>
+<h3 id="gopubmed">gopubmed</h3>
+<p>
+<a class="ext-link" href="http://gopubmed.org/"><span class="icon"> </span>http://gopubmed.org/</a> 
+</p>
+<pre class="wiki">&lt;rdf:Description about="info:pmid/20077120"&gt;
+&lt;dc:title&gt;
+Thymic stromal lymphopoietin induces tight junction protein claudin-7 via NF-kappaB in dendritic cells.
+&lt;/dc:title&gt;
+&lt;dcterms:abstract&gt;
+Epithelial-derived thymic stromal lymphopoietin (TSLP) is an IL-7-like cytokine that triggers dendritic cell (DC)-mediated Th2-type inflammatory responses. ...
+&lt;/dcterms:abstract&gt;
+&lt;dcterms:creator&gt;Kamekura, Ryuta&lt;/dcterms:creator&gt;
+&lt;dcterms:creator&gt;Kojima, Takashi&lt;/dcterms:creator&gt;
+&lt;dcterms:creator&gt;Takashima, Akira&lt;/dcterms:creator&gt;
+&lt;dcterms:creator&gt;Koizumi, Jun-Ichi&lt;/dcterms:creator&gt;
+&lt;dcterms:creator&gt;Ogasawara, Noriko&lt;/dcterms:creator&gt;
+&lt;dcterms:creator&gt;Go, Mitsuru&lt;/dcterms:creator&gt;
+&lt;dcterms:creator&gt;Takano, Ken-Ichi&lt;/dcterms:creator&gt;
+&lt;dcterms:creator&gt;Murata, Masaki&lt;/dcterms:creator&gt;
+&lt;dcterms:creator&gt;Tanaka, Satoshi&lt;/dcterms:creator&gt;
+&lt;dcterms:creator&gt;Ichimiya, Shingo&lt;/dcterms:creator&gt;
+&lt;dcterms:creator&gt;Himi, Tetsuo&lt;/dcterms:creator&gt;
+&lt;dcterms:creator&gt;Sawada, Norimasa&lt;/dcterms:creator&gt;
+&lt;prism:publicationName&gt;Histochem Cell Biol&lt;/prism:publicationName&gt;
+&lt;prism:publicationDate&gt;2010-Jan-14&lt;/prism:publicationDate&gt;
+&lt;prism:publicationVolume/&gt;
+&lt;prism:isPartOf&gt;urn:issn:1432-119X&lt;/prism:isPartOf&gt;
+&lt;/rdf:Description&gt;
+</pre><ul><li>dcterms
+</li><li>prism
+</li></ul><h3 id="DBLP">DBLP</h3>
+<h2 id="Rakefile">Rakefile</h2>
+<pre class="wiki">require 'open-uri'
+require 'bio'
+
+class Bio::MEDLINE
+  def subject_uri
+    "&lt;http://pubmed.org/#{self.pmid}&gt;"
+  end
+  def predicate(field)
+    "&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html##{field.downcase}&gt;" 
+  end
+  def to_rdf
+    pubmed.keys.map do |field|
+      case field
+      when 'AU','FAU','MH','IS','RN'
+        self.pubmed[field].chomp.split("\n").map do |object|
+          [subject_uri, predicate(field), "\"#{object}\" ."].join("\t") 
+        end
+      when 'AB','TI','AD'
+        [subject_uri, predicate(field), "\"#{self.pubmed[field].chomp.gsub("\n", ' ')}\" ."].join("\t") 
+      else
+        [subject_uri, predicate(field), "\"#{self.pubmed[field].chomp}\" ."].join("\t") 
+      end
+    end
+  end
+end
+
+desc 'test'
+task :test do
+  pm = open("http://togows.dbcls.jp/entry/pubmed/10975656").read
+  pm = Bio::MEDLINE.new(pm)
+  puts pm.to_rdf
+end
+</pre><h2 id="SimplebutpsuedoRDF">Simple but psuedo RDF</h2>
+<ul><li>subjects: <a class="ext-link" href="http://pubmed.org/${PMID"><span class="icon"> </span>http://pubmed.org/${PMID</a>}
+</li><li>predicates: <a class="ext-link" href="http://www.nlm.nih.gov/bsd/mms/medlineelements.html#${field_name"><span class="icon"> </span>http://www.nlm.nih.gov/bsd/mms/medlineelements.html#${field_name</a>}
+</li><li>objects: Literal
+</li></ul><h3 id="Converttask.">Convert task.</h3>
+<pre class="wiki">$ rake test -s &gt; test.n3
+</pre><h3 id="test.n3aPubMedinRDF">test.n3 a <a class="missing wiki">PubMed?</a> in RDF</h3>
+<pre class="wiki">&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#pmid&gt;	"10975656" .
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#own&gt;	"NLM" .
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#stat&gt;	"MEDLINE" .
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#da&gt;	"20001211" .
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#dcom&gt;	"20010111" .
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#lr&gt;	"20011128" .
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#is&gt;	"0894-0282 (Print)" .
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#is&gt;	"0894-0282 (Linking)" .
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#vi&gt;	"13" .
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#ip&gt;	"9" .
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#dp&gt;	"2000 Sep" .
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#ti&gt;	"Proteome analysis of differentially displayed proteins as a tool for the investigation of symbiosis." .
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#pg&gt;	"995-1009" .
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#ab&gt;	"Two-dimensional gel electrophoresis was used to identify differentially displayed proteins expressed during the symbiotic interaction between the bacterium Sinorhizobium meliloti strain 1021 and the legume Melilotus alba (white sweetclover). Our aim was to characterize novel symbiosis proteins and to determine how the two symbiotic partners alter their respective metabolisms as part of the interaction, by identifying gene products that are differentially present between the symbiotic and non-symbiotic states. Proteome maps from control M. alba roots, wild-type nodules, cultured S. meliloti, and S. meliloti bacteroids were generated and compared. Over 250 proteins were induced or up-regulated in the nodule, compared with the root, and over 350 proteins were down-regulated in the bacteroid form of the rhizobia, compared with cultured cells. N-terminal amino acid sequencing and matrix-assisted laser desorption/ionization time-of-flight mass spectrometry peptide mass fingerprint analysis, in conjunction with data base searching, were used to assign putative identity to nearly 100 nodule, bacterial, and bacteroid proteins. These included the previously identified nodule proteins leghemoglobin and NifH as well as proteins involved in carbon and nitrogen metabolism in S. meliloti. Bacteroid cells showed down-regulation of several proteins involved in nitrogen acquisition, including glutamine synthetase, urease, a urea-amide binding protein, and a PII isoform, indicating that the bacteroids were nitrogen proficient. The down-regulation of several enzymes involved in polyhydroxybutyrate synthesis and a cell division protein was also observed. This work shows that proteome analysis will be a useful strategy to link sequence information and functional genomics." .
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#ad&gt;	"Plant-Microbe Interaction Group, Research School of Biological Sciences, Australian National University, Canberra City." .
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#fau&gt;	"Natera, S H" .
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#fau&gt;	"Guerreiro, N" .
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#fau&gt;	"Djordjevic, M A" .
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#au&gt;	"Natera SH" .
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#au&gt;	"Guerreiro N" .
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#au&gt;	"Djordjevic MA" .
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#la&gt;	"eng" .
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#pt&gt;	"Journal Article" .
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#pl&gt;	"UNITED STATES" .
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#ta&gt;	"Mol Plant Microbe Interact" .
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#jt&gt;	"Molecular plant-microbe interactions : MPMI" .
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#jid&gt;	"9107902" .
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#rn&gt;	"0 (Proteome)" .
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#rn&gt;	"7727-37-9 (Nitrogen)" .
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#sb&gt;	"IM" .
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#mh&gt;	"Electrophoresis, Gel, Two-Dimensional" .
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#mh&gt;	"Fabaceae/*genetics/metabolism/microbiology" .
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#mh&gt;	"Nitrogen/metabolism" .
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#mh&gt;	"*Plants, Medicinal" .
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#mh&gt;	"*Proteome" .
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#mh&gt;	"Sinorhizobium meliloti/*genetics/metabolism" .
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#mh&gt;	"Spectrometry, Mass, Matrix-Assisted Laser Desorption-Ionization" .
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#mh&gt;	"*Symbiosis" .
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#edat&gt;	"2000/09/07" .
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#mhda&gt;	"2001/02/28" .
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#crdt&gt;	"2000/09/07" .
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#aid&gt;	"10.1094/MPMI.2000.13.9.995 [doi]" .
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#pst&gt;	"ppublish" .
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#so&gt;	"Mol Plant Microbe Interact. 2000 Sep;13(9):995-1009." .
+</pre><h3 id="Queryandresults">Query and results</h3>
+<p>
+Store it into 4store.
+</p>
+<pre class="wiki">$ 4s-backend-setup pubmed
+$ 4s-backend pubmed
+$ 4s-import pubmed test.n3
+</pre><p>
+Query.
+</p>
+<pre class="wiki">$ 4s-query pubmed -f text 'select * where { ?s ?p ?o }' 
+?s	?p	?o
+
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#mh&gt;	"Spectrometry, Mass, Matrix-Assisted Laser Desorption-Ionization"
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#mh&gt;	"Nitrogen/metabolism"
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#mh&gt;	"*Symbiosis"
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#mh&gt;	"*Plants, Medicinal"
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#mh&gt;	"Electrophoresis, Gel, Two-Dimensional"
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#mh&gt;	"Fabaceae/*genetics/metabolism/microbiology"
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#mh&gt;	"*Proteome"
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#mh&gt;	"Sinorhizobium meliloti/*genetics/metabolism"
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#dcom&gt;	"20010111"
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#edat&gt;	"2000/09/07"
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#aid&gt;	"10.1094/MPMI.2000.13.9.995 [doi]"
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#jid&gt;	"9107902"
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#crdt&gt;	"2000/09/07"
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#ab&gt;	"Two-dimensional gel electrophoresis was used to identify differentially displayed proteins expressed during the symbiotic interaction between the bacterium Sinorhizobium meliloti strain 1021 and the legume Melilotus alba (white sweetclover). Our aim was to characterize novel symbiosis proteins and to determine how the two symbiotic partners alter their respective metabolisms as part of the interaction, by identifying gene products that are differentially present between the symbiotic and non-symbiotic states. Proteome maps from control M. alba roots, wild-type nodules, cultured S. meliloti, and S. meliloti bacteroids were generated and compared. Over 250 proteins were induced or up-regulated in the nodule, compared with the root, and over 350 proteins were down-regulated in the bacteroid form of the rhizobia, compared with cultured cells. N-terminal amino acid sequencing and matrix-assisted laser desorption/ionization time-of-flight mass spectrometry peptide mass fingerprint analysis, in conjunction with data base searching, were used to assign putative identity to nearly 100 nodule, bacterial, and bacteroid proteins. These included the previously identified nodule proteins leghemoglobin and NifH as well as proteins involved in carbon and nitrogen metabolism in S. meliloti. Bacteroid cells showed down-regulation of several proteins involved in nitrogen acquisition, including glutamine synthetase, urease, a urea-amide binding protein, and a PII isoform, indicating that the bacteroids were nitrogen proficient. The down-regulation of several enzymes involved in polyhydroxybutyrate synthesis and a cell division protein was also observed. This work shows that proteome analysis will be a useful strategy to link sequence information and functional genomics."
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#au&gt;	"Djordjevic MA"
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#au&gt;	"Guerreiro N"
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#au&gt;	"Natera SH"
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#lr&gt;	"20011128"
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#pl&gt;	"UNITED STATES"
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#rn&gt;	"0 (Proteome)"
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#rn&gt;	"7727-37-9 (Nitrogen)"
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#ip&gt;	"9"
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#jt&gt;	"Molecular plant-microbe interactions : MPMI"
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#own&gt;	"NLM"
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#dp&gt;	"2000 Sep"
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#vi&gt;	"13"
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#mhda&gt;	"2001/02/28"
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#ta&gt;	"Mol Plant Microbe Interact"
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#pg&gt;	"995-1009"
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#ad&gt;	"Plant-Microbe Interaction Group, Research School of Biological Sciences, Australian National University, Canberra City."
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#pst&gt;	"ppublish"
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#la&gt;	"eng"
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#fau&gt;	"Djordjevic, M A"
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#fau&gt;	"Guerreiro, N"
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#fau&gt;	"Natera, S H"
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#is&gt;	"0894-0282 (Print)"
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#is&gt;	"0894-0282 (Linking)"
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#stat&gt;	"MEDLINE"
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#da&gt;	"20001211"
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#sb&gt;	"IM"
+&lt;http://pubmed.org/10975656&gt;	&lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#pt&gt;	"Journal Article"
+</pre><p>
+mesh terms.
+</p>
+<pre class="wiki">$ 4s-query pubmed -f text 'select * where { ?s &lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#mh&gt; ?mesh }'                                                                                10-01-13
+?s	?mesh
+&lt;http://pubmed.org/10975656&gt;	"Spectrometry, Mass, Matrix-Assisted Laser Desorption-Ionization"
+&lt;http://pubmed.org/10975656&gt;	"Nitrogen/metabolism"
+&lt;http://pubmed.org/10975656&gt;	"*Symbiosis"
+&lt;http://pubmed.org/10975656&gt;	"*Plants, Medicinal"
+&lt;http://pubmed.org/10975656&gt;	"Electrophoresis, Gel, Two-Dimensional"
+&lt;http://pubmed.org/10975656&gt;	"Fabaceae/*genetics/metabolism/microbiology"
+&lt;http://pubmed.org/10975656&gt;	"*Proteome"
+&lt;http://pubmed.org/10975656&gt;	"Sinorhizobium meliloti/*genetics/metabolism"
+</pre><p>
+authors.
+</p>
+<pre class="wiki">$ 4s-query pubmed -f text 'select * where { ?s &lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#au&gt; ?au }'                                                                                  10-01-13
+?s	?au
+&lt;http://pubmed.org/10975656&gt;	"Djordjevic MA"
+&lt;http://pubmed.org/10975656&gt;	"Guerreiro N"
+&lt;http://pubmed.org/10975656&gt;	"Natera SH"
+</pre><p>
+title.
+</p>
+<pre class="wiki">$ 4s-query pubmed -f text 'select * where { ?s &lt;http://www.nlm.nih.gov/bsd/mms/medlineelements.html#ti&gt; ?title }'                                                                               10-01-13
+?s	?title
+&lt;http://pubmed.org/10975656&gt;	"Proteome analysis of differentially displayed proteins as a tool for the investigation of symbiosis."
+</pre><h3 id="Issues">Issues</h3>
+<ol><li>Order of authors
+</li><li>Typing: Date, title, person, etc.
+</li><li>MeSH terms
+</li><li>subjects
+</li></ol><h2 id="SimpleRDFfromXML">Simple RDF from XML</h2>
+<h3 id="MEDLINECitationPubMedCitationXML">MEDLINE Citation / <a class="missing wiki">PubMed?</a> Citation XML</h3>
+<ul><li><a class="ext-link" href="http://www.nlm.nih.gov/news/medlinedata.html"><span class="icon"> </span>http://www.nlm.nih.gov/news/medlinedata.html</a>
+</li><li><a class="ext-link" href="http://www.nlm.nih.gov/databases/dtd/"><span class="icon"> </span>http://www.nlm.nih.gov/databases/dtd/</a>
+</li></ul><p>
+PMID:10975656 in the <a class="missing wiki">MedlineCitation?</a> XML
+</p>
+<pre class="wiki">&lt;PubmedArticle&gt;
+    &lt;MedlineCitation Owner="NLM" Status="MEDLINE"&gt;
+        &lt;PMID&gt;10975656&lt;/PMID&gt;
+        &lt;DateCreated&gt;
+            &lt;Year&gt;2000&lt;/Year&gt;
+            &lt;Month&gt;12&lt;/Month&gt;
+            &lt;Day&gt;11&lt;/Day&gt;
+        &lt;/DateCreated&gt;
+        &lt;DateCompleted&gt;
+            &lt;Year&gt;2001&lt;/Year&gt;
+            &lt;Month&gt;01&lt;/Month&gt;
+            &lt;Day&gt;11&lt;/Day&gt;
+        &lt;/DateCompleted&gt;
+        &lt;DateRevised&gt;
+            &lt;Year&gt;2001&lt;/Year&gt;
+            &lt;Month&gt;11&lt;/Month&gt;
+            &lt;Day&gt;28&lt;/Day&gt;
+        &lt;/DateRevised&gt;
+        &lt;Article PubModel="Print"&gt;
+            &lt;Journal&gt;
+                &lt;ISSN IssnType="Print"&gt;0894-0282&lt;/ISSN&gt;
+                &lt;JournalIssue CitedMedium="Print"&gt;
+                    &lt;Volume&gt;13&lt;/Volume&gt;
+                    &lt;Issue&gt;9&lt;/Issue&gt;
+                    &lt;PubDate&gt;
+                        &lt;Year&gt;2000&lt;/Year&gt;
+                        &lt;Month&gt;Sep&lt;/Month&gt;
+                    &lt;/PubDate&gt;
+                &lt;/JournalIssue&gt;
+                &lt;Title&gt;Molecular plant-microbe interactions : MPMI&lt;/Title&gt;
+                &lt;ISOAbbreviation&gt;Mol. Plant Microbe Interact.&lt;/ISOAbbreviation&gt;
+            &lt;/Journal&gt;
+            &lt;ArticleTitle&gt;Proteome analysis of differentially displayed proteins as a tool for the investigation of symbiosis.&lt;/ArticleTitle&gt;
+            &lt;Pagination&gt;
+                &lt;MedlinePgn&gt;995-1009&lt;/MedlinePgn&gt;
+            &lt;/Pagination&gt;
+            &lt;Abstract&gt;
+                &lt;AbstractText&gt;Two-dimensional gel electrophoresis was used to identify differentially displayed proteins expressed during the symbiotic interaction between the bacterium Sinorhizobium meliloti strain 1021 and the legume Melilotus alba (white sweetclover). Our aim was to characterize novel symbiosis proteins and to determine how the two symbiotic partners alter their respective metabolisms as part of the interaction, by identifying gene products that are differentially present between the symbiotic and non-symbiotic states. Proteome maps from control M. alba roots, wild-type nodules, cultured S. meliloti, and S. meliloti bacteroids were generated and compared. Over 250 proteins were induced or up-regulated in the nodule, compared with the root, and over 350 proteins were down-regulated in the bacteroid form of the rhizobia, compared with cultured cells. N-terminal amino acid sequencing and matrix-assisted laser desorption/ionization time-of-flight mass spectrometry peptide mass fingerprint analysis, in conjunction with data base searching, were used to assign putative identity to nearly 100 nodule, bacterial, and bacteroid proteins. These included the previously identified nodule proteins leghemoglobin and NifH as well as proteins involved in carbon and nitrogen metabolism in S. meliloti. Bacteroid cells showed down-regulation of several proteins involved in nitrogen acquisition, including glutamine synthetase, urease, a urea-amide binding protein, and a PII isoform, indicating that the bacteroids were nitrogen proficient. The down-regulation of several enzymes involved in polyhydroxybutyrate synthesis and a cell division protein was also observed. This work shows that proteome analysis will be a useful strategy to link sequence information and functional genomics.&lt;/AbstractText&gt;
+            &lt;/Abstract&gt;
+            &lt;Affiliation&gt;Plant-Microbe Interaction Group, Research School of Biological Sciences, Australian National University, Canberra City.&lt;/Affiliation&gt;
+            &lt;AuthorList CompleteYN="Y"&gt;
+                &lt;Author ValidYN="Y"&gt;
+                    &lt;LastName&gt;Natera&lt;/LastName&gt;
+                    &lt;ForeName&gt;S H&lt;/ForeName&gt;
+                    &lt;Initials&gt;SH&lt;/Initials&gt;
+                &lt;/Author&gt;
+                &lt;Author ValidYN="Y"&gt;
+                    &lt;LastName&gt;Guerreiro&lt;/LastName&gt;
+                    &lt;ForeName&gt;N&lt;/ForeName&gt;
+                    &lt;Initials&gt;N&lt;/Initials&gt;
+                &lt;/Author&gt;
+                &lt;Author ValidYN="Y"&gt;
+                    &lt;LastName&gt;Djordjevic&lt;/LastName&gt;
+                    &lt;ForeName&gt;M A&lt;/ForeName&gt;
+                    &lt;Initials&gt;MA&lt;/Initials&gt;
+                &lt;/Author&gt;
+            &lt;/AuthorList&gt;
+            &lt;Language&gt;eng&lt;/Language&gt;
+            &lt;PublicationTypeList&gt;
+                &lt;PublicationType&gt;Journal Article&lt;/PublicationType&gt;
+            &lt;/PublicationTypeList&gt;
+        &lt;/Article&gt;
+        &lt;MedlineJournalInfo&gt;
+            &lt;Country&gt;UNITED STATES&lt;/Country&gt;
+            &lt;MedlineTA&gt;Mol Plant Microbe Interact&lt;/MedlineTA&gt;
+            &lt;NlmUniqueID&gt;9107902&lt;/NlmUniqueID&gt;
+            &lt;ISSNLinking&gt;0894-0282&lt;/ISSNLinking&gt;
+        &lt;/MedlineJournalInfo&gt;
+        &lt;ChemicalList&gt;
+            &lt;Chemical&gt;
+                &lt;RegistryNumber&gt;0&lt;/RegistryNumber&gt;
+                &lt;NameOfSubstance&gt;Proteome&lt;/NameOfSubstance&gt;
+            &lt;/Chemical&gt;
+            &lt;Chemical&gt;
+                &lt;RegistryNumber&gt;7727-37-9&lt;/RegistryNumber&gt;
+                &lt;NameOfSubstance&gt;Nitrogen&lt;/NameOfSubstance&gt;
+            &lt;/Chemical&gt;
+        &lt;/ChemicalList&gt;
+        &lt;CitationSubset&gt;IM&lt;/CitationSubset&gt;
+        &lt;MeshHeadingList&gt;
+            &lt;MeshHeading&gt;
+                &lt;DescriptorName MajorTopicYN="N"&gt;Electrophoresis, Gel, Two-Dimensional&lt;/DescriptorName&gt;
+            &lt;/MeshHeading&gt;
+            &lt;MeshHeading&gt;
+                &lt;DescriptorName MajorTopicYN="N"&gt;Fabaceae&lt;/DescriptorName&gt;
+                &lt;QualifierName MajorTopicYN="Y"&gt;genetics&lt;/QualifierName&gt;
+                &lt;QualifierName MajorTopicYN="N"&gt;metabolism&lt;/QualifierName&gt;
+                &lt;QualifierName MajorTopicYN="N"&gt;microbiology&lt;/QualifierName&gt;
+            &lt;/MeshHeading&gt;
+            &lt;MeshHeading&gt;
+                &lt;DescriptorName MajorTopicYN="N"&gt;Nitrogen&lt;/DescriptorName&gt;
+                &lt;QualifierName MajorTopicYN="N"&gt;metabolism&lt;/QualifierName&gt;
+            &lt;/MeshHeading&gt;
+            &lt;MeshHeading&gt;
+                &lt;DescriptorName MajorTopicYN="Y"&gt;Plants, Medicinal&lt;/DescriptorName&gt;
+            &lt;/MeshHeading&gt;
+            &lt;MeshHeading&gt;
+                &lt;DescriptorName MajorTopicYN="Y"&gt;Proteome&lt;/DescriptorName&gt;
+            &lt;/MeshHeading&gt;
+            &lt;MeshHeading&gt;
+                &lt;DescriptorName MajorTopicYN="N"&gt;Sinorhizobium meliloti&lt;/DescriptorName&gt;
+                &lt;QualifierName MajorTopicYN="Y"&gt;genetics&lt;/QualifierName&gt;
+                &lt;QualifierName MajorTopicYN="N"&gt;metabolism&lt;/QualifierName&gt;
+            &lt;/MeshHeading&gt;
+            &lt;MeshHeading&gt;
+                &lt;DescriptorName MajorTopicYN="N"&gt;Spectrometry, Mass, Matrix-Assisted Laser Desorption-Ionization&lt;/DescriptorName&gt;
+            &lt;/MeshHeading&gt;
+            &lt;MeshHeading&gt;
+                &lt;DescriptorName MajorTopicYN="Y"&gt;Symbiosis&lt;/DescriptorName&gt;
+            &lt;/MeshHeading&gt;
+        &lt;/MeshHeadingList&gt;
+    &lt;/MedlineCitation&gt;
+    &lt;PubmedData&gt;
+        &lt;History&gt;
+            &lt;PubMedPubDate PubStatus="pubmed"&gt;
+                &lt;Year&gt;2000&lt;/Year&gt;
+                &lt;Month&gt;9&lt;/Month&gt;
+                &lt;Day&gt;7&lt;/Day&gt;
+                &lt;Hour&gt;11&lt;/Hour&gt;
+                &lt;Minute&gt;0&lt;/Minute&gt;
+            &lt;/PubMedPubDate&gt;
+            &lt;PubMedPubDate PubStatus="medline"&gt;
+                &lt;Year&gt;2001&lt;/Year&gt;
+                &lt;Month&gt;2&lt;/Month&gt;
+                &lt;Day&gt;28&lt;/Day&gt;
+                &lt;Hour&gt;10&lt;/Hour&gt;
+                &lt;Minute&gt;1&lt;/Minute&gt;
+            &lt;/PubMedPubDate&gt;
+            &lt;PubMedPubDate PubStatus="entrez"&gt;
+                &lt;Year&gt;2000&lt;/Year&gt;
+                &lt;Month&gt;9&lt;/Month&gt;
+                &lt;Day&gt;7&lt;/Day&gt;
+                &lt;Hour&gt;11&lt;/Hour&gt;
+                &lt;Minute&gt;0&lt;/Minute&gt;
+            &lt;/PubMedPubDate&gt;
+        &lt;/History&gt;
+        &lt;PublicationStatus&gt;ppublish&lt;/PublicationStatus&gt;
+        &lt;ArticleIdList&gt;
+            &lt;ArticleId IdType="pubmed"&gt;10975656&lt;/ArticleId&gt;
+            &lt;ArticleId IdType="doi"&gt;10.1094/MPMI.2000.13.9.995&lt;/ArticleId&gt;
+        &lt;/ArticleIdList&gt;
+    &lt;/PubmedData&gt;
+&lt;/PubmedArticle&gt;
+</pre><h2 id="TogoWSRDFTurtle">TogoWS RDF/Turtle</h2>
+<p>
+<a class="ext-link" href="http://togows.dbcls.jp/entry/pubmed/10975656.ttl"><span class="icon"> </span>http://togows.dbcls.jp/entry/pubmed/10975656.ttl</a>
+</p>
+<p>
+A mixture of the simple but psuedo RDF (above) and the prism vocabulary.
+</p>
+<ul><li>prism <a class="ext-link" href="http://prismstandard.org/namespaces/1.2/basic/"><span class="icon"> </span>http://prismstandard.org/namespaces/1.2/basic/</a>
+<pre class="wiki">&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/10975656&gt;	&lt;http://togows.dbcls.jp/ontology/ncbi-pubmed#pmid&gt;	"10975656" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/10975656&gt;	&lt;http://www.w3.org/2000/01/rdf-schema#label&gt;	"pmid:10975656" .          
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/10975656&gt;	&lt;http://purl.org/dc/elements/1.1/identifier&gt;	&lt;http://pubmed.org/10975656&gt; .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/10975656&gt;	&lt;http://togows.dbcls.jp/ontology/ncbi-pubmed#crdt&gt;	"2000/09/07 11:00" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/10975656&gt;	&lt;http://togows.dbcls.jp/ontology/ncbi-pubmed#edat&gt;	"2000/09/07 11:00" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/10975656&gt;	&lt;http://togows.dbcls.jp/ontology/ncbi-pubmed#mhda&gt;	"2001/02/28 10:01" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/10975656&gt;	&lt;http://togows.dbcls.jp/ontology/ncbi-pubmed#stat&gt;	"MEDLINE" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/10975656&gt;	&lt;http://togows.dbcls.jp/ontology/ncbi-pubmed#ti&gt;	"Proteome analysis of differentially displayed proteins as a tool for the investigation of symbiosis." .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/10975656&gt;	&lt;http://purl.org/dc/elements/1.1/title&gt;	"Proteome analysis of differentially displayed proteins as a tool for the investigation of symbiosis." .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/10975656&gt;	&lt;http://togows.dbcls.jp/ontology/ncbi-pubmed#ab&gt;	"Two-dimensional gel electrophoresis was used to identify differentially displayed proteins expressed during the symbiotic interaction between the bacterium Sinorhizobium meliloti strain 1021 and the legume Melilotus alba (white sweetclover). Our aim was to characterize novel symbiosis proteins and to determine how the two symbiotic partners alter their respective metabolisms as part of the interaction, by identifying gene products that are differentially present between the symbiotic and non-symbiotic states. Proteome maps from control M. alba roots, wild-type nodules, cultured S. meliloti, and S. meliloti bacteroids were generated and compared. Over 250 proteins were induced or up-regulated in the nodule, compared with the root, and over 350 proteins were down-regulated in the bacteroid form of the rhizobia, compared with cultured cells. N-terminal amino acid sequencing and matrix-assisted laser desorption/ionization time-of-flight mass spectrometry peptide mass fingerprint analysis, in conjunction with data base searching, were used to assign putative identity to nearly 100 nodule, bacterial, and bacteroid proteins. These included the previously identified nodule proteins leghemoglobin and NifH as well as proteins involved in carbon and nitrogen metabolism in S. meliloti. Bacteroid cells showed down-regulation of several proteins involved in nitrogen acquisition, including glutamine synthetase, urease, a urea-amide binding protein, and a PII isoform, indicating that the bacteroids were nitrogen proficient. The down-regulation of several enzymes involved in polyhydroxybutyrate synthesis and a cell division protein was also observed. This work shows that proteome analysis will be a useful strategy to link sequence information and functional genomics." .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/10975656&gt;	&lt;http://purl.org/dc/terms/abstract&gt;	"Two-dimensional gel electrophoresis was used to identify differentially displayed proteins expressed during the symbiotic interaction between the bacterium Sinorhizobium meliloti strain 1021 and the legume Melilotus alba (white sweetclover). Our aim was to characterize novel symbiosis proteins and to determine how the two symbiotic partners alter their respective metabolisms as part of the interaction, by identifying gene products that are differentially present between the symbiotic and non-symbiotic states. Proteome maps from control M. alba roots, wild-type nodules, cultured S. meliloti, and S. meliloti bacteroids were generated and compared. Over 250 proteins were induced or up-regulated in the nodule, compared with the root, and over 350 proteins were down-regulated in the bacteroid form of the rhizobia, compared with cultured cells. N-terminal amino acid sequencing and matrix-assisted laser desorption/ionization time-of-flight mass spectrometry peptide mass fingerprint analysis, in conjunction with data base searching, were used to assign putative identity to nearly 100 nodule, bacterial, and bacteroid proteins. These included the previously identified nodule proteins leghemoglobin and NifH as well as proteins involved in carbon and nitrogen metabolism in S. meliloti. Bacteroid cells showed down-regulation of several proteins involved in nitrogen acquisition, including glutamine synthetase, urease, a urea-amide binding protein, and a PII isoform, indicating that the bacteroids were nitrogen proficient. The down-regulation of several enzymes involved in polyhydroxybutyrate synthesis and a cell division protein was also observed. This work shows that proteome analysis will be a useful strategy to link sequence information and functional genomics." .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/10975656&gt;	&lt;http://togows.dbcls.jp/ontology/ncbi-pubmed#vi&gt;	"13" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/10975656&gt;	&lt;http://prismstandard.org/namespaces/1.2/basic/volume&gt;	"13" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/10975656&gt;	&lt;http://togows.dbcls.jp/ontology/ncbi-pubmed#pg&gt;	"995-1009" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/10975656&gt;	&lt;http://prismstandard.org/namespaces/1.2/basic/startingPage&gt;	"995" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/10975656&gt;	&lt;http://togows.dbcls.jp/ontology/ncbi-pubmed#dp&gt;	"2000 Sep" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/10975656&gt;	&lt;http://togows.dbcls.jp/ontology/ncbi-pubmed#dep&gt;	"" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/10975656&gt;	&lt;http://prismstandard.org/namespaces/1.2/basic/publicationDate&gt;	"" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/10975656&gt;	&lt;http://togows.dbcls.jp/ontology/ncbi-pubmed#ta&gt;	"Mol Plant Microbe Interact" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/10975656&gt;	&lt;http://prismstandard.org/namespaces/1.2/basic/publicationName&gt;	"Mol Plant Microbe Interact" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/10975656&gt;	&lt;http://togows.dbcls.jp/ontology/ncbi-pubmed#jt&gt;	"Molecular plant-microbe interactions : MPMI" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/10975656&gt;	&lt;http://togows.dbcls.jp/ontology/ncbi-pubmed#so&gt;	"Mol Plant Microbe Interact. 2000 Sep;13(9):995-1009." .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/10975656&gt;	&lt;http://togows.dbcls.jp/ontology/ncbi-pubmed#sb&gt;	"IM" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/10975656&gt;	&lt;http://togows.dbcls.jp/ontology/ncbi-pubmed#pt&gt;	"Journal Article" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/10975656&gt;	&lt;http://togows.dbcls.jp/ontology/ncbi-pubmed#fau&gt;	"Natera, S H" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/10975656&gt;	&lt;http://purl.org/dc/terms/creator&gt;	"Natera, S H" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/10975656&gt;	&lt;http://togows.dbcls.jp/ontology/ncbi-pubmed#fau&gt;	"Guerreiro, N" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/10975656&gt;	&lt;http://purl.org/dc/terms/creator&gt;	"Guerreiro, N" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/10975656&gt;	&lt;http://togows.dbcls.jp/ontology/ncbi-pubmed#fau&gt;	"Djordjevic, M A" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/10975656&gt;	&lt;http://purl.org/dc/terms/creator&gt;	"Djordjevic, M A" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/10975656&gt;	&lt;http://togows.dbcls.jp/ontology/ncbi-pubmed#au&gt;	"Natera SH" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/10975656&gt;	&lt;http://togows.dbcls.jp/ontology/ncbi-pubmed#au&gt;	"Guerreiro N" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/10975656&gt;	&lt;http://togows.dbcls.jp/ontology/ncbi-pubmed#au&gt;	"Djordjevic MA" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/10975656&gt;	&lt;http://togows.dbcls.jp/ontology/ncbi-pubmed#mh&gt;	"Electrophoresis, Gel, Two-Dimensional" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/10975656&gt;	&lt;http://togows.dbcls.jp/ontology/ncbi-pubmed#mh&gt;	"Fabaceae/*genetics/metabolism/microbiology" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/10975656&gt;	&lt;http://togows.dbcls.jp/ontology/ncbi-pubmed#mh&gt;	"Nitrogen/metabolism" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/10975656&gt;	&lt;http://togows.dbcls.jp/ontology/ncbi-pubmed#mh&gt;	"*Plants, Medicinal" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/10975656&gt;	&lt;http://togows.dbcls.jp/ontology/ncbi-pubmed#mh&gt;	"*Proteome" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/10975656&gt;	&lt;http://togows.dbcls.jp/ontology/ncbi-pubmed#mh&gt;	"Sinorhizobium meliloti/*genetics/metabolism" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/10975656&gt;	&lt;http://togows.dbcls.jp/ontology/ncbi-pubmed#mh&gt;	"Spectrometry, Mass, Matrix-Assisted Laser Desorption-Ionization" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/10975656&gt;	&lt;http://togows.dbcls.jp/ontology/ncbi-pubmed#mh&gt;	"*Symbiosis" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/10975656&gt;	&lt;http://togows.dbcls.jp/ontology/ncbi-pubmed#jid&gt;	"9107902" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/10975656&gt;	&lt;http://togows.dbcls.jp/ontology/ncbi-pubmed#dcom&gt;	"20010111" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/10975656&gt;	&lt;http://togows.dbcls.jp/ontology/ncbi-pubmed#pst&gt;	"ppublish" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/10975656&gt;	&lt;http://togows.dbcls.jp/ontology/ncbi-pubmed#aid&gt;	"10.1094/MPMI.2000.13.9.995 [doi]" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/10975656&gt;	&lt;http://togows.dbcls.jp/ontology/ncbi-pubmed#pmc&gt;	"" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/10975656&gt;	&lt;http://togows.dbcls.jp/ontology/ncbi-pubmed#pl&gt;	"UNITED STATES" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/10975656&gt;	&lt;http://togows.dbcls.jp/ontology/ncbi-pubmed#lr&gt;	"20011128" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/10975656&gt;	&lt;http://togows.dbcls.jp/ontology/ncbi-pubmed#own&gt;	"NLM" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/10975656&gt;	&lt;http://togows.dbcls.jp/ontology/ncbi-pubmed#da&gt;	"20001211" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/10975656&gt;	&lt;http://togows.dbcls.jp/ontology/ncbi-pubmed#la&gt;	"eng" .
+&lt;http://togows.dbcls.jp/entry/ncbi-pubmed/10975656&gt;	&lt;http://togows.dbcls.jp/ontology/ncbi-pubmed#is&gt;	"0894-0282 (Print) 0894-0282 (Linking)" .
+</pre></li></ul>
+        
+        
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="http://hackathon3.dbcls.jp/wiki/RDF/TogoWS/PubMed?version=1&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../../../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="../../../about.html"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

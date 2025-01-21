@@ -1,0 +1,900 @@
+/MetaMap/public_mm/bin/SKRrun -L 2008 -w /MetaMap/public_mm/lexicon /MetaMap/public_mm/bin/metamap08.BINARY -I -Z 08
+
+MetaMap (2008)
+
+
+Control options:
+  mm_data_year=08
+  show_cuis
+Berkeley DB databases (normal strict 08 model) are open.
+Static variants will come from table varsan.
+Variants: Adj/noun ONLY.
+Accessing lexicon /MetaMap/public_mm/lexicon/data/lexiconStatic2008.
+Variant generation mode: static.
+
+Established connection to Tagger Server on localhost.
+Processing 00000000.tx.1: What antibodies have been used to detect protein TLR4 ?
+
+Phrase: "What antibodies"
+Meta Candidates (2):
+  1000 C0003241:Antibodies [Amino Acid, Peptide, or Protein,Immunologic Factor,Indicator, Reagent, or Diagnostic Aid]
+   966 C1621287:antibody (antibody activity) [Molecular Function]
+Meta Mapping (1000):
+  1000 C0003241:Antibodies [Amino Acid, Peptide, or Protein,Immunologic Factor,Indicator, Reagent, or Diagnostic Aid]
+
+Phrase: "have"
+
+Phrase: "been"
+
+Phrase: "used"
+Meta Candidates (4):
+   966 C0042153:use (utilization qualifier) [Functional Concept]
+   966 C0457083:Use (Usage) [Functional Concept]
+   966 C1524063:Using (Use of) [Functional Concept]
+   966 C1947944:Use (Use - dosing instruction imperative) [Intellectual Product]
+Meta Mapping (966):
+   966 C0457083:Use (Usage) [Functional Concept]
+Meta Mapping (966):
+   966 C1947944:Use (Use - dosing instruction imperative) [Intellectual Product]
+Meta Mapping (966):
+   966 C1524063:Using (Use of) [Functional Concept]
+Meta Mapping (966):
+   966 C0042153:use (utilization qualifier) [Functional Concept]
+
+Phrase: "to"
+
+Phrase: "detect"
+Meta Candidates (2):
+   966 C0442726:Detected [Finding]
+   966 C1511790:Detected (Detection) [Therapeutic or Preventive Procedure]
+Meta Mapping (966):
+   966 C0442726:Detected [Finding]
+Meta Mapping (966):
+   966 C1511790:Detected (Detection) [Therapeutic or Preventive Procedure]
+
+Phrase: "protein TLR4 ?"
+Meta Candidates (2):
+   694 C0033684:Protein (Proteins) [Amino Acid, Peptide, or Protein,Biologically Active Substance]
+   694 C0202202:Protein NOS (Protein measurement) [Laboratory Procedure]
+Meta Mapping (694):
+   694 C0202202:Protein NOS (Protein measurement) [Laboratory Procedure]
+Meta Mapping (694):
+   694 C0033684:Protein (Proteins) [Amino Acid, Peptide, or Protein,Biologically Active Substance]
+/MetaMap/public_mm/bin/SKRrun -L 2008 -w /MetaMap/public_mm/lexicon /MetaMap/public_mm/bin/metamap08.BINARY -I -Z 08
+
+MetaMap (2008)
+
+
+Control options:
+  mm_data_year=08
+  show_cuis
+Berkeley DB databases (normal strict 08 model) are open.
+Static variants will come from table varsan.
+Variants: Adj/noun ONLY.
+Accessing lexicon /MetaMap/public_mm/lexicon/data/lexiconStatic2008.
+Variant generation mode: static.
+
+Established connection to Tagger Server on localhost.
+Processing 00000000.tx.1: What biological substances have been used to measure toxicity in response to cytarabine ?
+
+Phrase: "What biological substances"
+Meta Candidates (4):
+   983 C0005522:Biological substance (Biological Products) [Biologically Active Substance,Pharmacologic Substance]
+   861 C0439861:Substances (Substance) [Substance]
+   694 C0005532:Biological (Biologic) [Biomedical Occupation or Discipline]
+   694 C0205460:biological [Functional Concept]
+Meta Mapping (983):
+   983 C0005522:Biological substance (Biological Products) [Biologically Active Substance,Pharmacologic Substance]
+
+Phrase: "have"
+
+Phrase: "been"
+
+Phrase: "used"
+Meta Candidates (4):
+   966 C0042153:use (utilization qualifier) [Functional Concept]
+   966 C0457083:Use (Usage) [Functional Concept]
+   966 C1524063:Using (Use of) [Functional Concept]
+   966 C1947944:Use (Use - dosing instruction imperative) [Intellectual Product]
+Meta Mapping (966):
+   966 C0457083:Use (Usage) [Functional Concept]
+Meta Mapping (966):
+   966 C1947944:Use (Use - dosing instruction imperative) [Intellectual Product]
+Meta Mapping (966):
+   966 C1524063:Using (Use of) [Functional Concept]
+Meta Mapping (966):
+   966 C0042153:use (utilization qualifier) [Functional Concept]
+
+Phrase: "to"
+
+Phrase: "measure"
+Meta Candidates (3):
+  1000 C0079809:Measure (Measures) [Functional Concept,Quantitative Concept]
+  1000 C0242485:Measure (Measurement) [Functional Concept]
+   966 C0444706:Measured [Qualitative Concept]
+Meta Mapping (1000):
+  1000 C0242485:Measure (Measurement) [Functional Concept]
+Meta Mapping (1000):
+  1000 C0079809:Measure (Measures) [Functional Concept,Quantitative Concept]
+
+Phrase: "toxicity"
+Meta Candidates (7):
+  1000 C0040539:toxicity (Toxicity aspects) [Quantitative Concept]
+  1000 C0600688:Toxicity (Toxic effect) [Injury or Poisoning]
+   928 C1407029:Toxic [Qualitative Concept]
+   907 C0032346:Poison (Poisons) [Hazardous or Poisonous Substance]
+   907 C1548769:Poison (Poison Risk Codes) [Intellectual Product]
+   907 C1550590:poison (Poison RIsk) [Idea or Concept]
+   900 C0040549:Toxin [Biologically Active Substance,Hazardous or Poisonous Substance]
+Meta Mapping (1000):
+  1000 C0600688:Toxicity (Toxic effect) [Injury or Poisoning]
+Meta Mapping (1000):
+  1000 C0040539:toxicity (Toxicity aspects) [Quantitative Concept]
+
+Phrase: "in response to"
+Meta Candidates (2):
+   861 C0871261:response [Clinical Attribute]
+   861 C1704632:Response (Disease Response) [Finding]
+Meta Mapping (861):
+   861 C1704632:Response (Disease Response) [Finding]
+Meta Mapping (861):
+   861 C0871261:response [Clinical Attribute]
+
+Phrase: "cytarabine ?"
+Meta Candidates (2):
+  1000 C0010711:Cytarabine [Nucleic Acid, Nucleoside, or Nucleotide,Pharmacologic Substance]
+   944 C0591320:Cytosar [Hazardous or Poisonous Substance,Nucleic Acid, Nucleoside, or Nucleotide,Pharmacologic Substance]
+Meta Mapping (1000):
+  1000 C0010711:Cytarabine [Nucleic Acid, Nucleoside, or Nucleotide,Pharmacologic Substance]
+/MetaMap/public_mm/bin/SKRrun -L 2008 -w /MetaMap/public_mm/lexicon /MetaMap/public_mm/bin/metamap08.BINARY -I -Z 08
+
+MetaMap (2008)
+
+
+Control options:
+  mm_data_year=08
+  show_cuis
+Berkeley DB databases (normal strict 08 model) are open.
+Static variants will come from table varsan.
+Variants: Adj/noun ONLY.
+Accessing lexicon /MetaMap/public_mm/lexicon/data/lexiconStatic2008.
+Variant generation mode: static.
+
+Established connection to Tagger Server on localhost.
+Processing 00000000.tx.1: What cell or tissue types express members of the mammalian TIM gene family ?
+
+Phrase: "What cell"
+Meta Candidates (6):
+  1000 C0007634:Cell (Cells) [Cell]
+  1000 C1269647:Cell (Entire cell) [Cell]
+  1000 C1704653:Cell (Cell Device Component) [Medical Device]
+  1000 C1948049:Cell [Spatial Concept]
+   928 C0178539:Cellular [Functional Concept]
+   900 C1516377:Cellularity [Qualitative Concept]
+Meta Mapping (1000):
+  1000 C1948049:Cell [Spatial Concept]
+Meta Mapping (1000):
+  1000 C1704653:Cell (Cell Device Component) [Medical Device]
+Meta Mapping (1000):
+  1000 C0007634:Cell (Cells) [Cell]
+Meta Mapping (1000):
+  1000 C1269647:Cell (Entire cell) [Cell]
+
+Phrase: "or"
+
+Phrase: "tissue types"
+Meta Candidates (10):
+  1000 C0040300:Tissue Types (Body tissue) [Tissue]
+          tissue
+   983 C0019633:Tissue Typing (Histocompatibility Testing) [Laboratory Procedure]
+   861 C0332307:Types (Type - attribute) [Qualitative Concept]
+   861 C1547928:Tissue (Tissue Specimen Code) [Intellectual Product]
+   827 C0441704:Typing (Typing Classification) [Health Care Activity]
+   827 C0872404:Typing (Keyboard Typing) [Occupational Activity]
+   827 C1547052:*Type [Quantitative Concept]
+   827 C1552651:Type (Type - ParameterizedDataType) [Intellectual Product]
+   827 C1849011:TYPE (SPONDYLOMETAEPIPHYSEAL DYSPLASIA, SHORT LIMB-HAND TYPE) [Disease or Syndrome]
+Meta Mapping (1000):
+  1000 C0040300:Tissue Types (Body tissue) [Tissue]
+
+Phrase: "express"
+Meta Candidates (3):
+   966 C0017262:Expressed (Gene Expression) [Genetic Function]
+   966 C1171362:Expressed (protein expression) [Genetic Function]
+   966 C1515670:Expressed (mRNA Expression) [Genetic Function]
+Meta Mapping (966):
+   966 C0017262:Expressed (Gene Expression) [Genetic Function]
+Meta Mapping (966):
+   966 C1515670:Expressed (mRNA Expression) [Genetic Function]
+Meta Mapping (966):
+   966 C1171362:Expressed (protein expression) [Genetic Function]
+
+Phrase: "members"
+Meta Candidates (2):
+   966 C0680022:member [Population Group]
+   966 C1551024:member (Role Class - member) [Group]
+Meta Mapping (966):
+   966 C1551024:member (Role Class - member) [Group]
+Meta Mapping (966):
+   966 C0680022:member [Population Group]
+
+Phrase: "of the mammalian TIM gene family ?"
+Meta Candidates (6):
+   861 C1517488:Gene Family [Gene or Genome]
+   812 C0015576:Family [Conceptual Entity,Family Group]
+   741 C0241888:Familial [Functional Concept]
+   687 C0600269:Familiarity [Mental Process]
+   645 C0017337:Gene (Genes) [Gene or Genome]
+   645 C0024660:Mammalian (Mammals) [Mammal]
+Meta Mapping (824):
+   645 C0024660:Mammalian (Mammals) [Mammal]
+   861 C1517488:Gene Family [Gene or Genome]
+/MetaMap/public_mm/bin/SKRrun -L 2008 -w /MetaMap/public_mm/lexicon /MetaMap/public_mm/bin/metamap08.BINARY -I -Z 08
+
+MetaMap (2008)
+
+
+Control options:
+  mm_data_year=08
+  show_cuis
+Berkeley DB databases (normal strict 08 model) are open.
+Static variants will come from table varsan.
+Variants: Adj/noun ONLY.
+Accessing lexicon /MetaMap/public_mm/lexicon/data/lexiconStatic2008.
+Variant generation mode: static.
+
+Established connection to Tagger Server on localhost.
+Processing 00000000.tx.1: What diseases are associated with lysosomal abnormalities in the nervous system ?
+
+Phrase: "What diseases"
+Meta Candidates (4):
+  1000 C0012634:Diseases (Disease) [Disease or Syndrome]
+   928 C1422572:MAL (MKL1 gene) [Gene or Genome]
+   928 C1424810:Mal (TIRAP gene) [Gene or Genome]
+   928 C1836721:MALS [Finding]
+Meta Mapping (1000):
+  1000 C0012634:Diseases (Disease) [Disease or Syndrome]
+
+Phrase: "are"
+
+Phrase: "associated"
+Meta Candidates (3):
+  1000 C0332281:Associated (Associated with) [Qualitative Concept]
+   966 C0750490:Associate (Associate - relationship) [Idea or Concept]
+   966 C1706221:Associate (Associate - assistant) [Professional or Occupational Group]
+Meta Mapping (1000):
+  1000 C0332281:Associated (Associated with) [Qualitative Concept]
+
+Phrase: "with lysosomal abnormalities"
+Meta Candidates (7):
+   861 C0000768:Abnormalities (Congenital Abnormality) [Congenital Abnormality]
+   861 C0000769:abnormalities (teratologic) [Functional Concept]
+   827 C1704258:Abnormality [Finding]
+   777 C0205161:Abnormal [Functional Concept]
+   777 C1550458:Abnormal (Observation Interpretation - Abnormal) [Idea or Concept]
+   694 C0521450:Lysosomal [Body Location or Region]
+   623 C0024369:Lysosome (Lysosomes) [Cell Component]
+Meta Mapping (888):
+   694 C0521450:Lysosomal [Body Location or Region]
+   861 C0000768:Abnormalities (Congenital Abnormality) [Congenital Abnormality]
+Meta Mapping (888):
+   694 C0521450:Lysosomal [Body Location or Region]
+   861 C0000769:abnormalities (teratologic) [Functional Concept]
+
+Phrase: "in the nervous system ?"
+Meta Candidates (12):
+  1000 C0027763:Nervous System (Nervous system structure) [Body System]
+  1000 C1269560:Nervous system (Entire nervous system) [Body System]
+   944 C0205494:Neurologic [Functional Concept]
+   907 C0027855:Neurology (Neurology speciality) [Biomedical Occupation or Discipline]
+   907 C1555868:Neurology (Psychiatry & Neurology Physicians) [Professional or Occupational Group]
+   861 C0027769:Nervous (Nervousness) [Finding]
+   861 C0449913:System [Functional Concept]
+   861 C0599851:Nervous (relating to nervous system) [Functional Concept]
+   861 C1553451:System (Entity Code - System) [Manufactured Object]
+   861 C1704459:System (Device Component System) [Medical Device]
+   789 C0205373:Systemic [Functional Concept]
+   789 C0220922:systematic [Functional Concept]
+Meta Mapping (1000):
+  1000 C1269560:Nervous system (Entire nervous system) [Body System]
+Meta Mapping (1000):
+  1000 C0027763:Nervous System (Nervous system structure) [Body System]
+/MetaMap/public_mm/bin/SKRrun -L 2008 -w /MetaMap/public_mm/lexicon /MetaMap/public_mm/bin/metamap08.BINARY -I -Z 08
+
+MetaMap (2008)
+
+
+Control options:
+  mm_data_year=08
+  show_cuis
+Berkeley DB databases (normal strict 08 model) are open.
+Static variants will come from table varsan.
+Variants: Adj/noun ONLY.
+Accessing lexicon /MetaMap/public_mm/lexicon/data/lexiconStatic2008.
+Variant generation mode: static.
+
+Established connection to Tagger Server on localhost.
+Processing 00000000.tx.1: What drugs have been tested in mouse models of Alzheimer's disease ?
+
+Phrase: "What drugs"
+Meta Candidates (5):
+  1000 C0013227:Drugs (Pharmaceutical Preparations) [Pharmacologic Substance]
+   966 C1254351:Drug (Pharmacologic Substance) [Pharmacologic Substance]
+   928 C0031336:Pharmaceutical (Pharmacy) [Biomedical Occupation or Discipline]
+   928 C1553890:Pharmaceutical (Pharmaceutical - ActMedicalServiceCode) [Intellectual Product]
+   900 C0456386:Medicament [Pharmacologic Substance]
+Meta Mapping (1000):
+  1000 C0013227:Drugs (Pharmaceutical Preparations) [Pharmacologic Substance]
+
+Phrase: "have"
+
+Phrase: "been"
+
+Phrase: "tested"
+Meta Candidates (5):
+   966 C0022885:Test (Laboratory Procedures) [Laboratory Procedure]
+   966 C0039593:Test (Testing) [Functional Concept]
+   966 C0392366:Tests [Intellectual Product]
+   966 C0456984:test (Test Result) [Finding]
+   966 C1378537:TEST [Medical Device]
+Meta Mapping (966):
+   966 C0022885:Test (Laboratory Procedures) [Laboratory Procedure]
+Meta Mapping (966):
+   966 C1378537:TEST [Medical Device]
+Meta Mapping (966):
+   966 C0456984:test (Test Result) [Finding]
+Meta Mapping (966):
+   966 C0039593:Test (Testing) [Functional Concept]
+Meta Mapping (966):
+   966 C0392366:Tests [Intellectual Product]
+
+Phrase: "in mouse"
+Meta Candidates (4):
+  1000 C0025914:Mouse (House mice) [Mammal]
+  1000 C0025929:mouse (Laboratory mice) [Mammal]
+  1000 C0026809:Mouse (Mus) [Mammal]
+  1000 C1455722:Mouse (Mouse antigen) [Immunologic Factor]
+Meta Mapping (1000):
+  1000 C0025914:Mouse (House mice) [Mammal]
+Meta Mapping (1000):
+  1000 C0025929:mouse (Laboratory mice) [Mammal]
+Meta Mapping (1000):
+  1000 C1455722:Mouse (Mouse antigen) [Immunologic Factor]
+Meta Mapping (1000):
+  1000 C0026809:Mouse (Mus) [Mammal]
+
+Phrase: "models"
+Meta Candidates (3):
+  1000 C0026336:Models (Study models) [Intellectual Product,Research Device]
+  1000 C0026339:Models (Biological Models) [Intellectual Product,Research Device]
+   966 C0870071:Modeling [Intellectual Product,Research Activity]
+Meta Mapping (1000):
+  1000 C0026339:Models (Biological Models) [Intellectual Product,Research Device]
+Meta Mapping (1000):
+  1000 C0026336:Models (Study models) [Intellectual Product,Research Device]
+
+Phrase: "of Alzheimer's disease ?"
+Meta Candidates (6):
+  1000 C0002395:Alzheimer's Disease [Disease or Syndrome]
+          Alzheimer
+   861 C0012634:Disease [Disease or Syndrome]
+   805 C1422572:MAL (MKL1 gene) [Gene or Genome]
+   805 C1424810:Mal (TIRAP gene) [Gene or Genome]
+   805 C1836721:MALS [Finding]
+Meta Mapping (1000):
+  1000 C0002395:Alzheimer's Disease [Disease or Syndrome]
+/MetaMap/public_mm/bin/SKRrun -L 2008 -w /MetaMap/public_mm/lexicon /MetaMap/public_mm/bin/metamap08.BINARY -I -Z 08
+
+MetaMap (2008)
+
+
+Control options:
+  mm_data_year=08
+  show_cuis
+Berkeley DB databases (normal strict 08 model) are open.
+Static variants will come from table varsan.
+Variants: Adj/noun ONLY.
+Accessing lexicon /MetaMap/public_mm/lexicon/data/lexiconStatic2008.
+Variant generation mode: static.
+
+Established connection to Tagger Server on localhost.
+Processing 00000000.tx.1: What centrosomal genes are implicated in diseases of brain development ?
+
+Phrase: "What centrosomal genes"
+Meta Candidates (2):
+   861 C0017337:Genes [Gene or Genome]
+   623 C0242608:Centrosome [Cell Component]
+Meta Mapping (853):
+   623 C0242608:Centrosome [Cell Component]
+   861 C0017337:Genes [Gene or Genome]
+
+Phrase: "are"
+
+Phrase: "implicated"
+
+Phrase: "in diseases"
+Meta Candidates (4):
+  1000 C0012634:Diseases (Disease) [Disease or Syndrome]
+   928 C1422572:MAL (MKL1 gene) [Gene or Genome]
+   928 C1424810:Mal (TIRAP gene) [Gene or Genome]
+   928 C1836721:MALS [Finding]
+Meta Mapping (1000):
+  1000 C0012634:Diseases (Disease) [Disease or Syndrome]
+
+Phrase: "of brain development ?"
+Meta Candidates (8):
+  1000 C1160340:brain development [Organ or Tissue Function]
+   861 C0020119:Development (Human Development) [Physiologic Function]
+   861 C0243107:development (development aspects) [Physiologic Function]
+   861 C0678723:Development (Biologic Development) [Organism Function]
+   861 C1527148:Development [Functional Concept]
+   789 C0458003:Developmental [Qualitative Concept]
+   694 C0006104:Brain [Body Part, Organ, or Organ Component]
+   694 C1269537:Brain (Entire brain) [Body Part, Organ, or Organ Component]
+Meta Mapping (1000):
+  1000 C1160340:brain development [Organ or Tissue Function]
+/MetaMap/public_mm/bin/SKRrun -L 2008 -w /MetaMap/public_mm/lexicon /MetaMap/public_mm/bin/metamap08.BINARY -I -Z 08
+
+MetaMap (2008)
+
+
+Control options:
+  mm_data_year=08
+  show_cuis
+Berkeley DB databases (normal strict 08 model) are open.
+Static variants will come from table varsan.
+Variants: Adj/noun ONLY.
+Accessing lexicon /MetaMap/public_mm/lexicon/data/lexiconStatic2008.
+Variant generation mode: static.
+
+Established connection to Tagger Server on localhost.
+Processing 00000000.tx.1: What molecular functions does helicase protein NS3 play in HCV (Hepatitis C virus) ?
+
+Phrase: "What molecular functions"
+Meta Candidates (8):
+   983 C1148560:molecular_function [Molecular Function]
+   861 C0542341:Functions (Function) [Functional Concept]
+   827 C0031843:function (physiological aspects) [Physiologic Function]
+   827 C0700205:FUNCTION (Function Axis) [Classification]
+   827 C1705273:Function (Mathematical Operator) [Intellectual Product]
+   777 C0205245:Functional [Functional Concept]
+   694 C1521991:Molecular [Qualitative Concept]
+   623 C0567416:Molecule [Substance]
+Meta Mapping (983):
+   983 C1148560:molecular_function [Molecular Function]
+
+Phrase: "does"
+
+Phrase: "helicase protein NS3"
+Meta Candidates (4):
+   827 C1860991:NS3 (NOONAN SYNDROME 3) [Disease or Syndrome]
+   660 C0033684:Protein (Proteins) [Amino Acid, Peptide, or Protein,Biologically Active Substance]
+   660 C0202202:Protein NOS (Protein measurement) [Laboratory Procedure]
+   660 C0920283:helicase [Amino Acid, Peptide, or Protein,Enzyme]
+Meta Mapping (851):
+   660 C0920283:helicase [Amino Acid, Peptide, or Protein,Enzyme]
+   660 C0202202:Protein NOS (Protein measurement) [Laboratory Procedure]
+   827 C1860991:NS3 (NOONAN SYNDROME 3) [Disease or Syndrome]
+Meta Mapping (851):
+   660 C0920283:helicase [Amino Acid, Peptide, or Protein,Enzyme]
+   660 C0033684:Protein (Proteins) [Amino Acid, Peptide, or Protein,Biologically Active Substance]
+   827 C1860991:NS3 (NOONAN SYNDROME 3) [Disease or Syndrome]
+
+Phrase: "play"
+Meta Candidates (2):
+  1000 C0032214:Play [Daily or Recreational Activity]
+   966 C0600138:Plays (Does play) [Finding]
+Meta Mapping (1000):
+  1000 C0032214:Play [Daily or Recreational Activity]
+
+Phrase: "in HCV"
+Meta Candidates (1):
+  1000 C0220847:HCV (Hepatitis C virus) [Virus]
+Meta Mapping (1000):
+  1000 C0220847:HCV (Hepatitis C virus) [Virus]
+
+Phrase: "(Hepatitis C virus"
+Meta Candidates (9):
+  1000 C0220847:Hepatitis C virus [Virus]
+          Hepatitis C
+   983 C0079500:Hepatitis C viruses (Hepatitis C-Like Viruses) [Virus]
+   913 C0019186:Hepatitis virus (Hepatitis Viruses) [Virus]
+   901 C0019196:Hepatitis C [Disease or Syndrome]
+   827 C0019158:Hepatitis [Disease or Syndrome]
+   827 C0042769:virus (Virus Diseases) [Disease or Syndrome]
+   827 C0042776:Virus [Virus]
+   793 C0521026:viruses (Viral) [Functional Concept]
+Meta Mapping (1000):
+  1000 C0220847:Hepatitis C virus [Virus]
+
+Phrase: ") ?"
+/MetaMap/public_mm/bin/SKRrun -L 2008 -w /MetaMap/public_mm/lexicon /MetaMap/public_mm/bin/metamap08.BINARY -I -Z 08
+
+MetaMap (2008)
+
+
+Control options:
+  mm_data_year=08
+  show_cuis
+Berkeley DB databases (normal strict 08 model) are open.
+Static variants will come from table varsan.
+Variants: Adj/noun ONLY.
+Accessing lexicon /MetaMap/public_mm/lexicon/data/lexiconStatic2008.
+Variant generation mode: static.
+
+Established connection to Tagger Server on localhost.
+Processing 00000000.tx.1: What mutations in apolipoprotein genes are associated with disease ?
+
+Phrase: "What mutations"
+Meta Candidates (3):
+  1000 C0026882:Mutations (Mutation) [Genetic Function]
+   966 C1705285:Mutation (Mutation Abnormality) [Cell or Molecular Dysfunction]
+   916 C0596988:Mutant [Cell or Molecular Dysfunction]
+Meta Mapping (1000):
+  1000 C0026882:Mutations (Mutation) [Genetic Function]
+
+Phrase: "in apolipoprotein genes"
+Meta Candidates (4):
+   983 C1445865:Apolipoprotein gene [Gene or Genome]
+   861 C0017337:Genes [Gene or Genome]
+   694 C0003591:Apolipoprotein (Apolipoproteins) [Amino Acid, Peptide, or Protein,Biologically Active Substance]
+   694 C1325281:apolipoprotein (apolipoprotein activity) [Molecular Function]
+Meta Mapping (983):
+   983 C1445865:Apolipoprotein gene [Gene or Genome]
+
+Phrase: "are"
+
+Phrase: "associated"
+Meta Candidates (3):
+  1000 C0332281:Associated (Associated with) [Qualitative Concept]
+   966 C0750490:Associate (Associate - relationship) [Idea or Concept]
+   966 C1706221:Associate (Associate - assistant) [Professional or Occupational Group]
+Meta Mapping (1000):
+  1000 C0332281:Associated (Associated with) [Qualitative Concept]
+
+Phrase: "with disease ?"
+Meta Candidates (4):
+  1000 C0012634:Disease [Disease or Syndrome]
+   944 C1422572:MAL (MKL1 gene) [Gene or Genome]
+   944 C1424810:Mal (TIRAP gene) [Gene or Genome]
+   944 C1836721:MALS [Finding]
+Meta Mapping (1000):
+  1000 C0012634:Disease [Disease or Syndrome]
+/MetaMap/public_mm/bin/SKRrun -L 2008 -w /MetaMap/public_mm/lexicon /MetaMap/public_mm/bin/metamap08.BINARY -I -Z 08
+
+MetaMap (2008)
+
+
+Control options:
+  mm_data_year=08
+  show_cuis
+Berkeley DB databases (normal strict 08 model) are open.
+Static variants will come from table varsan.
+Variants: Adj/noun ONLY.
+Accessing lexicon /MetaMap/public_mm/lexicon/data/lexiconStatic2008.
+Variant generation mode: static.
+
+Established connection to Tagger Server on localhost.
+Processing 00000000.tx.1: Which pathways are possibly involved in the disease ADPKD ?
+
+Phrase: "Which pathways"
+Meta Candidates (2):
+  1000 C1704259:Pathways (Biochemical Pathway) [Molecular Function]
+  1000 C1705987:Pathways (Pathway) [Conceptual Entity]
+Meta Mapping (1000):
+  1000 C1704259:Pathways (Biochemical Pathway) [Molecular Function]
+Meta Mapping (1000):
+  1000 C1705987:Pathways (Pathway) [Conceptual Entity]
+
+Phrase: "are"
+
+Phrase: "possibly"
+Meta Candidates (1):
+  1000 C0332149:Possibly (Possible) [Qualitative Concept]
+Meta Mapping (1000):
+  1000 C0332149:Possibly (Possible) [Qualitative Concept]
+
+Phrase: "involved"
+Meta Candidates (1):
+  1000 C1314939:Involved (Involvement with) [Functional Concept]
+Meta Mapping (1000):
+  1000 C1314939:Involved (Involvement with) [Functional Concept]
+
+Phrase: "in the disease ADPKD ?"
+Meta Candidates (5):
+   861 C0085413:ADPKD (Polycystic Kidney, Autosomal Dominant) [Congenital Abnormality,Disease or Syndrome]
+   694 C0012634:Disease [Disease or Syndrome]
+   638 C1422572:MAL (MKL1 gene) [Gene or Genome]
+   638 C1424810:Mal (TIRAP gene) [Gene or Genome]
+   638 C1836721:MALS [Finding]
+Meta Mapping (888):
+   694 C0012634:Disease [Disease or Syndrome]
+   861 C0085413:ADPKD (Polycystic Kidney, Autosomal Dominant) [Congenital Abnormality,Disease or Syndrome]
+/MetaMap/public_mm/bin/SKRrun -L 2008 -w /MetaMap/public_mm/lexicon /MetaMap/public_mm/bin/metamap08.BINARY -I -Z 08
+
+MetaMap (2008)
+
+
+Control options:
+  mm_data_year=08
+  show_cuis
+Berkeley DB databases (normal strict 08 model) are open.
+Static variants will come from table varsan.
+Variants: Adj/noun ONLY.
+Accessing lexicon /MetaMap/public_mm/lexicon/data/lexiconStatic2008.
+Variant generation mode: static.
+
+Established connection to Tagger Server on localhost.
+Processing 00000000.tx.1: What proteins does epsin1 interact with during endocytosis ?
+
+Phrase: "What proteins"
+Meta Candidates (2):
+  1000 C0033684:Proteins [Amino Acid, Peptide, or Protein,Biologically Active Substance]
+   966 C0202202:Protein NOS (Protein measurement) [Laboratory Procedure]
+Meta Mapping (1000):
+  1000 C0033684:Proteins [Amino Acid, Peptide, or Protein,Biologically Active Substance]
+
+Phrase: "does"
+
+Phrase: "epsin1"
+
+Phrase: "interact"
+
+Phrase: "with"
+
+Phrase: "during endocytosis ?"
+Meta Candidates (1):
+  1000 C0014139:Endocytosis [Cell Function]
+Meta Mapping (1000):
+  1000 C0014139:Endocytosis [Cell Function]
+/MetaMap/public_mm/bin/SKRrun -L 2008 -w /MetaMap/public_mm/lexicon /MetaMap/public_mm/bin/metamap08.BINARY -I -Z 08
+
+MetaMap (2008)
+
+
+Control options:
+  mm_data_year=08
+  show_cuis
+Berkeley DB databases (normal strict 08 model) are open.
+Static variants will come from table varsan.
+Variants: Adj/noun ONLY.
+Accessing lexicon /MetaMap/public_mm/lexicon/data/lexiconStatic2008.
+Variant generation mode: static.
+
+Established connection to Tagger Server on localhost.
+Processing 00000000.tx.1: What Streptococcus pneumoniae strains are resistent to penicillin and erythromycin ?
+
+Phrase: "What Streptococcus pneumoniae strains"
+Meta Candidates (10):
+   827 C0080194:Strains (Muscle strain) [Injury or Poisoning]
+   827 C0456178:Strains (Microbiology subtype strains) [Intellectual Product]
+   793 C1510453:strain (strain symptom) [Sign or Symptom]
+   793 C1518614:Strain (Organism Strain) [Mammal]
+   734 C0038410:Streptococcus pneumoniae [Bacterium]
+   734 C0370030:Streptococcus pneumoniae (Streptococcus pneumoniae antigen) [Immunologic Factor]
+   660 C0032285:Pneumoniae (Pneumonia) [Disease or Syndrome]
+   660 C0038402:Streptococcus [Bacterium]
+   560 C0024109:Lung [Body Part, Organ, or Organ Component]
+   560 C1278908:Lung (Entire lung) [Body Part, Organ, or Organ Component]
+Meta Mapping (901):
+   734 C0038410:Streptococcus pneumoniae [Bacterium]
+   827 C0456178:Strains (Microbiology subtype strains) [Intellectual Product]
+Meta Mapping (901):
+   734 C0038410:Streptococcus pneumoniae [Bacterium]
+   827 C0080194:Strains (Muscle strain) [Injury or Poisoning]
+Meta Mapping (901):
+   734 C0370030:Streptococcus pneumoniae (Streptococcus pneumoniae antigen) [Immunologic Factor]
+   827 C0456178:Strains (Microbiology subtype strains) [Intellectual Product]
+Meta Mapping (901):
+   734 C0370030:Streptococcus pneumoniae (Streptococcus pneumoniae antigen) [Immunologic Factor]
+   827 C0080194:Strains (Muscle strain) [Injury or Poisoning]
+
+Phrase: "are"
+
+Phrase: "resistent"
+Meta Candidates (5):
+  1000 C0332325:Resistant [Functional Concept]
+  1000 C1550464:resistent [Idea or Concept]
+   916 C0237834:Resistance (Psychotherapeutic Resistance) [Mental Process]
+   916 C0683598:resistance (social resistance) [Social Behavior]
+   916 C1522618:Resistance (resistance mechanism) [Clinical Attribute]
+Meta Mapping (1000):
+  1000 C0332325:Resistant [Functional Concept]
+Meta Mapping (1000):
+  1000 C1550464:resistent [Idea or Concept]
+
+Phrase: "to penicillin"
+Meta Candidates (2):
+  1000 C0030842:Penicillin (Penicillins) [Antibiotic,Organic Chemical]
+  1000 C0220892:Penicillin [Antibiotic,Organic Chemical]
+Meta Mapping (1000):
+  1000 C0220892:Penicillin [Antibiotic,Organic Chemical]
+Meta Mapping (1000):
+  1000 C0030842:Penicillin (Penicillins) [Antibiotic,Organic Chemical]
+
+Phrase: "and"
+
+Phrase: "erythromycin ?"
+Meta Candidates (4):
+  1000 C0014806:Erythromycin [Antibiotic,Organic Chemical]
+   944 C0014824:Erythrosin (Erythrosine) [Indicator, Reagent, or Diagnostic Aid,Organic Chemical]
+   944 C0699338:Erythrocin [Antibiotic,Carbohydrate]
+   944 C0699339:Ilotycin [Antibiotic,Organic Chemical]
+Meta Mapping (1000):
+  1000 C0014806:Erythromycin [Antibiotic,Organic Chemical]
+/MetaMap/public_mm/bin/SKRrun -L 2008 -w /MetaMap/public_mm/lexicon /MetaMap/public_mm/bin/metamap08.BINARY -I -Z 08
+
+MetaMap (2008)
+
+
+Control options:
+  mm_data_year=08
+  show_cuis
+Berkeley DB databases (normal strict 08 model) are open.
+Static variants will come from table varsan.
+Variants: Adj/noun ONLY.
+Accessing lexicon /MetaMap/public_mm/lexicon/data/lexiconStatic2008.
+Variant generation mode: static.
+
+Established connection to Tagger Server on localhost.
+Processing 00000000.tx.1: What signs or symptoms of anxiety disorder are related to lipid levels ?
+
+Phrase: "What signs"
+Meta Candidates (5):
+  1000 C0220912:signs (Aspects of signs) [Functional Concept]
+  1000 C0220913:Signs (Manufactured sign) [Manufactured Object]
+  1000 C0311392:SIGNS (Physical findings) [Sign or Symptom]
+   966 C1547188:Sign (Language Ability - Sign) [Idea or Concept]
+   916 C1710082:Signal [Conceptual Entity]
+Meta Mapping (1000):
+  1000 C0220912:signs (Aspects of signs) [Functional Concept]
+Meta Mapping (1000):
+  1000 C0220913:Signs (Manufactured sign) [Manufactured Object]
+Meta Mapping (1000):
+  1000 C0311392:SIGNS (Physical findings) [Sign or Symptom]
+
+Phrase: "or"
+
+Phrase: "symptoms"
+Meta Candidates (3):
+  1000 C0683368:symptoms (Symptoms aspect) [Functional Concept]
+  1000 C1457887:Symptoms [Sign or Symptom]
+   916 C0231220:Symptomatic [Functional Concept]
+Meta Mapping (1000):
+  1000 C1457887:Symptoms [Sign or Symptom]
+Meta Mapping (1000):
+  1000 C0683368:symptoms (Symptoms aspect) [Functional Concept]
+
+Phrase: "of anxiety disorder"
+Meta Candidates (4):
+  1000 C0003469:Anxiety disorder NOS (Anxiety Disorders) [Mental or Behavioral Dysfunction]
+   861 C0003467:Anxiety [Mental Process]
+   861 C0012634:Disorder (Disease) [Disease or Syndrome]
+   861 C1963064:Anxiety (Anxiety Adverse Event) [Finding]
+Meta Mapping (1000):
+  1000 C0003469:Anxiety disorder NOS (Anxiety Disorders) [Mental or Behavioral Dysfunction]
+
+Phrase: "are"
+
+Phrase: "related"
+Meta Candidates (4):
+  1000 C0439849:Related (Relationships) [Qualitative Concept]
+  1000 C0445223:Related (Related personal status) [Finding]
+   966 C0163712:Relate [Organic Chemical]
+   966 C2003855:Relating [Functional Concept]
+Meta Mapping (1000):
+  1000 C0445223:Related (Related personal status) [Finding]
+Meta Mapping (1000):
+  1000 C0439849:Related (Relationships) [Qualitative Concept]
+
+Phrase: "to lipid levels ?"
+Meta Candidates (5):
+   983 C0428460:Lipid level (Lipid level - finding) [Laboratory or Test Result]
+   861 C0441889:Levels (Degree) [Qualitative Concept]
+   827 C0456079:Level (Disease classification level) [Classification]
+   694 C0023779:Lipid (Lipids) [Lipid]
+   661 C0523744:Lipids NOS (Lipids measurement) [Laboratory Procedure]
+Meta Mapping (983):
+   983 C0428460:Lipid level (Lipid level - finding) [Laboratory or Test Result]
+/MetaMap/public_mm/bin/SKRrun -L 2008 -w /MetaMap/public_mm/lexicon /MetaMap/public_mm/bin/metamap08.BINARY -I -Z 08
+
+MetaMap (2008)
+
+
+Control options:
+  mm_data_year=08
+  show_cuis
+Berkeley DB databases (normal strict 08 model) are open.
+Static variants will come from table varsan.
+Variants: Adj/noun ONLY.
+Accessing lexicon /MetaMap/public_mm/lexicon/data/lexiconStatic2008.
+Variant generation mode: static.
+
+Established connection to Tagger Server on localhost.
+Processing 00000000.tx.1: What toxicities are associated with cytarabine ?
+
+Phrase: "What toxicities"
+Meta Candidates (7):
+   966 C0040539:toxicity (Toxicity aspects) [Quantitative Concept]
+   966 C0600688:Toxicity (Toxic effect) [Injury or Poisoning]
+   916 C1407029:Toxic [Qualitative Concept]
+   900 C0032346:Poison (Poisons) [Hazardous or Poisonous Substance]
+   900 C1548769:Poison (Poison Risk Codes) [Intellectual Product]
+   900 C1550590:poison (Poison RIsk) [Idea or Concept]
+   893 C0040549:Toxin [Biologically Active Substance,Hazardous or Poisonous Substance]
+Meta Mapping (966):
+   966 C0600688:Toxicity (Toxic effect) [Injury or Poisoning]
+Meta Mapping (966):
+   966 C0040539:toxicity (Toxicity aspects) [Quantitative Concept]
+
+Phrase: "are"
+
+Phrase: "associated"
+Meta Candidates (3):
+  1000 C0332281:Associated (Associated with) [Qualitative Concept]
+   966 C0750490:Associate (Associate - relationship) [Idea or Concept]
+   966 C1706221:Associate (Associate - assistant) [Professional or Occupational Group]
+Meta Mapping (1000):
+  1000 C0332281:Associated (Associated with) [Qualitative Concept]
+
+Phrase: "with cytarabine ?"
+Meta Candidates (2):
+  1000 C0010711:Cytarabine [Nucleic Acid, Nucleoside, or Nucleotide,Pharmacologic Substance]
+   944 C0591320:Cytosar [Hazardous or Poisonous Substance,Nucleic Acid, Nucleoside, or Nucleotide,Pharmacologic Substance]
+Meta Mapping (1000):
+  1000 C0010711:Cytarabine [Nucleic Acid, Nucleoside, or Nucleotide,Pharmacologic Substance]
+/MetaMap/public_mm/bin/SKRrun -L 2008 -w /MetaMap/public_mm/lexicon /MetaMap/public_mm/bin/metamap08.BINARY -I -Z 08
+
+MetaMap (2008)
+
+
+Control options:
+  mm_data_year=08
+  show_cuis
+Berkeley DB databases (normal strict 08 model) are open.
+Static variants will come from table varsan.
+Variants: Adj/noun ONLY.
+Accessing lexicon /MetaMap/public_mm/lexicon/data/lexiconStatic2008.
+Variant generation mode: static.
+
+Established connection to Tagger Server on localhost.
+Processing 00000000.tx.1: What tumor types are associated with Rb1 mutations ?
+
+Phrase: "What tumor types"
+Meta Candidates (6):
+   861 C0332307:Types (Type - attribute) [Qualitative Concept]
+   827 C1547052:*Type [Quantitative Concept]
+   827 C1552651:Type (Type - ParameterizedDataType) [Intellectual Product]
+   827 C1849011:TYPE (SPONDYLOMETAEPIPHYSEAL DYSPLASIA, SHORT LIMB-HAND TYPE) [Disease or Syndrome]
+   694 C0027651:Tumor (Neoplasm) [Neoplastic Process]
+   694 C1578706:Tumor (Specimen Source Codes - tumor) [Intellectual Product]
+Meta Mapping (888):
+   694 C0027651:Tumor (Neoplasm) [Neoplastic Process]
+   861 C0332307:Types (Type - attribute) [Qualitative Concept]
+Meta Mapping (888):
+   694 C1578706:Tumor (Specimen Source Codes - tumor) [Intellectual Product]
+   861 C0332307:Types (Type - attribute) [Qualitative Concept]
+
+Phrase: "are"
+
+Phrase: "associated"
+Meta Candidates (3):
+  1000 C0332281:Associated (Associated with) [Qualitative Concept]
+   966 C0750490:Associate (Associate - relationship) [Idea or Concept]
+   966 C1706221:Associate (Associate - assistant) [Professional or Occupational Group]
+Meta Mapping (1000):
+  1000 C0332281:Associated (Associated with) [Qualitative Concept]
+
+Phrase: "with Rb1 mutations ?"
+Meta Candidates (5):
+   861 C0026882:Mutations (Mutation) [Genetic Function]
+   827 C1705285:Mutation (Mutation Abnormality) [Cell or Molecular Dysfunction]
+   777 C0596988:Mutant [Cell or Molecular Dysfunction]
+   694 C0080113:RB1 (Retinoblastoma Protein) [Amino Acid, Peptide, or Protein,Biologically Active Substance]
+   694 C0694889:RB1 (RB1 gene) [Gene or Genome]
+Meta Mapping (888):
+   694 C0694889:RB1 (RB1 gene) [Gene or Genome]
+   861 C0026882:Mutations (Mutation) [Genetic Function]
+Meta Mapping (888):
+   694 C0080113:RB1 (Retinoblastoma Protein) [Amino Acid, Peptide, or Protein,Biologically Active Substance]
+   861 C0026882:Mutations (Mutation) [Genetic Function]

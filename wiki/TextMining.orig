@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      TextMining – BioHackathon 2010
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="alternate" href="/wiki/TextMining?format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search BioHackathon 2010" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon3.dbcls.jp/"><img src="http://hackathon3.dbcls.jp/raw-attachment/wiki/LogoGallery/trac_logo.png" alt="DBCLS BioHackathon 2010" width="200" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><a href="/wiki/WikiStart">Start Page</a></li><li><a href="/wiki/TitleIndex">Index</a></li><li><a href="/wiki/TextMining?action=history">History</a></li><li class="last"><a href="/wiki/TextMining?action=diff&amp;version=15">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <p>
+</p><div class="wiki-toc"><ol><li><a href="#TextMiningTaskForce">Text Mining Task Force</a><ol><li><a href="#Groupactivities">Group activities</a></li><li>
+<a href="#Members">Members</a></li><li>
+<a href="#Proposal">Proposal</a></li></ol></li></ol></div><p> 
+</p>
+<h1 id="TextMiningTaskForce">Text Mining Task Force</h1>
+<h2 id="Groupactivities">Group activities</h2>
+<ul><li><a class="wiki" href="/wiki/TextMiningDayOne">TextMiningDayOne</a>
+</li><li><a class="wiki" href="/wiki/TextMiningDayTwo">TextMiningDayTwo</a>
+</li><li><a class="wiki" href="/wiki/TextMiningDayThree">TextMiningDayThree</a>
+</li><li><a class="wiki" href="/wiki/TextMiningDayFour">TextMiningDayFour</a>
+</li><li><a class="wiki" href="/wiki/TextMiningMore">TextMiningMore</a>
+</li><li><a class="wiki" href="/wiki/TextMiningReport">TextMiningReport</a>
+</li></ul><h2 id="Members">Members</h2>
+<ul><li><a class="ext-link" href="http://www.linkedin.com/in/albertolabarga"><span class="icon"> </span>Alberto Labarga</a>
+</li><li><a class="ext-link" href="http://uk.linkedin.com/pub/hammad-afzal/2/49/298"><span class="icon"> </span>Hammad Afzal</a>
+</li><li><a class="ext-link" href="http://www.linkedin.com/in/matthiassamwald/en"><span class="icon"> </span>Matthias Samwald</a>
+</li><li><a class="ext-link" href="http://de.linkedin.com/pub/venkata-satagopam/18/7a6/8b7"><span class="icon"> </span>Venkata Satagopam</a> 
+</li><li><a class="ext-link" href="http://www.linkedin.com/in/heikohorn"><span class="icon"> </span>Heiko Horn</a>
+</li><li><a class="ext-link" href="http://www.linkedin.com/pub/yasunori-yamamoto/10/859/63b"><span class="icon"> </span>Yasunori Yamamoto</a>
+</li></ul><h2 id="Proposal">Proposal</h2>
+<ul><li>Integration of text mining results
+<ul><li><a class="ext-link" href="http://reflect.ws"><span class="icon"> </span>Reflect</a> / <a class="ext-link" href="http://www.ebi.ac.uk/webservices/whatizit"><span class="icon"> </span>Whatizit</a> / <a class="wiki" href="/wiki/TextMiningMedieAndEnju">MEDIE and Enju APIs</a>
+</li><li>Results as triplets <a class="ext-link" href="http://whatizit.neurocommons.org/"><span class="icon"> </span>Check Science Commons text annotation service</a>  
+<ul><li>URI and predicates
+</li></ul></li><li>Implementation with <a class="ext-link" href="http://sadiframework.org"><span class="icon"> </span>SADI</a>
+</li><li>Result presentation using <a class="ext-link" href="http://hcls.deri.org/atag/generator/"><span class="icon"> </span>&lt;a&gt;Tag</a>
+</li></ul></li><li>Explore relations
+</li><li>Interfaces
+</li></ul>
+        
+        
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="/wiki/TextMining?format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

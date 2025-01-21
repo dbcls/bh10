@@ -1,0 +1,68 @@
+
+[http://www.sequenceontology.org/gff3.shtml GFF3] is a tab-delimited, ontology-aware format of genomic features. It should be beneficial to represent such genomic features in RDF so that we can exchange data and make queries with SW technologies.
+
+'''Participants'''
+  * Erick Antezana
+  * Alberto Labarga
+  * Yu Lin
+  * Hideya KAWAJI
+  * Venkata Satagopam
+  * Jerven Bolleman
+  * Mitsuteru Nakao
+  * ...
+
+'''Scope'''
+
+...
+
+'''Mapping GFF2RDF (proposal)'''
+
+The following table is in a very inmature state...
+
+|| '''GFF Element'''      || '''RDF (XML)'''                      || '''Description''' ||
+|| Column 1: "seqid"      || <gff:seqid rdf:about="#ctg123">      || ?                 ||
+|| Column 2: "source"     || <gff:source>1000</gff:source>        || ?                 ||
+|| Column 3: "type"       || <gff:type rdf:about="#SO:0000704">  | <rdfs:SubClassOf rdf:resource="#SO:0000704" /> ||  This is constrained to be either: (a) a term from the "lite" sequence ontology, SOFA; or (b) a SOFA accession number. It must map to a rdfs:subclassof (lin's proposal)||
+|| Column 4: "start"      || <gff:start>1000</gff:start>          || ?                 ||
+|| Column 5: "end"        || <gff:stop>9000</gff:stop>            || ?                 ||
+|| Column 6: "score"      || <gff:score>5.8e-42</gff:score>       || ?                 ||
+|| Column 7: "strand"     || <gff:strand>+</gff:strand>           || ?                 ||
+|| Column 8: "phase"      || <gff:phase>.</gff:phase>             || ?                 ||
+|| Column 9: "attributes" || <gff:attributes><rdf:Description>...</rdf:Description></gff:attributes> || ?  ||
+
+'''Attribute Mapping  (proposal) [[BR]]'''
+
+A list of feature attributes in the format tag=value.  Multiple tag=value pairs are separated by semicolons.  URL escaping rules are used for tags or values containing the following characters: ",=;". Spaces are allowed in this field, but tabs must be replaced with the ? URL escape.
+
+|| '''Attribute tags'''        || '''RDF (XML)'''       || '''Description''' ||
+|| Column 1: "ID"              ||                       ||                   ||
+|| Column 2: "Name"            ||                       ||                   ||
+|| Column 3: "Alias"           ||                       ||                   ||
+|| Column 4: "Parent"          ||                       ||                   ||
+|| Column 5: "Target"          ||                       ||                   ||
+|| Column 6: "Gap"             ||                       ||                   ||
+|| Column 7: "Derives_from"    ||                       ||                   ||
+|| Column 8: "Note"            ||                       ||                   ||
+|| Column 9: "Dbxref"          ||                       ||                   ||
+|| Column 10: "Ontology_term"  ||                       ||                   ||
+
+'''Tools'''
+
+  * [http://github.com/cmungall/bioperl-owl Chris Mungall's code]
+  * Tool for BioPython
+  * Tool for BioRuby
+  * Tool for Perl
+
+'''Discussion'''
+  * application to general genomic features (BED, etc)?
+  * Genomic coordinate system (0-based / 1-based)
+  * Dasty?
+  * Attributes is more important for describing an object.
+
+'''Expected milestones'''
+
+  * Mapping GGF2RDF (by Q1?)
+  * Tools (in PERL, Python and Ruby) implementing such translation
+  * Sample RDF data into a triple store (e.g. OpenVirtuoso)
+  * Sample SPARQL queries
+  * Divulgation (poster? or article?)

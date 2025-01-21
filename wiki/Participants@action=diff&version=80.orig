@@ -1,0 +1,324 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+    <html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      Participants (diff) – BioHackathon 2010
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="up" href="/wiki/Participants?action=history" title="Page history" />
+        <link rel="next" href="/wiki/Participants?action=diff&amp;version=81" title="Version 81" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/diff.css" type="text/css" />
+        <link rel="prev" href="/wiki/Participants?action=diff&amp;version=79" title="Version 79" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search BioHackathon 2010" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script><script type="text/javascript" src="/chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="/chrome/common/css/diff.css" /><meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon3.dbcls.jp/"><img src="http://hackathon3.dbcls.jp/raw-attachment/wiki/LogoGallery/trac_logo.png" alt="DBCLS BioHackathon 2010" width="200" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="/wiki/Participants?action=diff&amp;version=79" title="Version 79">Previous Change</a></span></li><li><a href="/wiki/Participants?action=history" title="Page history">Wiki History</a></li><li class="last"><span><a class="next" href="/wiki/Participants?action=diff&amp;version=81" title="Version 81">Next Change</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <h1>Changes
+        between
+          <a href="/wiki/Participants?version=79">Version 79</a> and
+        <a href="/wiki/Participants?version=80">Version 80</a> of
+        <a href="/wiki/Participants?version=80">Participants</a>
+      </h1>
+      <form method="post" id="prefs" action="/wiki/Participants?version=80"><div><input type="hidden" name="__FORM_TOKEN" value="9b92f779110146561b41c442" /></div>
+        <div>
+          <input type="hidden" name="action" value="diff" />
+          <input type="hidden" name="version" value="80" />
+          <input type="hidden" name="old_version" value="79" />
+    <label for="style">View differences</label>
+    <select id="style" name="style">
+      <option selected="selected" value="inline">inline</option>
+      <option value="sidebyside">side by side</option>
+    </select>
+    <div class="field">
+      Show <input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+      <label for="contextlines">lines around each change</label>
+    </div>
+    <fieldset id="ignore">
+      <legend>Ignore:</legend>
+      <div class="field">
+        <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+        <label for="ignoreblanklines">Blank lines</label>
+      </div>
+      <div class="field">
+        <input type="checkbox" id="ignorecase" name="ignorecase" />
+        <label for="ignorecase">Case changes</label>
+      </div>
+      <div class="field">
+        <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+        <label for="ignorewhitespace">White space changes</label>
+      </div>
+    </fieldset>
+    <div class="buttons">
+      <input type="submit" name="update" value="Update" />
+    </div>
+        </div>
+      </form>
+      <dl id="overview">
+        <dt class="property time">Timestamp:</dt>
+        <dd class="time">
+          2010/01/20 15:18:08 (<a class="timeline" href="/timeline?from=2010-01-20T15%3A18%3A08%2B0900&amp;precision=second" title="2010-01-20T15:18:08+0900 in Timeline">15 years</a> ago)
+        </dd>
+        <dt class="property author">Author:</dt>
+        <dd class="author">
+          ktym
+        </dd>
+        <dt class="property message">Comment:</dt>
+        <dd class="message">
+          
+          <p>
+--
+</p>
+
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+            <dt class="mod"></dt><dd>Modified</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="/wiki/Participants?version=80">Participants</a>
+        </h2>
+        <table class="inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Version 79">
+                    <a href="/wiki/Participants?version=79#L5">
+                      v79</a>
+                  </th>
+                  <th title="Version 80">
+                    <a href="/wiki/Participants?version=80#L5">
+                      v80</a>
+                  </th>
+                  <th> </th>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>5</th><th>5</th><td class="l"><span>{{{</span> </td>
+                  </tr><tr>
+                          <th>6</th><th>6</th><td class="l"><span>#!comment</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>7</th><th> </th><td class="l"><span>&nbsp;<del>1</del>. [http://www.linkedin.com/in/alanruttenberg Alan Ruttenberg] ([http://sciencecommons.org/projects/data/ NeuroCommons], [http://sciencecommons.org/ ScienceCommons])</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>7</th><td class="r"><span>&nbsp;<ins>0</ins>. [http://www.linkedin.com/in/alanruttenberg Alan Ruttenberg] ([http://sciencecommons.org/projects/data/ NeuroCommons], [http://sciencecommons.org/ ScienceCommons])</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>8</th><th>8</th><td class="l"><span>}}}</span> </td>
+                  </tr><tr>
+                          <th>9</th><th>9</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>10</th><th> </th><td class="l"><span>&nbsp;<del>2</del>. [http://www.linkedin.com/pub/erick-antezana/3/b75/743 Erick Antezana] ([http://togows.dbcls.jp/entry/pubmed/19457869 PMID:19457869], [http://www.cellcycleontology.org/ Cell Cycle Ontology], [http://www.semantic-systems-biology.org/ Semantic Systems Biology])</span> </td>
+                      </tr><tr>
+                        <th>11</th><th> </th><td class="l"><span>&nbsp;<del>3</del>. [http://ca.linkedin.com/in/fbelleau Francois Belleau] ([http://bio2rdf.org/ Bio2RDF]; Canada)</span> </td>
+                      </tr><tr>
+                        <th>12</th><th> </th><td class="l"><span>&nbsp;<del>4</del>. [http://www.linkedin.com/in/matthiassamwald/en Matthias Samwald] (Concept Web Alliance (CWA); Austria)</span> </td>
+                      </tr><tr>
+                        <th>13</th><th> </th><td class="l"><span>&nbsp;<del>5</del>. [http://www.linkedin.com/in/heikohorn Heiko Horn] ([http://reflect.ws Reflect]; NNF Center for Protein Research, Denmark)</span> </td>
+                      </tr><tr>
+                        <th>14</th><th> </th><td class="l"><span>&nbsp;<del>6</del>. [http://de.linkedin.com/pub/venkata-satagopam/18/7a6/8b7 Venkata Satagopam] ([http://biocompendium.embl.de/ bioCompendium], [http://reflect.ws Reflect], [http://arena3d.org/ Arena3D]; EMBL, Germany)</span> </td>
+                      </tr><tr>
+                        <th>15</th><th> </th><td class="l"><span>&nbsp;<del>7</del>. [http://de.linkedin.com/pub/anna-lena-lamprecht/8/274/b58 Anna-Lena Lamprecht] ([http://biojeti.cs.tu-dortmund.de/opencms/en/home/ Bio-jETI]; TU Dortmund, Germany)</span> </td>
+                      </tr><tr>
+                        <th>16</th><th> </th><td class="l"><span>&nbsp;<del>8</del>. [http://www.linkedin.com/in/albertolabarga Alberto Labarga] ([http://www.ebi.ac.uk/Tools/webservices ex-EBI], [http://genome2.ugr.es/bionotate BioNotate], [http://www.scientifik.info/ scientifik.info]; [http://genome.ugr.es/ Univ. of Granada], Spain)</span> </td>
+                      </tr><tr>
+                        <th>17</th><th> </th><td class="l"><span>&nbsp;<del>9</del>. [http://uk.linkedin.com/pub/hammad-afzal/2/49/298 HammaD AfzaL] (Text mining; Manchester U, UK)</span> </td>
+                      </tr><tr>
+                        <th>18</th><th> </th><td class="l"><span>&nbsp;<del>10</del>. [http://ch.linkedin.com/in/jervenbolleman Jerven Bolleman] ([http://uniprot.org/ UniProt]; Swiss)</span> </td>
+                      </tr><tr>
+                        <th>19</th><th> </th><td class="l"><span>&nbsp;1<del>1</del>. [http://ch.linkedin.com/in/thomaskappler Thomas Kappler] ([http://uniprot.org/ UniProt]; Swiss)</span> </td>
+                      </tr><tr>
+                        <th>20</th><th> </th><td class="l"><span>&nbsp;1<del>2</del>. [http://www.linkedin.com/pub/1/674/665 Mark Wilkinson] ([http://biomoby.org/ BioMoby], [http://sadiframework.org SADI], [http://cardioshare.icapture.ubc.ca CardioSHARE]; Genome Canada Bioinformatics Platform, Canada)</span> </td>
+                      </tr><tr>
+                        <th>21</th><th> </th><td class="l"><span>&nbsp;1<del>3</del>. Luke !McCarthy ([http://sadiframework.org SADI]; [http://cardioshare.icapture.ubc.ca CardioSHARE], Canada)</span> </td>
+                      </tr><tr>
+                        <th>22</th><th> </th><td class="l"><span>&nbsp;1<del>4</del>. [http://www.linkedin.com/in/paulmkgordon Paul Gordon] ([http://biomoby.org/ BioMoby], [http://sadiframework.org SADI],[http://www.daggoo.net Daggoo]; Genome Canada Bioinformatics Platform, Canada)</span> </td>
+                      </tr><tr>
+                        <th>23</th><th> </th><td class="l"><span>&nbsp;1<del>5</del>. [http://www.linkedin.com/in/withersdavid David Withers] ([http://sadiframework.org SADI], [http://www.taverna.org.uk/ Taverna]; Manchester U, UK, Genome Canada Bioinformatics Platform, Canada )</span> </td>
+                      </tr><tr>
+                        <th>24</th><th> </th><td class="l"><span>&nbsp;1<del>6</del>. [http://www.linkedin.com/pub/6/418/161 Keiichiro Ono] ([http://www.cytoscape.org/ Cytoscape]; UCSD, US)</span> </td>
+                      </tr><tr>
+                        <th>25</th><th> </th><td class="l"><span>&nbsp;1<del>7</del>. [http://uk.linkedin.com/in/andreasplendiani Andrea Splendiani] ([http://bioinformatics.org/rdfscape/ RDFscape], [http://beat.sourceforge.net ontology processing], [http://ondex.org/ ONDEX], BioPAX, [http://swat4ls.org/ SWAT4LS]; BBSRC, UK)</span> </td>
+                      </tr><tr>
+                        <th>26</th><th> </th><td class="l"><span>&nbsp;1<del>8</del>. [http://www.linkedin.com/in/brunoaranda Bruno Aranda] ([http://www.ebi.ac.uk/intact IntAct], PSIQUIC; EBI, UK)</span> </td>
+                      </tr><tr>
+                        <th>27</th><th> </th><td class="l"><span>&nbsp;1<del>9</del>. [http://www.linkedin.com/in/jamespetertaylor James Taylor] ([http://main.g2.bx.psu.edu/ Galaxy]; Emory Univ, US)</span> </td>
+                      </tr><tr>
+                        <th>28</th><th> </th><td class="l"><span>&nbsp;<del>20</del>. [http://www.linkedin.com/pub/4/807/22 Arek Kasprzyk] ([http://biomart.org/ BioMart]; OICR, Canada)</span> </td>
+                      </tr><tr>
+                        <th>29</th><th> </th><td class="l"><span>&nbsp;2<del>1</del>. [http://uk.linkedin.com/in/gosmicklem Gos Micklem] ([http://www.flymine.org/ FlyMine]; Cambridge, UK)</span> </td>
+                      </tr><tr>
+                        <th>30</th><th> </th><td class="l"><span>&nbsp;2<del>2</del>. [http://uk.linkedin.com/pub/richard-smith/13/7b2/142 Richard Smith] ([http://intermine.org/ InterMine]; U Cambridge, UK)</span> </td>
+                      </tr><tr>
+                        <th>31</th><th> </th><td class="l"><span>&nbsp;2<del>3</del>. [http://www.linkedin.com/in/rutgervos Rutger Vos] ([http://www.nexml.org/ NEXML], [http://treebase-dev.nescent.org:6666/treebase-web/ TreeBASE]; University of Reading, UK)</span> </td>
+                      </tr><tr>
+                        <th>32</th><th> </th><td class="l"><span>&nbsp;2<del>4</del>. [http://www.linkedin.com/in/cmzmasek Christian Zmasek] ([http://www.phyloxml.org/ phyloXML], [http://bioruby.org/ BioRuby], [http://biojava.org/ BioJava]; Burnham Institute, US)</span> </td>
+                      </tr><tr>
+                        <th>33</th><th> </th><td class="l"><span>&nbsp;2<del>5</del>. [http://it.linkedin.com/in/raoulbonnal Raoul Jean Pierre Bonnal] ([http://bioruby.org/ BioRuby], [http://biosql.org/ BioSQL]; Fondazione INGM, Italy)</span> </td>
+                      </tr><tr>
+                        <th>34</th><th> </th><td class="l"><span>&nbsp;2<del>6</del>. [http://www.linkedin.com/in/jandot Jan Aerts] ([http://bioruby.org/ BioRuby], visualization; Wellcome Trust Sanger Institute, UK)</span> </td>
+                      </tr><tr>
+                        <th>35</th><th> </th><td class="l"><span>&nbsp;2<del>7</del>. [http://nl.linkedin.com/pub/pjotr-prins/0/930/315 Pjotr Prins] ([http://biolib.open-bio.org/ BioLib])</span> </td>
+                      </tr><tr>
+                        <th>36</th><th> </th><td class="l"><span>&nbsp;2<del>8</del>. [http://www.linkedin.com/pub/brad-chapman/3/300/8ba Brad Chapman] ([http://biopython.org/ Biopython]; Mass General Hospital, US)</span> </td>
+                      </tr><tr>
+                        <th>37</th><th> </th><td class="l"><span>&nbsp;2<del>9</del>. Peter Cock (BioPython; UK)</span> </td>
+                      </tr><tr>
+                        <th>38</th><th> </th><td class="l"><span>&nbsp;<del>30</del>. [http://www.linkedin.com/in/lindenbaum Pierre Lindenbaum] ([http://plindenbaum.blogspot.com/ mash-up, visualization]; [http://www.cephb.fr/ CEPH], France)</span> </td>
+                      </tr><tr>
+                        <th>39</th><th> </th><td class="l"><span>&nbsp;3<del>1</del>. Young Joo Kim (Korea)</span> </td>
+                      </tr><tr>
+                        <th>40</th><th> </th><td class="l"><span>&nbsp;3<del>2</del>. [http://www.linkedin.com/pub/keun-joon-park/19/284/b44 Keun-Joon Park] (Center for Genome Science, Korea National Institute of Health, Korea)</span> </td>
+                      </tr><tr>
+                        <th>41</th><th> </th><td class="l"><span>&nbsp;3<del>3</del>. Kyung-Hoon Kwon (Korea)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>10</th><td class="r"><span>&nbsp;<ins>1</ins>. [http://www.linkedin.com/pub/erick-antezana/3/b75/743 Erick Antezana] ([http://togows.dbcls.jp/entry/pubmed/19457869 PMID:19457869], [http://www.cellcycleontology.org/ Cell Cycle Ontology], [http://www.semantic-systems-biology.org/ Semantic Systems Biology])</span> </td>
+                      </tr><tr>
+                        <th> </th><th>11</th><td class="r"><span>&nbsp;<ins>2</ins>. [http://ca.linkedin.com/in/fbelleau Francois Belleau] ([http://bio2rdf.org/ Bio2RDF]; Canada)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>12</th><td class="r"><span>&nbsp;<ins>3</ins>. [http://www.linkedin.com/in/matthiassamwald/en Matthias Samwald] (Concept Web Alliance (CWA); Austria)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>13</th><td class="r"><span>&nbsp;<ins>4</ins>. [http://www.linkedin.com/in/heikohorn Heiko Horn] ([http://reflect.ws Reflect]; NNF Center for Protein Research, Denmark)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>14</th><td class="r"><span>&nbsp;<ins>5</ins>. [http://de.linkedin.com/pub/venkata-satagopam/18/7a6/8b7 Venkata Satagopam] ([http://biocompendium.embl.de/ bioCompendium], [http://reflect.ws Reflect], [http://arena3d.org/ Arena3D]; EMBL, Germany)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>15</th><td class="r"><span>&nbsp;<ins>6</ins>. [http://de.linkedin.com/pub/anna-lena-lamprecht/8/274/b58 Anna-Lena Lamprecht] ([http://biojeti.cs.tu-dortmund.de/opencms/en/home/ Bio-jETI]; TU Dortmund, Germany)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>16</th><td class="r"><span>&nbsp;<ins>7</ins>. [http://www.linkedin.com/in/albertolabarga Alberto Labarga] ([http://www.ebi.ac.uk/Tools/webservices ex-EBI], [http://genome2.ugr.es/bionotate BioNotate], [http://www.scientifik.info/ scientifik.info]; [http://genome.ugr.es/ Univ. of Granada], Spain)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>17</th><td class="r"><span>&nbsp;<ins>8</ins>. [http://uk.linkedin.com/pub/hammad-afzal/2/49/298 HammaD AfzaL] (Text mining; Manchester U, UK)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>18</th><td class="r"><span>&nbsp;<ins>9</ins>. [http://ch.linkedin.com/in/jervenbolleman Jerven Bolleman] ([http://uniprot.org/ UniProt]; Swiss)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>19</th><td class="r"><span>&nbsp;1<ins>0</ins>. [http://ch.linkedin.com/in/thomaskappler Thomas Kappler] ([http://uniprot.org/ UniProt]; Swiss)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>20</th><td class="r"><span>&nbsp;1<ins>1</ins>. [http://www.linkedin.com/pub/1/674/665 Mark Wilkinson] ([http://biomoby.org/ BioMoby], [http://sadiframework.org SADI], [http://cardioshare.icapture.ubc.ca CardioSHARE]; Genome Canada Bioinformatics Platform, Canada)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>21</th><td class="r"><span>&nbsp;1<ins>2</ins>. Luke !McCarthy ([http://sadiframework.org SADI]; [http://cardioshare.icapture.ubc.ca CardioSHARE], Canada)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>22</th><td class="r"><span>&nbsp;1<ins>3</ins>. [http://www.linkedin.com/in/paulmkgordon Paul Gordon] ([http://biomoby.org/ BioMoby], [http://sadiframework.org SADI],[http://www.daggoo.net Daggoo]; Genome Canada Bioinformatics Platform, Canada)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>23</th><td class="r"><span>&nbsp;1<ins>4</ins>. [http://www.linkedin.com/in/withersdavid David Withers] ([http://sadiframework.org SADI], [http://www.taverna.org.uk/ Taverna]; Manchester U, UK, Genome Canada Bioinformatics Platform, Canada )</span> </td>
+                      </tr><tr>
+                        <th> </th><th>24</th><td class="r"><span>&nbsp;1<ins>5</ins>. [http://www.linkedin.com/pub/6/418/161 Keiichiro Ono] ([http://www.cytoscape.org/ Cytoscape]; UCSD, US)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>25</th><td class="r"><span>&nbsp;1<ins>6</ins>. [http://uk.linkedin.com/in/andreasplendiani Andrea Splendiani] ([http://bioinformatics.org/rdfscape/ RDFscape], [http://beat.sourceforge.net ontology processing], [http://ondex.org/ ONDEX], BioPAX, [http://swat4ls.org/ SWAT4LS]; BBSRC, UK)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>26</th><td class="r"><span>&nbsp;1<ins>7</ins>. [http://www.linkedin.com/in/brunoaranda Bruno Aranda] ([http://www.ebi.ac.uk/intact IntAct], PSIQUIC; EBI, UK)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>27</th><td class="r"><span>&nbsp;1<ins>8</ins>. [http://www.linkedin.com/in/jamespetertaylor James Taylor] ([http://main.g2.bx.psu.edu/ Galaxy]; Emory Univ, US)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>28</th><td class="r"><span>&nbsp;<ins>19</ins>. [http://www.linkedin.com/pub/4/807/22 Arek Kasprzyk] ([http://biomart.org/ BioMart]; OICR, Canada)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>29</th><td class="r"><span>&nbsp;2<ins>0</ins>. [http://uk.linkedin.com/in/gosmicklem Gos Micklem] ([http://www.flymine.org/ FlyMine]; Cambridge, UK)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>30</th><td class="r"><span>&nbsp;2<ins>1</ins>. [http://uk.linkedin.com/pub/richard-smith/13/7b2/142 Richard Smith] ([http://intermine.org/ InterMine]; U Cambridge, UK)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>31</th><td class="r"><span>&nbsp;2<ins>2</ins>. [http://www.linkedin.com/in/rutgervos Rutger Vos] ([http://www.nexml.org/ NEXML], [http://treebase-dev.nescent.org:6666/treebase-web/ TreeBASE]; University of Reading, UK)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>32</th><td class="r"><span>&nbsp;2<ins>3</ins>. [http://www.linkedin.com/in/cmzmasek Christian Zmasek] ([http://www.phyloxml.org/ phyloXML], [http://bioruby.org/ BioRuby], [http://biojava.org/ BioJava]; Burnham Institute, US)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>33</th><td class="r"><span>&nbsp;2<ins>4</ins>. [http://it.linkedin.com/in/raoulbonnal Raoul Jean Pierre Bonnal] ([http://bioruby.org/ BioRuby], [http://biosql.org/ BioSQL]; Fondazione INGM, Italy)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>34</th><td class="r"><span>&nbsp;2<ins>5</ins>. [http://www.linkedin.com/in/jandot Jan Aerts] ([http://bioruby.org/ BioRuby], visualization; Wellcome Trust Sanger Institute, UK)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>35</th><td class="r"><span>&nbsp;2<ins>6</ins>. [http://nl.linkedin.com/pub/pjotr-prins/0/930/315 Pjotr Prins] ([http://biolib.open-bio.org/ BioLib])</span> </td>
+                      </tr><tr>
+                        <th> </th><th>36</th><td class="r"><span>&nbsp;2<ins>7</ins>. [http://www.linkedin.com/pub/brad-chapman/3/300/8ba Brad Chapman] ([http://biopython.org/ Biopython]; Mass General Hospital, US)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>37</th><td class="r"><span>&nbsp;2<ins>8</ins>. Peter Cock (BioPython; UK)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>38</th><td class="r"><span>&nbsp;<ins>29</ins>. [http://www.linkedin.com/in/lindenbaum Pierre Lindenbaum] ([http://plindenbaum.blogspot.com/ mash-up, visualization]; [http://www.cephb.fr/ CEPH], France)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>39</th><td class="r"><span>&nbsp;3<ins>0</ins>. Young Joo Kim (Korea)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>40</th><td class="r"><span>&nbsp;3<ins>1</ins>. [http://www.linkedin.com/pub/keun-joon-park/19/284/b44 Keun-Joon Park] (Center for Genome Science, Korea National Institute of Health, Korea)</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>41</th><td class="r"><span>&nbsp;3<ins>2</ins>. Kyung-Hoon Kwon (Korea)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>42</th><th>42</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>43</th><th>43</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+      </div>
+  </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

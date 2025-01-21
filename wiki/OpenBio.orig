@@ -1,0 +1,260 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      OpenBio – BioHackathon 2010
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="alternate" href="/wiki/OpenBio?format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search BioHackathon 2010" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon3.dbcls.jp/"><img src="http://hackathon3.dbcls.jp/raw-attachment/wiki/LogoGallery/trac_logo.png" alt="DBCLS BioHackathon 2010" width="200" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><a href="/wiki/WikiStart">Start Page</a></li><li><a href="/wiki/TitleIndex">Index</a></li><li><a href="/wiki/OpenBio?action=history">History</a></li><li class="last"><a href="/wiki/OpenBio?action=diff&amp;version=47">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <p>
+</p><div class="wiki-toc"><ol><li><a href="#OpenBioSemanticWebtools">Open Bio* Semantic Web tools</a><ol><li><a href="#Participants">Participants</a><ol><li><a href="#RDFlibrariesineachlanguage">RDF libraries in each language</a></li><li>
+<a href="#ToolstomanipulateRDFdata">Tools to manipulate RDF data</a></li><li>
+<a href="#RDFconverters">RDF converters</a></li><li>
+<a href="#InterfaceforSPARQLendpoint">Interface for SPARQL endpoint</a></li></ol></li><li>
+<a href="#Galaxyintegration">Galaxy integration</a></li><li>
+<a href="#Day2">Day2</a><ol><li><a href="#UsingOWLtosupportdynamicqueriesandexplorationofRDFdata">Using OWL to support dynamic queries and exploration of RDF data</a></li></ol></li></ol></li></ol></div><p> 
+</p>
+<h1 id="OpenBioSemanticWebtools">Open Bio* Semantic Web tools</h1>
+<h2 id="Participants">Participants</h2>
+<p>
+(Please add your name!)
+</p>
+<ul><li>Toshiaki Katayama
+</li><li>Erick Antezana
+</li><li>Shuichi Kawashima
+</li><li>Mitsuteru Nakao
+</li><li>Brad Chapman
+</li><li>Peter Cock
+</li><li>Jan Aearts
+</li><li>Kyung-Hoon Kwon
+</li><li>Raoul Bonnal
+</li><li>Christian Zmasek
+</li><li>Keun-Joon Park
+</li><li>Thomas Kappler
+</li></ul><h3 id="RDFlibrariesineachlanguage">RDF libraries in each language</h3>
+<p>
+(Please add other languages as well!)
+</p>
+<p>
+Name of the available libraries:
+</p>
+<ul><li>Ruby
+<ul><li>ActiveRDF: may depends on Rails
+</li><li>We have a lot more. see --&gt; <a class="ext-link" href="http://raa.ruby-lang.org/search.rhtml?search=rdf"><span class="icon"> </span>http://raa.ruby-lang.org/search.rhtml?search=rdf</a>
+</li></ul></li><li>Python
+<ul><li>RDFLib <a class="ext-link" href="http://www.rdflib.net/"><span class="icon"> </span>http://www.rdflib.net/</a>
+</li><li>SPARQLWrapper <a class="ext-link" href="http://sparql-wrapper.sourceforge.net/"><span class="icon"> </span>http://sparql-wrapper.sourceforge.net/</a>
+</li></ul></li><li>Perl
+<ul><li>RDF:Trine: generic, actively developed RDF library
+</li><li>RDF::Redland: Perl wrapper for the C library Redland (librdf.org)
+</li><li>List of modules and community at <a class="ext-link" href="http://www.perlrdf.org"><span class="icon"> </span>http://www.perlrdf.org</a>
+</li><li><a class="ext-link" href="http://search.cpan.org/dist/ONTO-PERL/"><span class="icon"> </span>ONTO-PERL</a>: it might be used (it is, however, OBO-centric <a class="ext-link" href="http://bioinformatics.oxfordjournals.org/cgi/content/abstract/btn042"><span class="icon"> </span>http://bioinformatics.oxfordjournals.org/cgi/content/abstract/btn042</a>)
+</li><li><a class="wiki" href="/wiki/StateOfPerlAndRdf">StateOfPerlAndRdf</a>
+</li></ul></li></ul><p>
+Functionality
+</p>
+<ul><li>RDF reader (in)
+</li><li>RDF generator (out)
+</li><li>SPARQL query helpers
+</li></ul><table class="wiki">
+<tr><td> language </td><td> in </td><td> out </td><td> query 
+</td></tr><tr><td> Ruby </td><td> ? </td><td> ? </td><td> ? 
+</td></tr><tr><td> Python </td><td> o </td><td> o </td><td> ? 
+</td></tr><tr><td> Perl </td><td> o </td><td> o </td><td> o 
+</td></tr></table>
+<h3 id="ToolstomanipulateRDFdata">Tools to manipulate RDF data</h3>
+<ul><li>RDF grep
+</li><li>RDF diff
+</li><li>RDF sort
+</li><li>RDF uniq
+</li><li>RDF wc (triple count) (tkappler implemented a tiny one playing with RDF in Perl, it's at <a class="ext-link" href="http://github.com/thomas11/perl-rdf-experiments"><span class="icon"> </span>http://github.com/thomas11/perl-rdf-experiments</a>, works only with small files)
+</li><li>RDF cat (combine)
+<ul><li>(most of) these commands will output RDF graph :)
+</li><li>"sort" before "diff" is better.
+</li><li>it would be great if "diff" can have an option to ignore "empty node" which can shift internal IDs even if the graphs are almost same.
+</li></ul></li></ul><h3 id="RDFconverters">RDF converters</h3>
+<ul><li>general:
+<ul><li>RDF --&gt; JSON (for <a class="ext-link" href="http://couchdb.apache.org/"><span class="icon"> </span>CouchDB</a>, <a class="ext-link" href="http://www.mongodb.org/"><span class="icon"> </span>mongoDB</a> etc.)
+<ul><li>easy to do with RDF::Trine (Perl) as it supports RDF/JSON, not sure about performance, though.
+</li></ul></li></ul></li><li>biological:
+<ul><li>Bio DB entries -&gt; RDF (in <a class="ext-link" href="http://bioruby.org"><span class="icon"> </span>BioRuby</a> for <a class="ext-link" href="http://togows.dbcls.jp"><span class="icon"> </span>TogoWS</a>, for example)
+</li><li>OBO &lt;-&gt; RDF (used in <a class="ext-link" href="http://cellcycleontology.org"><span class="icon"> </span>Cell Cycle Ontology</a> because ".obo" file format is easy to read for human): now in ONTO-PERL.
+</li></ul></li><li>Bio2RDF converters:
+<ul><li>Perl <a class="ext-link" href="http://bio2rdf.svn.sourceforge.net/viewvc/bio2rdf/trunk/src/util/perl"><span class="icon"> </span>http://bio2rdf.svn.sourceforge.net/viewvc/bio2rdf/trunk/src/util/perl</a>
+</li><li>Python <a class="ext-link" href="http://bio2rdf.svn.sourceforge.net/viewvc/bio2rdf/trunk/src/util/python/"><span class="icon"> </span>http://bio2rdf.svn.sourceforge.net/viewvc/bio2rdf/trunk/src/util/python/</a>
+</li></ul></li></ul><h3 id="InterfaceforSPARQLendpoint">Interface for SPARQL endpoint</h3>
+<p>
+DBI like interface to Query and obtain Result by SPARQL.
+</p>
+<ul><li>automatically map to the relevant language object
+</li><li>we can use SPARQL endpoint as a data source for <a class="ext-link" href="http://usegalaxy.org"><span class="icon"> </span>Galaxy</a>, for example.
+</li><li>sometimes, results can be huge
+</li></ul><p>
+Language availability
+</p>
+<table class="wiki">
+<tr><td> language </td><td> generic </td><td> <a class="ext-link" href="http://4store.org/trac/wiki/ClientLibraries"><span class="icon"> </span>4store</a> 
+</td></tr><tr><td> Ruby </td><td> o </td><td> o 
+</td></tr><tr><td> Python </td><td> o </td><td> o 
+</td></tr><tr><td> Perl </td><td> o </td><td> x 
+</td></tr><tr><td> Java </td><td> o </td><td> o 
+</td></tr><tr><td> R </td><td> ? </td><td> ? 
+</td></tr></table>
+<ul><li>4store
+<ul><li>database server <a class="ext-link" href="http://4store.org/"><span class="icon"> </span>http://4store.org/</a>
+<ul><li>install doc in Japanese <a class="ext-link" href="http://lifesciencedb.g.hatena.ne.jp/nakao_mitsuteru/20100105/1262713627"><span class="icon"> </span>http://lifesciencedb.g.hatena.ne.jp/nakao_mitsuteru/20100105/1262713627</a>
+</li><li>binary download for mac <a class="ext-link" href="http://dl.dropbox.com/u/152468/4store-1.0.2.dmg"><span class="icon"> </span>http://dl.dropbox.com/u/152468/4store-1.0.2.dmg</a>
+</li><li><a class="wiki" href="/wiki/4storeQuickPrimer">4storeQuickPrimer</a>
+</li></ul></li><li>client library for Ruby/Python/Java <a class="ext-link" href="http://4store.org/trac/wiki/ClientLibraries"><span class="icon"> </span>http://4store.org/trac/wiki/ClientLibraries</a>
+</li><li>Supports HTTP-based Sparql Protocol, so can be used from any language that can do GET requests. Wrapper implemented by RDF::Query for Perl.
+</li></ul></li><li>Virtuoso
+<ul><li>database server <a class="ext-link" href="http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/"><span class="icon"> </span>http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/</a>
+<ul><li>-&gt; <a class="ext-link" href="http://sourceforge.net/projects/virtuoso/files/"><span class="icon"> </span>http://sourceforge.net/projects/virtuoso/files/</a>
+</li></ul></li></ul></li></ul><p>
+Try "short read archive (metadata) SPARQL endpoint" which will be developed by the <a class="missing wiki">NextGenSeq?</a> open space discussion group.
+</p>
+<h2 id="Galaxyintegration">Galaxy integration</h2>
+<ul><li>Plugin development
+</li><li>Documentation
+</li><li>See <a class="ext-link" href="http://bitbucket.org/easr/onto-toolkit/"><span class="icon"> </span>ONTO-Toolkit</a>
+</li></ul><h2 id="Day2">Day2</h2>
+<p>
+RDF manipulation tools and library to produce RDF from biological objects are important for data providers, but most users are consumers of the data, so we will focus on how to access public biological SPARQL endpoint easily in each Open Bio* library.
+</p>
+<p>
+Suggested endpoint to play with:
+</p>
+<ul><li><a class="ext-link" href="http://kegg.bio2rdf.org/sparql"><span class="icon"> </span>Kegg on Bio2Rdf</a>
+</li><li><a class="ext-link" href="http://geneid.bio2rdf.org/sparql"><span class="icon"> </span>Gene on Bio2Rdf</a>
+</li><li><a class="ext-link" href="http://www.semantic-systems-biology.org/biogateway/endpoint"><span class="icon"> </span>BioGateway endpoint</a>
+</li><li>More info at: <a class="ext-link" href="http://www.semantic-systems-biology.org/biogateway/querying"><span class="icon"> </span>Semantic Systems Biology</a>
+</li></ul><p>
+Implementations:
+</p>
+<ul><li>Python SPARQL client for <a class="missing wiki">BioGateway?</a>: 
+<ul><li>Improved: <a class="ext-link" href="http://chapmanb.posterous.com/biohackathon-2010-day-4-improved-python-sparq"><span class="icon"> </span>http://chapmanb.posterous.com/biohackathon-2010-day-4-improved-python-sparq</a>
+</li><li>Initial: <a class="ext-link" href="http://chapmanb.posterous.com/biohackathon-2010-day-2-python-sparql-query-b"><span class="icon"> </span>http://chapmanb.posterous.com/biohackathon-2010-day-2-python-sparql-query-b</a>
+</li></ul></li><li>Initial python query client for <a class="missing wiki">InterMine?</a>: <a class="ext-link" href="http://chapmanb.posterous.com/biohackathon-2010-day-3-fish-interoperating-a"><span class="icon"> </span>http://chapmanb.posterous.com/biohackathon-2010-day-3-fish-interoperating-a</a>
+</li><li>Ruby SPARQL client:
+<ul><li><a class="ext-link" href="http://activerdf.org/"><span class="icon"> </span>ActiveRDF</a> this is the original package, but it seems to be bugged with our endpoints. Two possible solutions:
+<ul><li>grab <a class="ext-link" href="http://github.com/net7/active_rdf_talia"><span class="icon"> </span>this</a> fork from github
+</li><li>apply this <a href="http://hackathon3.dbcls.jp/attachment/wiki/OpenBio/sparql.patch">patch</a> to the file /var/lib/gems/1.8/gems/activerdf_sparql-1.3.6/lib/activerdf_sparql/sparql.rb (path depends on your configuration)
+</li></ul></li><li>we did tests using Bio2RDF endpoints, we plan to support <a class="missing wiki">BioGateway?</a> as well.
+</li><li>we can explore the graph dinamically.
+</li><li>AGILE NOW!!!!!!!!!!!!! you can see an example of agile sparql on <a class="ext-link" href="http://blog.raoulbonnal.net/?p=227"><span class="icon"> </span>Raoul's blog</a>. 
+</li></ul></li></ul><p>
+Todo:
+</p>
+<ul><li>Survey existing SPARQL library in each language
+</li></ul><p>
+Todo:
+</p>
+<ul><li>Can we have common interface for major biological SPARQL endpoints?
+</li><li>Can we have nice SPARQL query builder? (see below for OWL notes)
+</li><li>Convert retrieved results into language's object?
+</li><li>What about getting not only a tabular result but also a result displaying a graph (nodes + edges)? (See <a class="ext-link" href="http://www.semantic-systems-biology.org/biogateway/sparql-viewer/"><span class="icon"> </span>BioGateway browser</a>)
+</li><li>Map directly on Bio* interal objects
+</li></ul><p>
+Note:
+</p>
+<ul><li>Half of the BioRuby group will also tackle with to develop the DB (e.g. KEGG) -&gt; RDF generator (will be used in Bio2RDF and TogoWS)
+</li></ul><h3 id="UsingOWLtosupportdynamicqueriesandexplorationofRDFdata">Using OWL to support dynamic queries and exploration of RDF data</h3>
+<p>
+This a short summary of a discussion on Friday, 2010-02-12.
+</p>
+<p>
+The plan is to work on a nice SPARQL query builder, as a joint effort between the Bio* communities. It could make use of an OWL ontology as a description of the data: it lists what things there are, and how they are related. These relations could be offered to the user, via a simple API to the programmer or even on a web page to the biologist.
+</p>
+<p>
+Erick pointed out the <a class="ext-link" href="http://www.co-ode.org/resources/reference/manchester_syntax/"><span class="icon"> </span>Manchester OWL Syntax</a> as a possibly related effort.
+</p>
+
+        
+        
+      </div>
+          <h3>Attachments</h3>
+          <ul>
+              <li>
+      <a href="/attachment/wiki/OpenBio/sparql.patch" title="View attachment">sparql.patch</a>
+      <a href="/raw-attachment/wiki/OpenBio/sparql.patch" title="Download" class="trac-rawlink"><img src="/chrome/common/download.png" alt="Download" /></a>
+      (<span title="18 bytes">18 bytes</span>) - added by <em>bonnal</em>
+      <a class="timeline" href="/timeline?from=2010-02-12T13%3A37%3A17%2B0900&amp;precision=second" title="2010-02-12T13:37:17+0900 in Timeline">15 years</a> ago.
+                <q>Apply this patch to fix a connection problem for sparql endpoints</q>
+              </li>
+          </ul>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="/wiki/OpenBio?format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

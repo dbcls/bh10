@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      UbuntuInstallation – BioHackathon 2010
+    </title>
+        <link rel="search" href="../search.1.html" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="UbuntuInstallation@format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="start" href="../wiki.1.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../search/opensearch" title="Search BioHackathon 2010" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="../index.html"><img src="http://hackathon3.dbcls.jp/raw-attachment/wiki/LogoGallery/trac_logo.png" alt="DBCLS BioHackathon 2010" width="200" /></a>
+      </div>
+      <form id="search" action="../search.1.html" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://hackathon3.dbcls.jp/login">Login</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li><a href="../about.html">About Trac</a></li><li class="last"><a href="../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.1.html">Wiki</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../roadmap.html">Roadmap</a></li><li><a href="../browser.html">Browse Source</a></li><li><a href="../report.html">View Tickets</a></li><li class="last"><a href="../search.1.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><a href="WikiStart.html">Start Page</a></li><li><a href="TitleIndex.html">Index</a></li><li><a href="UbuntuInstallation@action=history.html">History</a></li><li class="last"><a href="UbuntuInstallation@action=diff&amp;version=9.html">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <p>
+From scratch:
+Get the Virtuoso package provided by Francois.
+These are zipped information, plz refer to the official guide for better explenation.
+</p>
+<p>
+Install the required packages in ubuntu server edition 9.10 <br />
+</p>
+<p>
+6.31-17-generic-pae <a class="missing ticket">#54</a>-Ubuntu SMP Thu Dec 10 17:23:29 UTC 2009 i686 GNU/Linux:
+</p>
+<pre class="wiki">sudo aptitude install autoconf automake libtool flex bison gperf gawk m4 make libssl-dev
+tar xzvf virtuoso.tar.gz
+cd virtuoso
+./configure --prefix=/usr/local
+make
+sudo make install
+cd /usr/local/var/lib/virtuoso/db/
+sudo virtuoso-t -f &amp; 
+</pre><p>
+If you are using <a class="missing wiki">VirtualBox?</a> and you have installed Virtuose inside the Ubuntu(Guest) and you have the NAT enabled for it add these lines into "yourhome\.<a class="missing wiki">VirtualBox?</a>\Machines\<a class="missing wiki">YourMachine?</a>.xml" CLOSE YOUR VIRTUAL MACHINE AND VIRTUAL BOX BEFORE DO THAT.
+</p>
+<pre class="wiki">      &lt;ExtraDataItem name="VBoxInternal/Devices/pcnet/0/LUN#0/Config/virtuoso/GuestPort" value="8890"/&gt;
+      &lt;ExtraDataItem name="VBoxInternal/Devices/pcnet/0/LUN#0/Config/virtuoso/HostPort" value="8890"/&gt;
+      &lt;ExtraDataItem name="VBoxInternal/Devices/pcnet/0/LUN#0/Config/virtuoso/Protocol" value="TCP"/&gt;
+</pre><hr />
+<p>
+For the <a class="missing wiki">SemWeb?</a> installation contest I was looking on the web for a simple way to install Virtuoso on my virtualized Ubuntu server 9.10<br />
+</p>
+<p>
+Note: Virtuoso v5.0.12<br />
+</p>
+<p>
+It seems that kubuntu guys are very excited about semantic web &amp; desktop <a class="ext-link" href="http://www.kubuntu.org/news/kde-sc-4.4-rc-2"><span class="icon"> </span>http://www.kubuntu.org/news/kde-sc-4.4-rc-2</a> and their interest come from this application <a class="ext-link" href="http://nepomuk.semanticdesktop.org/xwiki/bin/view/Main1/"><span class="icon"> </span>http://nepomuk.semanticdesktop.org/xwiki/bin/view/Main1/</a>.<br />
+</p>
+<p>
+just few lines: 
+</p>
+<pre class="wiki">sudo aptitude install python-software-properties
+sudo add-apt-repository ppa:kubuntu-ppa/beta
+sudo apt-get update
+sudo aptitude install virtuoso-server
+sudo aptitude install virtuoso-drivers
+</pre>
+        
+        
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="UbuntuInstallation@format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="../about.html"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

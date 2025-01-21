@@ -1,0 +1,39 @@
+[[PageOutline]] 
+
+= Text Mining Task Force =
+
+== Group activities ==
+
+ * TextMiningDayOne
+ * TextMiningDayTwo
+ * TextMiningDayThree
+ * TextMiningDayFour
+ * TextMiningMore
+ * TextMiningReport
+
+== Members ==
+
+ * [http://www.linkedin.com/in/albertolabarga Alberto Labarga]
+ * [http://uk.linkedin.com/pub/hammad-afzal/2/49/298 Hammad Afzal]
+ * [http://www.linkedin.com/in/matthiassamwald/en Matthias Samwald]
+ * [http://de.linkedin.com/pub/venkata-satagopam/18/7a6/8b7 Venkata Satagopam] 
+ * [http://www.linkedin.com/in/heikohorn Heiko Horn]
+ * [http://www.linkedin.com/pub/yasunori-yamamoto/10/859/63b Yasunori Yamamoto]
+
+
+
+== Proposal ==
+
+
+  * Integration of text mining results
+    * [http://reflect.ws Reflect] / [http://www.ebi.ac.uk/webservices/whatizit Whatizit] / [TextMiningMedieAndEnju MEDIE and Enju APIs]
+    * Results as triplets [http://whatizit.neurocommons.org/ Check Science Commons text annotation service]  
+      * URI and predicates
+    * Implementation with [http://sadiframework.org SADI]
+    * Result presentation using [http://hcls.deri.org/atag/generator/ <a>Tag]
+  * Explore relations
+  * Interfaces
+
+
+
+

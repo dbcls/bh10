@@ -1,0 +1,124 @@
+== What is SPARQL ==
+
+ *  http://www.w3.org/TR/rdf-sparql-query/
+ *  http://en.wikipedia.org/wiki/SPARQL
+
+François Belleau's delicious bookmarks
+ *  http://delicious.com/fbelleau/bh2010:primer
+ *  http://delicious.com/fbelleau/bh2010:sparql 
+
+An endpoint to play with
+ * http://delicious.com/fbelleau/bio2rdf:sparql
+ * http://dbpedia.org/sparql
+ * http://www.semantic-systems-biology.org/biogateway/querying
+ * http://atlas.bio2rdf.org/sparql
+
+Facet browser
+ * http://atlas.bio2rdf.org/fct
+ * http://dbpedia.org/fct
+
+{{{
+select ?s2 as ?c1 count (*) as ?c2
+where {
+?s1 ?s1textp ?o1 .
+?o1 bif:contains '"hexokinase"' .
+?s1 a <http://purl.uniprot.org/core/Sequence> .
+?s1 a <http://purl.uniprot.org/core/Citation_Statement> .
+?s1 <http://purl.uniprot.org/core/memberOf> ?s2 .
+} group by ?s2 order by desc 2 limit 20 offset 0
+}}}
+
+In a triple store, I have the label of the predicate.
+
+Sample queries
+{{{
+select *
+where {?s ?p ?o}
+limit 100
+}}}
+
+{{{
+select ?o count(*)
+where {?s a ?o}
+}}}
+
+
+{{{
+select ?t ?p count(*)
+ where {
+?s ?p ?o .
+?s rdf:type ?t .
+?o bif:contains "hexokinase" .
+}
+}}}
+
+ * '''bif:contains''' (full-text search) is not standard.
+ * '''count(*)''' is not standard.
+
+{{{
+select ?s ?p ?o
+ where {
+?s ?p ?o .
+?o bif:contains "hexokinase" .
+}
+}}}
+
+{{{
+select ?s ?p ?o
+ where {
+?s ?p ?o .
+?s ?p1 ?o1 .
+?o bif:contains "hexokinase" .
+}
+ORDER BY (?s)
+}}}
+
+{{{
+select ?s1
+ where {
+?s ?p ?o .
+?s1 ?p1 ?s .
+?o bif:contains "hexokinase" .
+}
+}}}
+
+'''?s1 ?p1 ?s''' is the JOIN of SPARQL.
+
+{{{
+select count(*) 
+where { 
+?s ?p ?o
+}
+}}}
+
+This counts the number of triples in the database.
+
+{{{
+select ?s count(*)
+where {
+?s ?p ?o
+}
+}}}
+
+{{{
+select ?t ?p
+where {
+?s a ?t .
+?s ?p ?o .
+}
+order by ?t
+}}}
+
+{{{
+select ?o1 ?p ?o2 count(*)
+where {
+?s1 a ?o1 .
+?s2 a ?o2 .
+?s1 ?p ?s2 .
+FILTER (?o1 != ?o2)
+}
+order by desc(count(*))
+}}}
+
+== books ==
+ * Programming the semantic web

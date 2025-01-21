@@ -1,0 +1,32 @@
+= End-User Clients =
+
+== !BioMart ==
+
+== Cytoscape ==
+
+=== Current Status ===
+Cytoscape already has some tools related to semantic web technology:
+ * [http://www.bioinformatics.org/rdfscape/wiki/Main/HomePage RDFScape Plugin] - Plugin supports for reasoning on ontologies.  Also supports query/result visualization.
+ * BioPAX Reader - simply read and convert basic information stored in BioPAX level 2.
+And there are some issues:
+ * RDFScape is a bit hard to use for average users (biologists).  Need to refactor user interface.
+ * Typing SPARQL query is powerful for hardcore users, but too difficult for biologists.
+ * After Cytoscape reads BioPAX data, no semantics are used.
+
+=== Potential Projects for Hackathon ===
+ * Re-design RDFScape UI
+  * User-friendly Query Builder
+  * Automatic data import - load selected set of ontologies automatically
+ * Internal data management - how should Cytoscape store semantics from BioPAX data files?
+ * Merge networks/attributes automatically using semantics 
+
+== G-language ==
+
+== Galaxy ==
+
+== !InterMine ==
+
+
+----
+
+[wiki:Tools Back to Tools page]

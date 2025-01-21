@@ -1,0 +1,428 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+    <html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      WikiStart (diff) – BioHackathon 2010
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="up" href="/wiki/WikiStart?action=history" title="Page history" />
+        <link rel="next" href="/wiki/WikiStart?action=diff&amp;version=3" title="Version 3" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/diff.css" type="text/css" />
+        <link rel="prev" href="/wiki/WikiStart?action=diff&amp;version=1" title="Version 1" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search BioHackathon 2010" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script><script type="text/javascript" src="/chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="/chrome/common/css/diff.css" /><meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon3.dbcls.jp/"><img src="http://hackathon3.dbcls.jp/raw-attachment/wiki/LogoGallery/trac_logo.png" alt="DBCLS BioHackathon 2010" width="200" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="/wiki/WikiStart?action=diff&amp;version=1" title="Version 1">Previous Change</a></span></li><li><a href="/wiki/WikiStart?action=history" title="Page history">Wiki History</a></li><li class="last"><span><a class="next" href="/wiki/WikiStart?action=diff&amp;version=3" title="Version 3">Next Change</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <h1>Changes
+        between
+          <a href="/wiki/WikiStart?version=1">Version 1</a> and
+        <a href="/wiki/WikiStart?version=2">Version 2</a> of
+        <a href="/wiki/WikiStart?version=2">WikiStart</a>
+      </h1>
+      <form method="post" id="prefs" action="/wiki/WikiStart?version=2"><div><input type="hidden" name="__FORM_TOKEN" value="9b92f779110146561b41c442" /></div>
+        <div>
+          <input type="hidden" name="action" value="diff" />
+          <input type="hidden" name="version" value="2" />
+          <input type="hidden" name="old_version" value="1" />
+    <label for="style">View differences</label>
+    <select id="style" name="style">
+      <option selected="selected" value="inline">inline</option>
+      <option value="sidebyside">side by side</option>
+    </select>
+    <div class="field">
+      Show <input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+      <label for="contextlines">lines around each change</label>
+    </div>
+    <fieldset id="ignore">
+      <legend>Ignore:</legend>
+      <div class="field">
+        <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+        <label for="ignoreblanklines">Blank lines</label>
+      </div>
+      <div class="field">
+        <input type="checkbox" id="ignorecase" name="ignorecase" />
+        <label for="ignorecase">Case changes</label>
+      </div>
+      <div class="field">
+        <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+        <label for="ignorewhitespace">White space changes</label>
+      </div>
+    </fieldset>
+    <div class="buttons">
+      <input type="submit" name="update" value="Update" />
+    </div>
+        </div>
+      </form>
+      <dl id="overview">
+        <dt class="property time">Timestamp:</dt>
+        <dd class="time">
+          2009/10/28 17:08:39 (<a class="timeline" href="/timeline?from=2009-10-28T17%3A08%3A39%2B0900&amp;precision=second" title="2009-10-28T17:08:39+0900 in Timeline">15 years</a> ago)
+        </dd>
+        <dt class="property author">Author:</dt>
+        <dd class="author">
+          admin
+        </dd>
+        <dt class="property message">Comment:</dt>
+        <dd class="message">
+          
+          <p>
+--
+</p>
+
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+            <dt class="mod"></dt><dd>Modified</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="/wiki/WikiStart?version=2">WikiStart</a>
+        </h2>
+        <table class="inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Version 1">
+                    <a href="/wiki/WikiStart?version=1#L1">
+                      v1</a>
+                  </th>
+                  <th title="Version 2">
+                    <a href="/wiki/WikiStart?version=2#L1">
+                      v2</a>
+                  </th>
+                  <th> </th>
+                </tr>
+              </thead>
+            <tbody class="mod">
+                      <tr class="first">
+                        <th>1</th><th> </th><td class="l"><span>= Welcome to Trac 0.10.4 =</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>1</th><td class="r"><span>[[PageOutline]]</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>2</th><th>2</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>3</th><th> </th><td class="l"><span>Trac is a '''minimalistic''' approach to '''web-based''' management of</span> </td>
+                      </tr><tr>
+                        <th>4</th><th> </th><td class="l"><span>'''software projects'''. Its goal is to simplify effective tracking and handling of software issues, enhancements and overall progress.</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>3</th><td class="r"><span>= !BioHackathon 2009 =</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>5</th><th>4</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>6</th><th> </th><td class="l"><span>All aspects of Trac have been designed with the single goal to </span> </td>
+                      </tr><tr>
+                        <th>7</th><th> </th><td class="l"><span>'''help developers write great software''' while '''staying out of the way'''</span> </td>
+                      </tr><tr>
+                        <th>8</th><th> </th><td class="l"><span>and imposing as little as possible on a team's established process and</span> </td>
+                      </tr><tr>
+                        <th>9</th><th> </th><td class="l"><span>culture.</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>5</th><td class="r"><span>This is our 3rd !BioHackathon for the integrated human data interaction with the linked biomedical data.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>10</th><th>6</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>11</th><th> </th><td class="l"><span>As all Wiki pages, this page is editable, this means that you can</span> </td>
+                      </tr><tr>
+                        <th>12</th><th> </th><td class="l"><span>modify the contents of this page simply by using your</span> </td>
+                      </tr><tr>
+                        <th>13</th><th> </th><td class="l"><span>web-browser. Simply click on the "Edit this page" link at the bottom</span> </td>
+                      </tr><tr>
+                        <th>14</th><th> </th><td class="l"><span>of the page. WikiFormatting will give you a detailed description of</span> </td>
+                      </tr><tr>
+                        <th>15</th><th> </th><td class="l"><span>available Wiki formatting commands.</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>7</th><td class="r"><span>&nbsp;* [wiki:Participants]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>8</th><td class="r"><span>&nbsp;* [wiki:Schedule]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>9</th><td class="r"><span>&nbsp;* [wiki:Symposium]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>10</th><td class="r"><span>&nbsp;* [wiki:Hackathon]</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>11</th><td class="r"><span>&nbsp;* [wiki:Report]</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>16</th><th>12</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>17</th><th> </th><td class="l"><span>"[wiki:TracAdmin trac-admin] ''yourenvdir'' initenv" created</span> </td>
+                      </tr><tr>
+                        <th>18</th><th> </th><td class="l"><span>a new Trac environment, containing a default set of wiki pages and some sample</span> </td>
+                      </tr><tr>
+                        <th>19</th><th> </th><td class="l"><span>data. This newly created environment also contains </span> </td>
+                      </tr><tr>
+                        <th>20</th><th> </th><td class="l"><span>[wiki:TracGuide documentation] to help you get started with your project.</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>13</th><td class="r"><span>== About the Hackathon ==</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>21</th><th>14</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>22</th><th> </th><td class="l"><span>You can use [wiki:TracAdmin trac-admin] to configure</span> </td>
+                      </tr><tr>
+                        <th>23</th><th> </th><td class="l"><span>[http://trac.edgewall.org/ Trac] to better fit your project, especially in</span> </td>
+                      </tr><tr>
+                        <th>24</th><th> </th><td class="l"><span>regard to ''components'', ''versions'' and ''milestones''. </span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>15</th><td class="r"><span>The hackathon (hacking + marathon) basically is a camp where invited participants discuss about current issues and implement software to solve the problems on site collaboratively. This kind of meeting is very effective for the intensive development of projects, because face-to-face meeting of developers, who are usually spread around the world, accelerates communication and collaboration to exchange their ideas.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>16</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>17</th><td class="r"><span>!BioHackathon 2010 is sponsored by the Database Center for Life Science ([http://dbcls.rois.ac.jp/en/ DBCLS]), and will be held in Tokyo, Japan.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>18</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>19</th><td class="r"><span>&nbsp;* !BioHackathon 2010&nbsp; &nbsp;http://hackathon3.dbcls.jp/</span> </td>
+                      </tr><tr>
+                        <th> </th><th>20</th><td class="r"><span>&nbsp;* !BioHackathon 2009&nbsp; &nbsp;http://hackathon2.dbcls.jp/</span> </td>
+                      </tr><tr>
+                        <th> </th><th>21</th><td class="r"><span>&nbsp;* !BioHackathon 2008&nbsp; &nbsp;http://hackathon.dbcls.jp/</span> </td>
+                      </tr><tr>
+                        <th> </th><th>22</th><td class="r"><span>&nbsp;* DBCLS&nbsp; &nbsp; &nbsp; &nbsp; http://dbcls.rois.ac.jp/en/</span> </td>
+                      </tr><tr>
+                        <th> </th><th>23</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>24</th><td class="r"><span>The DBCLS is being accepted as a national center for the sustainable life science databases in Japan. </span> </td>
+                      </tr><tr>
+                        <th> </th><th>25</th><td class="r"><span></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>26</th><td class="r"><span>== Objectives ==</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>25</th><th>27</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>26</th><th>28</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>27</th><th> </th><td class="l"><span>TracGuide is a good place to start.</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>29</th><td class="r"><span>== Expected outcomes ==</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>28</th><th>30</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>29</th><th> </th><td class="l"><del>Enjoy! [[BR]]</del> </td>
+                  </tr><tr class="last">
+                          <th>30</th><th> </th><td class="l"><del>''The Trac Team''</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>31</th><th>31</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>32</th><th> </th><td class="l"><span>== <del>Starting Points</del> ==</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>32</th><td class="r"><span>== <ins>Mailing list</ins> ==</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>33</th><th>33</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>34</th><th> </th><td class="l"><span>&nbsp;* TracGuide --&nbsp; Built-in Documentation</span> </td>
+                      </tr><tr>
+                        <th>35</th><th> </th><td class="l"><span>&nbsp;* [http://trac.edgewall.org/ The Trac project] -- Trac Open Source Project</span> </td>
+                      </tr><tr>
+                        <th>36</th><th> </th><td class="l"><span>&nbsp;* [http://trac.edgewall.org/wiki/TracFaq Trac FAQ] -- Frequently Asked Questions</span> </td>
+                      </tr><tr>
+                        <th>37</th><th> </th><td class="l"><span>&nbsp;* TracSupport --&nbsp; Trac Support</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>34</th><td class="r"><span>&nbsp;* http://kml.dbcls.jp/pipermail/biohack3/</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>35</th><td class="r"><span>&nbsp;* biohack3_at_kml.dbcls.jp</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>38</th><th>36</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>39</th><th> </th><td class="l"><span>For a complete list of local wiki pages, see TitleIndex.</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>37</th><td class="r"><span>== Venue ==</span> </td>
+                      </tr><tr>
+                        <th> </th><th>38</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>39</th><td class="r"><span>&nbsp;* Tokyo (DBCLS) - for the 1st day (reception and symposium)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>40</th><td class="r"><span>&nbsp;</span> </td>
+                      </tr><tr>
+                        <th> </th><th>41</th><td class="r"><span>=== Access ===</span> </td>
+                      </tr><tr>
+                        <th> </th><th>42</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>43</th><td class="r"><span>&nbsp;* [http://dbcls.rois.ac.jp/en/access/index.html DBCLS] (Tokyo venue)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>44</th><td class="r"><span>&nbsp;</span> </td>
+                      </tr><tr>
+                        <th> </th><th>45</th><td class="r"><span>Annotated Google Maps and KML file for Google Earth are available:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>46</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>47</th><td class="r"><span>&nbsp;* [http://tinyurl.com/ch7ytg Google Maps for the BioHackathon 2009]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>48</th><td class="r"><span>&nbsp;* [http://hackathon2.dbcls.jp/attachment/wiki/WikiStart/biohackathon2009-locations.kmz KML file for Google Earth]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>49</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>50</th><td class="r"><span>=== Housing ===</span> </td>
+                      </tr><tr>
+                        <th> </th><th>51</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>52</th><td class="r"><span>&nbsp;</span> </td>
+                      </tr><tr>
+                        <th> </th><th>53</th><td class="r"><span>== Misc ==</span> </td>
+                      </tr><tr>
+                        <th> </th><th>54</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>55</th><td class="r"><span>What should you bring with you?</span> </td>
+                      </tr><tr>
+                        <th> </th><th>56</th><td class="r"><span>&nbsp;</span> </td>
+                      </tr><tr>
+                        <th> </th><th>57</th><td class="r"><span>&nbsp;* Laptop computer</span> </td>
+                      </tr><tr>
+                        <th> </th><th>58</th><td class="r"><span>&nbsp;* Conversion plug for your AC adaptor (identical to the US type; 100 volt)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>59</th><td class="r"><span>&nbsp;* Local liquor as always (for the Liquorthon at night or for the reception :-)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>60</th><td class="r"><span>&nbsp;* [http://www.linkedin.com/ LinkedIn] account to share your contact address</span> </td>
+                      </tr><tr>
+                        <th> </th><th>61</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>62</th><td class="r"><span>=== SVN repository ===</span> </td>
+                      </tr><tr>
+                        <th> </th><th>63</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>64</th><td class="r"><span>&nbsp;* http://hackathon3.dbcls.jp/svn/</span> </td>
+                      </tr><tr>
+                        <th> </th><th>65</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>66</th><td class="r"><span>=== Streaming and social networking ===</span> </td>
+                      </tr><tr>
+                        <th> </th><th>67</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>68</th><td class="r"><span>&nbsp;* http://www.ustream.tv/channel/biohackathon2010</span> </td>
+                      </tr><tr>
+                        <th> </th><th>69</th><td class="r"><span>&nbsp;* IRC: #biohackathon2010 on chat1.ustream.tv:6667</span> </td>
+                      </tr><tr>
+                        <th> </th><th>70</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>71</th><td class="r"><span>&nbsp;* http://friendfeed.com/rooms/biohackathon-2010 -- !FriendFeed room for !BioHackathon 2010</span> </td>
+                      </tr><tr>
+                        <th> </th><th>72</th><td class="r"><span>&nbsp;* #biohackathon2010 -- official hash tag for [http://search.twitter.com/search?q=%23biohackathon2010&amp;lang=all twitter], citeulike and so on.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>73</th><td class="r"><span>&nbsp;* [http://www.linkedin.com/groups?gid=1864599 LinkedIn Group]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>74</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>75</th><td class="r"><span>=== Photo album ===</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>76</th><td class="r"><span></span> </td>
+                      </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+      </div>
+  </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

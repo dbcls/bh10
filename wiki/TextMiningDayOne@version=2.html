@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      TextMiningDayOne – BioHackathon 2010
+    </title>
+        <link rel="search" href="../search.1.html" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://hackathon3.dbcls.jp/wiki/TextMiningDayOne?version=2&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="TextMiningDayOne.html" title="View latest version" />
+        <link rel="next" href="TextMiningDayOne@version=3.html" title="Version 3" />
+        <link rel="start" href="../wiki.1.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="prev" href="TextMiningDayOne@version=1.html" title="Version 1" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../search/opensearch" title="Search BioHackathon 2010" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="../index.html"><img src="http://hackathon3.dbcls.jp/raw-attachment/wiki/LogoGallery/trac_logo.png" alt="DBCLS BioHackathon 2010" width="200" /></a>
+      </div>
+      <form id="search" action="../search.1.html" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://hackathon3.dbcls.jp/login">Login</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li><a href="../about.html">About Trac</a></li><li class="last"><a href="../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.1.html">Wiki</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../roadmap.html">Roadmap</a></li><li><a href="../browser.html">Browse Source</a></li><li><a href="../report.html">View Tickets</a></li><li class="last"><a href="../search.1.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="TextMiningDayOne@version=1.html" title="Version 1">Previous Version</a></span></li><li><a href="TextMiningDayOne.html" title="View latest version">View Latest Version</a></li><li><span><a class="next" href="TextMiningDayOne@version=3.html" title="Version 3">Next Version</a> &rarr;</span></li><li class="last"><a href="TextMiningDayOne@action=diff&amp;version=2.html">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 2 (modified by alabarga, <a class="timeline" href="../timeline@from=2010-02-10T00%253A50%253A01+0900&amp;precision=second.html" title="2010-02-10T00:50:01+0900 in Timeline">15 years</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+--
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <h4 id="ReflectRDFasnippets">Reflect RDFa snippets</h4>
+<p>
+Idea 1 (interlaced with the text):
+</p>
+<pre class="wiki">&lt;div xmlns:sioc="http://rdfs.org/sioc/ns#" typeof="sioc:Item"&gt;
+&lt;span class='reflect_protein'&gt;&lt;a rel="sioc:topic" resource="http://purl.uniprot.org/uniprot/P05113"&gt;&lt;/a&gt;IL-5&lt;/span&gt;
+&lt;/div&gt;
+</pre><p>
+Idea 2 (at the end of the document, non-redundant):
+</p>
+<pre class="wiki">&lt;div xmlns:sioc="http://rdfs.org/sioc/ns#" typeof="sioc:Item"&gt;
+&lt;span id='reflectEntity0'&gt;9606.ENSP00000231454&lt;/span&gt;
+&lt;a rel="sioc:topic" resource="http://purl.uniprot.org/uniprot/P05113"&gt;&lt;/a&gt;
+&lt;/div&gt;
+</pre><h4 id="WhatizitRDFaservice">Whatizit RDFa service</h4>
+<p>
+IL-5 Example:
+<a class="ext-link" href="http://whatizit.neurocommons.org/index.py/text_query?pipeline=whatizitEBIMedDiseaseChemicals&amp;query=IL-5&amp;format=atag&amp;max_results=10"><span class="icon"> </span>http://whatizit.neurocommons.org/index.py/text_query?pipeline=whatizitEBIMedDiseaseChemicals&amp;query=IL-5&amp;format=atag&amp;max_results=10</a>
+</p>
+<p>
+Converted to Turtle:
+<a class="ext-link" href="http://www.w3.org/2007/08/pyRdfa/extract?uri=http://whatizit.neurocommons.org/index.py/text_query?pipeline=whatizitEBIMedDiseaseChemicals&amp;query=IL-5&amp;format=atag&amp;max_results=10"><span class="icon"> </span>http://www.w3.org/2007/08/pyRdfa/extract?uri=http://whatizit.neurocommons.org/index.py/text_query?pipeline=whatizitEBIMedDiseaseChemicals&amp;query=IL-5&amp;format=atag&amp;max_results=10</a>
+</p>
+<p>
+This uses a W3 service (<a class="ext-link" href="http://www.w3.org/2007/08/pyRdfa/extract"><span class="icon"> </span>http://www.w3.org/2007/08/pyRdfa/extract</a>)
+</p>
+<h4 id="UniprotRDF">Uniprot RDF</h4>
+<pre class="wiki">  http://www.uniprot.org/uniprot/P12345.n4
+</pre><pre class="wiki">
+uniprot:P12345
+  rdf:type Protein
+  alternativeName 
+    rdf:type Structured_Name
+    fullName "Transaminase A"
+  citation &lt;http://purl.uniprot.org/citations/4030726&gt;
+    rdf:type Journal_Citation
+    title 
+      "Aspartate aminotransferase isozymes from rabbit liver. Purification 
+       and properties."
+    author "Kuramitsu S."
+    author "Inoue K."
+    author "Kondo K."
+    author "Aki K."
+    author "Kagamiyama H."
+    skos:exactMatch &lt;http://purl.uniprot.org/medline/85289123&gt;
+    skos:exactMatch &lt;http://purl.uniprot.org/pubmed/4030726&gt;
+    date 1985
+    name "J. Biochem."
+    volume 97
+    pages "1337-1345"
+    +rdf:type Citation_Statement
+    +scope "PROTEIN SEQUENCE"
+    +context 
+      rdf:type Tissue
+      rdfs:label "Liver"
+
+
+</pre>
+        
+        
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="http://hackathon3.dbcls.jp/wiki/TextMiningDayOne?version=2&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="../about.html"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

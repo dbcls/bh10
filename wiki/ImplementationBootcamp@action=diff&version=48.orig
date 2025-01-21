@@ -1,0 +1,349 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+    <html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      ImplementationBootcamp (diff) – BioHackathon 2010
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="up" href="/wiki/ImplementationBootcamp?action=history" title="Page history" />
+        <link rel="next" href="/wiki/ImplementationBootcamp?action=diff&amp;version=49" title="Version 49" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/diff.css" type="text/css" />
+        <link rel="prev" href="/wiki/ImplementationBootcamp?action=diff&amp;version=47" title="Version 47" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search BioHackathon 2010" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script><script type="text/javascript" src="/chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="/chrome/common/css/diff.css" /><meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon3.dbcls.jp/"><img src="http://hackathon3.dbcls.jp/raw-attachment/wiki/LogoGallery/trac_logo.png" alt="DBCLS BioHackathon 2010" width="200" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="/wiki/ImplementationBootcamp?action=diff&amp;version=47" title="Version 47">Previous Change</a></span></li><li><a href="/wiki/ImplementationBootcamp?action=history" title="Page history">Wiki History</a></li><li class="last"><span><a class="next" href="/wiki/ImplementationBootcamp?action=diff&amp;version=49" title="Version 49">Next Change</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <h1>Changes
+        between
+          <a href="/wiki/ImplementationBootcamp?version=47">Version 47</a> and
+        <a href="/wiki/ImplementationBootcamp?version=48">Version 48</a> of
+        <a href="/wiki/ImplementationBootcamp?version=48">ImplementationBootcamp</a>
+      </h1>
+      <form method="post" id="prefs" action="/wiki/ImplementationBootcamp?version=48"><div><input type="hidden" name="__FORM_TOKEN" value="9b92f779110146561b41c442" /></div>
+        <div>
+          <input type="hidden" name="action" value="diff" />
+          <input type="hidden" name="version" value="48" />
+          <input type="hidden" name="old_version" value="47" />
+    <label for="style">View differences</label>
+    <select id="style" name="style">
+      <option selected="selected" value="inline">inline</option>
+      <option value="sidebyside">side by side</option>
+    </select>
+    <div class="field">
+      Show <input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+      <label for="contextlines">lines around each change</label>
+    </div>
+    <fieldset id="ignore">
+      <legend>Ignore:</legend>
+      <div class="field">
+        <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+        <label for="ignoreblanklines">Blank lines</label>
+      </div>
+      <div class="field">
+        <input type="checkbox" id="ignorecase" name="ignorecase" />
+        <label for="ignorecase">Case changes</label>
+      </div>
+      <div class="field">
+        <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+        <label for="ignorewhitespace">White space changes</label>
+      </div>
+    </fieldset>
+    <div class="buttons">
+      <input type="submit" name="update" value="Update" />
+    </div>
+        </div>
+      </form>
+      <dl id="overview">
+        <dt class="property time">Timestamp:</dt>
+        <dd class="time">
+          2010/02/11 22:32:33 (<a class="timeline" href="/timeline?from=2010-02-11T22%3A32%3A33%2B0900&amp;precision=second" title="2010-02-11T22:32:33+0900 in Timeline">15 years</a> ago)
+        </dd>
+        <dt class="property author">Author:</dt>
+        <dd class="author">
+          RutgerVos
+        </dd>
+        <dt class="property message">Comment:</dt>
+        <dd class="message">
+          
+          <p>
+--
+</p>
+
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+            <dt class="mod"></dt><dd>Modified</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="/wiki/ImplementationBootcamp?version=48">ImplementationBootcamp</a>
+        </h2>
+        <table class="inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Version 47">
+                    <a href="/wiki/ImplementationBootcamp?version=47#L30">
+                      v47</a>
+                  </th>
+                  <th title="Version 48">
+                    <a href="/wiki/ImplementationBootcamp?version=48#L30">
+                      v48</a>
+                  </th>
+                  <th> </th>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>30</th><th>30</th><td class="l"><span>Then use [http://protege.stanford.edu/ Protege] to actually build the ontology.</span> </td>
+                  </tr><tr>
+                          <th>31</th><th>31</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>32</th><th> </th><td class="l"><span><del>&gt; MDW:&nbsp; I highly recommend that you "make friends" with someone who has a deep understanding of OWL, and the consequences of various OWL constructs, as you go through your learning experience.&nbsp; While the existing tutorials are good for telling you what is possible, they aren't always entirely clear about the consequences of choosing one encoding method versus another... and this dramatically affects your ability to "reason over" your data!! </del> Unfortunately, there are few shortcuts - OWL is hard!&nbsp; </span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>32</th><td class="r"><span><ins>It is highly recommended that you "make friends" with someone who has a deep understanding of OWL, and the consequences of various OWL constructs, as you go through your learning experience.&nbsp; While the existing tutorials are good for telling you what is possible, they aren't always entirely clear about the consequences of choosing one encoding method versus another, and this dramatically affects your ability to "reason over" your data.</ins> Unfortunately, there are few shortcuts - OWL is hard!&nbsp; </span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>33</th><th>33</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>34</th><th>34</th><td class="l"><span>=== Which version of Protege should I use? ===</span> </td>
+                  </tr><tr>
+                          <th>35</th><th>35</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>36</th><th> </th><td class="l"><span><del>Why not the latest one? You get the current OWL 2</del>.</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>36</th><td class="r"><span><ins>Protege 3 and Protege 4 are "philosophically" different, and represent a split in the global ontology community that runs roughly along the lines of the "OBO-fans" and the "OWL-DL-fans" (that's over-simplifying the situation, but I think it is by-and-large correct).&nbsp; The two development communities had different target-audiences in mind when developing the software, and those audiences are reflected in the decisions made.&nbsp; Protege 4 uses the Manchester OWL API "under the hood", and is somewhat more capable of manipulating OWL than Protege 3 is.&nbsp; On the other hand, if you are planning to use Protege to generate RDF data ("individuals") manually, then Protege 3 might be more useful for you</ins>.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>37</th><th>37</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>38</th><th> </th><td class="l"><span>&gt; MDW:&nbsp; Protege 3 and Protege 4 are "philosophically" different, and represent a split in the global ontology community that runs roughly along the lines of the "OBO-fans" and the "OWL-DL-fans" (that's over-simplifying the situation, but I think it is by-and-large correct).&nbsp; The two development communities had different target-audiences in mind when developing the software, and those audiences are reflected in the decisions made.&nbsp; Protege 4 uses the Manchester OWL API "under the hood", and is somewhat more capable of manipulating OWL than Protege 3 is (IMO).&nbsp; On the other hand, if you are planning to use Protege to generate RDF data ("individuals") manually, then Protege 3 might be more useful for you.&nbsp; This is all entirely my opinion, so please don't flame me if you are a fan of one or the other :-)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>38</th><td class="r"><span>=== In my generated RDF, what namespace URI do I use to prefix my terms? ===</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>39</th><th>39</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>40</th><th> </th><td class="l"><span>=== How do I namespace my terms? ===</span> </td>
+                      </tr><tr>
+                        <th>41</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>42</th><th> </th><td class="l"><span>It is best to do this such that they can actually be resolved (unlike XML), preferably to an OWL file, e.g. "http://example.org/terms.owl#"</span> </td>
+                      </tr><tr>
+                        <th>43</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>44</th><th> </th><td class="l"><span>&gt; MDW:&nbsp; Can we re-phrase the question to be clear what we are asking?&nbsp; :-)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>40</th><td class="r"><span>It is best to do this using a real URL such that the terms can actually be resolved (unlike XML), preferably to an OWL file, e.g. "xmlns:foo=http://example.org/terms.owl#" such that construct "foo:bar" can be resolved.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>45</th><th>41</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>46</th><th>42</th><td class="l"><span>===&nbsp; What are the similarities and differences between the various shared names proposals?&nbsp; ===</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="/wiki/ImplementationBootcamp?version=47#L54">…</a></th>
+                  <th><a href="/wiki/ImplementationBootcamp?version=48#L50">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>54</th><th>50</th><td class="l"><span>===&nbsp; I have an analysis tool, how do I expose it as a semantic web resource? ===</span> </td>
+                  </tr><tr>
+                          <th>55</th><th>51</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>56</th><th> </th><td class="l"><span><del>&gt; MDW:&nbsp; SADI please :-)&nbsp; &nbsp;Luke gave the Java tutorial today, and I gave the Perl tutorial.&nbsp; Edward Kawas from my lab has produced movies detailing how to create services in Perl for SADI, and I will be doing the voice-over for these movies and putting them up on YouTube in the next week.&nbsp; I will add a link here.&nbsp; We will do the sam</del>e for the Java side once we have the extra-cool Java functionalities coded and ~stable.&nbsp; In particular, Luke McCarthy and Paul Gordon have been working together at the Hackathon finding simple ways to put SADI Java services into the Google Cloud... so you might not even have to consume your own compute resources to achieve this!</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>52</th><td class="r"><span><ins>SADI provides one solution.&nbsp; Luke McCarthy gave a Java tutorial Thursday 11 February 2010, and Mark Wilkinson gave the Perl tutorial on the same day.&nbsp; Edward Kawas from the Wilkinson lab has produced movies detailing how to create services in Perl for SADI, and Mark will be doing the voice-over for these movies and putting them up on YouTube in the second week of February 2010.&nbsp; Mark will add a link here.&nbsp; The same will be don</ins>e for the Java side once we have the extra-cool Java functionalities coded and ~stable.&nbsp; In particular, Luke McCarthy and Paul Gordon have been working together at the Hackathon finding simple ways to put SADI Java services into the Google Cloud... so you might not even have to consume your own compute resources to achieve this!</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>57</th><th>53</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>58</th><th>54</th><td class="l"><span>===&nbsp; When someone calls GET on my URLs, what should I return in order to be semantic webby? ===</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="/wiki/ImplementationBootcamp?version=47#L86">…</a></th>
+                  <th><a href="/wiki/ImplementationBootcamp?version=48#L82">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>86</th><th>82</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>87</th><th>83</th><td class="l"><span>=== What XSL processor to use, should you want to convert legacy xml to rdf? ===</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>88</th><th> </th><td class="l"><span><del>@yokofakun uses xsltproc which work</del> fine. For example see:</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>84</th><td class="r"><span><ins>Pierre Lindenbaum uses xsltproc which works</ins> fine. For example see:</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>89</th><th>85</th><td class="l"><span>&nbsp; * http://plindenbaum.blogspot.com/2010/02/linkedinxslt-foaf-people-from.html</span> </td>
+                  </tr><tr>
+                          <th>90</th><th>86</th><td class="l"><span>&nbsp; * http://plindenbaum.blogspot.com/2010/02/searching-for-genotypes-with-sparql.html</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>91</th><th> </th><td class="l"><span><del>@rvosa is using a stylesheet that uses XSL2.0 features, which libxslt</del> doesn't like. He therefore uses [http://saxon.sourceforge.net/ saxon] to transform NeXML into RDF.</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>87</th><td class="r"><span><ins>Rutger Vos is using a stylesheet that uses XSL2.0 features, which libxslt (on which xsltproc is based)</ins> doesn't like. He therefore uses [http://saxon.sourceforge.net/ saxon] to transform NeXML into RDF.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>92</th><th>88</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>93</th><th>89</th><td class="l"><span>=== What to do with RDFa metadata? ===</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="/wiki/ImplementationBootcamp?version=47#L96">…</a></th>
+                  <th><a href="/wiki/ImplementationBootcamp?version=48#L92">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>96</th><th>92</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>97</th><th>93</th><td class="l"><span>=== I have database in RMDB, how can I convert them directly to RDF? === </span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="last first">
+                          <th>98</th><th> </th><td class="l"><del>Use protege plug-in? or porvide web service?</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>99</th><th>94</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>100</th><th> </th><td class="l"><span>There is [http://www4.wiwiss.fu-berlin.de/bizer/d2rq/ D2RQ] which works okey but lacks a bit performance-wise.</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>95</th><td class="r"><span>Possibly using a protege plug-in (which on?) or by providing a web service. There is [http://www4.wiwiss.fu-berlin.de/bizer/d2rq/ D2RQ] which works okey but lacks a bit performance-wise. However, this really depends on whether or not you intend to publish your database as a SPARQL endpoint.&nbsp; The poll that Pierre Lindenbaum and Mark Wilkinson took over the past couple of days suggests that only 5 data providers (within Tweet-shot of us) currently provide SQL access to their data resources.&nbsp; This does not seem to bode well for having data providers set-up SPARQL endpoints:&nbsp; why would they open themselves to a new, unfamiliar technology when they don't open themselves to a well-known, tested, secure, and highly powerful technology?&nbsp; </span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>101</th><th>96</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>102</th><th> </th><td class="l"><span>&gt; MDW:&nbsp; This really depends on whether or not you intend to publish your database as a SPARQL endpoint.&nbsp; The poll that Pierre and I took over the past couple of days suggests that only 5 data providers (within Tweet-shot of us) currently provide SQL access to their data resources.&nbsp; IMO this does not bode well for having data providers set-up SPARQL endpoints!!&nbsp; (why would they open themselves to a new, unfamiliar technology when they don't open themselves to a well-known, tested, secure, and highly powerful technology???)&nbsp; &nbsp;We have tried to make a compelling argument that exposing resources via SADI Web Services gives you the best of both worlds - a highly-granular control over what data you expose, how you expose it, and over the distribution of large numbers of requests over your compute-resources; yet our SHARE client helps make it *appear* that the entire world is one big SPARQL endpoint (on steroids, since you can SPARQL data that doesn't even exist until you ask the question!)&nbsp; My opinion (biased!) is that SADI Web Services are a better way to expose RDF data compared to SPARQL endpoints.&nbsp; Moreover, it doesn't require you to change your existing data infrastructure in any way - you don't need to have a triple-store to expose your data as triples via SADI.&nbsp; With a Web Service-based exposure, you can migrate your data gradually/modularly, a few properties at a time, rather than attempting to move your entire database to the Semantic Web in one shot... and gain experience as you go!&nbsp; Given that it is currently not (natively) possible to SPARQL query over multiple endpoints, you aren't losing anything by going the SADI route either.&nbsp; Finally, '''all''' of your resources (both database and analytical tools) are exposed in exactly the same way, meaning that they are all accessed by clients in exactly the same way, simplifying client design :-)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>97</th><td class="r"><span>Mark Wilkinson's team have tried to make a compelling argument that exposing resources via SADI Web Services gives you the best of both worlds - a highly-granular control over what data you expose, how you expose it, and over the distribution of large numbers of requests over your compute-resources; yet the SHARE client helps make it *appear* that the entire world is one big SPARQL endpoint (on steroids, since you can SPARQL data that doesn't even exist until you ask the question!)&nbsp; </span> </td>
+                      </tr><tr>
+                        <th> </th><th>98</th><td class="r"><span></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>99</th><td class="r"><span>Mark's opinion (biased!) is that SADI Web Services are a better way to expose RDF data compared to SPARQL endpoints.&nbsp; Moreover, it doesn't require you to change your existing data infrastructure in any way - you don't need to have a triple-store to expose your data as triples via SADI.&nbsp; With a Web Service-based exposure, you can migrate your data gradually/modularly, a few properties at a time, rather than attempting to move your entire database to the Semantic Web in one shot... and gain experience as you go.&nbsp; Given that it is currently not (natively) possible to SPARQL query over multiple endpoints, you aren't losing anything by going the SADI route either.&nbsp; Finally, '''all''' of your resources (both database and analytical tools) are exposed in exactly the same way, meaning that they are all accessed by clients in exactly the same way, simplifying client design.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>103</th><th>100</th><td class="l"><span>&nbsp; </span> </td>
+                  </tr><tr>
+                          <th>104</th><th>101</th><td class="l"><span>=== How granular should my returned RDF be? ===</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+      </div>
+  </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

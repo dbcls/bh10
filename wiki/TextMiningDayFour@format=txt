@@ -1,0 +1,91 @@
+[[PageOutline]] 
+= Group activities: Day Four =
+ * TextMiningDayOne
+ * TextMiningDayTwo
+ * TextMiningDayThree
+ * TextMiningDayFour
+ * TextMiningReport
+
+== The part of the MEDIE result XML that we should focus on ==
+
+{{{
+<set>
+ <article>
+  <PMID>19694806</PMID>
+
+    ... <sentence>
+	Treatment with 5-aza-2'-deoxycytidine and/or the histone deacetylase inhibitor trichostatin A increased 
+	<entity_name gena_id="GMM040544" species="Mus musculus" db_site="EntrezGene:13138|MGI:101864|PIR:S59630|SWISS-PROT:Q62165|TrEMBL:Q8BPJ7" type="gene_prod" confidence="1" filter_confidence="0.284761" id="entity-10" gene_symbol="Dag1">Dag1</entity_name>
+ 	mRNA expression levels in myoblasts, and methylation decreased promoter activity in vitro.
+	</sentence>
+}}}
+
+
+== How to generate RDF-friendly URIs for recognized entities ==
+
+
+{{{
+<entity_name gena_id="GMM040544" species="Mus musculus" db_site="EntrezGene:13138|MGI:101864|PIR:S59630|SWISS-PROT:Q62165|TrEMBL:Q8BPJ7" 
+}}}
+
+--->  http://purl.uniprot.org/uniprot/Q62165
+
+Note: If given the choice, prefer Swissprot over TrEMBL
+
+{{{
+<entity_name id="disease6" facta_id="UMLS:C0878544" type="disease">cardiomyopathy</entity_name>
+}}}
+
+---> Unfortunately we still don't have well accepted URIs for UMLS yet. We could do a lookup and provide URIs pointing to the OBO disease ontology, but this is a bit computationally expensive.
+
+{{{
+<entity_name id="compound18615" facta_id="CAS:79-43-6" type="compound">Dichloroacetate</entity_name>
+<entity_name id="enzyme1375" facta_id="EC:3.5.3.22" type="enzyme">
+<entity_name id="compound18620" facta_id="CAS:61-78-9" type="compound">PAH</entity_name>
+</entity_name>
+}}}
+
+---> CAS and EC numbers would  need to be mapped as well
+
+Using TogoDB, although not a primary database provider, you can use URI for UMLS (subset, those can be redistributed).[[BR]]
+Note that currently we (DBCLS) haven't loaded the UMLS data to togoDB yet, so you will see an error page if you access to the following URL.
+But, we will prepare soon.
+
+{{{
+http://togows.dbcls.jp/entry/togodb-umls/C08384423
+}}}
+
+
+== RDF format discussion ==
+
+{{{
+<http://togows.dbcls.jp/entry/ncbi-pubmed/22333111> <ns:cites> <uniprot> .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/22333111> <ns:cites> <genbank> .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/22333111> <ns:contains> _:hasG1 .
+
+_:hasG1 <http://www.w3.org/2000/01/rdf-schema#label> "p53" .
+_:hasG1 <rdf:type> <something:protein> .
+_:hasG1 <something:taxonomy> <taxid:9399> .
+...
+
+<http://togows.dbcls.jp/entry/ncbi-pubmed/22333111> <http://togosw.dbcls.jp/textmining#hasSentence> _:hasS1 .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/22333111> <http://togosw.dbcls.jp/textmining#hasSentence> _:hasS2 .
+<http://togows.dbcls.jp/entry/ncbi-pubmed/22333111> <http://togosw.dbcls.jp/textmining#hasSentence> _:hasS3 .
+...
+
+_:hasS1 <http://togosw.dbcls.jp/textmining#hasSubject> _:sbj1 .
+_:hasS1 <http://togosw.dbcls.jp/textmining#hasVerb> _:verb1 .
+_:hasS1 <http://togosw.dbcls.jp/textmining#hasObject> _:obj1 .
+_:sbj1 <http://www.w3.org/2000/01/rdf-schema#label> "peripheral lymphocytes" .
+_:verb1 <http://www.w3.org/2000/01/rdf-schema#label> "secreting" .
+_:obj1 <http://www.w3.org/2000/01/rdf-schema#label> "a specific cytokine" .
+
+
+<http://purl.org/dc/elements/1.1/identifier> <http://pubmed.org/22333111>
+<http://purl.org/dc/elements/1.1/title> "pmid:22333111"
+<http://togows.dbcls.jp/entry/ncbi-pubmed/22333111>
+}}}
+
+
+----
+TextMining

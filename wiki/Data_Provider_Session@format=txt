@@ -1,0 +1,164 @@
+[[PageOutline]]
+'''NOTE''' - After discussion, this page and possible rules has been replaced by [[wiki:URI]]
+
+== The first ever official Data Provider session who will offer RAW DATA ==
+
+After a 1:30 hour brain storming discussion, the group take a break and get ready for the Data Provider session.
+
+The representative from the following official data provider were presents :
+
+ * DBCLS [http://dbcls.rois.ac.jp/]
+ * DDBJ [http://www.ddbj.nig.ac.jp/]
+ * Korean !HapMap [http://www.khapmap.org/]
+ * KEGG [http://www.genome.jp/]
+ * PDBj [http://www.pdbj.org/]
+ * !UniProt [http://www.uniprot.org/]
+ * TreeBASE [http://treebase.org v.1],[http://treebase-dev.nescent.org:6666/treebase-web v.2]
+
+The representative from the following data integration project offering a SPARQL endpoint:
+
+ * http://bio2rdf.org/ [http://delicious.com/fbelleau/bio2rdf:sparql SPARQL endpoint list]
+ * http://www.semantic-systems-biology.org/ [http://www.semantic-systems-biology.org/biogateway/endpoint SPARQL endpoint]
+ * http://hcls.deri.ie/ [http://hcls.deri.ie/sparql SPARQL endpoint]
+
+These are the objectives that were discussed :
+
+ * RAW DATA available as N-TRIPLES dump should be produced by the data provider and made available from their FTP or HTTP server
+ * SPARQL endpoint for each dataset should be made available
+ * Standard URIs should be used in triple
+ * Standard predicate should be used in triple
+
+== RAW Data dump ==
+
+!UniProt already offer raw data in RDF from their own [ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/rdf/ FTP server], and on the fly for query results by appending '&format=rdf' to the URL. TreeBASE does the latter also, and can make an RDF dump available easily. DDBJ, PDBJ and KEEG will do the same.
+
+== SPARQL endpoint ==
+
+There is already a certain number of SPARQL endpoints available but none are owned by the official data provider.
+
+There is a need for an hosting service offering SPARQL endpoint in which it will be possible to load the official raw data provided by the data provider on the [http://dig.csail.mit.edu/breadcrumbs/node/215 GGG].  
+
+== Standard URIs ==
+
+
+{{{
+Rule #1  
+         When a data provider has given a derefencable URI to a topic, 
+         this is the only accepted URI that should be published on the GGG.  
+         Other data provider must make reference to it in their own dataset.
+}}}
+
+Actually the following data provider have created their own [http://en.wikipedia.org/wiki/Dereferenceable_Uniform_Resource_Identifier derefencable URI] :
+
+ * !UniProt
+ * Gene Ontology
+
+the following data providers will apply Rule #1 when they start to publish RDF.
+
+ * DBCLS
+ * DDBJ
+ * KEGG
+ * PDBJ 
+
+Now that data provider will share a common naming for URI, it is encouraged to adopt a simple design rule for URIs.
+
+{{{
+Rule #2  
+        The encouraged syntax of a derefencable URI is as follow : 
+             http://providerDomaineName/publicNamespace/privateId
+}}}
+
+{{{
+Rule #3  
+        A common list of curated namespace and identifier format is adopted by the provider.
+}}}
+
+
+For example the folowing URI are valid:
+ * http://purl.uniprot.org/uniprot/P17710
+ * http://pdbj.org/pdbid/2yhx
+ * http://dbcls.jp/insc/AAB57760
+ * http://genome.jp/ec/2.7.1.1
+ * http://sabi.ddbj.nig.ac.jp/ddbj/Z48241
+ 
+but these are not ideal:
+
+ * http://www.genome.jp/dbget-bin/www_bget?ec:2.7.1.1
+ * http://lsrn.org/gene:15275
+ * http://bio2rdf.org/geneid:15275
+
+== Standard predicates ==
+
+'''NOTE''' - After discussion, this page and possible rules has been replaced by [[wiki:URI]]
+
+We propose a list of standard predicates for metadata we suggest shoulb be used systematically in the GGG of life science.
+
+ * http://www.w3.org/1999/02/22-rdf-syntax-ns#type 
+ * http://www.w3.org/2000/01/rdf-schema#comment
+ * http://www.w3.org/2000/01/rdf-schema#label
+ * http://purl.org/dc/elements/1.1/identifier
+ * http://purl.org/dc/elements/1.1/created
+ * http://purl.org/dc/elements/1.1/modified
+
+The proper usage of these predicate need to be discussed :
+
+ * http://purl.org/dc/elements/1.1/title
+ * http://purl.org/dc/elements/1.1/version
+ * http://purl.org/dc/elements/1.1/creator
+ * http://www.w3.org/2000/01/rdf-schema#seeAlso 	
+ * http://www.w3.org/2002/07/owl#sameAs
+
+We also need to select the proper predicate use in the community for:
+
+ * URL of the HTML document
+ * Images
+ * Reference to a person like a FOAF profil
+ * External database reference
+
+and other that should be discussed by the community in the [http://www.freebase.com/view/user/biohackathon BioHackathon Freebase] space for curation of namespace and predicate.
+
+{{{
+Rule #4  
+         The usage, with proper semantic, of the recommended predicates is encouraged.
+}}}
+
+
+{{{
+Rule #5
+         The list of approuved namespace and recommendaed predicate is publicly available on the Internet and publish in RDF.  
+         Its first version is curated by the BioHackathon community on at http://biohackathon.freebase.com . 
+}}}
+
+
+
+== Tokyo Manifesto ==
+
+The rules 1,2,3 and 4 are adopted by the following data provider or publisher of RDF:
+
+  * Francois Belleau for bio2rdf.org
+
+The !BioHackathon community will start the curation of namespace and predicate and will share its work on the Internet.  The first leader of the curation group is ????.
+
+== Notes / Discussion ==
+
+Peter:
+
+{{{
+
+The NCBI don't (yet) provide their data in RDF format, but they do provide a lot of different URLs for their resources (in various formats), some of which follow the pattern above:
+
+http://www.ncbi.nlm.nih.gov/taxonomy/9606
+http://www.ncbi.nlm.nih.gov/gene/15275
+http://www.ncbi.nlm.nih.gov/pubmed/18472304
+http://www.ncbi.nlm.nih.gov/pmc/2755819 (this redirects)
+
+However, it is unclear if this pattern covers all their databases or if they regard these as URLs they intend to support long term. Moreover, these URLs currently give HTML (although in the long term the NCBI could return RDF by content negotiation?). Could we or ''should'' we use these NCBI URLs as URIs right now?
+
+For publications with a DOI, do these URLs also make good URIs? The all redirect to the journal websites which tend to give you an HTML page:
+
+http://dx.doi.org/10.1016/j.jbi.2008.03.004
+http://dx.doi.org/10.1186/1471-2105-10-S10-S11
+
+}}}
+
+'''NOTE''' - After discussion, this page and possible rules has been replaced by [[wiki:URI]]

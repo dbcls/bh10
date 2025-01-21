@@ -1,0 +1,27 @@
+On the first day, at the symposium, the group tried to identify their main goals for the next few days.  This is the ones that were selected by the Linked Data/SPARQL group :
+
+* Get some tutorial about :
+  * RDF
+  * SPARQL
+  * Triplestore server
+     * Virtuoso
+     * 4Store
+     * Sesame
+
+* Convert existing databases to RDF, two candidates are :
+  * PDBj (Protein Data Bank Japan) http://www.pdbj.org/
+  * miRBase: the microRNA database http://www.mirbase.org/
+
+* Create a discussion between Data provider presents :
+  * UniProt
+  * EMBL
+  * DDBJ
+  * KEGG
+  * DBCLS
+  * TreeBASE
+
+* Identify how we could link data from those projects :
+  * BioMart
+  * PSI
+
+Resume of the discussion written By Francois Belleau.

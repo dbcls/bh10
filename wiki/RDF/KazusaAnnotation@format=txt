@@ -1,0 +1,211 @@
+[[PageOutline]] 
+
+== KazusaAnnoation RDF ==
+[http://a.kazusa.or.jp KazusaAnnotation] is a social genome annotation tool.
+
+KazusaAnnotation SPARQL endpoint: http://beta.dbcls.jp/4store/ka/test/ 
+
+
+
+== Turtle sample ==
+{{{
+<http://a.kazusa.or.jp/bookmarks/136848>        <http://purl.org/dc/elements/1.1/date>  "2008-01-15T16:23:42+09:00"^^<http://www.w3.org/2001/XMLSchema#:datetime> .
+<http://a.kazusa.or.jp/bookmarks/136848>        <http://purl.org/dc/elements/1.1/creator>       "yoshimura_h" .
+<http://a.kazusa.or.jp/bookmarks/136848>        gi:annotate     <http://a.kazusa.or.jp/pages/54> .
+<http://a.kazusa.or.jp/pages/54>        <http://purl.org/dc/elements/1.1/title> "CyanoBase/Synechocystis - syn:sll0821" .
+<http://a.kazusa.or.jp/pages/54>        <http://purl.org/dc/elements/1.1/uri>   <http://genome.kazusa.or.jp/cyanobase/Synechocystis/genes/sll0821> .
+<http://genome.kazusa.or.jp/cyanobase/Synechocystis/genes/sll0821>      <http://purl.org/dc/elements/1.1/title> "CyanoBase/Synechocystis - syn:sll0821" .
+<http://a.kazusa.or.jp/pages/54>        <http://www.w3.org/2000/01/rdf-schema#label>    "sll0821" .
+<http://a.kazusa.or.jp/pages/54>        gi:gene <http://genome.kazusa.or.jp/cyanobase/Synechocystis/genes/sll0821> .
+<http://a.kazusa.or.jp/pages/54>        gi:aspect       "genes" .
+<http://a.kazusa.or.jp/pages/54>        gi:dsn  <http://genome.kazusa.or.jp/cyanobase/Synechocystis> .
+<http://a.kazusa.or.jp/pages/54>        gi:dataset      <http://genome.kazusa.or.jp/cyanobase/> .
+<http://a.kazusa.or.jp/pages/54>        gi:species      "Synechocystis" .
+<http://a.kazusa.or.jp/bookmarks/136848>        gi:comment      "[pmid:15641769][Discussion]" .
+<http://a.kazusa.or.jp/bookmarks/136848>        gi:tag  "pmid:15641769" .
+<http://a.kazusa.or.jp/bookmarks/136848>        gi:tag  "pmid" .
+<http://a.kazusa.or.jp/bookmarks/136848>        gi:tag  "Discussion" .
+}}}
+
+== vocabulary ==
+
+ * http://purl.org/dc/elements/1.1/date
+ * http://purl.org/dc/elements/1.1/creator
+ * http://purl.org/dc/elements/1.1/title
+ * http://purl.org/dc/elements/1.1/uri
+ * http://www.w3.org/2000/01/rdf-schema#label
+http://a.kazusa.or.jp/core/1.0/ (image)
+ * http://a.kazusa.or.jp/core/1.0/annotate
+ * http://a.kazusa.or.jp/core/1.0/gene
+ * http://a.kazusa.or.jp/core/1.0/aspect
+ * http://a.kazusa.or.jp/core/1.0/dsn
+ * http://a.kazusa.or.jp/core/1.0/dataset
+ * http://a.kazusa.or.jp/core/1.0/commont
+ * http://a.kazusa.or.jp/core/1.0/tag
+ * http://a.kazusa.or.jp/core/1.0/species
+ 
+== Sample queries ==
+
+=== Bookmarks and tags annotated with gene "slr1311"  ===
+{{{
+SELECT ?b ?tag WHERE {
+ ?page <http://www.w3.org/2000/01/rdf-schema#label> "slr1311" .
+ ?b ?p ?page . 
+ ?b <http://a.kazusa.or.jp/core/1.0/tag> ?tag
+} LIMIT 1000
+}}}
+
+=== bookmarks and predicates of a page ===
+{{{
+select * where {?s ?p <http://a.kazusa.or.jp/pages/23> } limit 10
+}}}
+
+=== bookmarks and tags of page 23 ===
+{{{
+select ?s ?tag where {
+?s ?p <http://a.kazusa.or.jp/pages/23> . 
+?s <http://a.kazusa.or.jp/core/1.0/tag> ?tag 
+} limit 10
+}}}
+
+=== pages and labels === 
+{{{
+select * WHERE {
+?s <http://www.w3.org/2000/01/rdf-schema#label> ?o 
+} limit 10
+}}}
+
+=== slr1311 page ===
+{{{
+select * WHERE {
+?s <http://www.w3.org/2000/01/rdf-schema#label> "slr1311" 
+} limit 10
+}}}
+
+=== bookmarks annotated with slr1311 page ===
+{{{
+select * WHERE {
+?page <http://www.w3.org/2000/01/rdf-schema#label> "slr1311" . 
+?b <http://a.kazusa.or.jp/core/1.0/annotate> ?page . 
+} limit 10
+}}}
+
+
+=== bookmarks and tags annotated with slr1311 page === 
+{{{
+select * WHERE {
+?page <http://www.w3.org/2000/01/rdf-schema#label> "slr1311" . 
+?b <http://a.kazusa.or.jp/core/1.0/annotate> ?page . 
+?b <http://a.kazusa.or.jp/core/1.0/tag> ?tag .
+}
+}}}
+
+=== bookmarks to have "title" tag === 
+{{{
+select * where {?s <http://a.kazusa.or.jp/core/1.0/tag> "title" }
+}}}
+
+=== bookmarks and genes in article pmid:8193127 ===
+{{{
+select * where {
+?b <http://a.kazusa.or.jp/core/1.0/tag> "pmid:8193127" . 
+?b <http://a.kazusa.or.jp/core/1.0/annotate> ?page . 
+?page <http://a.kazusa.or.jp/core/1.0/gene> ?gene 
+}
+}}}
+
+
+=== tags of article pmid:8193127 ===
+{{{
+select ?tag where {
+?b <http://a.kazusa.or.jp/core/1.0/tag> "pmid:8193127" . 
+?b <http://a.kazusa.or.jp/core/1.0/annotate> ?page .  
+?c <http://a.kazusa.or.jp/core/1.0/annotate> ?page . 
+?c <http://a.kazusa.or.jp/core/1.0/tag> ?tag
+}
+}}}
+
+=== generic guery ===
+{{{
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ka: <http://a.kazusa.or.jp/core/1.0/>
+PREFIX mb: <http://genome.kazusa.or.jp/ns#>
+PREFIX togo: <http://togows.dbcls.jp/ns/ncbi-pubmed#>
+SELECT * WHERE {
+ ?s ?p ?o
+} LIMIT 10
+}}}
+
+=== "slr1485" ===
+{{{
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ka: <http://a.kazusa.or.jp/core/1.0/>
+PREFIX mb: <http://genome.kazusa.or.jp/ns#>
+PREFIX togo: <http://togows.dbcls.jp/ns/ncbi-pubmed#>
+SELECT * WHERE {
+ ?s ?p "slr1485"
+} LIMIT 10
+}}}
+
+{{{
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ka: <http://a.kazusa.or.jp/core/1.0/>
+PREFIX mb: <http://genome.kazusa.or.jp/ns#>
+PREFIX togo: <http://togows.dbcls.jp/ns/ncbi-pubmed#>
+CONSTRUCT 
+{
+?s ?p "slr1485"
+}
+WHERE {
+ ?s ?p "slr1485"
+} LIMIT 10
+}}}
+
+{{{
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ka: <http://a.kazusa.or.jp/core/1.0/>
+PREFIX mb: <http://genome.kazusa.or.jp/ns#>
+PREFIX togo: <http://togows.dbcls.jp/ns/ncbi-pubmed#>
+SELECT * WHERE {
+<http://a.kazusa.or.jp/pages/83> ?p ?o
+} LIMIT 10
+}}}
+
+{{{
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ka: <http://a.kazusa.or.jp/core/1.0/>
+PREFIX mb: <http://genome.kazusa.or.jp/ns#>
+PREFIX togo: <http://togows.dbcls.jp/ns/ncbi-pubmed#>
+CONSTRUCT
+{
+<http://a.kazusa.or.jp/pages/83> ?p ?o
+}
+WHERE {
+<http://a.kazusa.or.jp/pages/83> ?p ?o
+} LIMIT 10
+}}}
+
+{{{
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ka: <http://a.kazusa.or.jp/core/1.0/>
+PREFIX mb: <http://genome.kazusa.or.jp/ns#>
+PREFIX togo: <http://togows.dbcls.jp/ns/ncbi-pubmed#>
+SELECT * WHERE {
+?s ?p <http://a.kazusa.or.jp/pages/83>
+} LIMIT 10
+}}}
+
+
+{{{
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ka: <http://a.kazusa.or.jp/core/1.0/>
+PREFIX mb: <http://genome.kazusa.or.jp/ns#>
+PREFIX togo: <http://togows.dbcls.jp/ns/ncbi-pubmed#>
+CONSTRUCT
+{
+?s ?p <http://a.kazusa.or.jp/pages/83>
+}
+WHERE {
+?s ?p <http://a.kazusa.or.jp/pages/83>
+} LIMIT 10
+}}}

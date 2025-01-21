@@ -1,0 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      VirutuosoQuickPrimer – BioHackathon 2010
+    </title>
+        <link rel="search" href="../search.1.html" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://hackathon3.dbcls.jp/wiki/VirutuosoQuickPrimer?version=15&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="VirutuosoQuickPrimer.html" title="View latest version" />
+        <link rel="start" href="../wiki.1.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="prev" href="VirutuosoQuickPrimer@version=14.html" title="Version 14" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../search/opensearch" title="Search BioHackathon 2010" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="../index.html"><img src="http://hackathon3.dbcls.jp/raw-attachment/wiki/LogoGallery/trac_logo.png" alt="DBCLS BioHackathon 2010" width="200" /></a>
+      </div>
+      <form id="search" action="../search.1.html" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://hackathon3.dbcls.jp/login">Login</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li><a href="../about.html">About Trac</a></li><li class="last"><a href="../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.1.html">Wiki</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../roadmap.html">Roadmap</a></li><li><a href="../browser.html">Browse Source</a></li><li><a href="../report.html">View Tickets</a></li><li class="last"><a href="../search.1.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="VirutuosoQuickPrimer@version=14.html" title="Version 14">Previous Version</a></span></li><li><a href="VirutuosoQuickPrimer.html" title="View latest version">View Latest Version</a></li><li><span class="missing">Next Version &rarr;</span></li><li class="last"><a href="VirutuosoQuickPrimer@action=diff&amp;version=15.html">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 15 (modified by akinjo, <a class="timeline" href="../timeline@from=2010-02-22T18%253A29%253A14+0900&amp;precision=second.html" title="2010-02-22T18:29:14+0900 in Timeline">15 years</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+--
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <p>
+</p><div class="wiki-toc"><ol><li><a href="VirutuosoQuickPrimer@version=15.html#Installation">Installation</a></li><li>
+<a href="VirutuosoQuickPrimer@version=15.html#Startup">Startup</a><ol><li><a href="VirutuosoQuickPrimer@version=15.html#StartupwithRAMDISK">Startup with RAMDISK</a></li></ol></li><li>
+<a href="VirutuosoQuickPrimer@version=15.html#UseBio2RDFdumpdb">Use Bio2RDF dump db</a></li><li>
+<a href="VirutuosoQuickPrimer@version=15.html#LoadingRDF">Loading RDF</a></li><li>
+<a href="VirutuosoQuickPrimer@version=15.html#Facetsearchsetup">Facet search setup</a><ol><li><a href="VirutuosoQuickPrimer@version=15.html#Addfull-textindexandranking">Add full-text index and ranking</a></li><li>
+<a href="VirutuosoQuickPrimer@version=15.html#Installthefctpackage">Install the fct package</a></li></ol></li><li>
+<a href="VirutuosoQuickPrimer@version=15.html#Post-installation">Post-installation</a><ol><li><a href="VirutuosoQuickPrimer@version=15.html#Usefacetsearch">Use facet search</a></li></ol></li></ol></div><p> 
+</p>
+<p>
+This page describes brief summary how to set up a Virtuoso 6.0.0 server with the Facet search configuration.
+</p>
+<p>
+Goals
+</p>
+<ul><li>Set up a SPARQL endpoint at <a class="ext-link" href="http://localhost:8890/sparql/"><span class="icon"> </span>http://localhost:8890/sparql/</a>
+</li><li>Set up facet search at  <a class="ext-link" href="http://localhost:8890/fct"><span class="icon"> </span>http://localhost:8890/fct</a>
+</li></ul><h1 id="Installation">Installation</h1>
+<p>
+Check out the source code via CVS
+</p>
+<pre class="wiki">$ cvs -d:pserver:anonymous@virtuoso.cvs.sourceforge.net:/cvsroot/virtuoso co -r VOS-6_1_0 virtuoso-opensource
+</pre><p>
+223 MB files
+</p>
+<pre class="wiki">$ du -sh * 
+223M	virtuoso-opensource/
+</pre><pre class="wiki">$ cd virtuoso-opensource
+$ sh autogen.sh
+</pre><p>
+Build it (for 20-60 min.)
+</p>
+<pre class="wiki">$ ./autogen.sh        # should only be needed in CVS checkout
+$ ./configure --with-readline=/opt/local
+$ make -j2
+$ make -j2
+$ make check
+$ make install
+$ ls /usr/local/virtuoso-opensource
+</pre><h1 id="Startup">Startup</h1>
+<p>
+Set up a database directory (/some/where/db).
+</p>
+<pre class="wiki">$ mkdir /some/where/db
+$ cd /some/where/db
+$ cp /usr/local/virtuoso-opensource/var/lib/virtuoso/db/virtuoso.ini .
+</pre><p>
+Boot
+</p>
+<pre class="wiki">$ pwd
+/some/where/db
+$ /usr/local/virtuoso-opensource/bin/virtuoso-t -f
+</pre><p>
+Open <a class="ext-link" href="http://localhost:8890"><span class="icon"> </span>http://localhost:8890</a> by your web browser. 
+</p>
+<h2 id="StartupwithRAMDISK">Startup with RAMDISK</h2>
+<h1 id="UseBio2RDFdumpdb">Use Bio2RDF dump db</h1>
+<ol><li>Download a virtuoso version 6.0 dump db file form <a class="ext-link" href="http://quebec.bio2rdf.org/download/virtuoso/V6/"><span class="icon"> </span>http://quebec.bio2rdf.org/download/virtuoso/V6/</a>
+</li><li>Rename the dump db as "virtuoso.db" then deply at the db directory.
+</li><li>That's it
+</li></ol><p>
+(These dump files will not work with version 6.1.0)
+</p>
+<pre class="wiki">$ 
+</pre><h1 id="LoadingRDF">Loading RDF</h1>
+<p>
+See <a class="wiki" href="DDBJ-KEGG-PDBj.1.html#Howtoloaddatatovirtuoso">DDBJ-KEGG-PDBj#Howtoloaddatatovirtuoso</a>
+</p>
+<h1 id="Facetsearchsetup">Facet search setup</h1>
+<h2 id="Addfull-textindexandranking">Add full-text index and ranking</h2>
+<pre class="wiki">$ /usr/local/virtuoso-opensource/bin/isql 1111 dba dba fct-init.sql
+</pre><p>
+<strong>NOTE</strong> This should NOT be done for version 6.1.0.
+(I don't know why...)
+</p>
+<h2 id="Installthefctpackage">Install the fct package</h2>
+<p>
+Install the fct VAD package to activate the facet search at <a class="ext-link" href="http://localhost:8890/fct"><span class="icon"> </span>http://localhost:8890/fct</a>
+ 
+</p>
+<ol><li>Login as dba user / dba password at <a class="ext-link" href="http://localhost:8890/conductor/"><span class="icon"> </span>http://localhost:8890/conductor/</a>
+</li><li>Go System admin tab.
+</li><li>GO Packages sub-tab.
+</li><li>Install the fct package.
+</li></ol><p>
+<a style="padding:0; border:none" href="../attachment/wiki/VirutuosoQuickPrimer/Virtuoso&#32;Application&#32;Deployment.jpg.html"><img src="../raw-attachment/wiki/VirutuosoQuickPrimer/Virtuoso&#32;Application&#32;Deployment.jpg" /></a>
+</p>
+<h1 id="Post-installation">Post-installation</h1>
+<p>
+Apply the following sql script for post installation settings.
+</p>
+<pre class="wiki">$ /usr/local/virtuoso-opensource/bin/isql 1111 dba dba fct-index.sql
+</pre><p>
+<strong>Note</strong> For version 6.1.0, use fct-index-6.1.0.sql attached below.
+</p>
+<h2 id="Usefacetsearch">Use facet search</h2>
+<p>
+Open <a class="ext-link" href="http://localhost:8890/fct"><span class="icon"> </span>http://localhost:8890/fct</a> to use the facet search
+</p>
+
+        
+        
+      </div>
+          <h3>Attachments</h3>
+          <ul>
+              <li>
+      <a href="../attachment/wiki/VirutuosoQuickPrimer/fct-init.sql.html" title="View attachment">fct-init.sql</a>
+      <a href="../raw-attachment/wiki/VirutuosoQuickPrimer/fct-init.sql" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="1127 bytes">1.1 KB</span>) - added by <em>admin</em>
+      <a class="timeline" href="../timeline@from=2010-02-13T12%253A42%253A03+0900&amp;precision=second.html" title="2010-02-13T12:42:03+0900 in Timeline">15 years</a> ago.
+              </li>
+              <li>
+      <a href="../attachment/wiki/VirutuosoQuickPrimer/fct-index.sql.html" title="View attachment">fct-index.sql</a>
+      <a href="../raw-attachment/wiki/VirutuosoQuickPrimer/fct-index.sql" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="128 bytes">128 bytes</span>) - added by <em>admin</em>
+      <a class="timeline" href="../timeline@from=2010-02-13T12%253A42%253A27+0900&amp;precision=second.html" title="2010-02-13T12:42:27+0900 in Timeline">15 years</a> ago.
+              </li>
+              <li>
+      <a href="../attachment/wiki/VirutuosoQuickPrimer/Virtuoso&#32;Application&#32;Deployment.jpg.html" title="View attachment">Virtuoso Application Deployment.jpg</a>
+      <a href="../raw-attachment/wiki/VirutuosoQuickPrimer/Virtuoso&#32;Application&#32;Deployment.jpg" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="111352 bytes">108.7 KB</span>) - added by <em>admin</em>
+      <a class="timeline" href="../timeline@from=2010-02-14T14%253A56%253A13+0900&amp;precision=second.html" title="2010-02-14T14:56:13+0900 in Timeline">15 years</a> ago.
+              </li>
+              <li>
+      <a href="../attachment/wiki/VirutuosoQuickPrimer/fct-index-6_1_0.sql.html" title="View attachment">fct-index-6_1_0.sql</a>
+      <a href="../raw-attachment/wiki/VirutuosoQuickPrimer/fct-index-6_1_0.sql" title="Download" class="trac-rawlink"><img src="../chrome/common/download.png" alt="Download" /></a>
+      (<span title="196 bytes">196 bytes</span>) - added by <em>akinjo</em>
+      <a class="timeline" href="../timeline@from=2010-02-22T18%253A25%253A57+0900&amp;precision=second.html" title="2010-02-22T18:25:57+0900 in Timeline">15 years</a> ago.
+                <q>making index for facet search with virtuoso 6.1.0</q>
+              </li>
+          </ul>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="http://hackathon3.dbcls.jp/wiki/VirutuosoQuickPrimer?version=15&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="../about.html"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

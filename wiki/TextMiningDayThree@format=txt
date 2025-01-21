@@ -1,0 +1,74 @@
+= Group activities: Day Three =
+
+[[PageOutline]]
+
+ * TextMiningDayOne
+ * TextMiningDayTwo
+ * TextMiningDayThree
+ * TextMiningDayFour
+ * TextMiningReport
+
+= Hacking, hacking, hacking =
+
+== Implementation ==
+
+  * Make [http://reflect.ws/ Reflect] generate RDFa.
+  * Query [TextMiningWebservices Whatizit, Reflect and Medie].
+  * Get the RDFa data and use RDFa distiller or XSLT Transform to get RDF.
+  * Get [http://pubmed.gov Pubmed] data from [http://togows.dbcls.jp/ TogoWS]
+  * Get [http://dev.isb-sib.ch/projects/uniprot-rdf/ Uniprot RDF]
+  * Deploy in [http://www.openrdf.org/ Sesame]
+  * Make queries
+  * Expose as linked data with [http://www4.wiwiss.fu-berlin.de/pubby/ Pubby]
+
+== Accessing existing services ==
+
+Here is some code: http://scientifik.info/biohack/code/
+
+== Building RDF (Uniprot style) ==
+
+{{{
+
+(rdflib.URIRef('http://www.uniprot.org/uniprot/P12345.rdf#_1'), 
+ rdflib.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#object'), 
+ rdflib.URIRef('http://purl.uniprot.org/citations/4030726'))
+
+(rdflib.URIRef('http://www.uniprot.org/uniprot/P12345.rdf#_1'), 
+ rdflib.URIRef('http://purl.uniprot.org/core/scope'), 
+ rdflib.Literal(u'PROTEIN SEQUENCE'))
+
+(rdflib.URIRef('http://www.uniprot.org/uniprot/P12345.rdf#_1'), 
+ rdflib.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#type'), 
+ rdflib.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement'))
+
+(rdflib.URIRef('http://www.uniprot.org/uniprot/P12345.rdf#_1'), 
+ rdflib.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#type'), 
+ rdflib.URIRef('http://purl.uniprot.org/core/Citation_Statement'))
+
+(rdflib.URIRef('http://www.uniprot.org/uniprot/P12345.rdf#_1'), 
+ rdflib.URIRef('http://purl.uniprot.org/core/context'), 
+ rdflib.URIRef('http://www.uniprot.org/uniprot/P12345.rdf#_2'))
+
+(rdflib.URIRef('http://www.uniprot.org/uniprot/P12345.rdf#_1'), 
+ rdflib.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#subject'), 
+ rdflib.URIRef('http://purl.uniprot.org/uniprot/P12345'))
+
+(rdflib.URIRef('http://www.uniprot.org/uniprot/P12345.rdf#_1'), 
+ rdflib.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate'), 
+ rdflib.URIRef('http://purl.uniprot.org/core/citation'))
+
+(rdflib.URIRef('http://purl.uniprot.org/citations/4030726'), 
+ rdflib.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#type'), 
+ rdflib.URIRef('http://purl.uniprot.org/core/Journal_Citation'))
+
+(rdflib.URIRef('http://purl.uniprot.org/citations/4030726'), 
+ rdflib.URIRef('http://www.w3.org/2004/02/skos/core#exactMatch'), 
+ rdflib.URIRef('http://purl.uniprot.org/pubmed/4030726'))
+
+(rdflib.URIRef('http://purl.uniprot.org/citations/4030726'), 
+ rdflib.URIRef('http://www.w3.org/2004/02/skos/core#exactMatch'), 
+ rdflib.URIRef('http://purl.uniprot.org/medline/85289123'))
+
+}}}
+----
+TextMining

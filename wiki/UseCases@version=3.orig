@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      UseCases – BioHackathon 2010
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="alternate" href="/wiki/UseCases?version=3&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="/wiki/UseCases" title="View latest version" />
+        <link rel="next" href="/wiki/UseCases?version=4" title="Version 4" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" />
+        <link rel="prev" href="/wiki/UseCases?version=2" title="Version 2" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search BioHackathon 2010" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon3.dbcls.jp/"><img src="http://hackathon3.dbcls.jp/raw-attachment/wiki/LogoGallery/trac_logo.png" alt="DBCLS BioHackathon 2010" width="200" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="/wiki/UseCases?version=2" title="Version 2">Previous Version</a></span></li><li><a href="/wiki/UseCases" title="View latest version">View Latest Version</a></li><li><span><a class="next" href="/wiki/UseCases?version=4" title="Version 4">Next Version</a> &rarr;</span></li><li class="last"><a href="/wiki/UseCases?action=diff&amp;version=3">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 3 (modified by gaou, <a class="timeline" href="/timeline?from=2010-02-09T09%3A17%3A24%2B0900&amp;precision=second" title="2010-02-09T09:17:24+0900 in Timeline">15 years</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+--
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <h1 id="UseCases"><a class="wiki" href="/wiki/UseCases">UseCases</a></h1>
+<h2 id="Participants">Participants</h2>
+<p>
+(Please add your name!)
+</p>
+<p>
+*Kazuharu Arakawa
+*Mark Wilkinson
+*Francois Belleau
+*Arek Kasprzyk
+*Paul Gordon
+*Yasunori Yamamoto
+*Akira R. KINJO
+</p>
+<h2 id="Summary">Summary</h2>
+<p>
+- [ ] use cases
+</p>
+<ul><li>[ ] myexperiment - flymine
+<ul><li>[ ] any questions can be more efficient
+</li></ul></li></ul><p>
+- [ ] questions that queries over separated DBs
+</p>
+<ul><li>[ ] using in-house data -&gt; NGS
+</li><li>[ ] can be in different sources - less cost of integration
+</li></ul><p>
+- [ ] querying the predicates
+</p>
+<ul><li>[ ] discovery of DBs
+</li><li>[ ] hypothesis generation
+</li></ul><p>
+- [ ] compare how data can be published with existing &amp; SW technology
+- [ ] interpreted knowledge
+</p>
+<ul><li>[ ] not numerical?
+</li><li>[ ] not too raw?
+</li><li>[ ] linked by predicates (even if numerical)
+</li></ul><p>
+- [ ] data are linked
+- [ ] migrate SQL to simple SPARQL endpoints
+</p>
+<ul><li>[ ] easy to convert 20 lines?
+</li><li>[ ] convert PDB relational to Sparql (kinjo-san, Fransois)
+</li><li>[ ] miRbase (raoul)
+</li></ul><p>
+- [ ] users do not have to know the entire schema
+- [ ] Paul
+</p>
+<ul><li>[ ] predict PPI using homologs (PPI in yeast -&gt; homolog in human)
+</li></ul><p>
+- [ ] formulation of SPARQL queries -&gt; RDFscape
+</p>
+<ul><li>[ ] can be GUI.
+</li></ul><p>
+quick note copied from <a class="missing wiki">OmniOutliner?</a>. will make it prettier later (gaou)
+</p>
+
+        
+        
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="/wiki/UseCases?version=3&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,381 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      4storeQuickPrimer – BioHackathon 2010
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="alternate" href="/wiki/4storeQuickPrimer?version=3&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="/wiki/4storeQuickPrimer" title="View latest version" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" />
+        <link rel="prev" href="/wiki/4storeQuickPrimer?version=2" title="Version 2" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search BioHackathon 2010" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon3.dbcls.jp/"><img src="http://hackathon3.dbcls.jp/raw-attachment/wiki/LogoGallery/trac_logo.png" alt="DBCLS BioHackathon 2010" width="200" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="/wiki/4storeQuickPrimer?version=2" title="Version 2">Previous Version</a></span></li><li><a href="/wiki/4storeQuickPrimer" title="View latest version">View Latest Version</a></li><li><span class="missing">Next Version &rarr;</span></li><li class="last"><a href="/wiki/4storeQuickPrimer?action=diff&amp;version=3">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 3 (modified by jandot, <a class="timeline" href="/timeline?from=2010-02-10T10%3A07%3A36%2B0900&amp;precision=second" title="2010-02-10T10:07:36+0900 in Timeline">15 years</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+Small bugs in ruby example
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <p>
+<a class="ext-link" href="http://4store.org/trac/wiki/Documentation"><span class="icon"> </span>http://4store.org/trac/wiki/Documentation</a> 
+</p>
+<h1 id="Installation">Installation</h1>
+<p>
+For Mac OS X with <a class="missing wiki">MacPorts?</a> user.
+</p>
+<pre class="wiki">git clone git@github.com:nakao/4store.git
+cd 4store
+./configure
+</pre><pre class="wiki">port install pkg-config
+port install raptor  
+port install rasqal  
+port install glib2 
+port install libxml2 
+port install pcre 
+port install ncurses  
+port instal readline  
+port install zlib 
+</pre><p>
++universal variant configuration may be useful.
+Install
+</p>
+<pre class="wiki">./configure
+make
+make test
+</pre><p>
+Making a Mac .dmg package
+</p>
+<pre class="wiki">make macdmg
+</pre><p>
+or
+</p>
+<p>
+Install
+</p>
+<pre class="wiki">sudo make install
+</pre><h1 id="Usage">Usage</h1>
+<p>
+4store Commands 
+</p>
+<pre class="wiki">$ ls /Applications/4store.app/Contents/MacOS/bin/
+4s-backend*          4s-cluster-create*               4s-httpd*
+4s-backend-copy*     4s-cluster-destroy*              4s-import*
+4s-backend-destroy*  4s-cluster-file-backup*          4s-info*
+4s-backend-info*     4s-cluster-info*                 4s-query*
+4s-backend-passwd*   4s-cluster-replication-disable*  4s-resolve*
+4s-backend-setup*    4s-cluster-start*                4s-restore*
+4s-bind*             4s-cluster-stop*                 4s-reverse-bind*
+4s-cluster-cache*    4s-delete-model*                 4s-size*
+4s-cluster-copy*     4s-dump*                         4s-update*
+</pre><p>
+To setup a knowledge base (named demo) by 4s-backend-setup 
+<a class="ext-link" href="http://4store.org/trac/wiki/CreateDatabase"><span class="icon"> </span>http://4store.org/trac/wiki/CreateDatabase</a>
+</p>
+<pre class="wiki">$ 4s-backend-setup demo
+4store[39388]: backend-setup.c:176 erased files for KB demo
+4store[39388]: backend-setup.c:301 created RDF metadata for KB demo
+</pre><p>
+You can find the database files at /var/lib/4store/demo .
+</p>
+<p>
+To boot a backend process by 4s-backend
+</p>
+<pre class="wiki">4s-backend demo
+</pre><p>
+To import triples by 4s-import
+<a class="ext-link" href="http://4store.org/trac/wiki/ImportData"><span class="icon"> </span>http://4store.org/trac/wiki/ImportData</a>
+</p>
+<pre class="wiki">curl -O 
+$ 4s-import -v demo data/tiger/tiger_features.rdf
+removing old data
+Reading &lt;file:///Users/nakao/Applications/4store/4store/data/tiger/tiger_features.rdf&gt;;
+Pass 1, processed 748 triples (748)
+Pass 2, processed 748 triples, 90250 triples/s
+Updating index
+Index update took 1.469478 seconds
+Imported 748 triples, average 505 triples/s
+</pre><p>
+4s-query is a interactive query shell
+<a class="ext-link" href="http://4store.org/trac/wiki/Query"><span class="icon"> </span>http://4store.org/trac/wiki/Query</a>
+</p>
+<pre class="wiki">$ 4s-query demo4store&gt; SELECT * WHERE {?s ?p ?o}
+#EOQ
+?s     ?p     ?o
+&lt;http://www.census.gov/tiger/2002/CFCC/D85&gt;;     &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf&gt;;     &lt;http://www.census.gov/tiger/2002/CFCC/D8&gt;;
+&lt;http://www.census.gov/tiger/2002/CFCC/F40&gt;;     &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf&gt;;     &lt;http://www.census.gov/tiger/2002/CFCC/F4&gt;;
+&lt;http://www.census.gov/tiger/2002/CFCC/E0&gt;;     &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf&gt;;     &lt;http://www.census.gov/tiger/2002/CFCC/E&gt;;
+</pre><p>
+Ctrl+D
+</p>
+<p>
+To query in one-liner
+</p>
+<pre class="wiki">$ 4s-query demo 'SELECT * WHERE { ?s ?p ?o } LIMIT 1'
+&lt;?xml version="1.0"?&gt;
+&lt;sparql xmlns="http://www.w3.org/2005/sparql-results#"&gt;;
+  &lt;head&gt;
+    &lt;variable name="s"/&gt;
+    &lt;variable name="p"/&gt;
+    &lt;variable name="o"/&gt;
+  &lt;/head&gt;
+  &lt;results&gt;
+    &lt;result&gt;
+      &lt;binding name="s"&gt;&lt;uri&gt;http://www.census.gov/tiger/2002/CFCC/D85&lt;/uri&gt;&lt;/binding&gt;;
+      &lt;binding name="p"&gt;&lt;uri&gt;http://www.w3.org/2000/01/rdf-schema#subClassOf&lt;/uri&gt;&lt;/binding&gt;;
+      &lt;binding name="o"&gt;&lt;uri&gt;http://www.census.gov/tiger/2002/CFCC/D8&lt;/uri&gt;&lt;/binding&gt;;
+    &lt;/result&gt;
+  &lt;/results&gt;
+&lt;/sparql&gt;
+</pre><p>
+in JSON format
+</p>
+<pre class="wiki">$ 4s-query -f json demo 'SELECT * WHERE { ?s ?p ?o } LIMIT 1'
+{"head":{"vars":["s","p","o"]},
+ "results": {
+  "bindings":[
+   {"s":{"type":"uri","value":"http://www.census.gov/tiger/2002/CFCC/D85";},
+    "p":{"type":"uri","value":"http://www.w3.org/2000/01/rdf-schema#subClassOf";},
+    "o":{"type":"uri","value":"http://www.census.gov/tiger/2002/CFCC/D8";}}
+  ]
+ }}
+</pre><p>
+<a class="ext-link" href="http://www.w3.org/TR/rdf-sparql-json-res/"><span class="icon"> </span>Serializing SPARQL Query Results in JSON</a>
+</p>
+<p>
+in SPARQL-RESULTS format
+</p>
+<pre class="wiki">$ 4s-query -f sparql demo 'SELECT * WHERE { ?s ?p ?o } LIMIT 1'
+&lt;?xml version="1.0"?&gt;
+&lt;sparql xmlns="http://www.w3.org/2005/sparql-results#"&gt;;
+  &lt;head&gt;
+    &lt;variable name="s"/&gt;
+    &lt;variable name="p"/&gt;
+    &lt;variable name="o"/&gt;
+  &lt;/head&gt;
+  &lt;results&gt;
+    &lt;result&gt;
+      &lt;binding name="s"&gt;&lt;uri&gt;http://www.census.gov/tiger/2002/CFCC/D85&lt;/uri&gt;&lt;/binding&gt;;
+      &lt;binding name="p"&gt;&lt;uri&gt;http://www.w3.org/2000/01/rdf-schema#subClassOf&lt;/uri&gt;&lt;/binding&gt;;
+      &lt;binding name="o"&gt;&lt;uri&gt;http://www.census.gov/tiger/2002/CFCC/D8&lt;/uri&gt;&lt;/binding&gt;;
+    &lt;/result&gt;
+  &lt;/results&gt;
+&lt;/sparql&gt;
+</pre><p>
+<a class="ext-link" href="http://www.w3.org/TR/rdf-sparql-XMLres/"><span class="icon"> </span>SPARQL Query Results XML Format</a>
+</p>
+<p>
+in a text format
+</p>
+<pre class="wiki">$ 4s-query -f text demo 'SELECT * WHERE { ?s ?p ?o } LIMIT 1'
+?s     ?p     ?o
+&lt;http://www.census.gov/tiger/2002/CFCC/D85&gt;;     &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf&gt;;     &lt;http://www.census.gov/tiger/2002/CFCC/D8&gt;;
+</pre><p>
+in RDF test case format (Turtle)
+</p>
+<pre class="wiki">$ 4s-query -f testcase demo 'SELECT * WHERE { ?s ?p ?o } LIMIT 1'
+@prefix rs: &lt;http://www.w3.org/2001/sw/DataAccess/tests/result-set#&gt;; .
+@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;; .
+
+[] rdf:type rs:ResultSet ;
+   rs:resultVariable "s", "p", "o" ;
+   rs:solution [
+      rs:binding [ rs:variable "s" ;
+                   rs:value &lt;http://www.census.gov/tiger/2002/CFCC/D85&gt; ] ;
+      rs:binding [ rs:variable "p" ;
+                   rs:value &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf&gt; ] ;
+      rs:binding [ rs:variable "o" ;
+                   rs:value &lt;http://www.census.gov/tiger/2002/CFCC/D8&gt; ]
+   ] .
+</pre><p>
+<a class="ext-link" href="http://www.w3.org/TeamSubmission/turtle/"><span class="icon"> </span>Turtle</a>
+</p>
+<p>
+4s-httpd for a SPARQL endpoint
+</p>
+<pre class="wiki">$ 4s-httpd -p 8000 demo
+</pre><p>
+<a style="padding:0; border:none" href="http://img.skitch.com/20100106-ey6gcjsu42qsege2gimq316ia6.jpg"><img src="http://img.skitch.com/20100106-ey6gcjsu42qsege2gimq316ia6.jpg" alt="http://img.skitch.com/20100106-ey6gcjsu42qsege2gimq316ia6.jpg" title="http://img.skitch.com/20100106-ey6gcjsu42qsege2gimq316ia6.jpg" /></a>
+</p>
+<p>
+<a style="padding:0; border:none" href="http://img.skitch.com/20100106-nsq5ir2j1c6ynbkmif43t5a9p8.jpg"><img src="http://img.skitch.com/20100106-nsq5ir2j1c6ynbkmif43t5a9p8.jpg" alt="http://img.skitch.com/20100106-nsq5ir2j1c6ynbkmif43t5a9p8.jpg" title="http://img.skitch.com/20100106-nsq5ir2j1c6ynbkmif43t5a9p8.jpg" /></a>
+</p>
+<p>
+<a style="padding:0; border:none" href="http://img.skitch.com/20100106-cb9dq16jare8b33q82exaq12c.jpg"><img src="http://img.skitch.com/20100106-cb9dq16jare8b33q82exaq12c.jpg" alt="http://img.skitch.com/20100106-cb9dq16jare8b33q82exaq12c.jpg" title="http://img.skitch.com/20100106-cb9dq16jare8b33q82exaq12c.jpg" /></a>
+</p>
+<p>
+<a style="padding:0; border:none" href="http://img.skitch.com/20100106-x8hfwfdjt3xkexyn9nwcg346nh.jpg"><img src="http://img.skitch.com/20100106-x8hfwfdjt3xkexyn9nwcg346nh.jpg" alt="http://img.skitch.com/20100106-x8hfwfdjt3xkexyn9nwcg346nh.jpg" title="http://img.skitch.com/20100106-x8hfwfdjt3xkexyn9nwcg346nh.jpg" /></a>
+</p>
+<p>
+<a style="padding:0; border:none" href="http://img.skitch.com/20100106-8g2w2r4tsycy8sdwrnxa6966hp.jpg"><img src="http://img.skitch.com/20100106-8g2w2r4tsycy8sdwrnxa6966hp.jpg" alt="http://img.skitch.com/20100106-8g2w2r4tsycy8sdwrnxa6966hp.jpg" title="http://img.skitch.com/20100106-8g2w2r4tsycy8sdwrnxa6966hp.jpg" /></a>
+</p>
+<p>
+RESTful interface
+</p>
+<p>
+PUT
+</p>
+<pre class="wiki">$ curl -T file.rdf http://localhost:8000/sparql/file.rdf
+</pre><p>
+DELETE
+</p>
+<pre class="wiki">$ curl -X DELETE http://localhost:8000/sparql/file.rdf
+</pre><p>
+Note: <a class="ext-link" href="http://4store.org/trac/wiki/TODO"><span class="icon"> </span>http://4store.org/trac/wiki/TODO</a>
+</p>
+<p>
+Connecting from script language
+</p>
+<p>
+<a class="ext-link" href="http://4store.org/trac/wiki/ClientLibraries"><span class="icon"> </span>http://4store.org/trac/wiki/ClientLibraries</a>
+available php, python, ruby and Java (no Perl)
+</p>
+<p>
+To install the ruby client
+</p>
+<pre class="wiki">$ gem build 4store-ruby.gemspec
+WARNING:  no rubyforge_project specified
+  Successfully built RubyGem
+  Name: 4store-ruby
+  Version: 0.0.3
+  File: 4store-ruby-0.0.3.gem
+$ sudo gem install 4store-ruby-0.0.3.gem
+</pre><p>
+Usage
+</p>
+<pre class="wiki">&gt;&gt; require 'four_store/store'
+=&gt; true
+&gt;&gt; FourStore
+=&gt; FourStore
+&gt;&gt; FourStore::Store
+=&gt; FourStore::Store
+&gt;&gt; ep = FourStore::Store.new("http://localhost:8000/sparql/")
+=&gt; #&lt;FourStore::Store:0x101763890 @endpoint=#&lt;URI::HTTP:0x101763548 URL:http://localhost:8000/sparql/&gt;&gt;;
+&gt;&gt; res = ep.select("SELECT * WHERE { ?s ?p ?o } LIMIT 10")
+?&gt; "
+"
+=&gt; "\n"
+&gt;&gt; require 'pp'
+=&gt; true
+&gt;&gt; pp res
+[{"o"=&gt;"http://www.census.gov/tiger/2002/CFCC/D8";,
+  "p"=&gt;"http://www.w3.org/2000/01/rdf-schema#subClassOf";,
+  "s"=&gt;"http://www.census.gov/tiger/2002/CFCC/D85";},
+ {"o"=&gt;"http://www.census.gov/tiger/2002/CFCC/F4";,
+  "p"=&gt;"http://www.w3.org/2000/01/rdf-schema#subClassOf";,
+  "s"=&gt;"http://www.census.gov/tiger/2002/CFCC/F40";},
+ {"o"=&gt;"http://www.census.gov/tiger/2002/CFCC/E";,
+  "p"=&gt;"http://www.w3.org/2000/01/rdf-schema#subClassOf";,
+  "s"=&gt;"http://www.census.gov/tiger/2002/CFCC/E0";},
+ {"o"=&gt;"http://www.census.gov/tiger/2002/CFCC/B";,
+  "p"=&gt;"http://www.w3.org/2000/01/rdf-schema#subClassOf";,
+  "s"=&gt;"http://www.census.gov/tiger/2002/CFCC/B4";},
+ {"o"=&gt;"http://www.census.gov/tiger/2002/CFCC/D2";,
+  "p"=&gt;"http://www.w3.org/2000/01/rdf-schema#subClassOf";,
+  "s"=&gt;"http://www.census.gov/tiger/2002/CFCC/D27";},
+ {"o"=&gt;"http://www.census.gov/tiger/2002/CFCC/A";,
+  "p"=&gt;"http://www.w3.org/2000/01/rdf-schema#subClassOf";,
+  "s"=&gt;"http://www.census.gov/tiger/2002/CFCC/A5";},
+ {"o"=&gt;"http://www.census.gov/tiger/2002/CFCC/A2";,
+  "p"=&gt;"http://www.w3.org/2000/01/rdf-schema#subClassOf";,
+  "s"=&gt;"http://www.census.gov/tiger/2002/CFCC/A21";},
+ {"o"=&gt;"http://www.census.gov/tiger/2002/CFCC/H7";,
+  "p"=&gt;"http://www.w3.org/2000/01/rdf-schema#subClassOf";,
+  "s"=&gt;"http://www.census.gov/tiger/2002/CFCC/H70";},
+ {"o"=&gt;"http://www.census.gov/tiger/2002/CFCC/B5";,
+  "p"=&gt;"http://www.w3.org/2000/01/rdf-schema#subClassOf";,
+  "s"=&gt;"http://www.census.gov/tiger/2002/CFCC/B52";},
+ {"o"=&gt;"http://www.census.gov/tiger/2002/CFCC/D4";,
+  "p"=&gt;"http://www.w3.org/2000/01/rdf-schema#subClassOf";,
+  "s"=&gt;"http://www.census.gov/tiger/2002/CFCC/D43";}]
+=&gt; nil
+</pre><p>
+Methods in FourStore::Store class.
+</p>
+<pre class="wiki">&gt;&gt; FourStore::Store.instance_methods - Object.methods
+=&gt; ["delete", "add", "set", "select", "load"]
+</pre>
+        
+        
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="/wiki/4storeQuickPrimer?version=3&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+= !CodeFest 2010 =
+http://www.open-bio.org/wiki/Codefest_2010
+ * http://www.open-bio.org/wiki/SemWeb:PDB2RDF 
+
+= Ontology for PDB =
+ * http://mmcif.pdb.org/dictionaries/mmcif_pdbx.dic/Index/index.html (mmCIF PDB exchange dictionary)
+ * http://www.pdbj.org/schema/pdbx-v32.owl  (not completely complete yet)
+
+= !Bio2RDF =
+http://quebec.pdb.bio2rdf.org/fct/
+
+ * http://bio2rdf.org/pdb:1GOF
+
+= PDBj URL Examples =
+== Entry ==
+ * http://www.pdbj.org/pdb/1gof
+ * http://www.pdbj.org/pdb/1a00
+ * http://www.pdbj.org/pdb/100d
+
+== XPath (contents of an entry) ==
+ * http://www.pdbj.org/xpath/1GOF/PDBx:datablock/PDBx:atom_sitesCategory/PDBx:atom_sites%5b@entry_id=%271GOF%27%5d
+ * http://www.pdbj.org/xpath/1GOF/PDBx:datablock/PDBx:entityCategory/PDBx:entity%5b@id=%271%27%5d
+
+== Making URL short (not implemented) ==
+ * http://www.pdbj.org/xpath/1GOF/PDBx:datablock/PDBx:atom_sitesCategory/PDBx:atom_sites%5b@entry_id=%271GOF%27%5d
+  --> http://www.pdbj.org/xpath/1GOF/atom_sites/@entry_id=%271GOF%27
+Each single-quote (') must be uri-encoded (%27) for Virtuoso to work properly.

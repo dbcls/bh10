@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      Symposium – BioHackathon 2010
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="alternate" href="/wiki/Symposium?version=12&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="/wiki/Symposium" title="View latest version" />
+        <link rel="next" href="/wiki/Symposium?version=13" title="Version 13" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" />
+        <link rel="prev" href="/wiki/Symposium?version=11" title="Version 11" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search BioHackathon 2010" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon3.dbcls.jp/"><img src="http://hackathon3.dbcls.jp/raw-attachment/wiki/LogoGallery/trac_logo.png" alt="DBCLS BioHackathon 2010" width="200" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="/wiki/Symposium?version=11" title="Version 11">Previous Version</a></span></li><li><a href="/wiki/Symposium" title="View latest version">View Latest Version</a></li><li><span><a class="next" href="/wiki/Symposium?version=13" title="Version 13">Next Version</a> &rarr;</span></li><li class="last"><a href="/wiki/Symposium?action=diff&amp;version=12">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 12 (modified by shuichi, <a class="timeline" href="/timeline?from=2010-01-25T11%3A49%3A10%2B0900&amp;precision=second" title="2010-01-25T11:49:10+0900 in Timeline">15 years</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+--
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <p>
+</p><div class="wiki-toc"><ol><li><a href="#BioHackathon2010Symposium">BioHackathon 2010 Symposium</a><ol><li><a href="#Program">Program</a><ol><li><a href="#Open9:00">Open 9:00</a></li><li>
+<a href="#Talks10:00-12:00">Talks 10:00-12:00</a></li><li>
+<a href="#Lunchbreak">Lunch break</a></li><li>
+<a href="#Talks13:30-14:45">Talks 13:30-14:45</a></li><li>
+<a href="#Break">Break</a></li><li>
+<a href="#Postersession15:00-16:30">Poster session 15:00-16:30</a></li><li>
+<a href="#Openspacediscussion16:30-18:00">Open space discussion 16:30-18:00</a></li><li>
+<a href="#Reception18:00-20:00">Reception 18:00-20:00</a></li></ol></li></ol></li></ol></div><p> 
+</p>
+<h1 id="BioHackathon2010Symposium">BioHackathon 2010 Symposium</h1>
+<p>
+Public symposium -- talks given by selected speakers.
+</p>
+<ul><li>Date: 8 February, 2010
+</li><li>Time: 9:00-18:00
+</li><li>Place: 11F Hall at CBRC, AIST, Odaiba, Tokyo
+</li></ul><p>
+Neither pre-registration nor symposium fee is required to participate.
+</p>
+<p>
+なお、レセプションは事前の<a href="http://hackathon3.dbcls.jp/wiki/Registration">参加登録</a>が必要です。
+</p>
+<h2 id="Program">Program</h2>
+<h3 id="Open9:00">Open 9:00</h3>
+<h3 id="Talks10:00-12:00">Talks 10:00-12:00</h3>
+<dl><dt>10:00-10:05 Toshihisa Takagi (DBCLS/DDBJ)</dt><dd>
+Opening remarks
+</dd><dt>10:05-10:10 Toshiaki Katayama (HGC, University of Tokyo)</dt><dd>
+Introduction to the BioHackathon 2010 for Semantic Web
+</dd><dt>10:10-10:40 Erick Antezana</dt><dd>
+Towards a Semantic Systems Biology: Biological Knowledge Management Using Semantic Web Technologies
+</dd><dt>10:40-11:00  TBA</dt><dd>
+Concept Web Alliance
+</dd><dt>11:00-11:20  Thomas Kappler and Jerven Bolleman (Swiss Institute of Bioinformatics)</dt><dd>
+UniProt in RDF
+</dd><dt>11:20-11:40 François Belleau (Bio2RDF)</dt><dd>
+Bio2RDF cognoscope : A killer app for the life science.
+</dd><dt>11:40-12:00 Heiko Horn</dt><dd>
+Reflect - text mining in Semantic Web
+</dd></dl>
+<h3 id="Lunchbreak">Lunch break</h3>
+<h3 id="Talks13:30-14:45">Talks 13:30-14:45</h3>
+<dl><dt>13:30-13:50 Tetsuro Toyoda (RIKEN)</dt><dd>
+RIKEN SciNeS
+</dd><dt>13:50-14:10 Mark Wilkinson (Genome Canada Bioinformatics Platform)</dt><dd>
+SADI - semantic web service
+</dd><dt>14:10-14:30 Andrea Splendiani (Rothamsted Research)</dt><dd>
+Visualization and analysis of biological networks on the Semantic Web
+</dd><dt>14:30-14:45 Mitsuteru Nakao (DBCLS) and Toshiaki Katayama (HGC, University of Tokyo)</dt><dd>
+TogoWS and Open Bio*
+ 
+</dd></dl>
+<h3 id="Break">Break</h3>
+<h3 id="Postersession15:00-16:30">Poster session 15:00-16:30</h3>
+<p>
+All invited participants
+</p>
+<h3 id="Openspacediscussion16:30-18:00">Open space discussion 16:30-18:00</h3>
+<p>
+All attendees
+</p>
+<h3 id="Reception18:00-20:00">Reception 18:00-20:00</h3>
+
+        
+        
+      </div>
+          <h3>Attachments</h3>
+          <ul>
+              <li>
+      <a href="/attachment/wiki/Symposium/E.Antezana.pdf" title="View attachment">E.Antezana.pdf</a>
+      <a href="/raw-attachment/wiki/Symposium/E.Antezana.pdf" title="Download" class="trac-rawlink"><img src="/chrome/common/download.png" alt="Download" /></a>
+      (<span title="3753166 bytes">3.6 MB</span>) - added by <em>erick.antezana</em>
+      <a class="timeline" href="/timeline?from=2010-02-09T12%3A55%3A41%2B0900&amp;precision=second" title="2010-02-09T12:55:41+0900 in Timeline">15 years</a> ago.
+              </li>
+              <li>
+      <a href="/attachment/wiki/Symposium/Biohackaton3_uniprot_intro.pdf" title="View attachment">Biohackaton3_uniprot_intro.pdf</a>
+      <a href="/raw-attachment/wiki/Symposium/Biohackaton3_uniprot_intro.pdf" title="Download" class="trac-rawlink"><img src="/chrome/common/download.png" alt="Download" /></a>
+      (<span title="3365883 bytes">3.2 MB</span>) - added by <em>jerven</em>
+      <a class="timeline" href="/timeline?from=2010-02-10T19%3A10%3A18%2B0900&amp;precision=second" title="2010-02-10T19:10:18+0900 in Timeline">15 years</a> ago.
+              </li>
+              <li>
+      <a href="/attachment/wiki/Symposium/BioHackathon_Presentation_Samwald.pdf" title="View attachment">BioHackathon_Presentation_Samwald.pdf</a>
+      <a href="/raw-attachment/wiki/Symposium/BioHackathon_Presentation_Samwald.pdf" title="Download" class="trac-rawlink"><img src="/chrome/common/download.png" alt="Download" /></a>
+      (<span title="1290671 bytes">1.2 MB</span>) - added by <em>matthiassamwald</em>
+      <a class="timeline" href="/timeline?from=2010-02-11T12%3A05%3A55%2B0900&amp;precision=second" title="2010-02-11T12:05:55+0900 in Timeline">15 years</a> ago.
+                <q><a class="missing wiki">BioHackathon?</a>3 Presentation by Matthias Samwald</q>
+              </li>
+              <li>
+      <a href="/attachment/wiki/Symposium/bh10-katayama-nakao.key.pdf" title="View attachment">bh10-katayama-nakao.key.pdf</a>
+      <a href="/raw-attachment/wiki/Symposium/bh10-katayama-nakao.key.pdf" title="Download" class="trac-rawlink"><img src="/chrome/common/download.png" alt="Download" /></a>
+      (<span title="14818846 bytes">14.1 MB</span>) - added by <em>ktym</em>
+      <a class="timeline" href="/timeline?from=2010-02-13T21%3A57%3A10%2B0900&amp;precision=second" title="2010-02-13T21:57:10+0900 in Timeline">15 years</a> ago.
+                <q><a class="missing wiki">BioHackathon?</a>2010 presentation by Nakao &amp; Katayama</q>
+              </li>
+              <li>
+      <a href="/attachment/wiki/Symposium/BioHackatonSymposium.pdf" title="View attachment">BioHackatonSymposium.pdf</a>
+      <a href="/raw-attachment/wiki/Symposium/BioHackatonSymposium.pdf" title="Download" class="trac-rawlink"><img src="/chrome/common/download.png" alt="Download" /></a>
+      (<span title="9842891 bytes">9.4 MB</span>) - added by <em>andrea</em>
+      <a class="timeline" href="/timeline?from=2010-02-16T22%3A50%3A49%2B0900&amp;precision=second" title="2010-02-16T22:50:49+0900 in Timeline">15 years</a> ago.
+              </li>
+              <li>
+      <a href="/attachment/wiki/Symposium/reflect_biohackathon2010.pdf" title="View attachment">reflect_biohackathon2010.pdf</a>
+      <a href="/raw-attachment/wiki/Symposium/reflect_biohackathon2010.pdf" title="Download" class="trac-rawlink"><img src="/chrome/common/download.png" alt="Download" /></a>
+      (<span title="2026852 bytes">1.9 MB</span>) - added by <em>hhorn</em>
+      <a class="timeline" href="/timeline?from=2010-02-18T17%3A14%3A29%2B0900&amp;precision=second" title="2010-02-18T17:14:29+0900 in Timeline">15 years</a> ago.
+                <q>Presentation of Reflect at Biohackathon 2010</q>
+              </li>
+          </ul>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="/wiki/Symposium?version=12&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,513 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+    <html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      2010Q4 (diff) – BioHackathon 2010
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="up" href="/wiki/2010Q4?action=history" title="Page history" />
+        <link rel="next" href="/wiki/2010Q4?action=diff&amp;version=5" title="Version 5" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/diff.css" type="text/css" />
+        <link rel="prev" href="/wiki/2010Q4?action=diff&amp;version=3" title="Version 3" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search BioHackathon 2010" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script><script type="text/javascript" src="/chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="/chrome/common/css/diff.css" /><meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon3.dbcls.jp/"><img src="http://hackathon3.dbcls.jp/raw-attachment/wiki/LogoGallery/trac_logo.png" alt="DBCLS BioHackathon 2010" width="200" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="/wiki/2010Q4?action=diff&amp;version=3" title="Version 3">Previous Change</a></span></li><li><a href="/wiki/2010Q4?action=history" title="Page history">Wiki History</a></li><li class="last"><span><a class="next" href="/wiki/2010Q4?action=diff&amp;version=5" title="Version 5">Next Change</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <h1>Changes
+        between
+          <a href="/wiki/2010Q4?version=3">Version 3</a> and
+        <a href="/wiki/2010Q4?version=4">Version 4</a> of
+        <a href="/wiki/2010Q4?version=4">2010Q4</a>
+      </h1>
+      <form method="post" id="prefs" action="/wiki/2010Q4?version=4"><div><input type="hidden" name="__FORM_TOKEN" value="9b92f779110146561b41c442" /></div>
+        <div>
+          <input type="hidden" name="action" value="diff" />
+          <input type="hidden" name="version" value="4" />
+          <input type="hidden" name="old_version" value="3" />
+    <label for="style">View differences</label>
+    <select id="style" name="style">
+      <option selected="selected" value="inline">inline</option>
+      <option value="sidebyside">side by side</option>
+    </select>
+    <div class="field">
+      Show <input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+      <label for="contextlines">lines around each change</label>
+    </div>
+    <fieldset id="ignore">
+      <legend>Ignore:</legend>
+      <div class="field">
+        <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+        <label for="ignoreblanklines">Blank lines</label>
+      </div>
+      <div class="field">
+        <input type="checkbox" id="ignorecase" name="ignorecase" />
+        <label for="ignorecase">Case changes</label>
+      </div>
+      <div class="field">
+        <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+        <label for="ignorewhitespace">White space changes</label>
+      </div>
+    </fieldset>
+    <div class="buttons">
+      <input type="submit" name="update" value="Update" />
+    </div>
+        </div>
+      </form>
+      <dl id="overview">
+        <dt class="property time">Timestamp:</dt>
+        <dd class="time">
+          2011/01/27 17:29:42 (<a class="timeline" href="/timeline?from=2011-01-27T17%3A29%3A42%2B0900&amp;precision=second" title="2011-01-27T17:29:42+0900 in Timeline">14 years</a> ago)
+        </dd>
+        <dt class="property author">Author:</dt>
+        <dd class="author">
+          arek
+        </dd>
+        <dt class="property message">Comment:</dt>
+        <dd class="message">
+          
+          <p>
+--
+</p>
+
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+            <dt class="mod"></dt><dd>Modified</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="/wiki/2010Q4?version=4">2010Q4</a>
+        </h2>
+        <table class="inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Version 3">
+                    <a href="/wiki/2010Q4?version=3#L1">
+                      v3</a>
+                  </th>
+                  <th title="Version 4">
+                    <a href="/wiki/2010Q4?version=4#L1">
+                      v4</a>
+                  </th>
+                  <th> </th>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>1</th><th>1</th><td class="l"><span>Follwo-up meetings held during 2011/01-2011/03 at DBCLS.</span> </td>
+                  </tr><tr>
+                          <th>2</th><th>2</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>3</th><th> </th><td class="l"><span>BioMart RDF-Integration via SPARQL</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>3</th><td class="r"><span>[[PageOutline]] </span> </td>
+                      </tr><tr>
+                        <th> </th><th>4</th><td class="r"><span>= URL =</span> </td>
+                      </tr><tr>
+                        <th> </th><th>5</th><td class="r"><span>&nbsp;* BioMart http://www.biomart.org</span> </td>
+                      </tr><tr>
+                        <th> </th><th>6</th><td class="r"><span>&nbsp;* ICGC Data Portal http://dcc.icgc.org </span> </td>
+                      </tr><tr>
+                        <th> </th><th>7</th><td class="r"><span>&nbsp;*</span> </td>
+                      </tr><tr>
+                        <th> </th><th>8</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>9</th><td class="r"><span>== BioMart RDF integration via SPARQL ==</span> </td>
+                      </tr><tr>
+                        <th> </th><th>10</th><td class="r"><span>tore.eriksson has made a tentative XSL stylesheet to convert PDBMLplus (some selected elements) into RDF.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>11</th><td class="r"><span>(but when I checked the output RDF with raptor converter (rapper), it had some errors...)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>12</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>13</th><td class="r"><span>While I (akinjo) was in Shinkansen from Tokyo to Osaka, I wrote an XSL stylesheet that convert the whole PDBML file</span> </td>
+                      </tr><tr>
+                        <th> </th><th>14</th><td class="r"><span>into RDF (files attached). I noticed one good thing about PDBML.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>15</th><td class="r"><span>&nbsp;* PDBML is based on mmCIF (PDB's original format)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>16</th><td class="r"><span>&nbsp;* mmCIF is actually defined as an ontology.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>17</th><td class="r"><span>&nbsp;* So, we can use mmCIF categories and items as predicates.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>18</th><td class="r"><span>&nbsp;* An xpath REST interface for PDBMLplus is available at pdbj: e.g., http://service.pdbj.org/mine/xpath/1a00/PDBx:datablock/PDBx:entityCategory</span> </td>
+                      </tr><tr>
+                        <th> </th><th>19</th><td class="r"><span>&nbsp;* Thus, we can use xpaths as subjects and objects in RDF.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>20</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>21</th><td class="r"><span>Some examples of the triples are:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>22</th><td class="r"><span>{{{</span> </td>
+                      </tr><tr>
+                        <th> </th><th>23</th><td class="r"><span>&lt;http://service.pdbj.org/mine/xpath/1A00&gt; &lt;http://www.w3.org/2000/01/rdf-schema#label&gt; "1A00" .</span> </td>
+                      </tr><tr>
+                        <th> </th><th>24</th><td class="r"><span>&lt;http://service.pdbj.org/mine/xpath/1A00/PDBx:datablock/PDBx:entityCategory/PDBx:entity[1]&gt; &lt;http://mmcif.pdbj.org/XML/pdbmlplus/pdbMLplus_v32.xsd/_entity.pdbx_description&gt; "HEMOGLOBIN (ALPHA CHAIN)" .</span> </td>
+                      </tr><tr>
+                        <th> </th><th>25</th><td class="r"><span>&lt;http://service.pdbj.org/mine/xpath/1A00/PDBx:datablock/PDBx:entityCategory&gt; &lt;http://mmcif.pdbj.org/XML/pdbmlplus/pdbMLplus_v32.xsd/entity&gt; &lt;http://service.pdbj.org/mine/xpath/1A00/PDBx:datablock/PDBx:entityCategory/PDBx:entity[4]&gt; .</span> </td>
+                      </tr><tr>
+                        <th> </th><th>26</th><td class="r"><span>}}}</span> </td>
+                      </tr><tr>
+                        <th> </th><th>27</th><td class="r"><span>(Predicate URI's are not valid at present.)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>28</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>29</th><td class="r"><span>=== To do ===</span> </td>
+                      </tr><tr>
+                        <th> </th><th>30</th><td class="r"><span>&nbsp;* Currently, PDBML files converted by using PDBMLplus2rdf.xsl and PDBML2rdf.xsl do not contain any links to other databases. For that we need to write other XSL stylesheets.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>31</th><td class="r"><span>&nbsp;* There are also cross references within PDB, but these are not handled yet. To do so requires some analysis of the PDBML schema. </span> </td>
+                      </tr><tr>
+                        <th> </th><th>32</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>33</th><td class="r"><span>== 2010-02-15: PDBML schema to OWL ==</span> </td>
+                      </tr><tr>
+                        <th> </th><th>34</th><td class="r"><span>I succeeded converting PDBML schema into OWL/RDF using XSLT. The resulting OWL file was validated as OWL/Full-compatible by !WonderWeb OWL Ontology validator</span> </td>
+                      </tr><tr>
+                        <th> </th><th>35</th><td class="r"><span>( http://www.mygrid.org.uk/OWL/Validator )!</span> </td>
+                      </tr><tr>
+                        <th> </th><th>36</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>37</th><td class="r"><span>=== To do ===</span> </td>
+                      </tr><tr>
+                        <th> </th><th>38</th><td class="r"><span>&nbsp;* Writing a XSL stylesheet that write another XSL stylesheet for converting PDBML files into RDF.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>39</th><td class="r"><span>That is, </span> </td>
+                      </tr><tr>
+                        <th> </th><th>40</th><td class="r"><span>{{{</span> </td>
+                      </tr><tr>
+                        <th> </th><th>41</th><td class="r"><span>PDBML Schema (pdbx-v32.xsd) --(pdbx2pdbml2rdf.xsl)--&gt; XSL Stylesheet (pdbml2rdf.xsl)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>42</th><td class="r"><span>PDBML file --(pdbml2rdf.xsl)--&gt; PDBML/RDF</span> </td>
+                      </tr><tr>
+                        <th> </th><th>43</th><td class="r"><span>}}}</span> </td>
+                      </tr><tr>
+                        <th> </th><th>44</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>45</th><td class="r"><span>One big advantage of translating PDBML schema is that it contains cross-references to many items within a PDBML file.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>46</th><td class="r"><span>= DDBJ things =</span> </td>
+                      </tr><tr>
+                        <th> </th><th>47</th><td class="r"><span>&nbsp;* http://xml.nig.ac.jp/rest/Invoke?service=DDBJ&amp;method=getXMLEntry&amp;accession=&lt;ACCESSION&gt;</span> </td>
+                      </tr><tr>
+                        <th> </th><th>48</th><td class="r"><span>&nbsp; &nbsp; e.g. http://xml.nig.ac.jp/rest/Invoke?service=DDBJ&amp;method=getXMLEntry&amp;accession=AL121903</span> </td>
+                      </tr><tr>
+                        <th> </th><th>49</th><td class="r"><span>&nbsp;* URL which returns prototype RDF</span> </td>
+                      </tr><tr>
+                        <th> </th><th>50</th><td class="r"><span>&nbsp;* http://sabi.ddbj.nig.ac.jp/ddbj/data/&lt;ACCESSION&gt;</span> </td>
+                      </tr><tr>
+                        <th> </th><th>51</th><td class="r"><span>&nbsp; &nbsp; e.g. http://sabi.ddbj.nig.ac.jp/ddbj/data/Z48241</span> </td>
+                      </tr><tr>
+                        <th> </th><th>52</th><td class="r"><span>&nbsp;* URL which returns in flatfile format</span> </td>
+                      </tr><tr>
+                        <th> </th><th>53</th><td class="r"><span>&nbsp;* http://sabi.ddbj.nig.ac.jp/ddbj/&lt;ACCESSION&gt;</span> </td>
+                      </tr><tr>
+                        <th> </th><th>54</th><td class="r"><span>&nbsp; &nbsp; e.g. http://sabi.ddbj.nig.ac.jp/ddbj/Z48241</span> </td>
+                      </tr><tr>
+                        <th> </th><th>55</th><td class="r"><span>&nbsp;* URL which redirects HTML page</span> </td>
+                      </tr><tr>
+                        <th> </th><th>56</th><td class="r"><span>&nbsp;* http://sabi.ddbj.nig.ac.jp/ddbj/html/&lt;ACCESSION&gt;</span> </td>
+                      </tr><tr>
+                        <th> </th><th>57</th><td class="r"><span>&nbsp; &nbsp; e.g. http://sabi.ddbj.nig.ac.jp/ddbj/html/Z48241</span> </td>
+                      </tr><tr>
+                        <th> </th><th>58</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>59</th><td class="r"><span>= KEGG things =</span> </td>
+                      </tr><tr>
+                        <th> </th><th>60</th><td class="r"><span>&nbsp;* Draft KEGG RDF download site (temporal) : http://www.hgc.jp/~shuichi/biohack2010/</span> </td>
+                      </tr><tr>
+                        <th> </th><th>61</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>62</th><td class="r"><span>&nbsp;* Note: I wouldn't recommend to display the following files in your web browsers because it's large text file.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>63</th><td class="r"><span>&nbsp;* http://www.hgc.jp/~shuichi/biohack2010/kegg-genes2pdb.ttl (KEGG GENES2PDB / PDB2KEGG GENES turtle: 730,602 triples)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>64</th><td class="r"><span>&nbsp;* http://www.hgc.jp/~shuichi/biohack2010/kegg-genes2kegg-ko.ttl (KEGG GENES2KO / KEGG KO2GENES turtle: 3,687,074 triples)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>65</th><td class="r"><span>&nbsp;* http://www.hgc.jp/~shuichi/biohack2010/kegg-ko2kegg-pathway.ttl (KEGG KO2PATHWAY / KEGG PATHWAY2KO turtle: 22,774 triples)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>66</th><td class="r"><span>&nbsp;* http://www.hgc.jp/~shuichi/biohack2010/kegg-genes2kegg-ko.ttl (KEGG GENES2NCBI GENE-ID / NCBI GENE-ID2KEGG GENES turtle: 3,687,074 triples)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>67</th><td class="r"><span>&nbsp;* http://www.hgc.jp/~shuichi/biohack2010/kegg-ko2definition.ttl (KEGG KO2KO definition turtle: 13,211 triples)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>68</th><td class="r"><span>&nbsp;* Total 14,391,245 triples</span> </td>
+                      </tr><tr>
+                        <th> </th><th>69</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>70</th><td class="r"><span>= Reflect for pubmed =</span> </td>
+                      </tr><tr>
+                        <th> </th><th>71</th><td class="r"><span>To use reflect on pubmed:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>72</th><td class="r"><span>http://reflect.cbs.dtu.dk/TEST/GetEntities?uri=http://www.ncbi.nlm.nih.gov/pubmed/20146332&amp;entity_types=9606</span> </td>
+                      </tr><tr>
+                        <th> </th><th>73</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>74</th><td class="r"><span>The result will contain XML code like seen at</span> </td>
+                      </tr><tr>
+                        <th> </th><th>75</th><td class="r"><span>[http://reflect.cbs.dtu.dk/restAPI.html http://reflect.cbs.dtu.dk/restAPI.html]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>76</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>77</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>78</th><td class="r"><span>= SPARQL endpoint =</span> </td>
+                      </tr><tr>
+                        <th> </th><th>79</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>80</th><td class="r"><span>Room 415 network</span> </td>
+                      </tr><tr>
+                        <th> </th><th>81</th><td class="r"><span>&nbsp;* Bio2RDF KEGG - http://192.168.11.61:8890/sparql/</span> </td>
+                      </tr><tr>
+                        <th> </th><th>82</th><td class="r"><span>&nbsp;* Bio2RDF PDB - http://192.168.11.61:8891/sparql/</span> </td>
+                      </tr><tr>
+                        <th> </th><th>83</th><td class="r"><span>&nbsp;* DDBJ+KEGG-PDBj -&nbsp; http://192.168.11.61:8892/sparql/</span> </td>
+                      </tr><tr>
+                        <th> </th><th>84</th><td class="r"><span>&nbsp;* PDBj -</span> </td>
+                      </tr><tr>
+                        <th> </th><th>85</th><td class="r"><span>&nbsp;* KEGG - </span> </td>
+                      </tr><tr>
+                        <th> </th><th>86</th><td class="r"><span>&nbsp;* DDBJ - </span> </td>
+                      </tr><tr>
+                        <th> </th><th>87</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>88</th><td class="r"><span>Facet</span> </td>
+                      </tr><tr>
+                        <th> </th><th>89</th><td class="r"><span>&nbsp;* Bio2RDF KEGG - http://192.168.11.61:8890/fct/</span> </td>
+                      </tr><tr>
+                        <th> </th><th>90</th><td class="r"><span>&nbsp;* Bio2RDF PDB - http://192.168.11.61:8891/fct/</span> </td>
+                      </tr><tr>
+                        <th> </th><th>91</th><td class="r"><span>&nbsp;* DDBJ-KEGG-PDBj -&nbsp; http://192.168.11.61:8892/fct/</span> </td>
+                      </tr><tr>
+                        <th> </th><th>92</th><td class="r"><span>&nbsp;* PDBj - </span> </td>
+                      </tr><tr>
+                        <th> </th><th>93</th><td class="r"><span>&nbsp;* KEGG - </span> </td>
+                      </tr><tr>
+                        <th> </th><th>94</th><td class="r"><span>&nbsp;* DDBJ - </span> </td>
+                      </tr><tr>
+                        <th> </th><th>95</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>96</th><td class="r"><span>= Validating RDF/XML format =</span> </td>
+                      </tr><tr>
+                        <th> </th><th>97</th><td class="r"><span>&nbsp;* http://librdf.org/parse</span> </td>
+                      </tr><tr>
+                        <th> </th><th>98</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>99</th><td class="r"><span>= How to load data to virtuoso =</span> </td>
+                      </tr><tr>
+                        <th> </th><th>100</th><td class="r"><span>First, in the '''virtuoso.ini''' file, set the following parameter </span> </td>
+                      </tr><tr>
+                        <th> </th><th>101</th><td class="r"><span>{{{</span> </td>
+                      </tr><tr>
+                        <th> </th><th>102</th><td class="r"><span>DirsAllowed&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;= ., /usr/local/virtuoso-opensource/share/virtuoso/vad, /tmp</span> </td>
+                      </tr><tr>
+                        <th> </th><th>103</th><td class="r"><span>}}}</span> </td>
+                      </tr><tr>
+                        <th> </th><th>104</th><td class="r"><span>So the directory /tmp is allowed to have data to be loaded.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>105</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>106</th><td class="r"><span>Then put the data file in /tmp (e.g., all.ttl, ddbj.rdf).</span> </td>
+                      </tr><tr>
+                        <th> </th><th>107</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>108</th><td class="r"><span>{{{</span> </td>
+                      </tr><tr>
+                        <th> </th><th>109</th><td class="r"><span>% cat load.isql</span> </td>
+                      </tr><tr>
+                        <th> </th><th>110</th><td class="r"><span>DB.DBA.TTLP_MT(file_to_string_output('/tmp/all.ttl'), '' ,'http://www.pdbj.org');</span> </td>
+                      </tr><tr>
+                        <th> </th><th>111</th><td class="r"><span>checkpoint;</span> </td>
+                      </tr><tr>
+                        <th> </th><th>112</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>113</th><td class="r"><span>DB.DBA.RDF_LOAD_RDFXML(file_to_string_output('/tmp/lala.rdf'), '' ,'http://www.pdbj.org');</span> </td>
+                      </tr><tr>
+                        <th> </th><th>114</th><td class="r"><span>checkpoint;</span> </td>
+                      </tr><tr>
+                        <th> </th><th>115</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>116</th><td class="r"><span>% isql 1111 dba dba &lt; load.isql</span> </td>
+                      </tr><tr>
+                        <th> </th><th>117</th><td class="r"><span>}}}</span> </td>
+                      </tr><tr>
+                        <th> </th><th>118</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>119</th><td class="r"><span>Here the third argument for the functions '''TTLP_MT''' and '''RDF_LOAD_RDFXML''' is the name of the graph</span> </td>
+                      </tr><tr>
+                        <th> </th><th>120</th><td class="r"><span>(in this case, it's '''http://www.pdbj.org''').</span> </td>
+                      </tr><tr>
+                        <th> </th><th>121</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>122</th><td class="r"><span>= Results? =</span> </td>
+                      </tr><tr>
+                        <th> </th><th>123</th><td class="r"><span>[[wiki:DDBJ-KEGG-PDBj/Results]]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>124</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>125</th><td class="r"><span>Developed the following on-the-fly DDBJ interface of RDF, Web API and HTML page</span> </td>
+                      </tr><tr>
+                        <th> </th><th>126</th><td class="r"><span>&nbsp;* URL which returns prototype RDF</span> </td>
+                      </tr><tr>
+                        <th> </th><th>127</th><td class="r"><span>&nbsp;* http://sabi.ddbj.nig.ac.jp/ddbj/data/&lt;ACCESSION&gt;</span> </td>
+                      </tr><tr>
+                        <th> </th><th>128</th><td class="r"><span>&nbsp; &nbsp; e.g. http://sabi.ddbj.nig.ac.jp/ddbj/data/Z48241</span> </td>
+                      </tr><tr>
+                        <th> </th><th>129</th><td class="r"><span>&nbsp;* URL which returns in flatfile format (URI?)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>130</th><td class="r"><span>&nbsp;* http://sabi.ddbj.nig.ac.jp/ddbj/&lt;ACCESSION&gt;</span> </td>
+                      </tr><tr>
+                        <th> </th><th>131</th><td class="r"><span>&nbsp; &nbsp; e.g. http://sabi.ddbj.nig.ac.jp/ddbj/Z48241</span> </td>
+                      </tr><tr>
+                        <th> </th><th>132</th><td class="r"><span>&nbsp;* URL which redirects HTML page</span> </td>
+                      </tr><tr>
+                        <th> </th><th>133</th><td class="r"><span>&nbsp;* http://sabi.ddbj.nig.ac.jp/ddbj/html/&lt;ACCESSION&gt;</span> </td>
+                      </tr><tr>
+                        <th> </th><th>134</th><td class="r"><span>&nbsp; &nbsp; e.g. http://sabi.ddbj.nig.ac.jp/ddbj/html/Z48241</span> </td>
+                      </tr><tr>
+                        <th> </th><th>135</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>136</th><td class="r"><span>Installed the following virtuoso at DDBJ site</span> </td>
+                      </tr><tr>
+                        <th> </th><th>137</th><td class="r"><span>&nbsp;* http://sabi.ddbj.nig.ac.jp:8080/sparql</span> </td>
+                      </tr><tr>
+                        <th> </th><th>138</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>139</th><td class="r"><span>FAQ: How many triples ?</span> </td>
+                      </tr><tr>
+                        <th> </th><th>140</th><td class="r"><span>{{{</span> </td>
+                      </tr><tr>
+                        <th> </th><th>141</th><td class="r"><span>mnmq:pdbj bh10$ wc -l *.ttl</span> </td>
+                      </tr><tr>
+                        <th> </th><th>142</th><td class="r"><span>&nbsp;1018388 all.ttl</span> </td>
+                      </tr><tr>
+                        <th> </th><th>143</th><td class="r"><span>&nbsp; &nbsp;25991 ddbj.ttl</span> </td>
+                      </tr><tr>
+                        <th> </th><th>144</th><td class="r"><span>&nbsp; 730602 kegg-genes2pdb.ttl</span> </td>
+                      </tr><tr>
+                        <th> </th><th>145</th><td class="r"><span>&nbsp; &nbsp;18988 kegg-hsa2kegg-ko.ttl</span> </td>
+                      </tr><tr>
+                        <th> </th><th>146</th><td class="r"><span>&nbsp; &nbsp;51438 kegg-hsa2ncbi-gene_id.ttl</span> </td>
+                      </tr><tr>
+                        <th> </th><th>147</th><td class="r"><span>&nbsp; &nbsp;22774 kegg-ko2kegg-pathway.ttl</span> </td>
+                      </tr><tr>
+                        <th> </th><th>148</th><td class="r"><span>&nbsp;15048785 kegg.ttl</span> </td>
+                      </tr><tr>
+                        <th> </th><th>149</th><td class="r"><span>&nbsp; &nbsp;61208 pubmed.ttl</span> </td>
+                      </tr><tr>
+                        <th> </th><th>150</th><td class="r"><span>&nbsp; 831951 struct_title.ttl</span> </td>
+                      </tr><tr>
+                        <th> </th><th>151</th><td class="r"><span>&nbsp; &nbsp;57943 taxonomy.ttl</span> </td>
+                      </tr><tr>
+                        <th> </th><th>152</th><td class="r"><span>&nbsp; &nbsp;67286 uniprot.ttl</span> </td>
+                      </tr><tr>
+                        <th> </th><th>153</th><td class="r"><span>}}}</span> </td>
+                      </tr><tr>
+                        <th> </th><th>154</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>155</th><td class="r"><span>== PDBML2RDF ==</span> </td>
+                      </tr><tr>
+                        <th> </th><th>156</th><td class="r"><span>&nbsp;* The XSL stylesheet for converting PDBML Schema (pdbx-v32.xsd) to an OWL ontology is completed (pdbx2owl.xsl).</span> </td>
+                      </tr><tr>
+                        <th> </th><th>157</th><td class="r"><span>&nbsp;* The XSL stylesheet for converting PDBML Schema (pdbx-v32.xsd) to the XSL stylesheet that converts PDBML files to RDF files is completed (pdbx2pdbml2rdf.xsl).</span> </td>
+                      </tr><tr>
+                        <th> </th><th>158</th><td class="r"><span>&nbsp; * This converter generator also make internal cross-references within each PDB entry. However, there are a number of errors in the definition of cross-references in the PDBML Schema (using xsd:key and xsd:keyref), thus, the resulting cross-references are significantly flawed.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>159</th><td class="r"><span>Example of using the stylesheets</span> </td>
+                      </tr><tr>
+                        <th> </th><th>160</th><td class="r"><span>{{{</span> </td>
+                      </tr><tr>
+                        <th> </th><th>161</th><td class="r"><span># creating OWL ontology</span> </td>
+                      </tr><tr>
+                        <th> </th><th>162</th><td class="r"><span>% xsltproc pdbx2owl.xsl pdbx-v32.xsd &gt; pdbx-v32.owl</span> </td>
+                      </tr><tr>
+                        <th> </th><th>163</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>164</th><td class="r"><span># creating PDBML-&gt; RDF converter</span> </td>
+                      </tr><tr>
+                        <th> </th><th>165</th><td class="r"><span>% xsltproc pdbx2pdbml2rdf.xsl pdbx-v32.xsd &gt; PDBML2rdf.xsl</span> </td>
+                      </tr><tr>
+                        <th> </th><th>166</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>167</th><td class="r"><span># converting a PDBML file to RDF.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>168</th><td class="r"><span>% xsltproc PDBML2rdf.xsl 1a00-noatom.xml &gt; 1a00-noatom.rdf</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>169</th><td class="r"><span>}}}</span> </td>
+                      </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+      </div>
+  </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

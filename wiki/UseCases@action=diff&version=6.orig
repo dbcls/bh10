@@ -1,0 +1,297 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+    <html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      UseCases (diff) – BioHackathon 2010
+    </title>
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="up" href="/wiki/UseCases?action=history" title="Page history" />
+        <link rel="next" href="/wiki/UseCases?action=diff&amp;version=7" title="Version 7" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/diff.css" type="text/css" />
+        <link rel="prev" href="/wiki/UseCases?action=diff&amp;version=5" title="Version 5" />
+        <link rel="shortcut icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="/chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search BioHackathon 2010" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script><script type="text/javascript" src="/chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="/chrome/common/css/diff.css" /><meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://hackathon3.dbcls.jp/"><img src="http://hackathon3.dbcls.jp/raw-attachment/wiki/LogoGallery/trac_logo.png" alt="DBCLS BioHackathon 2010" width="200" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Login</a></li><li><a href="/wiki/TracGuide">Help/Guide</a></li><li><a href="/about">About Trac</a></li><li class="last"><a href="/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Timeline</a></li><li><a href="/roadmap">Roadmap</a></li><li><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="/wiki/UseCases?action=diff&amp;version=5" title="Version 5">Previous Change</a></span></li><li><a href="/wiki/UseCases?action=history" title="Page history">Wiki History</a></li><li class="last"><span><a class="next" href="/wiki/UseCases?action=diff&amp;version=7" title="Version 7">Next Change</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <h1>Changes
+        between
+          <a href="/wiki/UseCases?version=5">Version 5</a> and
+        <a href="/wiki/UseCases?version=6">Version 6</a> of
+        <a href="/wiki/UseCases?version=6">UseCases</a>
+      </h1>
+      <form method="post" id="prefs" action="/wiki/UseCases?version=6"><div><input type="hidden" name="__FORM_TOKEN" value="9b92f779110146561b41c442" /></div>
+        <div>
+          <input type="hidden" name="action" value="diff" />
+          <input type="hidden" name="version" value="6" />
+          <input type="hidden" name="old_version" value="5" />
+    <label for="style">View differences</label>
+    <select id="style" name="style">
+      <option selected="selected" value="inline">inline</option>
+      <option value="sidebyside">side by side</option>
+    </select>
+    <div class="field">
+      Show <input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+      <label for="contextlines">lines around each change</label>
+    </div>
+    <fieldset id="ignore">
+      <legend>Ignore:</legend>
+      <div class="field">
+        <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+        <label for="ignoreblanklines">Blank lines</label>
+      </div>
+      <div class="field">
+        <input type="checkbox" id="ignorecase" name="ignorecase" />
+        <label for="ignorecase">Case changes</label>
+      </div>
+      <div class="field">
+        <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+        <label for="ignorewhitespace">White space changes</label>
+      </div>
+    </fieldset>
+    <div class="buttons">
+      <input type="submit" name="update" value="Update" />
+    </div>
+        </div>
+      </form>
+      <dl id="overview">
+        <dt class="property time">Timestamp:</dt>
+        <dd class="time">
+          2010/02/09 09:33:27 (<a class="timeline" href="/timeline?from=2010-02-09T09%3A33%3A27%2B0900&amp;precision=second" title="2010-02-09T09:33:27+0900 in Timeline">15 years</a> ago)
+        </dd>
+        <dt class="property author">Author:</dt>
+        <dd class="author">
+          gaou
+        </dd>
+        <dt class="property message">Comment:</dt>
+        <dd class="message">
+          
+          <p>
+--
+</p>
+
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+            <dt class="mod"></dt><dd>Modified</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="/wiki/UseCases?version=6">UseCases</a>
+        </h2>
+        <table class="inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Version 5">
+                    <a href="/wiki/UseCases?version=5#L13">
+                      v5</a>
+                  </th>
+                  <th title="Version 6">
+                    <a href="/wiki/UseCases?version=6#L13">
+                      v6</a>
+                  </th>
+                  <th> </th>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>13</th><th>13</th><td class="l"><span>&nbsp; * Yasunori Yamamoto</span> </td>
+                  </tr><tr>
+                          <th>14</th><th>14</th><td class="l"><span>&nbsp; * Akira R. KINJO</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>15</th><td class="r"><ins>&nbsp; * Gos Micklem</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>15</th><th>16</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>16</th><th>17</th><td class="l"><span>== Summary ==</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>17</th><th> </th><td class="l"><del>- [ ] use cases</del> </td>
+                  </tr><tr>
+                          <th>18</th><th> </th><td class="l"><del>&nbsp; &nbsp; - [ ] myexperiment - flymine</del> </td>
+                  </tr><tr>
+                          <th>19</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; - [ ] any questions can be more efficient</del> </td>
+                  </tr><tr>
+                          <th>20</th><th> </th><td class="l"><del>- [ ] questions that queries over separated DBs</del> </td>
+                  </tr><tr>
+                          <th>21</th><th> </th><td class="l"><del>&nbsp; &nbsp; - [ ] using in-house data -&gt; NGS</del> </td>
+                  </tr><tr>
+                          <th>22</th><th> </th><td class="l"><del>&nbsp; &nbsp; - [ ] can be in different sources - less cost of integration</del> </td>
+                  </tr><tr>
+                          <th>23</th><th> </th><td class="l"><del>- [ ] querying the predicates</del> </td>
+                  </tr><tr>
+                          <th>24</th><th> </th><td class="l"><del>&nbsp; &nbsp; - [ ] discovery of DBs</del> </td>
+                  </tr><tr>
+                          <th>25</th><th> </th><td class="l"><del>&nbsp; &nbsp; - [ ] hypothesis generation</del> </td>
+                  </tr><tr>
+                          <th>26</th><th> </th><td class="l"><del>- [ ] compare how data can be published with existing &amp; SW technology</del> </td>
+                  </tr><tr>
+                          <th>27</th><th> </th><td class="l"><del>- [ ] interpreted knowledge</del> </td>
+                  </tr><tr>
+                          <th>28</th><th> </th><td class="l"><del>&nbsp; &nbsp; - [ ] not numerical?</del> </td>
+                  </tr><tr>
+                          <th>29</th><th> </th><td class="l"><del>&nbsp; &nbsp; - [ ] not too raw?</del> </td>
+                  </tr><tr>
+                          <th>30</th><th> </th><td class="l"><del>&nbsp; &nbsp; - [ ] linked by predicates (even if numerical)</del> </td>
+                  </tr><tr>
+                          <th>31</th><th> </th><td class="l"><del>- [ ] data are linked</del> </td>
+                  </tr><tr>
+                          <th>32</th><th> </th><td class="l"><del>- [ ] migrate SQL to simple SPARQL endpoints</del> </td>
+                  </tr><tr>
+                          <th>33</th><th> </th><td class="l"><del>&nbsp; &nbsp; - [ ] easy to convert 20 lines?</del> </td>
+                  </tr><tr>
+                          <th>34</th><th> </th><td class="l"><del>&nbsp; &nbsp; - [ ] convert PDB relational to Sparql (kinjo-san, Fransois)</del> </td>
+                  </tr><tr>
+                          <th>35</th><th> </th><td class="l"><del>&nbsp; &nbsp; - [ ] miRbase (raoul)</del> </td>
+                  </tr><tr>
+                          <th>36</th><th> </th><td class="l"><del>- [ ] users do not have to know the entire schema</del> </td>
+                  </tr><tr>
+                          <th>37</th><th> </th><td class="l"><del>- [ ] Paul</del> </td>
+                  </tr><tr>
+                          <th>38</th><th> </th><td class="l"><del>&nbsp; &nbsp; - [ ] predict PPI using homologs (PPI in yeast -&gt; homolog in human)</del> </td>
+                  </tr><tr>
+                          <th>39</th><th> </th><td class="l"><del>- [ ] formulation of SPARQL queries -&gt; RDFscape</del> </td>
+                  </tr><tr class="last">
+                          <th>40</th><th> </th><td class="l"><del>&nbsp; &nbsp; - [ ] can be GUI.</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>41</th><th>18</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>42</th><th> </th><td class="l"><span>quick note copied from OmniOutliner. will make it prettier later (gaou)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>19</th><td class="r"><span>Lots of use cases in data and service integrations are available in websites such as [http://www.myexperiment.org/ myExperiment] and [http://www.flymine.org/ FlyMine]. Using semantic web, any of the existing questions and use cases can be more efficient.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>20</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>21</th><td class="r"><span>So one use case/demonstration would be to compare how data can be published with existing &amp; SW technology.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>22</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>23</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>24</th><td class="r"><span>&nbsp; * questions that queries over separated DBs</span> </td>
+                      </tr><tr>
+                        <th> </th><th>25</th><td class="r"><span>&nbsp; &nbsp; * using in-house data -&gt; NGS</span> </td>
+                      </tr><tr>
+                        <th> </th><th>26</th><td class="r"><span>&nbsp; &nbsp; * can be in different sources - less cost of integration</span> </td>
+                      </tr><tr>
+                        <th> </th><th>27</th><td class="r"><span>&nbsp; * querying the predicates</span> </td>
+                      </tr><tr>
+                        <th> </th><th>28</th><td class="r"><span>&nbsp; &nbsp; * discovery of DBs</span> </td>
+                      </tr><tr>
+                        <th> </th><th>29</th><td class="r"><span>&nbsp; &nbsp; * hypothesis generation</span> </td>
+                      </tr><tr>
+                        <th> </th><th>30</th><td class="r"><span>&nbsp; * interpreted knowledge</span> </td>
+                      </tr><tr>
+                        <th> </th><th>31</th><td class="r"><span>&nbsp; &nbsp; * not numerical?</span> </td>
+                      </tr><tr>
+                        <th> </th><th>32</th><td class="r"><span>&nbsp; &nbsp; * not too raw?</span> </td>
+                      </tr><tr>
+                        <th> </th><th>33</th><td class="r"><span>&nbsp; &nbsp; * linked by predicates (even if numerical)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>34</th><td class="r"><span>&nbsp; * data are linked</span> </td>
+                      </tr><tr>
+                        <th> </th><th>35</th><td class="r"><span>&nbsp; * migrate SQL to simple SPARQL endpoints</span> </td>
+                      </tr><tr>
+                        <th> </th><th>36</th><td class="r"><span>&nbsp; &nbsp; * easy to convert 20 lines?</span> </td>
+                      </tr><tr>
+                        <th> </th><th>37</th><td class="r"><span>&nbsp; &nbsp; * convert PDB relational to Sparql (kinjo-san, Fransois)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>38</th><td class="r"><span>&nbsp; &nbsp; * miRbase (raoul)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>39</th><td class="r"><span>&nbsp; * users do not have to know the entire schema</span> </td>
+                      </tr><tr>
+                        <th> </th><th>40</th><td class="r"><span>&nbsp; * Paul</span> </td>
+                      </tr><tr>
+                        <th> </th><th>41</th><td class="r"><span>&nbsp; &nbsp; * predict PPI using homologs (PPI in yeast -&gt; homolog in human)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>42</th><td class="r"><span>&nbsp; * formulation of SPARQL queries -&gt; RDFscape</span> </td>
+                      </tr><tr>
+                        <th> </th><th>43</th><td class="r"><span>&nbsp; &nbsp; * can be GUI.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>44</th><td class="r"><span></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>45</th><td class="r"><span>&nbsp;- gaou (Kazuharu Arakawa)</span> </td>
+                      </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+      </div>
+  </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="/about"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

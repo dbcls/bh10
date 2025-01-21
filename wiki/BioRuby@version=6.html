@@ -1,0 +1,272 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  
+
+  <head>
+    <title>
+      BioRuby – BioHackathon 2010
+    </title>
+        <link rel="search" href="../search.1.html" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://hackathon3.dbcls.jp/wiki/BioRuby?version=6&amp;format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="BioRuby.html" title="View latest version" />
+        <link rel="start" href="../wiki.1.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="prev" href="BioRuby@version=5.html" title="Version 5" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../search/opensearch" title="Search BioHackathon 2010" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor("Link to this section");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="../index.html"><img src="http://hackathon3.dbcls.jp/raw-attachment/wiki/LogoGallery/trac_logo.png" alt="DBCLS BioHackathon 2010" width="200" /></a>
+      </div>
+      <form id="search" action="../search.1.html" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://hackathon3.dbcls.jp/login">Login</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li><a href="../about.html">About Trac</a></li><li class="last"><a href="../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.1.html">Wiki</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../roadmap.html">Roadmap</a></li><li><a href="../browser.html">Browse Source</a></li><li><a href="../report.html">View Tickets</a></li><li class="last"><a href="../search.1.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="BioRuby@version=5.html" title="Version 5">Previous Version</a></span></li><li><a href="BioRuby.html" title="View latest version">View Latest Version</a></li><li><span class="missing">Next Version &rarr;</span></li><li class="last"><a href="BioRuby@action=diff&amp;version=6.html">Last Change</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+        <table id="info" summary="Revision info">
+          <tbody>
+            <tr><th scope="row">
+                Version 6 (modified by ngoto, <a class="timeline" href="../timeline@from=2010-02-15T15%253A29%253A38+0900&amp;precision=second.html" title="2010-02-15T15:29:38+0900 in Timeline">15 years</a> ago)
+            </th></tr>
+            <tr><td class="message">
+              <p>
+--
+</p>
+
+            </td></tr>
+          </tbody>
+        </table>
+      <div class="wikipage searchable">
+        
+          <p>
+</p><div class="wiki-toc"><ol><li><a href="BioRuby@version=6.html#Day-126">Day-1 (2/6)</a><ol><li><a href="BioRuby@version=6.html#BioRubyRoadmap">BioRuby Roadmap</a></li></ol></li><li>
+<a href="BioRuby@version=6.html#Day027">Day0 (2/7)</a><ol><li><a href="BioRuby@version=6.html#BioRubyRoadmap1">BioRuby Roadmap</a></li></ol></li><li>
+<a href="BioRuby@version=6.html#Day1">Day1</a></li><li>
+<a href="BioRuby@version=6.html#Day2">Day2</a><ol><li><a href="BioRuby@version=6.html#DesigningamechanismtooutputobjectusingtheERbtemplateengineforwritingdatainRDF">Designing a mechanism to output object using the ERb template engine for …</a><ol><li><a href="BioRuby@version=6.html#Basicidea">Basic idea</a></li><li>
+<a href="BioRuby@version=6.html#Proposedarchitecture">Proposed architecture</a></li><li>
+<a href="BioRuby@version=6.html#Issues">Issues</a></li></ol></li></ol></li></ol></div><p> 
+</p>
+<h1 id="Day-126">Day-1 (2/6)</h1>
+<h2 id="BioRubyRoadmap"><a class="wiki" href="BioRuby.html">BioRuby</a> Roadmap</h2>
+<p>
+10:30-18:00, Room 408, DBCLS (Faculty of Engineering Bldg. 12, Univ. of Tokyo)
+</p>
+<p>
+Participants:
+</p>
+<ul><li>Pjotr Prins
+</li><li>Jan Aerts
+</li><li>Toshiaki Katayama
+</li><li>Mitsuteru Nakao
+</li><li>Naohisa Goto
+</li><li>Raoul Jean Pierre Bonnal
+</li></ul><h1 id="Day027">Day0 (2/7)</h1>
+<h2 id="BioRubyRoadmap1"><a class="wiki" href="BioRuby.html">BioRuby</a> Roadmap</h2>
+<p>
+10:00-18:00, Room 408
+</p>
+<p>
+Participants:
+</p>
+<ul><li>Pjotr Prins
+</li><li>Jan Aerts
+</li><li>Toshiaki Katayama
+</li><li>Mitsuteru Nakao
+</li><li>Naohisa Goto
+</li><li>Raoul Jean Pierre Bonnal
+</li><li>Christian M Zmasek
+</li><li>Shuichi Kawashima
+</li><li>Kazuhiro Hayashi
+</li></ul><h1 id="Day1">Day1</h1>
+<h1 id="Day2">Day2</h1>
+<h2 id="DesigningamechanismtooutputobjectusingtheERbtemplateengineforwritingdatainRDF">Designing a mechanism to output object using the ERb template engine for writing data in RDF</h2>
+<ul><li>Mitsuteru Nakao
+</li><li>Naohisa Goto
+</li><li>Toshiaki Katayama
+</li><li>Raoul Jean Pierre Bonnal
+</li></ul><h3 id="Basicidea">Basic idea</h3>
+<pre class="wiki">medline = Bio::MEDLINE.new(medline_flatfile)
+puts medline.output_rdf # =&gt; print a medline abstract in RDF format.
+</pre><ul><li>Writing a Bio::DB object data in RDF format
+</li><li>Using the Erb template system
+</li><li>Template replaceablity
+</li></ul><h3 id="Proposedarchitecture">Proposed architecture</h3>
+<p>
+Adding a module Bio::<a class="missing wiki">OutputErb?</a>
+</p>
+<pre class="wiki">module Bio
+  module OutputErb
+    require 'erb'
+    def output_method_erb(m, t)
+      erb = ERB.new(File.read(t))
+      erb.def_method(self, m, t)
+    end
+  end
+end
+</pre><p>
+Extending the Bio::MEDLINE
+</p>
+<pre class="wiki">class MEDLINE
+  extend OutputErb
+  def_output_method_erb("output_ttl", 'bio/bio/db/medline/medline.ttl.erb')
+
+  def output(t)
+    send("output_#{t.to_s}")
+  end
+end
+</pre><p>
+An Erb template file medline.ttl.erb for RDF/Turtle (partial)
+</p>
+<pre class="wiki">&lt;%
+require 'date'
+# http://www.nlm.nih.gov/bsd/mms/medlineelements.html
+# A generic RDF subject URI at the TogoWS REST
+@prefix = "http://togows.dbcls.jp/entry/ncbi-pubmed"
+
+def uri
+  "&lt;#{@prefix}/#{c(pubmed['PMID'])}&gt;"
+end
+
+# Generate a generic RDF predicate URI at the TogoWS REST.
+def predicate(field_name)
+  "&lt;http://togows.dbcls.jp/nezu/1.0/ncbi-pubmed##{field_name}&gt;"
+end
+
+def ndate(str)
+  str.strip
+  case str
+  when /^\d+$/
+    str.gsub(/(\d{4})(\d{2})(\d{2})/) { "#{$1}-#{$2}-#{$3}"}
+  else
+    str.gsub("/", '-')
+  end
+end
+
+def ndatetime(str)
+  d,t = str.split(" ")
+  [ndate(d), t].join(" ")
+end
+%&gt;&lt;%= uri %&gt;    &lt;%= predicate('pmid') %&gt;        "&lt;%=c pubmed['PMID'] %&gt;" .
+&lt;%= uri %&gt;      &lt;http://www.w3.org/2000/01/rdf-schema#label&gt;    "pmid:&lt;%=c pubmed['PMID'] %&gt;" .
+&lt;%= uri %&gt;      &lt;http://purl.org/dc/elements/1.1/title&gt; "pmid:&lt;%=c pubmed['PMID'] %&gt;" .
+&lt;%= uri %&gt;      &lt;http://purl.org/dc/elements/1.1/identifier&gt;    &lt;http://pubmed.org/&lt;%=c pubmed['PMID'] %&gt;&gt; .
+&lt;%= uri %&gt;      &lt;%= predicate('own') %&gt; "&lt;%=c pubmed['OWN'] %&gt;" .
+&lt;%= uri %&gt;      &lt;%= predicate('stat') %&gt;        "&lt;%=c pubmed['STAT'] %&gt;" .
+&lt;%= uri %&gt;      &lt;%= predicate('da') %&gt;  "&lt;%= ndate(c pubmed['DA']) %&gt;" .
+&lt;%= uri %&gt;      &lt;%= predicate('dcom') %&gt;        "&lt;%=ndate(c pubmed['DCOM']) %&gt;" .
+&lt;%= uri %&gt;      &lt;%= predicate('lr') %&gt;  "&lt;%=ndate(c pubmed['LR']) %&gt;" .
+&lt;% pubmed['IS'].scan(/(\d+-\d+ \(\S+\))/).flatten.each do |is| %&gt;
+&lt;%= uri %&gt;      &lt;%= predicate('is') %&gt;  "&lt;%=c "#{is}" %&gt;" .
+&lt;% end %&gt;
+&lt;%= uri %&gt;      &lt;%= predicate('vi') %&gt;  "&lt;%=c pubmed['VI'] %&gt;" .
+&lt;%= uri %&gt;      &lt;http://prismstandard.org/namespaces/2.0/basic/volume&gt;  "&lt;%=c pubmed['VI'] %&gt;" .
+&lt;%= uri %&gt;      &lt;%= predicate('dp') %&gt;  "&lt;%=c pubmed['DP'] %&gt;" .
+...
+</pre><p>
+On using 
+</p>
+<pre class="wiki">medline = Bio::MEDLINE.new(medline_flatfile)
+
+mdeline.output_ttl # .ttl == RDF/Turtle
+mdeline.output(:ttl) # alias 
+medline.to_ttl # alias 
+medline.to(:ttl) # alias 
+</pre><p>
+Use user template
+</p>
+<pre class="wiki">class MEDLINE
+  def_output_method_erb("output_rdfxml", 'bio/bio/db/medline/medline.rdfxml.erb')
+end
+
+medline = Bio::MEDLINE.new(medline_flatfile)
+mdeline.output_rdfxml
+</pre><p>
+File arrangement
+</p>
+<ul><li>lib/bio/db/
+<ul><li>medline.rb
+</li><li>medline/medline.ttl.erb
+</li></ul></li></ul><h3 id="Issues">Issues</h3>
+<p>
+Naming issue
+</p>
+<ul><li>Choice: Bio::Renderer / Bio::Render / Bio::Template / Bio::Output / Bio::Export / Bio::Exporter / Bio::Writer / Bio::<a class="missing wiki">OutputErb?</a> 
+</li><li>Choice: medline.output_ttl / medline.output(:ttl) / medline.to_ttl / medline.to(:ttl)
+<ul><li>Pros: the to_ttl naming is easy for beginner. 
+</li><li>Cons: to_ttl style name is  for converting class. The to_s method is to convert a object to String expression. And to_json may be confusional.
+</li></ul></li></ul><p>
+Method namespace
+</p>
+<ul><li>Functions defined at the template file contaminates the namespace of the Bio::MEDLINE class.
+</li></ul><p>
+Performance issue
+</p>
+<ul><li>Reading template file every time may be heavy because it uses eval.
+<ul><li>ERB#def_method (or def_class or def_module) may help, but another problem: it always reads the template when the method (or class/module) is defined even if the output is not needed.
+</li></ul></li></ul><p>
+Format variants and options
+</p>
+<ul><li>How to specify format variants and options? For example, it is better to have many html output variants.
+</li></ul>
+        
+        
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="http://hackathon3.dbcls.jp/wiki/BioRuby?version=6&amp;format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">
+        Powered by <a href="../about.html"><strong>Trac 0.11.6</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

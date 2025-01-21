@@ -1,0 +1,68 @@
+[[PageOutline]] 
+= Datasets =
+
+Lists currently available and still missing datasets (as Linked Data / RDF).
+
+== Available resources ==
+
+Let's make a list of all RDF resources currently available and evaluate them according to its contents and quality.
+Extraction of meaningful triples (relations) from original data sources requires good understanding of their contents and it could be a key for the resulting usefulness.
+
+ * [http://sourceforge.net/apps/mediawiki/bio2rdf/index.php Bio2RDF] [http://sourceforge.net/apps/mediawiki/bio2rdf/index.php?title=Namespace Namespace]
+   * [http://sourceforge.net/apps/mediawiki/bio2rdf/index.php?title=Banff_Manifesto Banff_Manifesto]
+   * Ensembl - genes
+   * OBO - GO terms, ChEBI compounds
+   * NCBI - genes, sequences, mesh terms, disease (omim), pubmed articles
+   * KEGG - pathways, genes, enzymes, compounds, drugs, glycans, reactions
+   * MGI - genes
+   * PDB - structures
+   * !UniProt - proteins, keywords, taxonomy
+   * http://quebec.bio2rdf.org/download/virtuoso/V6/ 
+ * [http://neurocommons.org/page/Main_Page NeuroCommons Project]
+   * http://sparql.neurocommons.org/
+   * http://sparql.neurocommons.org/sparql? -- SPARQL endpoint
+   * http://neurocommons.org/page/RDF_distribution
+   * http://neurocommons.org/page/Bundles
+   * http://ashby.csail.mit.edu/presentations/The_Neurocommons_Common_names_and_ontologies_for_open_source_knowledge_integration_on_the_Semantic_Web.pdf
+ * uniprot RDF
+   * http://dev.isb-sib.ch/projects/uniprot-rdf/
+   * http://dev.isb-sib.ch/projects/uniprot-rdf/migration.html
+   * http://dev.isb-sib.ch/projects/uniprot-rdf/shorthand.html
+   * http://dev.isb-sib.ch/projects/uniprot-rdf/owl/ 
+   * [http://sunsite.informatik.rwth-aachen.de/Publications/CEUR-WS/Vol-559/HighlightPoster1.pdf Jerven Bolleman, Thomas Kappler, and the UniProt Consortium (2009) Weekend Triple Billionaire Maintaining a Large RDF Data Set in the Life Sciences]
+ * [http://linkedlifedata.com/ LinkedLifeData]
+  * http://linkedlifedata.com/sources 
+  * http://linkedlifedata.com/sparql
+  * http://linkedlifedata.com/relfinder
+  * http://linkedlifedata.com/convention
+  * ftp://ftp.ontotext.com/pub/lld
+  * http://linkedlifedata.com/about
+* CardioSHARE
+   * [http://biordf.net/cardioSHARE/predicates.html CardioSHARE demo - Available predicates]
+ * Linked Data
+   * [http://www.ted.com/talks/tim_berners_lee_on_the_next_web.html Tim Berners-Lee on the next Web | Video on TED.com]
+     * [http://www.ted.com/talks/hans_rosling_shows_the_best_stats_you_ve_ever_seen.html Hans Rosling shows the best stats you've ever seen | Video on TED.com]
+ * [wiki:DBCLS_RDFs]
+ * TreeBASE
+   * [http://treebase-dev.nescent.org:6666/treebase-web/help/urlAPI.jsp URL API, serialization formats]
+ * RDF example from SciNeS, RIKEN
+   * [https://database.riken.jp/sw/download/cria110s1ria110s222i~archives~semantics~external_id.rdf.xml]
+ * [wiki:SystemsBiology]
+ * Semantic Systems Biology [http://www.semantic-systems-biology.org/]
+
+We should categorize these according to their format (e.g. RDF) and extracted relationships (not only by their original source databases).
+
+== Missing resources ==
+
+Not sure that they are actually unavailable, but let's lists wanted relations (triples) to solve biological queries.
+
+ * Taxonomy <-> Pathway module
+ * Taxonomy <-> Ortholog cluster
+ * Gene <-> Expression patterns (from multiple experiments)
+ * Enzyme <-> Activity
+ * Protein architectures (domain combinations) <-> Taxonomy
+
+We should add intended reasons (what for these relations are required).
+
+ * Contents of the [http://togodb.dbcls.jp/ TogoDB] should be exported as RDF through [http://togows.dbcls.jp/ TogoWS] at DBCLS
+
